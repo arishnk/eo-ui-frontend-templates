@@ -67,6 +67,7 @@
   display: inline-block;
   background-size: cover;
   line-height: 1em;
+  transition: 250ms;
 
   &.eo-icon-middle {
     vertical-align: middle !important;
@@ -82,6 +83,10 @@
 
   &.eo-icon-pad-sm {
     margin-right: 2px;
+  }
+
+  &.eo-icon-half-opacity {
+    opacity: .5;
   }
 
   &.eo-icon-add-a-person { .icon-versions(28px; 28px; '../img/icon_add_a_person.svg'); top: -2px; }
@@ -116,4 +121,11 @@
   &.eo-icon-radio-button-on-hover { .icon-versions(18px; 18px; '../img/icon_radio_button_on_hover.svg'); }
   &.eo-icon-remove-large { .icon-versions(14px; 14px; '../img/icon_remove_large.svg'); top: -1px; }
 
+}
+
+a:hover .eo-icon.eo-icon-half-opacity,
+button:hover .eo-icon.eo-icon-half-opacity,
+a:focus .eo-icon.eo-icon-half-opacity,
+button:focus .eo-icon.eo-icon-half-opacity  {
+  opacity: 1;
 }
