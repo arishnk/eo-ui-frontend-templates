@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title></title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,500i,600,600i" rel="stylesheet">
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="has-footer">
+
+    <div class="main-content bg-green">
+
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="row row-no-padding">
+            <div class="navbar-header col-sm-2 col-lg-3 hidden-xs">
+              <div class="navbar-brand" href="#" style="background-image: url(../img/icon_header_eoriginal_logo.svg)"><span class="sr-only">Bank of America</span></div>
+            </div>
+            <div class="col-xs-10 col-sm-8 col-lg-6 product-name text-center text-left-xs">
+              <div class="navbar-brand hidden-sm hidden-md hidden-lg" href="#" style="background-image: url(../img/icon_header_eoriginal_logo.svg)"><span class="sr-only">eOriginal</span></div><br class="visible-xs-block">
+              <div class="product-name-image" style="background-image: url(../img/product_name_closing_center.svg);"><span class="sr-only">Closing Center</span></div>
+            </div>
+            <ul class="nav navbar-nav col-xs-2">
+              <li class="dropdown sign-in-menu pull-right">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Sign in
+                </a>
+                <div class="dropdown-menu">
+                  <form class="form">
+                    <h3>Sign in to my<br> Closing Center</h3>
+                    <div class="pad-sm"></div>
+                    <div class="form-group">
+                      <a href="#" class="small pull-right">I forgot my user name</a>
+                      <label class="control-label" for="username">User name</label>
+                      <div class="form-control-wrap">
+                        <input class="form-control" name="username" type="text" id="username" placeholder="" value="">
+                      </div>
+                    </div>
+                    <div class="form-group has-feedback">
+                      <a href="#" class="small pull-right">I forgot my password</a>
+                      <label class="control-label" for="password">Password</label>
+                      <div class="form-control-wrap">
+                        <input class="form-control" name="password" type="password" id="password" placeholder="" value="">
+                        <a href="#" title="Click to show password" class="form-control-feedback"><span class="eo-icon eo-icon-password-hidden"></span><!-- <span class="eo-icon eo-icon-password-shown"></span> --></a>
+                      </div>
+                    </div>
+                    <div class="pad-sm"></div>
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary col-xs-7">Sign in</button>
+                      <button type="button" id="cancelSignIn" class="btn btn-blank col-xs-5">Cancel</button>
+                    </div>
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+
+            <div class="pad"></div>
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xs-12">
+
+                  <p class="text-center"><span class="eo-icon eo-icon-closing-large"></span></p>
+
+                  <p class="text-xxl white semi-strong"><span class="text-xxxl">Closing Center</span> is your central, personalized portal for tracking and managing all of your digital closings. </p>
+
+                  <div class="pad"></div>
+
+                  <ul class="list-checks-white text-large semi-strong">
+                    <li>Review title and lender documents before closing.</li>
+                    <li>Execute the digital signing of documents during closing.</li>
+                    <li>Maintain continued access to signed documents after closing. </li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="pad-lg"></div>
+
+            <div class="well well-sm">
+
+              <h2>Register</h2>
+
+              <p class="text-large">Don’t have an <strong>eOriginal Closing Center</strong> account?<br>Registration is easy. </p>
+
+              <p>To get started, provide your name and email address and we’ll send you a link to complete the registration process.
+
+              <div class="pad-lg"></div>
+
+              <form class="form">
+
+                <div class="row">
+                  <div class="form-group col-sm-6">
+                    <label class="control-label required" for="firstName">
+                      <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                      First name
+                    </label>
+                    <div class="form-control-wrap">
+                      <input class="form-control" name="firstName" type="text" id="firstName" placeholder="" value="">
+                    </div>
+                    <div class="help-block"></div>
+                  </div>
+                  <div class="form-group col-sm-6">
+                    <label class="control-label required" for="lastName">
+                      <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                      Last name
+                    </label>
+                    <div class="form-control-wrap">
+                      <input class="form-control" name="lastName" type="text" id="lastName" placeholder="" value="">
+                    </div>
+                    <div class="help-block"></div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-xs-12">
+                    <label class="control-label required" for="emailAddress">
+                      <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                      Email address
+                    </label>
+                    <div class="form-control-wrap">
+                      <input class="form-control" name="emailAddress" type="email" id="emailAddress" placeholder="" value="">
+                    </div>
+                    <div class="help-block"></div>
+                  </div>
+                </div>
+
+                <div class="pad-sm"></div>
+
+                <div class="form-group row">
+                  <div class="col-sm-6">
+                    <button type="submit" class="btn btn-primary full-width">Create account</button>
+                  </div>
+                  <div class="col-sm-6 text-center">
+                    <div class="button-height">
+                      Already have an account?&nbsp;&nbsp;&nbsp;
+                      <a href="#">Sign&nbsp;in</a>
+                    </div>
+                  </div>
+                </div>
+
+              </form>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+
+            <img src="../img/icon_footer_logo_w_tagline.svg" width="223" class="hidden-xs" alt="eOriginal: Trust the Asset. Trust the Transaction.TM">
+
+          </div>
+          <div class="col-sm-4">
+
+            <address>
+              The Warehouse at Camden Yards<br>
+              Baltimore, MD 21201
+            </address>
+
+            <p>
+              <a href="tel:866.364.3578" class="link-phone">866.935.1776</a>
+            </p>
+
+            <p>
+              <a href="http://www.eoriginal.com" class="link-www" target="_blank">www.eoriginal.com</a>
+            </p>
+
+            <div class="pad hidden-sm hidden-md hidden-lg"></div>
+
+            <img src="../img/icon_footer_logo_w_tagline.svg" width="223" class="hidden-sm hidden-md hidden-lg" alt="eOriginal: Trust the Asset. Trust the Transaction.TM">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-decoration"></div>
+
+      <div class="container text-muted">
+        <div class="row">
+          <div class="col-sm-7 col-sm-push-5">
+            <ul class="list-inline list-inline-piped pull-right-sm pull-right-md pull-right-lg small">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Intellectual Property</a></li>
+              <li><a href="#">Terms &amp; Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-5 col-sm-pull-7">
+            <p class="small">&copy; 2019 <span class="white">eOriginal</span>, Inc. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+    <script>
+
+      $('[title]').tooltip();
+
+      $(document)
+        .on('focus blur', 'input.form-control[id]', function(){
+
+          var thisOne = $(this)
+              thatOne = $('label[for=' + thisOne.attr('id') + ']');
+
+          thatOne.toggleClass('has-focus');
+
+        });
+
+        $('#cancelSignIn').click(function(e){
+
+          $('.sign-in-menu .dropdown-toggle').dropdown('toggle');
+
+        })
+
+    </script>
+
+  </body>
+
+</html>
