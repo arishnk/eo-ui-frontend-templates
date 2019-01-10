@@ -9935,6 +9935,7 @@ body > .footer address:before {
   left: 0px;
   width: 18px;
   height: 18px;
+  background-image: url("../img/icon_footer_location_pin.svg");
 }
 
 body > .footer .link-www {
@@ -9951,6 +9952,7 @@ body > .footer .link-www:before {
   left: 0px;
   width: 18px;
   height: 18px;
+  background-image: url("../img/icon_footer_website.svg");
 }
 
 body > .footer .link-phone {
@@ -9967,6 +9969,7 @@ body > .footer .link-phone:before {
   left: 0px;
   width: 18px;
   height: 18px;
+  background-image: url("../img/icon_footer_phone.svg");
 }
 
 body > .footer .link-email {
@@ -9983,6 +9986,7 @@ body > .footer .link-email:before {
   left: 0px;
   width: 18px;
   height: 18px;
+  background-image: url("../img/icon_footer_email.svg");
 }
 
 body > .main-content > .navbar {
@@ -10343,6 +10347,7 @@ a.form-control-feedback:hover {
   width: 100%;
   height: 32px;
   opacity: .2;
+  background-image: url("../img/white_dots_2_rows.svg");
 }
 
 .jumbotron h1 {
@@ -10517,10 +10522,20 @@ h6.reserve-two-lines {
   display: block;
   width: 20px;
   height: 18px;
+  background-image: url("../img/icon_checkmark_green_large.svg");
+}
+
+.list-checks li.x-mark:before,
+.list-checks-white li.x-mark:before {
+  background-image: url("../img/icon_orange_x_large.svg");
 }
 
 .list-checks-white {
   color: #fff;
+}
+
+.list-checks-white li:before {
+  background-image: url("../img/icon_checkmark_white_large.svg");
 }
 
 .em {
@@ -10581,6 +10596,7 @@ hr.hr-dots {
 
 .footer-decoration {
   background-size: cover;
+  background-image: url("../img/white_dots_4_rows_footer.svg");
   height: 72px;
   margin: 60px 0 20px;
 }
@@ -10610,6 +10626,19 @@ hr.hr-dots {
   height: 18px;
   top: 0px;
   left: 0px;
+  background-image: url("../img/icon_checkbox_off.svg");
+}
+
+.checkbox label input:checked + span:before {
+  background-image: url("../img/icon_checkbox_on.svg");
+}
+
+.checkbox label input:hover + span:before {
+  background-image: url("../img/icon_checkbox_off_hover.svg");
+}
+
+.checkbox label input:checked:hover + span:before {
+  background-image: url("../img/icon_checkbox_on_hover.svg");
 }
 
 .radio {
@@ -10637,6 +10666,19 @@ hr.hr-dots {
   height: 18px;
   top: 0px;
   left: 0px;
+  background-image: url("../img/icon_radio_button_off.svg");
+}
+
+.radio label input:checked + span:before {
+  background-image: url("../img/icon_radio_button_on.svg");
+}
+
+.radio label input:hover + span:before {
+  background-image: url("../img/icon_radio_button_off_hover.svg");
+}
+
+.radio label input:checked:hover + span:before {
+  background-image: url("../img/icon_radio_button_on_hover.svg");
 }
 
 .progress.progress-sm {
@@ -10858,6 +10900,7 @@ a.help-text {
 .eo-icon.eo-icon-add-a-person {
   width: 28px;
   height: 28px;
+  background-image: url("../img/icon_add_a_person.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -10888,6 +10931,7 @@ a.help-text {
 .eo-icon.eo-icon-alert-large {
   width: 32px;
   height: 32px;
+  background-image: url("../img/icon_alert_large.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -10917,6 +10961,7 @@ a.help-text {
 .eo-icon.eo-icon-asterisk {
   width: 9px;
   height: 9px;
+  background-image: url("../img/icon_asterisk.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -10947,6 +10992,7 @@ a.help-text {
 .eo-icon.eo-icon-asterisk-red {
   width: 9px;
   height: 9px;
+  background-image: url("../img/icon_asterisk_red.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -10977,6 +11023,7 @@ a.help-text {
 .eo-icon.eo-icon-checkbox-off {
   width: 18px;
   height: 18px;
+  background-image: url("../img/icon_checkbox_off.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11006,6 +11053,7 @@ a.help-text {
 .eo-icon.eo-icon-checkbox-off-hover {
   width: 18px;
   height: 18px;
+  background-image: url("../img/icon_checkbox_off_hover.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11035,6 +11083,7 @@ a.help-text {
 .eo-icon.eo-icon-checkbox-on {
   width: 18px;
   height: 18px;
+  background-image: url("../img/icon_checkbox_on.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11064,6 +11113,7 @@ a.help-text {
 .eo-icon.eo-icon-checkbox-on-hover {
   width: 18px;
   height: 18px;
+  background-image: url("../img/icon_checkbox_on_hover.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11093,6 +11143,7 @@ a.help-text {
 .eo-icon.eo-icon-checkmark-green-large {
   width: 20px;
   height: 18px;
+  background-image: url("../img/icon_checkmark_green_large.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11122,6 +11173,7 @@ a.help-text {
 .eo-icon.eo-icon-checkmark-white-large {
   width: 20px;
   height: 18px;
+  background-image: url("../img/icon_checkmark_white_large.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11151,6 +11203,7 @@ a.help-text {
 .eo-icon.eo-icon-closing-large {
   width: 73px;
   height: 62px;
+  background-image: url("../img/icon_closing_large.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11180,6 +11233,7 @@ a.help-text {
 .eo-icon.eo-icon-email-verified-large {
   width: 50px;
   height: 32px;
+  background-image: url("../img/icon_email_verified_large.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11209,6 +11263,7 @@ a.help-text {
 .eo-icon.eo-icon-equal-housing-lender {
   width: 112px;
   height: 21px;
+  background-image: url("../img/icon_equal_housing_lender.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11238,6 +11293,7 @@ a.help-text {
 .eo-icon.eo-icon-footer-email {
   width: 18px;
   height: 18px;
+  background-image: url("../img/icon_footer_email.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11267,6 +11323,7 @@ a.help-text {
 .eo-icon.eo-icon-footer-location-pin {
   width: 18px;
   height: 18px;
+  background-image: url("../img/icon_footer_location_pin.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11296,6 +11353,7 @@ a.help-text {
 .eo-icon.eo-icon-footer-logo-w-tagline {
   width: 223px;
   height: 61px;
+  background-image: url("../img/icon_footer_logo_w_tagline.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11325,6 +11383,7 @@ a.help-text {
 .eo-icon.eo-icon-footer-phone {
   width: 18px;
   height: 18px;
+  background-image: url("../img/icon_footer_phone.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11354,6 +11413,7 @@ a.help-text {
 .eo-icon.eo-icon-footer-website {
   width: 18px;
   height: 18px;
+  background-image: url("../img/icon_footer_website.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11383,6 +11443,7 @@ a.help-text {
 .eo-icon.eo-icon-header-eoriginal-logo {
   width: 157px;
   height: 30px;
+  background-image: url("../img/icon_header_eoriginal_logo.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11412,6 +11473,7 @@ a.help-text {
 .eo-icon.eo-icon-header-powered-by {
   width: 182px;
   height: 42px;
+  background-image: url("../img/icon_header_powered_by_logo.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11441,6 +11503,7 @@ a.help-text {
 .eo-icon.eo-icon-info-small {
   width: 16px;
   height: 16px;
+  background-image: url("../img/icon_info_small.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11470,6 +11533,7 @@ a.help-text {
 .eo-icon.eo-icon-info-small-hover {
   width: 16px;
   height: 16px;
+  background-image: url("../img/icon_info_small_hover.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11499,6 +11563,7 @@ a.help-text {
 .eo-icon.eo-icon-menu-arrow-down {
   width: 8px;
   height: 5px;
+  background-image: url("../img/icon_menu_arrow_down.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11528,6 +11593,7 @@ a.help-text {
 .eo-icon.eo-icon-orange-x-large {
   width: 20px;
   height: 18px;
+  background-image: url("../img/icon_orange_x_large.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11557,6 +11623,7 @@ a.help-text {
 .eo-icon.eo-icon-password-hidden {
   width: 20px;
   height: 18px;
+  background-image: url("../img/icon_password_hidden.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11586,6 +11653,7 @@ a.help-text {
 .eo-icon.eo-icon-password-shown {
   width: 20px;
   height: 18px;
+  background-image: url("../img/icon_password_shown.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11615,6 +11683,7 @@ a.help-text {
 .eo-icon.eo-icon-radio-button-off {
   width: 18px;
   height: 18px;
+  background-image: url("../img/icon_radio_button_off.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11644,6 +11713,7 @@ a.help-text {
 .eo-icon.eo-icon-radio-button-off-hover {
   width: 18px;
   height: 18px;
+  background-image: url("../img/icon_radio_button_off_hover.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11673,6 +11743,7 @@ a.help-text {
 .eo-icon.eo-icon-radio-button-on {
   width: 18px;
   height: 18px;
+  background-image: url("../img/icon_radio_button_on.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11702,6 +11773,7 @@ a.help-text {
 .eo-icon.eo-icon-radio-button-on-hover {
   width: 18px;
   height: 18px;
+  background-image: url("../img/icon_radio_button_on_hover.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
@@ -11731,6 +11803,7 @@ a.help-text {
 .eo-icon.eo-icon-remove-large {
   width: 14px;
   height: 14px;
+  background-image: url("../img/icon_remove_large.svg");
   background-size: cover;
   vertical-align: middle;
   background-repeat: no-repeat;
