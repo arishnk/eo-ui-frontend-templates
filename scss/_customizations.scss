@@ -396,6 +396,9 @@ h1,h2,h3,h4,h5,h6,
 .form-control-feedback {
   opacity: .5;
   transition: opacity 250ms;
+  position: absolute;
+  top: 4px;
+  right: 8px;
 }
 
 .form-control:focus + .form-control-feedback,
@@ -990,11 +993,12 @@ a.help-text {
 
   font-size: $font-size-lg;
   font-weight: 500;
-  padding-left: 48px;
+  padding: 20px 20px 20px 48px;
   overflow: hidden;
   position: relative;
   letter-spacing: .9;
   border: none;
+  color: #fff;
 
   &:before {
     content: "";
@@ -1014,6 +1018,10 @@ a.help-text {
     font-size: $h2-font-size;
     font-weight: 600;
     margin-bottom: 20px;
+  }
+
+  > p {
+    margin-bottom: 0px;
   }
 
   &.alert-success {
