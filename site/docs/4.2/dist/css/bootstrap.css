@@ -1860,7 +1860,7 @@ pre code {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: transparent;
   background-clip: padding-box;
   border: 1px solid #d9dee1;
   border-radius: 0;
@@ -1880,7 +1880,7 @@ pre code {
 
 .form-control:focus {
   color: #495057;
-  background-color: #fff;
+  background-color: transparent;
   border-color: #0abae5;
   outline: 0;
   box-shadow: none;
@@ -1918,7 +1918,7 @@ pre code {
 
 select.form-control:focus::-ms-value {
   color: #495057;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .form-control-file,
@@ -3676,7 +3676,7 @@ input[type="button"].btn-block {
   height: 1rem;
   pointer-events: none;
   content: "";
-  background-color: #fff;
+  background-color: transparent;
   border: #adb5bd solid 1px;
 }
 
@@ -3760,7 +3760,7 @@ input[type="button"].btn-block {
 }
 
 .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
-  background-color: #fff;
+  background-color: transparent;
   -webkit-transform: translateX(0.75rem);
   transform: translateX(0.75rem);
 }
@@ -3779,7 +3779,7 @@ input[type="button"].btn-block {
   color: #495057;
   vertical-align: middle;
   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23353937' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid #d9dee1;
   border-radius: 6px;
   -webkit-appearance: none;
@@ -3795,7 +3795,7 @@ input[type="button"].btn-block {
 
 .custom-select:focus::-ms-value {
   color: #495057;
-  background-color: #fff;
+  background-color: transparent;
 }
 
 .custom-select[multiple], .custom-select[size]:not([size="1"]) {
@@ -3874,7 +3874,7 @@ input[type="button"].btn-block {
   font-weight: 400;
   line-height: 1.5;
   color: #495057;
-  background-color: #fff;
+  background-color: transparent;
   border: 1px solid #d9dee1;
   border-radius: 0;
 }
@@ -10174,7 +10174,7 @@ h1, h2, h3, h4, h5, h6,
   top: 0px;
   height: calc(100% - 8px);
   width: 3px;
-  background: #fff;
+  background: transparent;
   z-index: 4;
 }
 
@@ -10383,16 +10383,16 @@ a.form-control-feedback:hover {
   }
 }
 
-.well {
+.card {
   border-radius: 9px;
   padding: 25px 40px 35px;
 }
 
-.well > *:first-child {
+.card > *:first-child {
   margin-top: 0px;
 }
 
-.well.well-sm {
+.card.card-sm {
   padding: 15px 25px 20px;
 }
 
@@ -10431,9 +10431,6 @@ a.form-control-feedback:hover {
   .text-center-sm {
     text-align: center;
   }
-  .pull-right-sm {
-    float: right;
-  }
   .bg-white-sm {
     background-color: #fff;
   }
@@ -10452,9 +10449,6 @@ a.form-control-feedback:hover {
   .text-center-md {
     text-align: center;
   }
-  .pull-right-md {
-    float: right;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -10469,9 +10463,6 @@ a.form-control-feedback:hover {
   }
   .text-center-lg {
     text-align: center;
-  }
-  .pull-right-lg {
-    float: right;
   }
 }
 
