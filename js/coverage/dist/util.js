@@ -11,14 +11,14 @@
 
   $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
 
-  var cov_c7ihpjow2 = function () {
-    var path = "/Users/jkoulish/Sites/eo-ui-frontend-templates/js/src/util.js",
-        hash = "aa755acc2f964c384597bc2a58afbae405baf898",
+  var cov_feufbb5ng = function () {
+    var path = "C:\\Users\\ari\\source\\repos\\eo-ui-frontend-templates\\js\\src\\util.js",
+        hash = "d550f34a48da75671679fe06d3307ec0545d5833",
         Function = function () {}.constructor,
         global = new Function('return this')(),
         gcv = "__coverage__",
         coverageData = {
-      path: "/Users/jkoulish/Sites/eo-ui-frontend-templates/js/src/util.js",
+      path: "C:\\Users\\ari\\source\\repos\\eo-ui-frontend-templates\\js\\src\\util.js",
       statementMap: {
         "0": {
           start: {
@@ -1811,35 +1811,35 @@
    * ------------------------------------------------------------------------
    */
 
-  var TRANSITION_END = (cov_c7ihpjow2.s[0]++, 'transitionend');
-  var MAX_UID = (cov_c7ihpjow2.s[1]++, 1000000);
-  var MILLISECONDS_MULTIPLIER = (cov_c7ihpjow2.s[2]++, 1000); // Shoutout AngusCroll (https://goo.gl/pxwQGp)
+  var TRANSITION_END = (cov_feufbb5ng.s[0]++, 'transitionend');
+  var MAX_UID = (cov_feufbb5ng.s[1]++, 1000000);
+  var MILLISECONDS_MULTIPLIER = (cov_feufbb5ng.s[2]++, 1000); // Shoutout AngusCroll (https://goo.gl/pxwQGp)
 
   function toType(obj) {
-    cov_c7ihpjow2.f[0]++;
-    cov_c7ihpjow2.s[3]++;
+    cov_feufbb5ng.f[0]++;
+    cov_feufbb5ng.s[3]++;
     return {}.toString.call(obj).match(/\s([a-z]+)/i)[1].toLowerCase();
   }
 
   function getSpecialTransitionEndEvent() {
-    cov_c7ihpjow2.f[1]++;
-    cov_c7ihpjow2.s[4]++;
+    cov_feufbb5ng.f[1]++;
+    cov_feufbb5ng.s[4]++;
     return {
       bindType: TRANSITION_END,
       delegateType: TRANSITION_END,
       handle: function handle(event) {
-        cov_c7ihpjow2.f[2]++;
-        cov_c7ihpjow2.s[5]++;
+        cov_feufbb5ng.f[2]++;
+        cov_feufbb5ng.s[5]++;
 
         if ($(event.target).is(this)) {
-          cov_c7ihpjow2.b[0][0]++;
-          cov_c7ihpjow2.s[6]++;
+          cov_feufbb5ng.b[0][0]++;
+          cov_feufbb5ng.s[6]++;
           return event.handleObj.handler.apply(this, arguments); // eslint-disable-line prefer-rest-params
         } else {
-          cov_c7ihpjow2.b[0][1]++;
+          cov_feufbb5ng.b[0][1]++;
         }
 
-        cov_c7ihpjow2.s[7]++;
+        cov_feufbb5ng.s[7]++;
         return undefined; // eslint-disable-line no-undefined
       }
     };
@@ -1848,36 +1848,36 @@
   function transitionEndEmulator(duration) {
     var _this = this;
 
-    cov_c7ihpjow2.f[3]++;
-    var called = (cov_c7ihpjow2.s[8]++, false);
-    cov_c7ihpjow2.s[9]++;
+    cov_feufbb5ng.f[3]++;
+    var called = (cov_feufbb5ng.s[8]++, false);
+    cov_feufbb5ng.s[9]++;
     $(this).one(Util.TRANSITION_END, function () {
-      cov_c7ihpjow2.f[4]++;
-      cov_c7ihpjow2.s[10]++;
+      cov_feufbb5ng.f[4]++;
+      cov_feufbb5ng.s[10]++;
       called = true;
     });
-    cov_c7ihpjow2.s[11]++;
+    cov_feufbb5ng.s[11]++;
     setTimeout(function () {
-      cov_c7ihpjow2.f[5]++;
-      cov_c7ihpjow2.s[12]++;
+      cov_feufbb5ng.f[5]++;
+      cov_feufbb5ng.s[12]++;
 
       if (!called) {
-        cov_c7ihpjow2.b[1][0]++;
-        cov_c7ihpjow2.s[13]++;
+        cov_feufbb5ng.b[1][0]++;
+        cov_feufbb5ng.s[13]++;
         Util.triggerTransitionEnd(_this);
       } else {
-        cov_c7ihpjow2.b[1][1]++;
+        cov_feufbb5ng.b[1][1]++;
       }
     }, duration);
-    cov_c7ihpjow2.s[14]++;
+    cov_feufbb5ng.s[14]++;
     return this;
   }
 
   function setTransitionEndSupport() {
-    cov_c7ihpjow2.f[6]++;
-    cov_c7ihpjow2.s[15]++;
+    cov_feufbb5ng.f[6]++;
+    cov_feufbb5ng.s[15]++;
     $.fn.emulateTransitionEnd = transitionEndEmulator;
-    cov_c7ihpjow2.s[16]++;
+    cov_feufbb5ng.s[16]++;
     $.event.special[Util.TRANSITION_END] = getSpecialTransitionEndEvent();
   }
   /**
@@ -1887,171 +1887,171 @@
    */
 
 
-  var Util = (cov_c7ihpjow2.s[17]++, {
+  var Util = (cov_feufbb5ng.s[17]++, {
     TRANSITION_END: 'bsTransitionEnd',
     getUID: function getUID(prefix) {
-      cov_c7ihpjow2.f[7]++;
-      cov_c7ihpjow2.s[18]++;
+      cov_feufbb5ng.f[7]++;
+      cov_feufbb5ng.s[18]++;
 
       do {
-        cov_c7ihpjow2.s[19]++;
+        cov_feufbb5ng.s[19]++;
         // eslint-disable-next-line no-bitwise
         prefix += ~~(Math.random() * MAX_UID); // "~~" acts like a faster Math.floor() here
       } while (document.getElementById(prefix));
 
-      cov_c7ihpjow2.s[20]++;
+      cov_feufbb5ng.s[20]++;
       return prefix;
     },
     getSelectorFromElement: function getSelectorFromElement(element) {
-      cov_c7ihpjow2.f[8]++;
-      var selector = (cov_c7ihpjow2.s[21]++, element.getAttribute('data-target'));
-      cov_c7ihpjow2.s[22]++;
+      cov_feufbb5ng.f[8]++;
+      var selector = (cov_feufbb5ng.s[21]++, element.getAttribute('data-target'));
+      cov_feufbb5ng.s[22]++;
 
-      if ((cov_c7ihpjow2.b[3][0]++, !selector) || (cov_c7ihpjow2.b[3][1]++, selector === '#')) {
-        cov_c7ihpjow2.b[2][0]++;
-        var hrefAttr = (cov_c7ihpjow2.s[23]++, element.getAttribute('href'));
-        cov_c7ihpjow2.s[24]++;
-        selector = (cov_c7ihpjow2.b[5][0]++, hrefAttr) && (cov_c7ihpjow2.b[5][1]++, hrefAttr !== '#') ? (cov_c7ihpjow2.b[4][0]++, hrefAttr.trim()) : (cov_c7ihpjow2.b[4][1]++, '');
+      if ((cov_feufbb5ng.b[3][0]++, !selector) || (cov_feufbb5ng.b[3][1]++, selector === '#')) {
+        cov_feufbb5ng.b[2][0]++;
+        var hrefAttr = (cov_feufbb5ng.s[23]++, element.getAttribute('href'));
+        cov_feufbb5ng.s[24]++;
+        selector = (cov_feufbb5ng.b[5][0]++, hrefAttr) && (cov_feufbb5ng.b[5][1]++, hrefAttr !== '#') ? (cov_feufbb5ng.b[4][0]++, hrefAttr.trim()) : (cov_feufbb5ng.b[4][1]++, '');
       } else {
-        cov_c7ihpjow2.b[2][1]++;
+        cov_feufbb5ng.b[2][1]++;
       }
 
-      cov_c7ihpjow2.s[25]++;
-      return (cov_c7ihpjow2.b[7][0]++, selector) && (cov_c7ihpjow2.b[7][1]++, document.querySelector(selector)) ? (cov_c7ihpjow2.b[6][0]++, selector) : (cov_c7ihpjow2.b[6][1]++, null);
+      cov_feufbb5ng.s[25]++;
+      return (cov_feufbb5ng.b[7][0]++, selector) && (cov_feufbb5ng.b[7][1]++, document.querySelector(selector)) ? (cov_feufbb5ng.b[6][0]++, selector) : (cov_feufbb5ng.b[6][1]++, null);
     },
     getTransitionDurationFromElement: function getTransitionDurationFromElement(element) {
-      cov_c7ihpjow2.f[9]++;
-      cov_c7ihpjow2.s[26]++;
+      cov_feufbb5ng.f[9]++;
+      cov_feufbb5ng.s[26]++;
 
       if (!element) {
-        cov_c7ihpjow2.b[8][0]++;
-        cov_c7ihpjow2.s[27]++;
+        cov_feufbb5ng.b[8][0]++;
+        cov_feufbb5ng.s[27]++;
         return 0;
       } else {
-        cov_c7ihpjow2.b[8][1]++;
+        cov_feufbb5ng.b[8][1]++;
       } // Get transition-duration of the element
 
 
-      var transitionDuration = (cov_c7ihpjow2.s[28]++, $(element).css('transition-duration'));
-      var transitionDelay = (cov_c7ihpjow2.s[29]++, $(element).css('transition-delay'));
-      var floatTransitionDuration = (cov_c7ihpjow2.s[30]++, parseFloat(transitionDuration));
-      var floatTransitionDelay = (cov_c7ihpjow2.s[31]++, parseFloat(transitionDelay)); // Return 0 if element or transition duration is not found
+      var transitionDuration = (cov_feufbb5ng.s[28]++, $(element).css('transition-duration'));
+      var transitionDelay = (cov_feufbb5ng.s[29]++, $(element).css('transition-delay'));
+      var floatTransitionDuration = (cov_feufbb5ng.s[30]++, parseFloat(transitionDuration));
+      var floatTransitionDelay = (cov_feufbb5ng.s[31]++, parseFloat(transitionDelay)); // Return 0 if element or transition duration is not found
 
-      cov_c7ihpjow2.s[32]++;
+      cov_feufbb5ng.s[32]++;
 
-      if ((cov_c7ihpjow2.b[10][0]++, !floatTransitionDuration) && (cov_c7ihpjow2.b[10][1]++, !floatTransitionDelay)) {
-        cov_c7ihpjow2.b[9][0]++;
-        cov_c7ihpjow2.s[33]++;
+      if ((cov_feufbb5ng.b[10][0]++, !floatTransitionDuration) && (cov_feufbb5ng.b[10][1]++, !floatTransitionDelay)) {
+        cov_feufbb5ng.b[9][0]++;
+        cov_feufbb5ng.s[33]++;
         return 0;
       } else {
-        cov_c7ihpjow2.b[9][1]++;
+        cov_feufbb5ng.b[9][1]++;
       } // If multiple durations are defined, take the first
 
 
-      cov_c7ihpjow2.s[34]++;
+      cov_feufbb5ng.s[34]++;
       transitionDuration = transitionDuration.split(',')[0];
-      cov_c7ihpjow2.s[35]++;
+      cov_feufbb5ng.s[35]++;
       transitionDelay = transitionDelay.split(',')[0];
-      cov_c7ihpjow2.s[36]++;
+      cov_feufbb5ng.s[36]++;
       return (parseFloat(transitionDuration) + parseFloat(transitionDelay)) * MILLISECONDS_MULTIPLIER;
     },
     reflow: function reflow(element) {
-      cov_c7ihpjow2.f[10]++;
-      cov_c7ihpjow2.s[37]++;
+      cov_feufbb5ng.f[10]++;
+      cov_feufbb5ng.s[37]++;
       return element.offsetHeight;
     },
     triggerTransitionEnd: function triggerTransitionEnd(element) {
-      cov_c7ihpjow2.f[11]++;
-      cov_c7ihpjow2.s[38]++;
+      cov_feufbb5ng.f[11]++;
+      cov_feufbb5ng.s[38]++;
       $(element).trigger(TRANSITION_END);
     },
     // TODO: Remove in v5
     supportsTransitionEnd: function supportsTransitionEnd() {
-      cov_c7ihpjow2.f[12]++;
-      cov_c7ihpjow2.s[39]++;
+      cov_feufbb5ng.f[12]++;
+      cov_feufbb5ng.s[39]++;
       return Boolean(TRANSITION_END);
     },
     isElement: function isElement(obj) {
-      cov_c7ihpjow2.f[13]++;
-      cov_c7ihpjow2.s[40]++;
-      return ((cov_c7ihpjow2.b[11][0]++, obj[0]) || (cov_c7ihpjow2.b[11][1]++, obj)).nodeType;
+      cov_feufbb5ng.f[13]++;
+      cov_feufbb5ng.s[40]++;
+      return ((cov_feufbb5ng.b[11][0]++, obj[0]) || (cov_feufbb5ng.b[11][1]++, obj)).nodeType;
     },
     typeCheckConfig: function typeCheckConfig(componentName, config, configTypes) {
-      cov_c7ihpjow2.f[14]++;
-      cov_c7ihpjow2.s[41]++;
+      cov_feufbb5ng.f[14]++;
+      cov_feufbb5ng.s[41]++;
 
       for (var property in configTypes) {
-        cov_c7ihpjow2.s[42]++;
+        cov_feufbb5ng.s[42]++;
 
         if (Object.prototype.hasOwnProperty.call(configTypes, property)) {
-          cov_c7ihpjow2.b[12][0]++;
-          var expectedTypes = (cov_c7ihpjow2.s[43]++, configTypes[property]);
-          var value = (cov_c7ihpjow2.s[44]++, config[property]);
-          var valueType = (cov_c7ihpjow2.s[45]++, (cov_c7ihpjow2.b[14][0]++, value) && (cov_c7ihpjow2.b[14][1]++, Util.isElement(value)) ? (cov_c7ihpjow2.b[13][0]++, 'element') : (cov_c7ihpjow2.b[13][1]++, toType(value)));
-          cov_c7ihpjow2.s[46]++;
+          cov_feufbb5ng.b[12][0]++;
+          var expectedTypes = (cov_feufbb5ng.s[43]++, configTypes[property]);
+          var value = (cov_feufbb5ng.s[44]++, config[property]);
+          var valueType = (cov_feufbb5ng.s[45]++, (cov_feufbb5ng.b[14][0]++, value) && (cov_feufbb5ng.b[14][1]++, Util.isElement(value)) ? (cov_feufbb5ng.b[13][0]++, 'element') : (cov_feufbb5ng.b[13][1]++, toType(value)));
+          cov_feufbb5ng.s[46]++;
 
           if (!new RegExp(expectedTypes).test(valueType)) {
-            cov_c7ihpjow2.b[15][0]++;
-            cov_c7ihpjow2.s[47]++;
+            cov_feufbb5ng.b[15][0]++;
+            cov_feufbb5ng.s[47]++;
             throw new Error(componentName.toUpperCase() + ": " + ("Option \"" + property + "\" provided type \"" + valueType + "\" ") + ("but expected type \"" + expectedTypes + "\"."));
           } else {
-            cov_c7ihpjow2.b[15][1]++;
+            cov_feufbb5ng.b[15][1]++;
           }
         } else {
-          cov_c7ihpjow2.b[12][1]++;
+          cov_feufbb5ng.b[12][1]++;
         }
       }
     },
     findShadowRoot: function findShadowRoot(element) {
-      cov_c7ihpjow2.f[15]++;
-      cov_c7ihpjow2.s[48]++;
+      cov_feufbb5ng.f[15]++;
+      cov_feufbb5ng.s[48]++;
 
       if (!document.documentElement.attachShadow) {
-        cov_c7ihpjow2.b[16][0]++;
-        cov_c7ihpjow2.s[49]++;
+        cov_feufbb5ng.b[16][0]++;
+        cov_feufbb5ng.s[49]++;
         return null;
       } else {
-        cov_c7ihpjow2.b[16][1]++;
+        cov_feufbb5ng.b[16][1]++;
       } // Can find the shadow root otherwise it'll return the document
 
 
-      cov_c7ihpjow2.s[50]++;
+      cov_feufbb5ng.s[50]++;
 
       if (typeof element.getRootNode === 'function') {
-        cov_c7ihpjow2.b[17][0]++;
-        var root = (cov_c7ihpjow2.s[51]++, element.getRootNode());
-        cov_c7ihpjow2.s[52]++;
-        return root instanceof ShadowRoot ? (cov_c7ihpjow2.b[18][0]++, root) : (cov_c7ihpjow2.b[18][1]++, null);
+        cov_feufbb5ng.b[17][0]++;
+        var root = (cov_feufbb5ng.s[51]++, element.getRootNode());
+        cov_feufbb5ng.s[52]++;
+        return root instanceof ShadowRoot ? (cov_feufbb5ng.b[18][0]++, root) : (cov_feufbb5ng.b[18][1]++, null);
       } else {
-        cov_c7ihpjow2.b[17][1]++;
+        cov_feufbb5ng.b[17][1]++;
       }
 
-      cov_c7ihpjow2.s[53]++;
+      cov_feufbb5ng.s[53]++;
 
       if (element instanceof ShadowRoot) {
-        cov_c7ihpjow2.b[19][0]++;
-        cov_c7ihpjow2.s[54]++;
+        cov_feufbb5ng.b[19][0]++;
+        cov_feufbb5ng.s[54]++;
         return element;
       } else {
-        cov_c7ihpjow2.b[19][1]++;
+        cov_feufbb5ng.b[19][1]++;
       } // when we don't find a shadow root
 
 
-      cov_c7ihpjow2.s[55]++;
+      cov_feufbb5ng.s[55]++;
 
       if (!element.parentNode) {
-        cov_c7ihpjow2.b[20][0]++;
-        cov_c7ihpjow2.s[56]++;
+        cov_feufbb5ng.b[20][0]++;
+        cov_feufbb5ng.s[56]++;
         return null;
       } else {
-        cov_c7ihpjow2.b[20][1]++;
+        cov_feufbb5ng.b[20][1]++;
       }
 
-      cov_c7ihpjow2.s[57]++;
+      cov_feufbb5ng.s[57]++;
       return Util.findShadowRoot(element.parentNode);
     }
   });
-  cov_c7ihpjow2.s[58]++;
+  cov_feufbb5ng.s[58]++;
   setTransitionEndSupport();
 
   return Util;
