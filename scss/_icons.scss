@@ -89,37 +89,49 @@
     opacity: .5;
   }
 
-  &.eo-icon-add-a-person { @include icon-versions(28px, 28px, '../img/icon_add_a_person.svg'); top: -2px; }
-  &.eo-icon-alert-large { @include icon-versions(32px, 32px, '../img/icon_alert_large.svg'); }
-  &.eo-icon-asterisk { @include icon-versions(9px, 9px, '../img/icon_asterisk.svg'); top: -1px; }
-  &.eo-icon-asterisk-red { @include icon-versions(9px, 9px, '../img/icon_asterisk_red.svg'); top: -1px; }
-  &.eo-icon-checkbox-off { @include icon-versions(18px, 18px, '../img/icon_checkbox_off.svg'); }
-  &.eo-icon-checkbox-off-hover { @include icon-versions(18px, 18px, '../img/icon_checkbox_off_hover.svg'); }
-  &.eo-icon-checkbox-on { @include icon-versions(18px, 18px, '../img/icon_checkbox_on.svg'); }
-  &.eo-icon-checkbox-on-hover { @include icon-versions(18px, 18px, '../img/icon_checkbox_on_hover.svg'); }
-  &.eo-icon-checkmark-green-large { @include icon-versions(20px, 18px, '../img/icon_checkmark_green_large.svg'); }
-  &.eo-icon-checkmark-white-large { @include icon-versions(20px, 18px, '../img/icon_checkmark_white_large.svg'); }
-  &.eo-icon-closing-large { @include icon-versions(73px, 62px, '../img/icon_closing_large.svg'); }
-  &.eo-icon-email-verified-large { @include icon-versions(50px, 32px, '../img/icon_email_verified_large.svg'); }
-  &.eo-icon-equal-housing-lender { @include icon-versions(112px, 21px, '../img/icon_equal_housing_lender.svg'); }
-  &.eo-icon-footer-email { @include icon-versions(18px, 18px, '../img/icon_footer_email.svg'); }
-  &.eo-icon-footer-location-pin { @include icon-versions(18px, 18px, '../img/icon_footer_location_pin.svg'); }
-  &.eo-icon-footer-logo-w-tagline { @include icon-versions(223px, 61px, '../img/icon_footer_logo_w_tagline.svg'); }
-  &.eo-icon-footer-phone { @include icon-versions(18px, 18px, '../img/icon_footer_phone.svg'); }
-  &.eo-icon-footer-website { @include icon-versions(18px, 18px, '../img/icon_footer_website.svg'); }
-  &.eo-icon-header-eoriginal-logo { @include icon-versions(157px, 30px, '../img/icon_header_eoriginal_logo.svg'); }
-  &.eo-icon-header-powered-by { @include icon-versions(182px, 42px, '../img/icon_header_powered_by_logo.svg'); }
-  &.eo-icon-info-small { @include icon-versions(16px, 16px, '../img/icon_info_small.svg'); }
-  &.eo-icon-info-small-hover { @include icon-versions(16px, 16px, '../img/icon_info_small_hover.svg'); }
-  &.eo-icon-menu-arrow-down { @include icon-versions(8px, 5px, '../img/icon_menu_arrow_down.svg'); }
-  &.eo-icon-orange-x-large { @include icon-versions(20px, 18px, '../img/icon_orange_x_large.svg'); }
-  &.eo-icon-password-hidden { @include icon-versions(20px, 18px, '../img/icon_password_hidden.svg'); }
-  &.eo-icon-password-shown { @include icon-versions(20px, 18px, '../img/icon_password_shown.svg'); }
-  &.eo-icon-radio-button-off { @include icon-versions(18px, 18px, '../img/icon_radio_button_off.svg'); }
-  &.eo-icon-radio-button-off-hover { @include icon-versions(18px, 18px, '../img/icon_radio_button_off_hover.svg'); }
-  &.eo-icon-radio-button-on { @include icon-versions(18px, 18px, '../img/icon_radio_button_on.svg'); }
-  &.eo-icon-radio-button-on-hover { @include icon-versions(18px, 18px, '../img/icon_radio_button_on_hover.svg'); }
-  &.eo-icon-remove-large { @include icon-versions(14px, 14px, '../img/icon_remove_large.svg'); top: -1px; }
+  &.eo-icon-add-a-person {
+    @include icon-versions(28px, 28px, "../img/icon_add_a_person.svg");
+    top: -2px;
+  }
+  &.eo-icon-alert-large { @include icon-versions(32px, 32px, "../img/icon_alert_large.svg"); }
+  &.eo-icon-asterisk {
+    @include icon-versions(9px, 9px, "../img/icon_asterisk.svg");
+    top: -1px;
+  }
+  &.eo-icon-asterisk-red {
+    @include icon-versions(9px, 9px, "../img/icon_asterisk_red.svg");
+    top: -1px;
+  }
+  &.eo-icon-checkbox-off { @include icon-versions(18px, 18px, "../img/icon_checkbox_off.svg"); }
+  &.eo-icon-checkbox-off-hover { @include icon-versions(18px, 18px, "../img/icon_checkbox_off_hover.svg"); }
+  &.eo-icon-checkbox-on { @include icon-versions(18px, 18px, "../img/icon_checkbox_on.svg"); }
+  &.eo-icon-checkbox-on-hover { @include icon-versions(18px, 18px, "../img/icon_checkbox_on_hover.svg"); }
+  &.eo-icon-checkmark-green-large { @include icon-versions(20px, 18px, "../img/icon_checkmark_green_large.svg"); }
+  &.eo-icon-checkmark-white-large { @include icon-versions(20px, 18px, "../img/icon_checkmark_white_large.svg"); }
+  &.eo-icon-closing-large { @include icon-versions(73px, 62px, "../img/icon_closing_large.svg"); }
+  &.eo-icon-email-verified-large { @include icon-versions(50px, 32px, "../img/icon_email_verified_large.svg"); }
+  &.eo-icon-equal-housing-lender { @include icon-versions(112px, 21px, "../img/icon_equal_housing_lender.svg"); }
+  &.eo-icon-footer-email { @include icon-versions(18px, 18px, "../img/icon_footer_email.svg"); }
+  &.eo-icon-footer-location-pin { @include icon-versions(18px, 18px, "../img/icon_footer_location_pin.svg"); }
+  &.eo-icon-footer-logo-w-tagline { @include icon-versions(223px, 61px, "../img/icon_footer_logo_w_tagline.svg"); }
+  &.eo-icon-footer-phone { @include icon-versions(18px, 18px, "../img/icon_footer_phone.svg"); }
+  &.eo-icon-footer-website { @include icon-versions(18px, 18px, "../img/icon_footer_website.svg"); }
+  &.eo-icon-header-eoriginal-logo { @include icon-versions(157px, 30px, "../img/icon_header_eoriginal_logo.svg"); }
+  &.eo-icon-header-powered-by { @include icon-versions(182px, 42px, "../img/icon_header_powered_by_logo.svg"); }
+  &.eo-icon-info-small { @include icon-versions(16px, 16px, "../img/icon_info_small.svg"); }
+  &.eo-icon-info-small-hover { @include icon-versions(16px, 16px, "../img/icon_info_small_hover.svg"); }
+  &.eo-icon-menu-arrow-down { @include icon-versions(8px, 5px, "../img/icon_menu_arrow_down.svg"); }
+  &.eo-icon-orange-x-large { @include icon-versions(20px, 18px, "../img/icon_orange_x_large.svg"); }
+  &.eo-icon-password-hidden { @include icon-versions(20px, 18px, "../img/icon_password_hidden.svg"); }
+  &.eo-icon-password-shown { @include icon-versions(20px, 18px, "../img/icon_password_shown.svg"); }
+  &.eo-icon-radio-button-off { @include icon-versions(18px, 18px, "../img/icon_radio_button_off.svg"); }
+  &.eo-icon-radio-button-off-hover { @include icon-versions(18px, 18px, "../img/icon_radio_button_off_hover.svg"); }
+  &.eo-icon-radio-button-on { @include icon-versions(18px, 18px, "../img/icon_radio_button_on.svg"); }
+  &.eo-icon-radio-button-on-hover { @include icon-versions(18px, 18px, "../img/icon_radio_button_on_hover.svg"); }
+  &.eo-icon-remove-large {
+    @include icon-versions(14px, 14px, "../img/icon_remove_large.svg");
+    top: -1px;
+  }
 
 }
 
