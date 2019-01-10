@@ -10805,4 +10805,963 @@ a.help-text {
   vertical-align: middle;
   width: 100%;
 }
+
+@-webkit-keyframes eo-icon-spin {
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  0% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes eo-icon-spin {
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  0% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.eo-icon {
+  display: inline-block;
+  background-size: cover;
+  line-height: 1em;
+  transition: 250ms;
+}
+
+.eo-icon.eo-icon-middle {
+  vertical-align: middle !important;
+}
+
+.eo-icon.eo-icon-baseline {
+  vertical-align: baseline !important;
+}
+
+.eo-icon.eo-icon-bottom {
+  vertical-align: text-bottom !important;
+}
+
+.eo-icon.eo-icon-pad-sm {
+  margin-right: 2px;
+}
+
+.eo-icon.eo-icon-half-opacity {
+  opacity: .5;
+}
+
+.eo-icon.eo-icon-add-a-person {
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -2px;
+}
+
+.eo-icon.eo-icon-add-a-person.eo-icon-xs {
+  width: 7px;
+  height: 7px;
+}
+
+.eo-icon.eo-icon-add-a-person.eo-icon-sm {
+  width: 14px;
+  height: 14px;
+}
+
+.eo-icon.eo-icon-add-a-person.eo-icon-lg {
+  width: 35px;
+  height: 35px;
+}
+
+.eo-icon.eo-icon-add-a-person.eo-icon-xl {
+  width: 42px;
+  height: 42px;
+}
+
+.eo-icon.eo-icon-alert-large {
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-alert-large.eo-icon-xs {
+  width: 8px;
+  height: 8px;
+}
+
+.eo-icon.eo-icon-alert-large.eo-icon-sm {
+  width: 16px;
+  height: 16px;
+}
+
+.eo-icon.eo-icon-alert-large.eo-icon-lg {
+  width: 40px;
+  height: 40px;
+}
+
+.eo-icon.eo-icon-alert-large.eo-icon-xl {
+  width: 48px;
+  height: 48px;
+}
+
+.eo-icon.eo-icon-asterisk {
+  width: 9px;
+  height: 9px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -1px;
+}
+
+.eo-icon.eo-icon-asterisk.eo-icon-xs {
+  width: 2.25px;
+  height: 2.25px;
+}
+
+.eo-icon.eo-icon-asterisk.eo-icon-sm {
+  width: 4.5px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-asterisk.eo-icon-lg {
+  width: 11.25px;
+  height: 11.25px;
+}
+
+.eo-icon.eo-icon-asterisk.eo-icon-xl {
+  width: 13.5px;
+  height: 13.5px;
+}
+
+.eo-icon.eo-icon-asterisk-red {
+  width: 9px;
+  height: 9px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -1px;
+}
+
+.eo-icon.eo-icon-asterisk-red.eo-icon-xs {
+  width: 2.25px;
+  height: 2.25px;
+}
+
+.eo-icon.eo-icon-asterisk-red.eo-icon-sm {
+  width: 4.5px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-asterisk-red.eo-icon-lg {
+  width: 11.25px;
+  height: 11.25px;
+}
+
+.eo-icon.eo-icon-asterisk-red.eo-icon-xl {
+  width: 13.5px;
+  height: 13.5px;
+}
+
+.eo-icon.eo-icon-checkbox-off {
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-checkbox-off.eo-icon-xs {
+  width: 4.5px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-checkbox-off.eo-icon-sm {
+  width: 9px;
+  height: 9px;
+}
+
+.eo-icon.eo-icon-checkbox-off.eo-icon-lg {
+  width: 22.5px;
+  height: 22.5px;
+}
+
+.eo-icon.eo-icon-checkbox-off.eo-icon-xl {
+  width: 27px;
+  height: 27px;
+}
+
+.eo-icon.eo-icon-checkbox-off-hover {
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-checkbox-off-hover.eo-icon-xs {
+  width: 4.5px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-checkbox-off-hover.eo-icon-sm {
+  width: 9px;
+  height: 9px;
+}
+
+.eo-icon.eo-icon-checkbox-off-hover.eo-icon-lg {
+  width: 22.5px;
+  height: 22.5px;
+}
+
+.eo-icon.eo-icon-checkbox-off-hover.eo-icon-xl {
+  width: 27px;
+  height: 27px;
+}
+
+.eo-icon.eo-icon-checkbox-on {
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-checkbox-on.eo-icon-xs {
+  width: 4.5px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-checkbox-on.eo-icon-sm {
+  width: 9px;
+  height: 9px;
+}
+
+.eo-icon.eo-icon-checkbox-on.eo-icon-lg {
+  width: 22.5px;
+  height: 22.5px;
+}
+
+.eo-icon.eo-icon-checkbox-on.eo-icon-xl {
+  width: 27px;
+  height: 27px;
+}
+
+.eo-icon.eo-icon-checkbox-on-hover {
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-checkbox-on-hover.eo-icon-xs {
+  width: 4.5px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-checkbox-on-hover.eo-icon-sm {
+  width: 9px;
+  height: 9px;
+}
+
+.eo-icon.eo-icon-checkbox-on-hover.eo-icon-lg {
+  width: 22.5px;
+  height: 22.5px;
+}
+
+.eo-icon.eo-icon-checkbox-on-hover.eo-icon-xl {
+  width: 27px;
+  height: 27px;
+}
+
+.eo-icon.eo-icon-checkmark-green-large {
+  width: 20px;
+  height: 18px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-checkmark-green-large.eo-icon-xs {
+  width: 5px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-checkmark-green-large.eo-icon-sm {
+  width: 10px;
+  height: 9px;
+}
+
+.eo-icon.eo-icon-checkmark-green-large.eo-icon-lg {
+  width: 25px;
+  height: 22.5px;
+}
+
+.eo-icon.eo-icon-checkmark-green-large.eo-icon-xl {
+  width: 30px;
+  height: 27px;
+}
+
+.eo-icon.eo-icon-checkmark-white-large {
+  width: 20px;
+  height: 18px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-checkmark-white-large.eo-icon-xs {
+  width: 5px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-checkmark-white-large.eo-icon-sm {
+  width: 10px;
+  height: 9px;
+}
+
+.eo-icon.eo-icon-checkmark-white-large.eo-icon-lg {
+  width: 25px;
+  height: 22.5px;
+}
+
+.eo-icon.eo-icon-checkmark-white-large.eo-icon-xl {
+  width: 30px;
+  height: 27px;
+}
+
+.eo-icon.eo-icon-closing-large {
+  width: 73px;
+  height: 62px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-closing-large.eo-icon-xs {
+  width: 18.25px;
+  height: 15.5px;
+}
+
+.eo-icon.eo-icon-closing-large.eo-icon-sm {
+  width: 36.5px;
+  height: 31px;
+}
+
+.eo-icon.eo-icon-closing-large.eo-icon-lg {
+  width: 91.25px;
+  height: 77.5px;
+}
+
+.eo-icon.eo-icon-closing-large.eo-icon-xl {
+  width: 109.5px;
+  height: 93px;
+}
+
+.eo-icon.eo-icon-email-verified-large {
+  width: 50px;
+  height: 32px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-email-verified-large.eo-icon-xs {
+  width: 12.5px;
+  height: 8px;
+}
+
+.eo-icon.eo-icon-email-verified-large.eo-icon-sm {
+  width: 25px;
+  height: 16px;
+}
+
+.eo-icon.eo-icon-email-verified-large.eo-icon-lg {
+  width: 62.5px;
+  height: 40px;
+}
+
+.eo-icon.eo-icon-email-verified-large.eo-icon-xl {
+  width: 75px;
+  height: 48px;
+}
+
+.eo-icon.eo-icon-equal-housing-lender {
+  width: 112px;
+  height: 21px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-equal-housing-lender.eo-icon-xs {
+  width: 28px;
+  height: 5.25px;
+}
+
+.eo-icon.eo-icon-equal-housing-lender.eo-icon-sm {
+  width: 56px;
+  height: 10.5px;
+}
+
+.eo-icon.eo-icon-equal-housing-lender.eo-icon-lg {
+  width: 140px;
+  height: 26.25px;
+}
+
+.eo-icon.eo-icon-equal-housing-lender.eo-icon-xl {
+  width: 168px;
+  height: 31.5px;
+}
+
+.eo-icon.eo-icon-footer-email {
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-footer-email.eo-icon-xs {
+  width: 4.5px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-footer-email.eo-icon-sm {
+  width: 9px;
+  height: 9px;
+}
+
+.eo-icon.eo-icon-footer-email.eo-icon-lg {
+  width: 22.5px;
+  height: 22.5px;
+}
+
+.eo-icon.eo-icon-footer-email.eo-icon-xl {
+  width: 27px;
+  height: 27px;
+}
+
+.eo-icon.eo-icon-footer-location-pin {
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-footer-location-pin.eo-icon-xs {
+  width: 4.5px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-footer-location-pin.eo-icon-sm {
+  width: 9px;
+  height: 9px;
+}
+
+.eo-icon.eo-icon-footer-location-pin.eo-icon-lg {
+  width: 22.5px;
+  height: 22.5px;
+}
+
+.eo-icon.eo-icon-footer-location-pin.eo-icon-xl {
+  width: 27px;
+  height: 27px;
+}
+
+.eo-icon.eo-icon-footer-logo-w-tagline {
+  width: 223px;
+  height: 61px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-footer-logo-w-tagline.eo-icon-xs {
+  width: 55.75px;
+  height: 15.25px;
+}
+
+.eo-icon.eo-icon-footer-logo-w-tagline.eo-icon-sm {
+  width: 111.5px;
+  height: 30.5px;
+}
+
+.eo-icon.eo-icon-footer-logo-w-tagline.eo-icon-lg {
+  width: 278.75px;
+  height: 76.25px;
+}
+
+.eo-icon.eo-icon-footer-logo-w-tagline.eo-icon-xl {
+  width: 334.5px;
+  height: 91.5px;
+}
+
+.eo-icon.eo-icon-footer-phone {
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-footer-phone.eo-icon-xs {
+  width: 4.5px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-footer-phone.eo-icon-sm {
+  width: 9px;
+  height: 9px;
+}
+
+.eo-icon.eo-icon-footer-phone.eo-icon-lg {
+  width: 22.5px;
+  height: 22.5px;
+}
+
+.eo-icon.eo-icon-footer-phone.eo-icon-xl {
+  width: 27px;
+  height: 27px;
+}
+
+.eo-icon.eo-icon-footer-website {
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-footer-website.eo-icon-xs {
+  width: 4.5px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-footer-website.eo-icon-sm {
+  width: 9px;
+  height: 9px;
+}
+
+.eo-icon.eo-icon-footer-website.eo-icon-lg {
+  width: 22.5px;
+  height: 22.5px;
+}
+
+.eo-icon.eo-icon-footer-website.eo-icon-xl {
+  width: 27px;
+  height: 27px;
+}
+
+.eo-icon.eo-icon-header-eoriginal-logo {
+  width: 157px;
+  height: 30px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-header-eoriginal-logo.eo-icon-xs {
+  width: 39.25px;
+  height: 7.5px;
+}
+
+.eo-icon.eo-icon-header-eoriginal-logo.eo-icon-sm {
+  width: 78.5px;
+  height: 15px;
+}
+
+.eo-icon.eo-icon-header-eoriginal-logo.eo-icon-lg {
+  width: 196.25px;
+  height: 37.5px;
+}
+
+.eo-icon.eo-icon-header-eoriginal-logo.eo-icon-xl {
+  width: 235.5px;
+  height: 45px;
+}
+
+.eo-icon.eo-icon-header-powered-by {
+  width: 182px;
+  height: 42px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-header-powered-by.eo-icon-xs {
+  width: 45.5px;
+  height: 10.5px;
+}
+
+.eo-icon.eo-icon-header-powered-by.eo-icon-sm {
+  width: 91px;
+  height: 21px;
+}
+
+.eo-icon.eo-icon-header-powered-by.eo-icon-lg {
+  width: 227.5px;
+  height: 52.5px;
+}
+
+.eo-icon.eo-icon-header-powered-by.eo-icon-xl {
+  width: 273px;
+  height: 63px;
+}
+
+.eo-icon.eo-icon-info-small {
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-info-small.eo-icon-xs {
+  width: 4px;
+  height: 4px;
+}
+
+.eo-icon.eo-icon-info-small.eo-icon-sm {
+  width: 8px;
+  height: 8px;
+}
+
+.eo-icon.eo-icon-info-small.eo-icon-lg {
+  width: 20px;
+  height: 20px;
+}
+
+.eo-icon.eo-icon-info-small.eo-icon-xl {
+  width: 24px;
+  height: 24px;
+}
+
+.eo-icon.eo-icon-info-small-hover {
+  width: 16px;
+  height: 16px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-info-small-hover.eo-icon-xs {
+  width: 4px;
+  height: 4px;
+}
+
+.eo-icon.eo-icon-info-small-hover.eo-icon-sm {
+  width: 8px;
+  height: 8px;
+}
+
+.eo-icon.eo-icon-info-small-hover.eo-icon-lg {
+  width: 20px;
+  height: 20px;
+}
+
+.eo-icon.eo-icon-info-small-hover.eo-icon-xl {
+  width: 24px;
+  height: 24px;
+}
+
+.eo-icon.eo-icon-menu-arrow-down {
+  width: 8px;
+  height: 5px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-menu-arrow-down.eo-icon-xs {
+  width: 2px;
+  height: 1.25px;
+}
+
+.eo-icon.eo-icon-menu-arrow-down.eo-icon-sm {
+  width: 4px;
+  height: 2.5px;
+}
+
+.eo-icon.eo-icon-menu-arrow-down.eo-icon-lg {
+  width: 10px;
+  height: 6.25px;
+}
+
+.eo-icon.eo-icon-menu-arrow-down.eo-icon-xl {
+  width: 12px;
+  height: 7.5px;
+}
+
+.eo-icon.eo-icon-orange-x-large {
+  width: 20px;
+  height: 18px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-orange-x-large.eo-icon-xs {
+  width: 5px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-orange-x-large.eo-icon-sm {
+  width: 10px;
+  height: 9px;
+}
+
+.eo-icon.eo-icon-orange-x-large.eo-icon-lg {
+  width: 25px;
+  height: 22.5px;
+}
+
+.eo-icon.eo-icon-orange-x-large.eo-icon-xl {
+  width: 30px;
+  height: 27px;
+}
+
+.eo-icon.eo-icon-password-hidden {
+  width: 20px;
+  height: 18px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-password-hidden.eo-icon-xs {
+  width: 5px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-password-hidden.eo-icon-sm {
+  width: 10px;
+  height: 9px;
+}
+
+.eo-icon.eo-icon-password-hidden.eo-icon-lg {
+  width: 25px;
+  height: 22.5px;
+}
+
+.eo-icon.eo-icon-password-hidden.eo-icon-xl {
+  width: 30px;
+  height: 27px;
+}
+
+.eo-icon.eo-icon-password-shown {
+  width: 20px;
+  height: 18px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-password-shown.eo-icon-xs {
+  width: 5px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-password-shown.eo-icon-sm {
+  width: 10px;
+  height: 9px;
+}
+
+.eo-icon.eo-icon-password-shown.eo-icon-lg {
+  width: 25px;
+  height: 22.5px;
+}
+
+.eo-icon.eo-icon-password-shown.eo-icon-xl {
+  width: 30px;
+  height: 27px;
+}
+
+.eo-icon.eo-icon-radio-button-off {
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-radio-button-off.eo-icon-xs {
+  width: 4.5px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-radio-button-off.eo-icon-sm {
+  width: 9px;
+  height: 9px;
+}
+
+.eo-icon.eo-icon-radio-button-off.eo-icon-lg {
+  width: 22.5px;
+  height: 22.5px;
+}
+
+.eo-icon.eo-icon-radio-button-off.eo-icon-xl {
+  width: 27px;
+  height: 27px;
+}
+
+.eo-icon.eo-icon-radio-button-off-hover {
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-radio-button-off-hover.eo-icon-xs {
+  width: 4.5px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-radio-button-off-hover.eo-icon-sm {
+  width: 9px;
+  height: 9px;
+}
+
+.eo-icon.eo-icon-radio-button-off-hover.eo-icon-lg {
+  width: 22.5px;
+  height: 22.5px;
+}
+
+.eo-icon.eo-icon-radio-button-off-hover.eo-icon-xl {
+  width: 27px;
+  height: 27px;
+}
+
+.eo-icon.eo-icon-radio-button-on {
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-radio-button-on.eo-icon-xs {
+  width: 4.5px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-radio-button-on.eo-icon-sm {
+  width: 9px;
+  height: 9px;
+}
+
+.eo-icon.eo-icon-radio-button-on.eo-icon-lg {
+  width: 22.5px;
+  height: 22.5px;
+}
+
+.eo-icon.eo-icon-radio-button-on.eo-icon-xl {
+  width: 27px;
+  height: 27px;
+}
+
+.eo-icon.eo-icon-radio-button-on-hover {
+  width: 18px;
+  height: 18px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-radio-button-on-hover.eo-icon-xs {
+  width: 4.5px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-radio-button-on-hover.eo-icon-sm {
+  width: 9px;
+  height: 9px;
+}
+
+.eo-icon.eo-icon-radio-button-on-hover.eo-icon-lg {
+  width: 22.5px;
+  height: 22.5px;
+}
+
+.eo-icon.eo-icon-radio-button-on-hover.eo-icon-xl {
+  width: 27px;
+  height: 27px;
+}
+
+.eo-icon.eo-icon-remove-large {
+  width: 14px;
+  height: 14px;
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -1px;
+}
+
+.eo-icon.eo-icon-remove-large.eo-icon-xs {
+  width: 3.5px;
+  height: 3.5px;
+}
+
+.eo-icon.eo-icon-remove-large.eo-icon-sm {
+  width: 7px;
+  height: 7px;
+}
+
+.eo-icon.eo-icon-remove-large.eo-icon-lg {
+  width: 17.5px;
+  height: 17.5px;
+}
+
+.eo-icon.eo-icon-remove-large.eo-icon-xl {
+  width: 21px;
+  height: 21px;
+}
+
+a:hover .eo-icon.eo-icon-half-opacity,
+button:hover .eo-icon.eo-icon-half-opacity,
+a:focus .eo-icon.eo-icon-half-opacity,
+button:focus .eo-icon.eo-icon-half-opacity {
+  opacity: 1;
+}
 /*# sourceMappingURL=bootstrap.css.map */
