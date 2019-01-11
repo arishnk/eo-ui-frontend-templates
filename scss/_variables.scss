@@ -67,7 +67,7 @@ $colors: map-merge(
 );
 
 $primary:       #57a40a !default; // default was $blue
-$secondary:     $gray-600 !default;
+$secondary:     #f7f8f9 !default;
 $success:       #57a40a !default; // default was $green
 $info:          $gray-100 !default; // default was $cyan
 $warning:       #fd7f23 !default; // default was $yellow
@@ -275,7 +275,6 @@ $embed-responsive-aspect-ratios: join(
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-sans-serif:      "Open Sans", sans-serif !default; // override leaving default in place for now
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
