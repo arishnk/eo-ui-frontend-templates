@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title></title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,500i,600,600i" rel="stylesheet">
+  <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="has-footer">
+  <div class="main-content">
+    <nav class="navbar navbar-light bg-light justify-content-between">
+      <div class="navbar-brand" href="#">
+        <img src="../img/icon_bank_of_america.png" alt="Bank of America" />
+        <span class="sr-only">Bank of America</span>
+      </div>
+      <div class="product-name-image">
+        <img src="../img/product_name_closing_center.svg" width="208" height="31" alt="Closing Center" />
+      </div>
+      <div class="righthand-name-menu d-flex flex-column justify-content-between">
+        <div class="header-name">John Smith</div>
+        <ul class="header-menu">
+          <li>
+            <a href="#" class="menu-item" id="closings">My Closings</a>
+          </li>
+          <li>
+            <a href="#" class="menu-item dropdown-toggle" id="account">My Account</a>
+          </li>
+          <li>
+            <a href="#" class="menu-item" id="signout">Sign Out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="workbench-banner bg-primary">
+      <div class="container d-flex justify-content-between">
+        <div class="workbench-banner-left">
+          <span>My Closings</span>
+        </div>
+        <div class="workbench-banner-middle">
+          <span class="eo-icon eo-icon-closing-large"></span>
+        </div>
+        <div class="workbench-banner-right">
+          <span>Add closing</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row bg-dark text-light workbench-table-row workbench-table-header">
+        <div class="workbench-table-cell col name-column">
+          <span class="cell-text text-uppercase font-weight-semibold">Primary Borrower</span>
+        </div>
+        <div class="workbench-table-cell col date-column">
+          <span class="cell-text text-uppercase font-weight-semibold">Closing Date</span>
+        </div>
+        <div class="workbench-table-cell col lender-column">
+          <span class="cell-text text-uppercase font-weight-semibold">Lender</span>
+        </div>
+        <div class="workbench-table-cell col documents-column">
+          <span class="cell-text text-uppercase font-weight-semibold">Documents</span>
+        </div>
+        <div class="workbench-table-cell col status-column">
+          <span class="cell-text text-uppercase font-weight-semibold">Status</span>
+        </div>
+        <div class="workbench-table-cell col buttons-column">
+          <span class="cell-text sr-only">Action Buttons</span>
+        </div>
+      </div>
+
+      <div class="row border-bottom workbench-table-row">
+        <div class="workbench-table-cell col name-column">
+            <div class="cell-text">Rodriguez, Marco</div>
+        </div>
+        <div class="workbench-table-cell col date-column">
+            <div class="cell-text">
+              <span class="date">12/11/2019</span>
+              <span class="time">8:00 am ET</span>
+            </div>
+        </div>
+        <div class="workbench-table-cell col lender-column">
+            <div class="cell-text">
+              <img src="../img/icon_fannie_mae_logo_small.png" alt="Fannie Mae"/>
+            </div>
+        </div>
+        <div class="workbench-table-cell col documents-column">
+          <div class="cell-text">
+            <span class="eo-icon eo-icon-documents"></span>
+            <span class="docs">
+              <span class="docs-value">12</span>
+              <span class="docs-label">docs</span>
+            </span>
+            <span class="pages">
+              <span class="docs-value">103</span>
+              <span class="docs-label">pg</span>
+            </span>
+          </div>
+        </div>
+        <div class="workbench-table-cell col status-column">
+            <div class="cell-text">
+              <span class="eo-icon eo-icon-trans-closing-in-process"></span>
+              <div class="d-flex flex-column justify-content-center">
+                <span class="status-text">Closing in progress</span>
+                <div class="status-more">
+                  <span>More Actions</span>
+                  <span class="eo-icon eo-icon-menu-arrow-down"></span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="workbench-table-cell col buttons-column">
+            <div class="cell-text">
+              <button class="btn btn-primary btn-block">Complete closing</button>
+            </div>
+        </div>
+      </div>
+
+      <div class="row border-bottom workbench-table-row">
+        <div class="workbench-table-cell col name-column">
+            <div class="cell-text"></div>
+        </div>
+        <div class="workbench-table-cell col date-column">
+            <div class="cell-text">
+              <span class="date"></span>
+              <span class="time"></span>
+            </div>
+        </div>
+        <div class="workbench-table-cell col lender-column">
+            <div class="cell-text">
+              <img src="../img/" alt=""/>
+            </div>
+        </div>
+        <div class="workbench-table-cell col documents-column">
+          <div class="cell-text">
+            <span class="eo-icon eo-icon-documents"></span>
+            <span class="docs">
+              <span class="docs-value"></span>
+              <span class="docs-label">docs</span>
+            </span>
+            <span class="pages">
+              <span class="docs-value"></span>
+              <span class="docs-label">pg</span>
+            </span>
+            <span class="msg">
+              <span class="eo-icon eo-icon-note-green"></span>
+              <span class="num-msgs">2</span>
+            </span>
+          </div>
+        </div>
+        <div class="workbench-table-cell col status-column">
+            <div class="cell-text">
+              <span class="eo-icon eo-icon-trans-closing-completed"></span>
+              <div class="d-flex flex-column justify-content-center">
+                <span class="status-text">Closing completed</span>
+                <div class="status-more">
+                  <span>More Actions</span>
+                  <span class="eo-icon eo-icon-menu-arrow-down"></span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="workbench-table-cell col buttons-column">
+            <div class="cell-text">
+              <button class="btn btn-primary btn-block"></button>
+            </div>
+        </div>
+      </div>
+
+      <div class="row border-bottom workbench-table-row">
+        <div class="workbench-table-cell col name-column">
+            <div class="cell-text"></div>
+        </div>
+        <div class="workbench-table-cell col date-column">
+            <div class="cell-text">
+              <span class="date"></span>
+              <span class="time"></span>
+            </div>
+        </div>
+        <div class="workbench-table-cell col lender-column">
+            <div class="cell-text">
+              <img src="../img/" alt=""/>
+            </div>
+        </div>
+        <div class="workbench-table-cell col documents-column">
+          <div class="cell-text">
+            <span class="eo-icon eo-icon-documents-updated"></span>
+            <span class="docs">
+              <span class="docs-value"></span>
+              <span class="docs-label">docs</span>
+            </span>
+            <span class="pages">
+              <span class="docs-value"></span>
+              <span class="docs-label">pg</span>
+            </span>
+          </div>
+        </div>
+        <div class="workbench-table-cell col status-column">
+            <div class="cell-text">
+              <span class="eo-icon eo-icon-trans-lender"></span>
+              <div class="d-flex flex-column justify-content-center">
+                <span class="status-text">Lender review</span>
+                <div class="status-more">
+                  <span>More Actions</span>
+                  <span class="eo-icon eo-icon-menu-arrow-down"></span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="workbench-table-cell col buttons-column">
+            <div class="cell-text">
+            </div>
+        </div>
+      </div>
+
+      <div class="row border-bottom workbench-table-row">
+        <div class="workbench-table-cell col name-column">
+            <div class="cell-text"></div>
+        </div>
+        <div class="workbench-table-cell col date-column">
+            <div class="cell-text">
+              <span class="date"></span>
+              <span class="time"></span>
+            </div>
+        </div>
+        <div class="workbench-table-cell col lender-column">
+            <div class="cell-text">
+              <img src="../img/" alt=""/>
+            </div>
+        </div>
+        <div class="workbench-table-cell col documents-column">
+          <div class="cell-text">
+            <span class="eo-icon eo-icon-documents-updated"></span>
+            <span class="docs">
+              <span class="docs-value"></span>
+              <span class="docs-label">docs</span>
+            </span>
+            <span class="pages">
+              <span class="docs-value"></span>
+              <span class="docs-label">pg</span>
+            </span>
+          </div>
+        </div>
+        <div class="workbench-table-cell col status-column">
+            <div class="cell-text">
+              <span class="eo-icon eo-icon-trans-ready-to-close"></span>
+              <div class="d-flex flex-column justify-content-center">
+                <span class="status-text">Ready to close</span>
+                <div class="status-more">
+                  <span>More Actions</span>
+                  <span class="eo-icon eo-icon-menu-arrow-down"></span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="workbench-table-cell col buttons-column">
+            <div class="cell-text">
+              <button class="btn btn-primary btn-block"></button>
+            </div>
+        </div>
+      </div>
+
+      <div class="row border-bottom workbench-table-row">
+        <div class="workbench-table-cell col name-column">
+            <div class="cell-text"></div>
+        </div>
+        <div class="workbench-table-cell col date-column">
+            <div class="cell-text">
+              <span class="date"></span>
+              <span class="time"></span>
+            </div>
+        </div>
+        <div class="workbench-table-cell col lender-column">
+            <div class="cell-text">
+              <img src="../img/" alt=""/>
+            </div>
+        </div>
+        <div class="workbench-table-cell col documents-column">
+          <div class="cell-text">
+            <span class="eo-icon eo-icon-documents"></span>
+            <span class="docs">
+              <span class="docs-value"></span>
+              <span class="docs-label">docs</span>
+            </span>
+            <span class="pages">
+              <span class="docs-value"></span>
+              <span class="docs-label">pg</span>
+            </span>
+          </div>
+        </div>
+        <div class="workbench-table-cell col status-column">
+            <div class="cell-text">
+              <span class="eo-icon eo-icon-trans-withdrawn"></span>
+              <div class="d-flex flex-column justify-content-center">
+                <span class="status-text">Withdrawn</span>
+                <div class="status-more">
+                  <span>More Actions</span>
+                  <span class="eo-icon eo-icon-menu-arrow-down"></span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="workbench-table-cell col buttons-column">
+            <div class="cell-text">
+              <button class="btn btn-primary btn-block"></button>
+            </div>
+        </div>
+      </div>
+
+      <div class="row border-bottom workbench-table-row">
+        <div class="workbench-table-cell col name-column">
+            <div class="cell-text"></div>
+        </div>
+        <div class="workbench-table-cell col date-column">
+            <div class="cell-text">
+              <span class="date"></span>
+              <span class="time"></span>
+            </div>
+        </div>
+        <div class="workbench-table-cell col lender-column">
+            <div class="cell-text">
+              <img src="../img/" alt=""/>
+            </div>
+        </div>
+        <div class="workbench-table-cell col documents-column">
+          <div class="cell-text">
+            <span class="eo-icon eo-icon-documents"></span>
+            <span class="docs">
+              <span class="docs-value"></span>
+              <span class="docs-label">docs</span>
+            </span>
+            <span class="pages">
+              <span class="docs-value"></span>
+              <span class="docs-label">pg</span>
+            </span>
+          </div>
+        </div>
+        <div class="workbench-table-cell col status-column">
+            <div class="cell-text">
+              <span class="eo-icon eo-icon-trans-void"></span>
+              <div class="d-flex flex-column justify-content-center">
+                <span class="status-text"></span>
+                <div class="status-more">
+                  <span>More Actions</span>
+                  <span class="eo-icon eo-icon-menu-arrow-down"></span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="workbench-table-cell col buttons-column">
+            <div class="cell-text">
+              <button class="btn btn-primary btn-block"></button>
+            </div>
+        </div>
+      </div>
+
+      <div class="row border-bottom workbench-table-row">
+        <div class="workbench-table-cell col name-column">
+            <div class="cell-text"></div>
+        </div>
+        <div class="workbench-table-cell col date-column">
+            <div class="cell-text">
+              <span class="date"></span>
+              <span class="time"></span>
+            </div>
+        </div>
+        <div class="workbench-table-cell col lender-column">
+            <div class="cell-text">
+              <img src="../img/" alt=""/>
+            </div>
+        </div>
+        <div class="workbench-table-cell col documents-column">
+          <div class="cell-text">
+            <span class="eo-icon eo-icon-documents"></span>
+            <span class="docs">
+              <span class="docs-value"></span>
+              <span class="docs-label">docs</span>
+            </span>
+            <span class="pages">
+              <span class="docs-value"></span>
+              <span class="docs-label">pg</span>
+            </span>
+          </div>
+        </div>
+        <div class="workbench-table-cell col status-column">
+            <div class="cell-text">
+              <span class="eo-icon eo-icon-trans-ready-to-close"></span>
+              <div class="d-flex flex-column justify-content-center">
+                <span class="status-text"></span>
+                <div class="status-more">
+                  <span>More Actions</span>
+                  <span class="eo-icon eo-icon-menu-arrow-down"></span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="workbench-table-cell col buttons-column">
+            <div class="cell-text">
+              <button class="btn btn-primary btn-block"></button>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+
+</html>
