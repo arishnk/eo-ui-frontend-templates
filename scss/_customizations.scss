@@ -123,7 +123,11 @@ body {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-width: 2px;
+    border-bottom: 2px solid #81c241;
+
+    .row {
+      width: 100%;
+    }
 
     .navbar-header {
       //margin-left: 30px;
@@ -166,7 +170,8 @@ body {
 @include media-breakpoint-up(md) {
 
   body > .main-content > .navbar .product-name {
-    padding-top: 30px;
+
+    //padding-top: 30px;
 
     .navbar-brand {
       height: 50px;
@@ -177,6 +182,7 @@ body {
       height: 31px;
       margin-left: 0;
     }
+
   }
 
 }
@@ -190,11 +196,11 @@ body {
 
 }
 
-.navbar-default div.navbar-brand {
+.navbar div.navbar-brand {
   display: inline-block;
 }
 
-.navbar-default div.navbar-brand:hover {
+.navbar div.navbar-brand:hover {
   opacity: 1;
   display: inline-block;
 }
@@ -249,6 +255,12 @@ h6,
 }
 
 .sign-in-menu {
+
+  font-weight: 600;
+
+  .dropdown-toggle::after {
+    display: none;
+  }
 
   .dropdown-menu {
 
@@ -384,7 +396,7 @@ h6,
 
 }
 
-.control-label {
+.col-form-label {
 
   color: $gray-800 !important;
   font-size: $font-size-sm;
@@ -539,6 +551,7 @@ a.form-control-feedback {
   position: relative;
   padding-bottom: 28px;
   letter-spacing: .9px;
+  border-radius: 0;
 
   &::after {
     content: "";
@@ -562,6 +575,7 @@ a.form-control-feedback {
   h1 {
     font-size: $h1-font-size;
     margin-top: 0;
+    color: #fff;
   }
 
   p,
@@ -572,6 +586,7 @@ a.form-control-feedback {
   h5,
   div {
     font-size: $h3-font-size;
+    color: #fff;
   }
 
 }
@@ -638,7 +653,7 @@ a.form-control-feedback {
 
 }
 
-@include media-breakpoint-only(md) {
+@include media-breakpoint-only(sm) {
 
   .well-hidden-sm {
     padding: 0;
@@ -802,17 +817,18 @@ strong {
 
 }
 
-.navbar-default .navbar-brand {
+.navbar .navbar-brand {
 
   background-position: center left;
   background-size: contain;
   background-repeat: no-repeat;
   color: transparent !important;
-  width: 100%;
+  //width: 100%;
   height: 50px;
   padding: 0;
   margin-top: 13px;
   margin-left: 0;
+  margin-right: 0;
   transition: opacity 250ms;
 
   &:hover {
@@ -1068,6 +1084,14 @@ a.help-text {
 
 }
 
+.navbar-nav {
+  display: block;
+}
+
+.navbar-nav li {
+  display: block;
+}
+
 .navbar-nav > li > a {
   padding-top: 40px;
   padding-bottom: 20px;
@@ -1134,4 +1158,25 @@ a.help-text {
   display: table-cell;
   vertical-align: middle;
   width: 100%;
+}
+
+small,
+.small {
+  font-weight: inherit;
+}
+
+table.table.table-sm {
+
+  thead {
+
+    tr:first-child {
+
+      th {
+        border-top: none;
+      }
+
+    }
+
+  }
+
 }
