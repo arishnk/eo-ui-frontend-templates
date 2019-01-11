@@ -132,7 +132,15 @@
     @include icon-versions(14px, 14px, "../img/icon_remove_large.svg");
     top: -1px;
   }
-
+  &.eo-icon-documents { @include icon-versions(16px, 18px, "../img/icon_documents.svg"); }
+  &.eo-icon-documents-updated { @include icon-versions(23px, 27px, "../img/icon_documents_updated.svg"); }
+  &.eo-icon-note-green { @include icon-versions(17px, 16px, "../img/icon_note_green.svg"); }
+  &.eo-icon-trans-closing-completed { @include icon-versions(33px, 32px, "../img/icon_trans_closing_completed.svg"); }
+  &.eo-icon-trans-closing-in-process { @include icon-versions(35px, 37px, "../img/icon_trans_closing_in_process.svg"); }
+  &.eo-icon-trans-lender { @include icon-versions(33px, 33px, "../img/icon_trans_lender.svg"); }
+  &.eo-icon-trans-ready-to-close { @include icon-versions(33px, 33px, "../img/icon_trans_ready_to_close.svg"); }
+  &.eo-icon-trans-void { @include icon-versions(32px, 33px, "../img/icon_trans_void.svg"); }
+  &.eo-icon-trans-withdrawn { @include icon-versions(32px, 33px, "../img/icon_trans_withdrawn.svg"); }
 }
 
 a:hover .eo-icon.eo-icon-half-opacity,
