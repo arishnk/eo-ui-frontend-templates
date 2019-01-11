@@ -545,25 +545,25 @@ pre code {
 
 @media (min-width: 576px) {
   .container {
-    max-width: 540px;
+    max-width: 570px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 750px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 990px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1170px;
   }
 }
 
@@ -10000,7 +10000,11 @@ body > .main-content > .navbar {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-width: 2px;
+  border-bottom: 2px solid #81c241;
+}
+
+body > .main-content > .navbar .row {
+  width: 100%;
 }
 
 body > .main-content > .navbar .product-name {
@@ -10027,9 +10031,6 @@ body > .main-content > .navbar .product-name.text-center .product-name-image {
 }
 
 @media (min-width: 768px) {
-  body > .main-content > .navbar .product-name {
-    padding-top: 30px;
-  }
   body > .main-content > .navbar .product-name .navbar-brand {
     height: 50px;
     margin-left: 0;
@@ -10047,11 +10048,11 @@ body > .main-content > .navbar .product-name.text-center .product-name-image {
   }
 }
 
-.navbar-default div.navbar-brand {
+.navbar div.navbar-brand {
   display: inline-block;
 }
 
-.navbar-default div.navbar-brand:hover {
+.navbar div.navbar-brand:hover {
   opacity: 1;
   display: inline-block;
 }
@@ -10088,6 +10089,14 @@ h1, h2, h3, h4, h5, h6,
   height: 612px;
   opacity: .1;
   background-image: url("../img/angled_white_dot_pattern.png");
+}
+
+.sign-in-menu {
+  font-weight: 600;
+}
+
+.sign-in-menu .dropdown-toggle::after {
+  display: none;
 }
 
 .sign-in-menu .dropdown-menu {
@@ -10187,19 +10196,19 @@ h1, h2, h3, h4, h5, h6,
   right: -24px;
 }
 
-.control-label {
+.col-form-label {
   color: #353937 !important;
   font-size: 0.75rem;
   font-weight: 400;
 }
 
-.control-label .text-muted {
+.col-form-label .text-muted {
   font-weight: 400;
   color: #71767f;
   margin-left: 8px;
 }
 
-.control-label.has-focus {
+.col-form-label.has-focus {
   color: #000;
 }
 
@@ -10336,6 +10345,7 @@ a.form-control-feedback:hover {
   position: relative;
   padding-bottom: 28px;
   letter-spacing: .9px;
+  border-radius: 0;
   background: #81c242;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10359,6 +10369,7 @@ a.form-control-feedback:hover {
 .jumbotron h1 {
   font-size: 2.25rem;
   margin-top: 0;
+  color: #fff;
 }
 
 .jumbotron p,
@@ -10369,6 +10380,7 @@ a.form-control-feedback:hover {
 .jumbotron h5,
 .jumbotron div {
   font-size: 1.5rem;
+  color: #fff;
 }
 
 @media (max-width: 991.98px) {
@@ -10420,7 +10432,7 @@ a.form-control-feedback:hover {
   }
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 576px) and (max-width: 767.98px) {
   .well-hidden-sm {
     padding: 0;
     background-color: initial;
@@ -10563,20 +10575,20 @@ strong {
   margin: 0 10px;
 }
 
-.navbar-default .navbar-brand {
+.navbar .navbar-brand {
   background-position: center left;
   background-size: contain;
   background-repeat: no-repeat;
   color: transparent !important;
-  width: 100%;
   height: 50px;
   padding: 0;
   margin-top: 13px;
   margin-left: 0;
+  margin-right: 0;
   transition: opacity 250ms;
 }
 
-.navbar-default .navbar-brand:hover {
+.navbar .navbar-brand:hover {
   opacity: .6;
 }
 
@@ -10790,6 +10802,14 @@ a.help-text {
   margin-top: 17px;
 }
 
+.navbar-nav {
+  display: block;
+}
+
+.navbar-nav li {
+  display: block;
+}
+
 .navbar-nav > li > a {
   padding-top: 40px;
   padding-bottom: 20px;
@@ -10848,6 +10868,15 @@ a.help-text {
   display: table-cell;
   vertical-align: middle;
   width: 100%;
+}
+
+small,
+.small {
+  font-weight: inherit;
+}
+
+table.table.table-sm thead tr:first-child th {
+  border-top: none;
 }
 
 .eo-icon {
