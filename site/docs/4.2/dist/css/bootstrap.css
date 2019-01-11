@@ -19,7 +19,7 @@
   --gray: #71767f;
   --gray-dark: #353937;
   --primary: #57a40a;
-  --secondary: #71767f;
+  --secondary: #f7f8f9;
   --success: #57a40a;
   --info: #f7f8f9;
   --warning: #fd7f23;
@@ -31,7 +31,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: "Open Sans", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -54,7 +54,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
@@ -1586,23 +1586,23 @@ pre code {
 .table-secondary,
 .table-secondary > th,
 .table-secondary > td {
-  background-color: #d7d9db;
+  background-color: #fdfdfd;
 }
 
 .table-secondary th,
 .table-secondary td,
 .table-secondary thead th,
 .table-secondary tbody + tbody {
-  border-color: #b5b8bc;
+  border-color: #fbfbfc;
 }
 
 .table-hover .table-secondary:hover {
-  background-color: #cacccf;
+  background-color: #f0f0f0;
 }
 
 .table-hover .table-secondary:hover > td,
 .table-hover .table-secondary:hover > th {
-  background-color: #cacccf;
+  background-color: #f0f0f0;
 }
 
 .table-success,
@@ -2453,37 +2453,37 @@ fieldset:disabled a.btn {
 }
 
 .btn-secondary {
-  color: #fff;
-  background-color: #71767f;
-  border-color: #71767f;
+  color: #212529;
+  background-color: #f7f8f9;
+  border-color: #f7f8f9;
 }
 
 .btn-secondary:hover {
-  color: #fff;
-  background-color: #5f636b;
-  border-color: #595d64;
+  color: #212529;
+  background-color: #e1e5e9;
+  border-color: #dadfe3;
 }
 
 .btn-secondary:focus, .btn-secondary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(134, 139, 146, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(215, 216, 218, 0.5);
 }
 
 .btn-secondary.disabled, .btn-secondary:disabled {
-  color: #fff;
-  background-color: #71767f;
-  border-color: #71767f;
+  color: #212529;
+  background-color: #f7f8f9;
+  border-color: #f7f8f9;
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-secondary.dropdown-toggle {
-  color: #fff;
-  background-color: #595d64;
-  border-color: #53575d;
+  color: #212529;
+  background-color: #dadfe3;
+  border-color: #d3d8de;
 }
 
 .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(134, 139, 146, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(215, 216, 218, 0.5);
 }
 
 .btn-success {
@@ -2723,35 +2723,35 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-secondary {
-  color: #71767f;
-  border-color: #71767f;
+  color: #f7f8f9;
+  border-color: #f7f8f9;
 }
 
 .btn-outline-secondary:hover {
-  color: #fff;
-  background-color: #71767f;
-  border-color: #71767f;
+  color: #212529;
+  background-color: #f7f8f9;
+  border-color: #f7f8f9;
 }
 
 .btn-outline-secondary:focus, .btn-outline-secondary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(113, 118, 127, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(247, 248, 249, 0.5);
 }
 
 .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
-  color: #71767f;
+  color: #f7f8f9;
   background-color: transparent;
 }
 
 .btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-secondary.dropdown-toggle {
-  color: #fff;
-  background-color: #71767f;
-  border-color: #71767f;
+  color: #212529;
+  background-color: #f7f8f9;
+  border-color: #f7f8f9;
 }
 
 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-secondary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(113, 118, 127, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(247, 248, 249, 0.5);
 }
 
 .btn-outline-success {
@@ -5015,13 +5015,13 @@ a.badge-primary:hover, a.badge-primary:focus {
 }
 
 .badge-secondary {
-  color: #fff;
-  background-color: #71767f;
+  color: #212529;
+  background-color: #f7f8f9;
 }
 
 a.badge-secondary:hover, a.badge-secondary:focus {
-  color: #fff;
-  background-color: #595d64;
+  color: #212529;
+  background-color: #dadfe3;
 }
 
 .badge-success {
@@ -5146,17 +5146,17 @@ a.badge-dark:hover, a.badge-dark:focus {
 }
 
 .alert-secondary {
-  color: #3b3d42;
-  background-color: #71767f;
-  border-color: #d7d9db;
+  color: #808181;
+  background-color: #f7f8f9;
+  border-color: #fdfdfd;
 }
 
 .alert-secondary hr {
-  border-top-color: #cacccf;
+  border-top-color: #f0f0f0;
 }
 
 .alert-secondary .alert-link {
-  color: #232427;
+  color: #676767;
 }
 
 .alert-success {
@@ -5413,19 +5413,19 @@ a.badge-dark:hover, a.badge-dark:focus {
 }
 
 .list-group-item-secondary {
-  color: #3b3d42;
-  background-color: #d7d9db;
+  color: #808181;
+  background-color: #fdfdfd;
 }
 
 .list-group-item-secondary.list-group-item-action:hover, .list-group-item-secondary.list-group-item-action:focus {
-  color: #3b3d42;
-  background-color: #cacccf;
+  color: #808181;
+  background-color: #f0f0f0;
 }
 
 .list-group-item-secondary.list-group-item-action.active {
   color: #fff;
-  background-color: #3b3d42;
-  border-color: #3b3d42;
+  background-color: #808181;
+  border-color: #808181;
 }
 
 .list-group-item-success {
@@ -5794,7 +5794,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5907,7 +5907,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6392,13 +6392,13 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #71767f !important;
+  background-color: #f7f8f9 !important;
 }
 
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
 button.bg-secondary:focus {
-  background-color: #595d64 !important;
+  background-color: #dadfe3 !important;
 }
 
 .bg-success {
@@ -6514,7 +6514,7 @@ button.bg-dark:focus {
 }
 
 .border-secondary {
-  border-color: #71767f !important;
+  border-color: #f7f8f9 !important;
 }
 
 .border-success {
@@ -9715,11 +9715,11 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 .text-secondary {
-  color: #71767f !important;
+  color: #f7f8f9 !important;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
-  color: #71767f !important;
+  color: #f7f8f9 !important;
 }
 
 .text-success {
@@ -10132,6 +10132,11 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 600;
   letter-spacing: .9px;
   padding: 10px 18px;
+}
+
+.btn.btn-secondary {
+  border: 2px solid #d9dee1;
+  color: #2ea049;
 }
 
 .btn.btn-blank {
@@ -10608,11 +10613,12 @@ hr.hr-dots {
 }
 
 .checkbox {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  position: relative;
 }
 
 .checkbox label {
-  padding-left: 26px;
+  padding-left: 16px;
 }
 
 .checkbox label input {
@@ -10648,11 +10654,12 @@ hr.hr-dots {
 }
 
 .radio {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  position: relative;
 }
 
 .radio label {
-  padding-left: 26px;
+  padding-left: 16px;
 }
 
 .radio label input {
