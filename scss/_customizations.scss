@@ -314,6 +314,11 @@ h6,
   letter-spacing: .9px;
   padding: 10px 18px;
 
+  &.btn-secondary {
+    border: 2px solid #d9dee1;
+    color: #2ea049;
+  }
+
   &.btn-blank {
 
     background: transparent;
