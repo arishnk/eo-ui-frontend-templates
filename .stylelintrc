@@ -7,7 +7,6 @@
     "at-rule-empty-line-before": null,
     "at-rule-name-space-after": "always",
     "at-rule-no-unknown": null,
-    "at-rule-no-vendor-prefix": true,
     "at-rule-semicolon-space-before": "never",
     "block-closing-brace-empty-line-before": null,
     "block-closing-brace-newline-after": null,
@@ -17,7 +16,6 @@
     "declaration-block-semicolon-newline-before": "never-multi-line",
     "declaration-block-semicolon-space-after": "always-single-line",
     "declaration-empty-line-before": null,
-    "declaration-no-important": true,
     "font-family-name-quotes": "always-where-recommended",
     "font-weight-notation": [
       "numeric",
@@ -45,10 +43,8 @@
     "media-feature-range-operator-space-after": "always",
     "media-feature-range-operator-space-before": "never",
     "no-descending-specificity": null,
-    "no-duplicate-selectors": true,
     "number-leading-zero": "never",
-    "property-blacklist": ["transition"],
-    "property-no-vendor-prefix": true,
+    "property-blacklist": [""],
     "rule-empty-line-before": null,
     "scss/at-function-named-arguments": "never",
     "scss/at-function-parentheses-space-before": "never",
@@ -92,7 +88,6 @@
     "selector-max-empty-lines": 1,
     "selector-max-id": 0,
     "selector-max-specificity": null,
-    "selector-max-type": 2,
     "selector-max-universal": 1,
     "selector-no-qualifying-type": [
       true,
@@ -102,7 +97,6 @@
         ]
       }
     ],
-    "selector-no-vendor-prefix": true,
     "shorthand-property-no-redundant-values": true,
     "string-quotes": "double",
     "value-keyword-case": "lower",
