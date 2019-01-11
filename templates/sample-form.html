@@ -24,7 +24,7 @@
 <body class="has-footer">
 
   <div class="main-content">
-    <nav class="navbar navbar-light bg-light navbar-expand-md">
+    <nav class="navbar navbar-expand">
       <div class="container">
         <div class="row row-no-padding">
           <div class="navbar-brand" href="#" style="background-image: url(../img/icon_bank_of_america.png)"><span class="sr-only">Bank of America</span>
@@ -57,7 +57,7 @@
                   <div class="form-group has-feedback"> <a href="#" class="small float-right">I forgot my password</a>
                     <label class="col-form-label" for="password">Password</label>
                     <div class="form-control-wrap">
-                      <input class="form-control" name="password" type="password" id="password" placeholder="" value=""> <a href="#" title="Click to show password" class="form-control-feedback"><span class="eo-icon eo-icon-password-hidden"></span><!-- <span class="eo-icon eo-icon-password-shown"></span> --></a>
+                      <input class="form-control" name="password" type="password" id="password" placeholder="" value="" autocomplete="password"> <a href="#" title="Click to show password" class="form-control-feedback"><span class="eo-icon eo-icon-password-hidden"></span><!-- <span class="eo-icon eo-icon-password-shown"></span> --></a>
                     </div>
                   </div>
                   <div class="pad-sm"></div>
@@ -121,11 +121,11 @@
             </div>
             <div class="row">
               <div class="form-group col-12">
-                <label class="col-form-label required" for="emailAddress"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                <label class="col-form-label required" for="emailAddress2"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
                   Borrower&apos;s
                   email address</label>
                 <div class="form-control-wrap">
-                  <input class="form-control" name="emailAddress" type="email" id="emailAddress" placeholder="" value="">
+                  <input class="form-control" name="emailAddress2" type="email" id="emailAddress2" placeholder="" value="">
                 </div>
                 <div class="form-text"></div>
               </div>
@@ -291,7 +291,7 @@
                 <label class="col-form-label required" for="password1"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
                   Password</label>
                 <div class="form-control-wrap">
-                  <input class="form-control" name="password1" type="password" id="password1" placeholder="" value=""> <a href="#" title="Click to show password" class="form-control-feedback"><span class="eo-icon eo-icon-password-hidden"></span></a>
+                  <input class="form-control" name="password1" type="password" id="password1" placeholder="" value="" autocomplete="new-password"> <a href="#" title="Click to show password" class="form-control-feedback"><span class="eo-icon eo-icon-password-hidden"></span></a>
                   <span class="gutter-icon eo-icon eo-icon-checkmark-green-large"></span>
                 </div>
                 <div class="pad-xs"></div>
@@ -334,17 +334,17 @@
                 <label class="col-form-label required" for="password2"> <span class="eo-icon eo-icon-asterisk-red eo-icon-pad-sm"></span>
                   Password</label>
                 <div class="form-control-wrap">
-                  <input class="form-control" name="password2" type="password" id="password2" placeholder="" value="">
+                  <input class="form-control" name="password2" type="password" id="password2" placeholder="" value="" autocomplete="new-password">
                 </div>
                 <div class="form-text">Passwords do not match</div>
               </div>
             </div>
             <div class="row">
               <div class="form-group col-lg-6 has-feedback">
-                <label class="col-form-label required" for="password2"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                <label class="col-form-label required" for="password3"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
                   Password</label>
                 <div class="form-control-wrap">
-                  <input class="form-control" name="password2" type="password" id="password2" placeholder="" value="">
+                  <input class="form-control" name="password3" type="password" id="password3" placeholder="" value="" autocomplete="new-password">
                 </div>
                 <div class="form-text">Help text</div>
               </div>
