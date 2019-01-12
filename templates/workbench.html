@@ -16,10 +16,10 @@
 </head>
 
 <body class="has-footer">
-  <div class="main-content">
+  <div class="main-content pb-0">
     <nav class="navbar navbar-light bg-light justify-content-between">
       <div class="navbar-brand" href="#">
-        <img src="../img/icon_bank_of_america.png" alt="Bank of America" />
+        <img src="../img/icon_header_eoriginal_logo.svg" width="157" height="30" alt="Bank of America" />
         <span class="sr-only">Bank of America</span>
       </div>
       <div class="product-name-image">
@@ -42,388 +42,392 @@
     </nav>
 
     <div class="workbench-banner bg-primary">
-      <div class="container d-flex justify-content-between">
+      <div class="container px-2 d-flex justify-content-between align-items-center">
         <div class="workbench-banner-left">
-          <span>My Closings</span>
+          <span class="workbench-banner-left-text">My Closings</span>
         </div>
-        <div class="workbench-banner-middle">
-          <span class="eo-icon eo-icon-closing-large"></span>
+        <div class="workbench-banner-middle py-2 d-none d-md-block">
+          <span class="eo-icon eo-icon-closing-medium"></span>
         </div>
         <div class="workbench-banner-right">
-          <span>Add closing</span>
+          <a href="#" class="workbench-banner-right-text">
+            <!-- <span class="eo-icon"></span> -->
+            <span>Add closing</span>
+          </a>
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="row bg-dark text-light workbench-table-row workbench-table-header">
-        <div class="workbench-table-cell col name-column">
-          <span class="cell-text text-uppercase font-weight-semibold">Primary Borrower</span>
-        </div>
-        <div class="workbench-table-cell col date-column">
-          <span class="cell-text text-uppercase font-weight-semibold">Closing Date</span>
-        </div>
-        <div class="workbench-table-cell col lender-column">
-          <span class="cell-text text-uppercase font-weight-semibold">Lender</span>
-        </div>
-        <div class="workbench-table-cell col documents-column">
-          <span class="cell-text text-uppercase font-weight-semibold">Documents</span>
-        </div>
-        <div class="workbench-table-cell col status-column">
-          <span class="cell-text text-uppercase font-weight-semibold">Status</span>
-        </div>
-        <div class="workbench-table-cell col buttons-column">
-          <span class="cell-text sr-only">Action Buttons</span>
+    <div class="workbench-main">
+
+      <div class="container py-2 py-md-3 py-xl-4 workbench-status">
+        <div class="row pl-3 pl-sm-0 d-flex align-items-center">
+          <div class="last-refreshed text-sm">
+            <span class="last-refreshed-label">Last refreshed: </span>
+            <span class="last-refreshed-value">12/20/2019 10:23 am ET</span>
+          </div>
+          <div class="refresh pl-4">
+            <a href="#" class="d-flex align-items-center">
+              <span class="eo-icon eo-icon-refresh"></span>
+              <span class="refresh-text font-weight-semibold pl-2">Refresh</span>
+            </a>
+          </div>
         </div>
       </div>
 
-      <div class="row border-bottom workbench-table-row">
-        <div class="workbench-table-cell col name-column">
-          <div class="cell-text font-weight-semibold">
-            <span class="lastname">Rodriguez</span>, <span class="firstname">Marco</span>
+      <div class="container workbench-table">
+        <div class="row text-light workbench-table-header">
+          <div class="workbench-table-cell col name-column d-flex justify-content-between align-items-center">
+            <span class="cell-text text-uppercase font-weight-semibold">Primary Borrower</span>
+          </div>
+          <div class="workbench-table-cell col date-column d-flex justify-content-between align-items-center">
+            <span class="cell-text text-uppercase font-weight-semibold">Closing Date</span>
+            <span class="eo-icon eo-icon-sort-down d-none d-sm-block"></span>
+          </div>
+          <div class="workbench-table-cell col lender-column d-none d-xl-block">
+            <span class="cell-text text-uppercase font-weight-semibold">Lender</span>
+          </div>
+          <div class="workbench-table-cell col documents-column d-none d-lg-block">
+            <span class="cell-text text-uppercase font-weight-semibold">Documents</span>
+          </div>
+          <div class="workbench-table-cell col status-column d-flex justify-content-between align-items-center">
+            <span class="cell-text text-uppercase font-weight-semibold">Status</span>
+            <span class="eo-icon eo-icon-sort-up d-none d-sm-block"></span>
+          </div>
+          <div class="workbench-table-cell col buttons-column d-none d-md-block">
+            <span class="cell-text sr-only">Action Buttons</span>
           </div>
         </div>
-        <div class="workbench-table-cell col date-column">
-          <div class="cell-text">
-            <span class="date">12/11/2019</span>
-            <span class="time">8:00 am ET</span>
+
+        <div class="row border-bottom align-items-center workbench-table-row">
+          <div class="workbench-table-cell col name-column">
+            <div class="cell-text font-weight-semibold">
+              <span class="lastname">Rodriguez</span>, <span class="firstname">Marco</span>
+            </div>
           </div>
-        </div>
-        <div class="workbench-table-cell col lender-column">
-          <div class="cell-text">
-            <img src="../img/icon_fannie_mae_logo_small.png" alt="Fannie Mae" />
+          <div class="workbench-table-cell col date-column">
+            <div class="cell-text">
+              <span class="date font-weight-semibold pr-sm-1">12/11/2019</span>
+              <span class="time d-block d-sm-inline">8:00 am ET</span>
+            </div>
           </div>
-        </div>
-        <div class="workbench-table-cell col documents-column">
-          <div class="cell-text">
-            <span class="eo-icon eo-icon-documents"></span>
-            <span class="docs">
-              <span class="docs-value">12</span>
-              <span class="docs-label">docs</span>
-            </span>
-            <span class="pages">
-              <span class="docs-value">103</span>
-              <span class="docs-label">pg</span>
-            </span>
+          <div class="workbench-table-cell col lender-column d-none d-xl-block">
+            <div class="cell-text">
+              <img src="../img/icon_fannie_mae_logo_small.png" alt="Fannie Mae" />
+            </div>
           </div>
-        </div>
-        <div class="workbench-table-cell col status-column">
-          <div class="cell-text">
-            <span class="eo-icon eo-icon-trans-closing-in-process"></span>
-            <div class="d-flex flex-column justify-content-center">
-              <span class="status-text">Closing in progress</span>
-              <div class="status-more">
-                <span>More Actions</span>
-                <span class="eo-icon eo-icon-menu-arrow-down"></span>
+          <div class="workbench-table-cell col documents-column d-none d-lg-block">
+            <div class="cell-text d-flex align-items-center">
+              <span class="eo-icon eo-icon-documents"></span>
+              <span class="docs pl-2">
+                <span class="docs-value font-weight-semibold">12</span>
+                <span class="docs-label">docs</span>
+              </span>
+              <span class="comma">,</span>
+              <span class="pages pl-1">
+                <span class="docs-value font-weight-semibold">103</span>
+                <span class="docs-label">pg</span>
+              </span>
+            </div>
+          </div>
+          <div class="workbench-table-cell col status-column">
+            <div class="cell-text d-flex align-items-center">
+              <span class="eo-icon eo-icon-trans-closing-in-process"></span>
+              <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
+                <span class="status-text">Closing in progress</span>
+                <div class="status-more d-none d-md-block">
+                  <span>More Actions</span>
+                  <span class="eo-icon eo-icon-menu-arrow-down-green"></span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="workbench-table-cell col buttons-column">
-          <div class="cell-text">
-            <button class="btn btn-primary btn-block">Complete closing</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="row border-bottom workbench-table-row">
-        <div class="workbench-table-cell col name-column">
-          <div class="cell-text font-weight-semibold">
-            <span class="last">Nguyen</span>, <span class="first">Naomi</span>
-          </div>
-        </div>
-        <div class="workbench-table-cell col date-column">
-          <div class="cell-text">
-            <span class="date">12/12/2019</span>
-            <span class="time">9:00 am ET</span>
-          </div>
-        </div>
-        <div class="workbench-table-cell col lender-column">
-          <div class="cell-text">
-            <img src="../img/icon_fairway_logo_small.png" alt="Fairway" />
-          </div>
-        </div>
-        <div class="workbench-table-cell col documents-column">
-          <div class="cell-text">
-            <span class="eo-icon eo-icon-documents"></span>
-            <span class="docs">
-              <span class="docs-value">8</span>
-              <span class="docs-label">docs</span>
-            </span>
-            <span class="pages">
-              <span class="docs-value">76</span>
-              <span class="docs-label">pg</span>
-            </span>
-            <span class="msg">
-              <span class="eo-icon eo-icon-note-green"></span>
-              <span class="num-msgs">2</span>
-            </span>
-          </div>
-        </div>
-        <div class="workbench-table-cell col status-column">
-          <div class="cell-text">
-            <span class="eo-icon eo-icon-trans-closing-completed"></span>
-            <div class="d-flex flex-column justify-content-center">
-              <span class="status-text">Closing completed</span>
-              <div class="status-more">
-                <span>More Actions</span>
-                <span class="eo-icon eo-icon-menu-arrow-down"></span>
-              </div>
+          <div class="workbench-table-cell col buttons-column d-none d-md-block">
+            <div class="cell-text">
+              <button class="btn btn-primary btn-block">Complete closing</button>
             </div>
           </div>
         </div>
-        <div class="workbench-table-cell col buttons-column">
-          <div class="cell-text">
-            <button class="btn btn-secondary btn-block">Finish</button>
-          </div>
-        </div>
-      </div>
 
-      <div class="row border-bottom workbench-table-row">
-        <div class="workbench-table-cell col name-column">
-          <div class="cell-text font-weight-semibold">
-            <span class="last">Fredrick</span>, <span class="first">Warren</span>
+        <div class="row border-bottom align-items-center workbench-table-row">
+          <div class="workbench-table-cell col name-column">
+            <div class="cell-text font-weight-semibold">
+              <span class="last">Nguyen</span>, <span class="first">Naomi</span>
+            </div>
           </div>
-        </div>
-        <div class="workbench-table-cell col date-column">
-          <div class="cell-text">
-            <span class="date"></span>
-            <span class="time"></span>
+          <div class="workbench-table-cell col date-column">
+            <div class="cell-text">
+              <span class="date font-weight-semibold pr-sm-1">12/12/2019</span>
+              <span class="time d-block d-sm-inline">9:00 am ET</span>
+            </div>
           </div>
-        </div>
-        <div class="workbench-table-cell col lender-column">
-          <div class="cell-text">
-            <img src="../img/icon_bank_of_america.png" alt="Bank of America" />
+          <div class="workbench-table-cell col lender-column d-none d-xl-block">
+            <div class="cell-text">
+              <img src="../img/icon_fairway_logo_small.png" alt="Fairway" />
+            </div>
           </div>
-        </div>
-        <div class="workbench-table-cell col documents-column">
-          <div class="cell-text">
-            <span class="eo-icon eo-icon-documents-updated"></span>
-            <span class="docs">
-              <span class="docs-value">15</span>
-              <span class="docs-label">docs</span>
-            </span>
-            <span class="pages">
-              <span class="docs-value">99</span>
-              <span class="docs-label">pg</span>
-            </span>
+          <div class="workbench-table-cell col documents-column d-none d-lg-block">
+            <div class="cell-text d-flex align-items-center">
+              <span class="eo-icon eo-icon-documents"></span>
+              <span class="docs pl-2">
+                <span class="docs-value font-weight-semibold">8</span>
+                <span class="docs-label">docs</span>
+              </span>
+              <span class="comma">,</span>
+              <span class="pages pl-1">
+                <span class="docs-value font-weight-semibold">76</span>
+                <span class="docs-label">pg</span>
+              </span>
+              <span class="msg ml-auto">
+                <span class="eo-icon eo-icon-note-green"></span>
+                <span class="num-msgs">2</span>
+              </span>
+            </div>
           </div>
-        </div>
-        <div class="workbench-table-cell col status-column">
-          <div class="cell-text">
-            <span class="eo-icon eo-icon-trans-lender"></span>
-            <div class="d-flex flex-column justify-content-center">
-              <span class="status-text">Lender review</span>
-              <div class="status-more">
-                <span>More Actions</span>
-                <span class="eo-icon eo-icon-menu-arrow-down"></span>
+          <div class="workbench-table-cell col status-column">
+            <div class="cell-text d-flex align-items-center">
+              <span class="eo-icon eo-icon-trans-closing-completed"></span>
+              <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
+                <span class="status-text">Closing completed</span>
               </div>
             </div>
           </div>
-        </div>
-        <div class="workbench-table-cell col buttons-column">
-          <div class="cell-text">
-          </div>
-        </div>
-      </div>
-
-      <div class="row border-bottom workbench-table-row">
-        <div class="workbench-table-cell col name-column">
-          <div class="cell-text font-weight-semibold">
-            <span class="last">Shields</span>, <span class="first">Jonathan</span>
-          </div>
-        </div>
-        <div class="workbench-table-cell col date-column">
-          <div class="cell-text">
-            <span class="date">12/14/2019</span>
-            <span class="time">4:30 pm ET</span>
-          </div>
-        </div>
-        <div class="workbench-table-cell col lender-column">
-          <div class="cell-text">
-            <img src="../img/icon_bank_of_america.png" alt="Bank of America" />
-          </div>
-        </div>
-        <div class="workbench-table-cell col documents-column">
-          <div class="cell-text">
-            <span class="eo-icon eo-icon-documents-updated"></span>
-            <span class="docs">
-              <span class="docs-value">13</span>
-              <span class="docs-label">docs</span>
-            </span>
-            <span class="pages">
-              <span class="docs-value">106</span>
-              <span class="docs-label">pg</span>
-            </span>
-          </div>
-        </div>
-        <div class="workbench-table-cell col status-column">
-          <div class="cell-text">
-            <span class="eo-icon eo-icon-trans-ready-to-close"></span>
-            <div class="d-flex flex-column justify-content-center">
-              <span class="status-text">Ready to close</span>
-              <div class="status-more">
-                <span>More Actions</span>
-                <span class="eo-icon eo-icon-menu-arrow-down"></span>
-              </div>
+          <div class="workbench-table-cell col buttons-column d-none d-md-block">
+            <div class="cell-text">
+              <button class="btn btn-secondary btn-block">Finish</button>
             </div>
           </div>
         </div>
-        <div class="workbench-table-cell col buttons-column">
-          <div class="cell-text">
-            <button class="btn btn-primary btn-block">Start closing</button>
-          </div>
-        </div>
-      </div>
 
-      <div class="row border-bottom workbench-table-row">
-        <div class="workbench-table-cell col name-column">
-          <div class="cell-text font-weight-semibold">
-            <span class="last">Lu</span>, <span class="first">Florence</span>
+        <div class="row border-bottom align-items-center workbench-table-row">
+          <div class="workbench-table-cell col name-column">
+            <div class="cell-text font-weight-semibold">
+              <span class="last">Fredrick</span>, <span class="first">Warren</span>
+            </div>
           </div>
-        </div>
-        <div class="workbench-table-cell col date-column">
-          <div class="cell-text">
-            <span class="date">12/15/2019</span>
-            <span class="time">8:30 am ET</span>
+          <div class="workbench-table-cell col date-column">
+            <div class="cell-text">
+            </div>
           </div>
-        </div>
-        <div class="workbench-table-cell col lender-column">
-          <div class="cell-text">
-            <img src="../img/icon_roundpoint_logo_small.png" alt="Roundpoint" />
+          <div class="workbench-table-cell col lender-column d-none d-xl-block">
+            <div class="cell-text">
+              <img src="../img/icon_bank_of_america.png" alt="Bank of America" />
+            </div>
           </div>
-        </div>
-        <div class="workbench-table-cell col documents-column">
-          <div class="cell-text">
-            <span class="eo-icon eo-icon-documents"></span>
-            <span class="docs">
-              <span class="docs-value"></span>
-              <span class="docs-label">docs</span>
-            </span>
-            <span class="pages">
-              <span class="docs-value"></span>
-              <span class="docs-label">pg</span>
-            </span>
+          <div class="workbench-table-cell col documents-column d-none d-lg-block">
+            <div class="cell-text d-flex align-items-center">
+              <span class="eo-icon eo-icon-documents-updated"></span>
+              <span class="docs pl-2">
+                <span class="docs-value font-weight-semibold">15</span>
+                <span class="docs-label">docs</span>
+              </span>
+              <span class="comma">,</span>
+              <span class="pages pl-1">
+                <span class="docs-value font-weight-semibold">99</span>
+                <span class="docs-label">pg</span>
+              </span>
+            </div>
           </div>
-        </div>
-        <div class="workbench-table-cell col status-column">
-          <div class="cell-text">
-            <span class="eo-icon eo-icon-trans-withdrawn"></span>
-            <div class="d-flex flex-column justify-content-center">
-              <span class="status-text">Withdrawn</span>
-              <div class="status-more">
-                <span>More Actions</span>
-                <span class="eo-icon eo-icon-menu-arrow-down"></span>
+          <div class="workbench-table-cell col status-column">
+            <div class="cell-text d-flex align-items-center">
+              <span class="eo-icon eo-icon-trans-lender"></span>
+              <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
+                <span class="status-text">Lender review</span>
+                <div class="status-more d-none d-md-block">
+                  <span>More Actions</span>
+                  <span class="eo-icon eo-icon-menu-arrow-down-green"></span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="workbench-table-cell col buttons-column">
-          <div class="cell-text">
-            <button class="btn btn-secondary btn-block">Remove closing</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="row border-bottom workbench-table-row">
-        <div class="workbench-table-cell col name-column">
-          <div class="cell-text font-weight-semibold">
-            <span class="last">Von dem Knesbeck - Robertson</span>, <span class="first">Hannah</span>
-          </div>
-        </div>
-        <div class="workbench-table-cell col date-column">
-          <div class="cell-text">
-            <span class="date">12/15/2019</span>
-            <span class="time">1:30 pm ET</span>
-          </div>
-        </div>
-        <div class="workbench-table-cell col lender-column">
-          <div class="cell-text">
-            <img src="../img/icon_roundpoint_logo_small.png" alt="Roundpoint" />
-          </div>
-        </div>
-        <div class="workbench-table-cell col documents-column">
-          <div class="cell-text">
-            <span class="eo-icon eo-icon-documents"></span>
-            <span class="docs">
-              <span class="docs-value">10</span>
-              <span class="docs-label">docs</span>
-            </span>
-            <span class="pages">
-              <span class="docs-value">54</span>
-              <span class="docs-label">pg</span>
-            </span>
-          </div>
-        </div>
-        <div class="workbench-table-cell col status-column">
-          <div class="cell-text">
-            <span class="eo-icon eo-icon-trans-void"></span>
-            <div class="d-flex flex-column justify-content-center">
-              <span class="status-text"></span>
-              <div class="status-more">
-                <span>More Actions</span>
-                <span class="eo-icon eo-icon-menu-arrow-down"></span>
-              </div>
+          <div class="workbench-table-cell col buttons-column d-none d-md-block">
+            <div class="cell-text">
             </div>
           </div>
         </div>
-        <div class="workbench-table-cell col buttons-column">
-          <div class="cell-text">
-            <button class="btn btn-secondary btn-block">Remove closing</button>
-          </div>
-        </div>
-      </div>
 
-      <div class="row border-bottom workbench-table-row">
-        <div class="workbench-table-cell col name-column">
-          <div class="cell-text font-weight-semibold">
-            <span class="last">Sorrenson</span>, <span class="first">Alecia</span>
+        <div class="row border-bottom align-items-center workbench-table-row">
+          <div class="workbench-table-cell col name-column">
+            <div class="cell-text font-weight-semibold">
+              <span class="last">Shields</span>, <span class="first">Jonathan</span>
+            </div>
           </div>
-        </div>
-        <div class="workbench-table-cell col date-column">
-          <div class="cell-text">
-            <span class="date">12/16/2019</span>
-            <span class="time">8:30 am ET</span>
+          <div class="workbench-table-cell col date-column">
+            <div class="cell-text">
+              <span class="date font-weight-semibold pr-sm-1">12/14/2019</span>
+              <span class="time d-block d-sm-inline">4:30 pm ET</span>
+            </div>
           </div>
-        </div>
-        <div class="workbench-table-cell col lender-column">
-          <div class="cell-text">
-            <img src="../img/icon_fannie_mae_logo_small.png" alt="Fannie Mae" />
+          <div class="workbench-table-cell col lender-column d-none d-xl-block">
+            <div class="cell-text">
+              <img src="../img/icon_bank_of_america.png" alt="Bank of America" />
+            </div>
           </div>
-        </div>
-        <div class="workbench-table-cell col documents-column">
-          <div class="cell-text">
-            <span class="eo-icon eo-icon-documents"></span>
-            <span class="docs">
-              <span class="docs-value">15</span>
-              <span class="docs-label">docs</span>
-            </span>
-            <span class="pages">
-              <span class="docs-value">99</span>
-              <span class="docs-label">pg</span>
-            </span>
+          <div class="workbench-table-cell col documents-column d-none d-lg-block">
+            <div class="cell-text d-flex align-items-center">
+              <span class="eo-icon eo-icon-documents-updated"></span>
+              <span class="docs pl-2">
+                <span class="docs-value font-weight-semibold">13</span>
+                <span class="docs-label">docs</span>
+              </span>
+              <span class="comma">,</span>
+              <span class="pages pl-1">
+                <span class="docs-value font-weight-semibold">106</span>
+                <span class="docs-label">pg</span>
+              </span>
+            </div>
           </div>
-        </div>
-        <div class="workbench-table-cell col status-column">
-          <div class="cell-text">
-            <span class="eo-icon eo-icon-trans-ready-to-close"></span>
-            <div class="d-flex flex-column justify-content-center">
-              <span class="status-text"></span>
-              <div class="status-more">
-                <span>More Actions</span>
-                <span class="eo-icon eo-icon-menu-arrow-down"></span>
+          <div class="workbench-table-cell col status-column">
+            <div class="cell-text d-flex align-items-center">
+              <span class="eo-icon eo-icon-trans-ready-to-close"></span>
+              <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
+                <span class="status-text">Ready to close</span>
+                <div class="status-more d-none d-md-block">
+                  <span>More Actions</span>
+                  <span class="eo-icon eo-icon-menu-arrow-down-green"></span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="workbench-table-cell col buttons-column">
-          <div class="cell-text">
-            <button class="btn btn-primary btn-block">Start closing</button>
+          <div class="workbench-table-cell col buttons-column d-none d-md-block">
+            <div class="cell-text">
+              <button class="btn btn-primary btn-block">Start closing</button>
+            </div>
           </div>
         </div>
+
+        <div class="row border-bottom align-items-center workbench-table-row">
+          <div class="workbench-table-cell col name-column">
+            <div class="cell-text font-weight-semibold">
+              <span class="last">Lu</span>, <span class="first">Florence</span>
+            </div>
+          </div>
+          <div class="workbench-table-cell col date-column">
+            <div class="cell-text">
+              <span class="date font-weight-semibold pr-sm-1">12/15/2019</span>
+              <span class="time d-block d-sm-inline">8:30 am ET</span>
+            </div>
+          </div>
+          <div class="workbench-table-cell col lender-column d-none d-xl-block">
+            <div class="cell-text">
+              <img src="../img/icon_roundpoint_logo_small.png" alt="Roundpoint" />
+            </div>
+          </div>
+          <div class="workbench-table-cell col documents-column d-none d-lg-block">
+          </div>
+          <div class="workbench-table-cell col status-column">
+            <div class="cell-text d-flex align-items-center">
+              <span class="eo-icon eo-icon-trans-withdrawn"></span>
+              <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
+                <span class="status-text">Withdrawn</span>
+              </div>
+            </div>
+          </div>
+          <div class="workbench-table-cell col buttons-column d-none d-md-block">
+            <div class="cell-text">
+              <button class="btn btn-secondary btn-block">Remove closing</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row border-bottom align-items-center workbench-table-row">
+          <div class="workbench-table-cell col name-column">
+            <div class="cell-text font-weight-semibold">
+              <span class="last">Von dem Knesbeck - Robertson</span>, <span class="first">Hannah</span>
+            </div>
+          </div>
+          <div class="workbench-table-cell col date-column">
+            <div class="cell-text">
+              <span class="date font-weight-semibold pr-sm-1">12/15/2019</span>
+              <span class="time d-block d-sm-inline">1:30 pm ET</span>
+            </div>
+          </div>
+          <div class="workbench-table-cell col lender-column d-none d-xl-block">
+            <div class="cell-text">
+              <img src="../img/icon_lender_logo_white_bgd.png" alt="Fairway with white background TEST" />
+            </div>
+          </div>
+          <div class="workbench-table-cell col documents-column d-none d-lg-block">
+            <div class="cell-text d-flex align-items-center">
+              <span class="eo-icon eo-icon-documents"></span>
+              <span class="docs pl-2">
+                <span class="docs-value font-weight-semibold">10</span>
+                <span class="docs-label">docs</span>
+              </span>
+              <span class="comma">,</span>
+              <span class="pages pl-1">
+                <span class="docs-value font-weight-semibold">54</span>
+                <span class="docs-label">pg</span>
+              </span>
+            </div>
+          </div>
+          <div class="workbench-table-cell col status-column">
+            <div class="cell-text d-flex align-items-center">
+              <span class="eo-icon eo-icon-trans-void"></span>
+              <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
+                <span class="status-text">Void</span>
+              </div>
+            </div>
+          </div>
+          <div class="workbench-table-cell col buttons-column d-none d-md-block">
+            <div class="cell-text">
+              <button class="btn btn-secondary btn-block">Remove closing</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row border-bottom align-items-center workbench-table-row">
+          <div class="workbench-table-cell col name-column">
+            <div class="cell-text font-weight-semibold">
+              <span class="last">Sorrenson</span>, <span class="first">Alecia</span>
+            </div>
+          </div>
+          <div class="workbench-table-cell col date-column">
+            <div class="cell-text">
+              <span class="date font-weight-semibold pr-sm-1">12/16/2019</span>
+              <span class="time d-block d-sm-inline">8:30 am ET</span>
+            </div>
+          </div>
+          <div class="workbench-table-cell col lender-column d-none d-xl-block">
+            <div class="cell-text">
+              <img src="../img/icon_fannie_mae_logo_small.png" alt="Fannie Mae" />
+            </div>
+          </div>
+          <div class="workbench-table-cell col documents-column d-none d-lg-block">
+            <div class="cell-text d-flex align-items-center">
+              <span class="eo-icon eo-icon-documents"></span>
+              <span class="docs pl-2">
+                <span class="docs-value font-weight-semibold">15</span>
+                <span class="docs-label">docs</span>
+              </span>
+              <span class="comma">,</span>
+              <span class="pages pl-1">
+                <span class="docs-value font-weight-semibold">99</span>
+                <span class="docs-label">pg</span>
+              </span>
+            </div>
+          </div>
+          <div class="workbench-table-cell col status-column">
+            <div class="cell-text d-flex align-items-center">
+              <span class="eo-icon eo-icon-trans-ready-to-close"></span>
+              <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
+                <span class="status-text">Ready to close</span>
+                <div class="status-more d-none d-md-block">
+                  <span>More Actions</span>
+                  <span class="eo-icon eo-icon-menu-arrow-down-green"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="workbench-table-cell col buttons-column d-none d-md-block">
+            <div class="cell-text">
+              <button class="btn btn-primary btn-block">Start closing</button>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-    </div>
   </div>
 </body>
 

@@ -87,6 +87,7 @@
   &.eo-icon-checkmark-green-large { @include icon-versions(20px, 18px, "../img/icon_checkmark_green_large.svg"); }
   &.eo-icon-checkmark-white-large { @include icon-versions(20px, 18px, "../img/icon_checkmark_white_large.svg"); }
   &.eo-icon-closing-large { @include icon-versions(73px, 62px, "../img/icon_closing_large.svg"); }
+  &.eo-icon-closing-medium { @include icon-versions(62px, 53px, "../img/icon_closing_medium.svg"); }
   &.eo-icon-email-verified-large { @include icon-versions(50px, 32px, "../img/icon_email_verified_large.svg"); }
   &.eo-icon-equal-housing-lender { @include icon-versions(112px, 21px, "../img/icon_equal_housing_lender.svg"); }
   &.eo-icon-footer-email { @include icon-versions(18px, 18px, "../img/icon_footer_email.svg"); }
@@ -99,6 +100,7 @@
   &.eo-icon-info-small { @include icon-versions(16px, 16px, "../img/icon_info_small.svg"); }
   &.eo-icon-info-small-hover { @include icon-versions(16px, 16px, "../img/icon_info_small_hover.svg"); }
   &.eo-icon-menu-arrow-down { @include icon-versions(8px, 5px, "../img/icon_menu_arrow_down.svg"); }
+  &.eo-icon-menu-arrow-down-green { @include icon-versions(8px, 5px, "../img/icon_menu_arrow_down_green.svg"); }
   &.eo-icon-orange-x-large { @include icon-versions(20px, 18px, "../img/icon_orange_x_large.svg"); }
   &.eo-icon-password-hidden { @include icon-versions(20px, 18px, "../img/icon_password_hidden.svg"); }
   &.eo-icon-password-shown { @include icon-versions(20px, 18px, "../img/icon_password_shown.svg"); }
@@ -110,15 +112,18 @@
     @include icon-versions(14px, 14px, "../img/icon_remove_large.svg");
     top: -1px;
   }
-  &.eo-icon-documents { @include icon-versions(16px, 18px, "../img/icon_documents.svg"); }
+  &.eo-icon-documents { @include icon-versions(23px, 27px, "../img/icon_documents.svg"); }
   &.eo-icon-documents-updated { @include icon-versions(23px, 27px, "../img/icon_documents_updated.svg"); }
-  &.eo-icon-note-green { @include icon-versions(17px, 16px, "../img/icon_note_green.svg"); }
-  &.eo-icon-trans-closing-completed { @include icon-versions(33px, 32px, "../img/icon_trans_closing_completed.svg"); }
-  &.eo-icon-trans-closing-in-process { @include icon-versions(35px, 37px, "../img/icon_trans_closing_in_process.svg"); }
+  &.eo-icon-note-green { @include icon-versions(17px, 18px, "../img/icon_note_green.svg"); }
+  &.eo-icon-trans-closing-completed { @include icon-versions(33px, 35px, "../img/icon_trans_closing_completed.svg"); }
+  &.eo-icon-trans-closing-in-process { @include icon-versions(33px, 35px, "../img/icon_trans_closing_in_process.svg"); }
   &.eo-icon-trans-lender { @include icon-versions(33px, 33px, "../img/icon_trans_lender.svg"); }
   &.eo-icon-trans-ready-to-close { @include icon-versions(33px, 33px, "../img/icon_trans_ready_to_close.svg"); }
   &.eo-icon-trans-void { @include icon-versions(32px, 33px, "../img/icon_trans_void.svg"); }
   &.eo-icon-trans-withdrawn { @include icon-versions(32px, 33px, "../img/icon_trans_withdrawn.svg"); }
+  &.eo-icon-refresh { @include icon-versions(14px, 14px, "../img/icon_refresh.svg"); }
+  &.eo-icon-sort-down { @include icon-versions(18px, 18px, "../img/icon_sort_down.svg"); }
+  &.eo-icon-sort-up { @include icon-versions(18px, 18px, "../img/icon_sort_up.svg"); }
 }
 
 a:hover .eo-icon.eo-icon-half-opacity,
