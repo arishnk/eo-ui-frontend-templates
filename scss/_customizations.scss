@@ -864,7 +864,7 @@ hr.hr-dots {
 
   label {
 
-    padding-left: 16px;
+    padding-left: 12px;
 
     input {
 
@@ -911,7 +911,7 @@ hr.hr-dots {
 
   label {
 
-    padding-left: 16px;
+    padding-left: 12px;
 
     input {
 
@@ -986,20 +986,27 @@ hr.hr-dots {
   border-color: transparent !important;
 }
 
-.has-feedback .form-control,
-.has-feedback .form-control:focus {
-  @include box-shadow(none);
+.form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus,
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+  box-shadow: none;
 }
 
 .help-block,
-.help-text {
+.form-text,
+.invalid-feedback {
   font-size: $font-size-sm;
   font-weight: 600;
+}
+
+.help-block,
+.form-text {
   color: #71767f;
 }
 
 a.help-block,
-a.help-text {
+a.form-text {
   font-weight: 600;
   color: #2ea049;
 }
@@ -1141,7 +1148,7 @@ a.help-text {
 
 }
 
-.help-block {
+.form-text {
   min-height: $line-height-computed;
 }
 
@@ -1187,4 +1194,8 @@ table.table.table-sm {
 
   }
 
+}
+
+.is-invalid ~ .invalid-feedback {
+  display: block;
 }

@@ -24,7 +24,7 @@
 <body class="has-footer">
 
   <div class="main-content">
-    <nav class="navbar navbar-expand">
+    <!-- <nav class="navbar navbar-expand">
       <div class="container">
         <div class="row row-no-padding">
           <div class="navbar-brand col-sm-2 col-lg-3 hidden-xs " href="#" style="background-image: url(../img/icon_bank_of_america.png)"><span class="sr-only">Bank of America</span>
@@ -32,7 +32,7 @@
           <div class="col-8 col-md-5 col-lg-6 col-xl-5 product-name">
             <div class="navbar-brand hidden-sm d-md-none d-block" href="#" style="background-image: url(../img/icon_bank_of_america.png)"><span class="sr-only">Bank of America</span>
             </div>
-            <br class="d-block d-sm-none-block">
+            <br class="d-block d-sm-none">
             <div class="product-name-image" style="background-image: url(../img/product_name_digital_closing_portal.svg);"><span class="sr-only">Digitial Closing Portal</span>
             </div>
           </div>
@@ -57,7 +57,7 @@
                   <div class="form-group has-feedback"> <a href="#" class="small float-right">I forgot my password</a>
                     <label class="col-form-label" for="password">Password</label>
                     <div class="form-control-wrap">
-                      <input class="form-control" name="password" type="password" id="password" placeholder="" value="" autocomplete="password"> <a href="#" title="Click to show password" class="form-control-feedback"><span class="eo-icon eo-icon-password-hidden"></span><!-- <span class="eo-icon eo-icon-password-shown"></span> --></a>
+                      <input class="form-control" name="password" type="password" id="password" placeholder="" value="" autocomplete="password"> <a href="#" title="Click to show password" class="form-control-feedback"><span class="eo-icon eo-icon-password-hidden"></span></a>
                     </div>
                   </div>
                   <div class="pad-sm"></div>
@@ -74,16 +74,16 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
     <div class="container">
       <div class="row">
-        <div class="col-md-8 offset-md-2 col-xl-6 offset-xl-3">
+        <div class="col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
           <form class="form">
-            <div class="pad-sm"></div>
+            <div class="pad"></div>
             <h2>Start your digital closing</h2>
             <p class="text-muted font-lg">In just 1 step, you&apos;ll be delivering a fully digital borrowing experience</p>
-            <div class="pad-lg hidden-xsd-none d-sm-block"></div>
-            <div class="pad d-block d-sm-none-block"></div>
+            <div class="pad-lg hidden-xs d-none d-sm-block"></div>
+            <div class="pad d-block d-sm-none"></div>
             <hr class="hr-dots">
             <h2>Borrower&apos;s information</h2>
             <div class="pad"></div>
@@ -130,8 +130,8 @@
                 <div class="form-text"></div>
               </div>
             </div>
-            <div class="pad-lg hidden-xsd-none d-sm-block"></div>
-            <div class="pad d-block d-sm-none-block"></div>
+            <div class="pad-lg hidden-xs d-none d-sm-block"></div>
+            <div class="pad d-block d-sm-none"></div>
             <hr class="hr-dots">
             <div class="">
               <button class="btn btn-blank btn-muted float-right" role="button">Remove <span class="eo-icon eo-icon-remove-large eo-icon-half-opacity"></span>
@@ -176,8 +176,8 @@
                   the settlement agent for this transaction, I accept the Terms and Conditions.</span>
               </label>
             </div>
-            <div class="pad-lg hidden-xsd-none d-sm-block"></div>
-            <div class="pad d-block d-sm-none-block"></div>
+            <div class="pad-lg hidden-xs d-none d-sm-block"></div>
+            <div class="pad d-block d-sm-none"></div>
             <hr class="hr-dots">
             <h2>More Fields</h2>
             <div class="row">
@@ -231,8 +231,8 @@
                 <div class="form-text"></div>
               </div>
             </div>
-            <div class="pad-lg hidden-xsd-none d-sm-block"></div>
-            <div class="pad d-block d-sm-none-block"></div>
+            <div class="pad-lg hidden-xs d-none d-sm-block"></div>
+            <div class="pad d-block d-sm-none"></div>
             <hr class="hr-dots">
             <h2>Radio Buttons</h2>
             <div class="pad"></div>
@@ -256,8 +256,8 @@
                 <input type="radio" value="" name="radio1"> <span>Radio Button 4</span>
               </label>
             </div>
-            <div class="pad-lg hidden-xsd-none d-sm-block"></div>
-            <div class="pad d-block d-sm-none-block"></div>
+            <div class="pad-lg hidden-xs d-none d-sm-block"></div>
+            <div class="pad d-block d-sm-none"></div>
             <hr class="hr-dots">
             <h2>Checkboxes</h2>
             <div class="pad"></div>
@@ -281,8 +281,8 @@
                 <input type="checkbox" value="" name="checkbox1"> <span>Checkbox 4</span>
               </label>
             </div>
-            <div class="pad-lg hidden-xsd-none d-sm-block"></div>
-            <div class="pad d-block d-sm-none-block"></div>
+            <div class="pad-lg hidden-xs d-none d-sm-block"></div>
+            <div class="pad d-block d-sm-none"></div>
             <hr class="hr-dots">
             <h2>Password Fields</h2>
             <div class="pad"></div>
@@ -333,14 +333,14 @@
               <div class="form-group col-md-6 has-feedback has-error">
                 <label class="col-form-label required" for="password2"> <span class="eo-icon eo-icon-asterisk-red eo-icon-pad-sm"></span>
                   Password</label>
-                <div class="form-control-wrap">
-                  <input class="form-control" name="password2" type="password" id="password2" placeholder="" value="" autocomplete="new-password">
+                <div class="form-control-wrap is-invalid">
+                  <input class="form-control is-invalid" name="password2" type="password" id="password2" placeholder="" value="" autocomplete="new-password">
                 </div>
-                <div class="form-text">Passwords do not match</div>
+                <div class="invalid-feedback">Passwords do not match</div>
               </div>
             </div>
             <div class="row">
-              <div class="form-group col-lg-6 has-feedback">
+              <div class="form-group col-md-6 has-feedback">
                 <label class="col-form-label required" for="password3"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
                   Password</label>
                 <div class="form-control-wrap">
@@ -349,8 +349,8 @@
                 <div class="form-text">Help text</div>
               </div>
             </div>
-            <div class="pad-lg hidden-xsd-none d-sm-block"></div>
-            <div class="pad d-block d-sm-none-block"></div>
+            <div class="pad-lg hidden-xs d-none d-sm-block"></div>
+            <div class="pad d-block d-sm-none"></div>
             <hr class="hr-dots">
             <h2>Alerts</h2>
             <div class="pad"></div>
@@ -369,8 +369,8 @@
               <p class="font-xl has-icon"> <span><span class="eo-icon eo-icon-alert-large"></span></span> <span>Please complete the 4 fields below.</span>
               </p>
             </div>
-            <div class="pad-lg hidden-xsd-none d-sm-block"></div>
-            <div class="pad d-block d-sm-none-block"></div>
+            <div class="pad-lg hidden-xs d-none d-sm-block"></div>
+            <div class="pad d-block d-sm-none"></div>
             <hr class="hr-dots">
             <h2>Select Fields</h2>
             <div class="pad"></div>
@@ -407,7 +407,7 @@
       </div>
     </div>
   </div>
-  <footer class="footer">
+  <!--<footer class="footer">
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
@@ -451,7 +451,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer>-->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>

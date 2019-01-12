@@ -10618,7 +10618,7 @@ hr.hr-dots {
 }
 
 .checkbox label {
-  padding-left: 16px;
+  padding-left: 12px;
 }
 
 .checkbox label input {
@@ -10659,7 +10659,7 @@ hr.hr-dots {
 }
 
 .radio label {
-  padding-left: 16px;
+  padding-left: 12px;
 }
 
 .radio label input {
@@ -10723,15 +10723,27 @@ hr.hr-dots {
   border-color: transparent !important;
 }
 
+.form-control.is-invalid:focus,
+.was-validated .form-control:invalid:focus,
+.form-control.is-valid:focus,
+.was-validated .form-control:valid:focus {
+  box-shadow: none;
+}
+
 .help-block,
-.help-text {
+.form-text,
+.invalid-feedback {
   font-size: 0.75rem;
   font-weight: 600;
+}
+
+.help-block,
+.form-text {
   color: #71767f;
 }
 
 a.help-block,
-a.help-text {
+a.form-text {
   font-weight: 600;
   color: #2ea049;
 }
@@ -10853,7 +10865,7 @@ a.help-text {
   padding-right: 6.25px !important;
 }
 
-.help-block {
+.form-text {
   min-height: 1rem;
 }
 
@@ -10885,6 +10897,10 @@ small,
 
 table.table.table-sm thead tr:first-child th {
   border-top: none;
+}
+
+.is-invalid ~ .invalid-feedback {
+  display: block;
 }
 
 .eo-icon {
