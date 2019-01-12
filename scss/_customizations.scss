@@ -308,7 +308,7 @@ h6,
 
   // transition: background 250ms;
   // font-weight: $font-weight-bold;
-  @include box-shadow(0 3px 3px 0 rgba(0, 0, 0, .15));
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .15);
   border-radius: 6px;
   font-weight: 600;
   letter-spacing: .9px;
@@ -1186,5 +1186,172 @@ table.table.table-sm {
     }
 
   }
+
+}
+
+.workbench-banner {
+  position: relative;
+  background-image: linear-gradient(89deg, #81c241, #2ea049);
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 237px;
+    height: 100%;
+    opacity: .14;
+    background-image: url("../img/angled_white_dot_pattern.png");
+    background-position-y: 65%;
+  }
+
+  .workbench-banner-left .workbench-banner-left-text {
+    font-size: 30px;
+    color: $white;
+  }
+
+  .workbench-banner-right .workbench-banner-right-text {
+    font-size: $font-size-lg;
+    letter-spacing: .4px;
+    color: $white;
+  }
+}
+
+.workbench-main {
+  background-image: linear-gradient(to bottom, #eff2f3 0%, #d9dee1);
+  padding-bottom: 100px;
+}
+
+.workbench-status {
+  .last-refreshed-label {
+    color: #5a5a5a;
+  }
+
+  .last-refreshed-value {
+    color: $black;
+  }
+
+  .refresh-text {
+    color: #38a448;
+  }
+
+}
+
+.workbench-table {
+  background: $white;
+  box-shadow: 0 2px 9px 0 rgba(63, 75, 80, .4);
+
+  .workbench-table-header {
+    font-size: $font-size-sm;
+    line-height: 15px;
+
+    .workbench-table-cell {
+      background: $black;
+      padding: 20px 12.5px;
+
+      @include media-breakpoint-only(xs) {
+        padding: 10px 12.5px;
+      }
+
+      &:not(:last-child) {
+        border-right: 1px solid rgba(141, 147, 154, .38);
+      }
+
+      &:hover {
+        cursor: pointer;
+        background: $dark;
+      }
+    }
+  }
+
+  .workbench-table-cell {
+    padding: 10px 12.5px;
+
+    &.lender-column {
+      flex-basis: 145px;
+      flex-grow: 0;
+    }
+    @include media-breakpoint-only(xs) {
+      &.date-column {
+        flex-basis: 95px;
+        flex-grow: 0;
+      }
+
+      &.status-column {
+        flex-basis: 140px;
+        flex-grow: 0;
+      }
+    }
+  }
+
+  .workbench-table-row {
+    &:hover {
+      cursor: pointer;
+      background: #b9ef84;
+      transition: background .3s;
+    }
+
+    .name-column {
+      .cell-text {
+        font-size: $font-size-smaller;
+        color: $link-color;
+      }
+    }
+
+    .date-column {
+      .date {
+        font-size: $font-size-smaller;
+        line-height: 22px;
+      }
+
+      .time {
+        font-size: $font-size-sm;
+        line-height: 22px;
+        color: $text-muted;
+      }
+    }
+
+    .lender-column {
+      img {
+        max-width: 100%;
+      }
+    }
+
+    .documents-column {
+      .docs-label,
+      .pages .docs-value {
+        font-size: $font-size-sm;
+      }
+
+      .docs-label,
+      .comma {
+        color: $text-muted;
+      }
+    }
+
+    .status-column {
+
+      .eo-icon {
+        flex-shrink: 0;
+      }
+
+      .status-text {
+        font-size: $font-size-smaller;
+      }
+
+      .status-more {
+        font-size: $font-size-sm;
+        color: $link-color;
+      }
+    }
+
+    .buttons-column {
+      .btn {
+        letter-spacing: .5px;
+      }
+    }
+  }
+
 
 }

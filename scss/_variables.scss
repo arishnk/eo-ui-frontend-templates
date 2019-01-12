@@ -210,10 +210,10 @@ $container-max-widths: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $container-max-widths: map-merge(
   (
-    sm: 540px,
-    md: 720px,
-    lg: 960px,
-    xl: 1140px
+    sm: 570px,
+    md: 750px,
+    lg: 990px,
+    xl: 1170px
   ),
   $container-max-widths
 );
@@ -275,7 +275,6 @@ $embed-responsive-aspect-ratios: join(
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-sans-serif:      "Open Sans", sans-serif !default; // override leaving default in place for now
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
@@ -286,6 +285,7 @@ $font-size-xxxl:              ($font-size-base * 12 / 7) !default; // 24px
 $font-size-xxl:               ($font-size-base * 10 / 7) !default; // 20px
 $font-size-xl:                ($font-size-base * 9 / 7) !default; // 18px
 $font-size-lg:                ($font-size-base * 8 / 7) !default; // 16px
+$font-size-smaller:           ($font-size-base * 13 / 14) !default; // 13px
 $font-size-sm:                ($font-size-base * 6 / 7) !default; // 12px
 
 $font-weight-lighter:         lighter !default;
@@ -470,7 +470,7 @@ $input-padding-x-lg:                    $input-btn-padding-x-lg !default;
 $input-font-size-lg:                    $input-btn-font-size-lg !default;
 $input-line-height-lg:                  $input-btn-line-height-lg !default;
 
-$input-bg:                              transparent !default;
+$input-bg:                              $white !default;
 $input-disabled-bg:                     transparent !default; // was $gray-200
 
 $input-color:                           $gray-700 !default; // @input-color was black in v3
