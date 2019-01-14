@@ -304,7 +304,7 @@ h6,
 
   // transition: background 250ms;
   // font-weight: $font-weight-bold;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, .15);
+  box-shadow: 0 3px 3px 0 rgba($black, .15);
   border-radius: 6px;
   font-weight: 600;
   letter-spacing: .9px;
@@ -313,6 +313,7 @@ h6,
   &.btn-secondary {
     border: 2px solid #d9dee1;
     color: #2ea049;
+    box-shadow: 0 3px 3px 0 rgba($black, .05);
   }
 
   &.btn-blank {
@@ -1210,11 +1211,34 @@ table.table.table-sm {
     height: 100%;
     opacity: .14;
     background-image: url("../img/angled_white_dot_pattern.png");
-    background-position-y: 65%;
+    background-position-y: calc(65% + 5px);
+
+    @include media-breakpoint-up(md) {
+      background-position-y: 65%;
+    }
+  }
+
+  .workbench-banner-content {
+
+    @include media-breakpoint-only(xs) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+      padding-top: .5rem;
+      padding-bottom: .5rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding-top: 1rem * (13 / 16);
+      padding-bottom: 1rem * (13 / 16);
+    }
   }
 
   .workbench-banner-left .workbench-banner-left-text {
     font-size: 30px;
+    font-weight: $font-weight-normal;
     color: $white;
   }
 
@@ -1231,6 +1255,14 @@ table.table.table-sm {
 }
 
 .workbench-status {
+
+  .workbench-status-content {
+    @include media-breakpoint-only(xs) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
   .last-refreshed-label {
     color: #5a5a5a;
   }
@@ -1262,7 +1294,16 @@ table.table.table-sm {
       }
 
       @include media-breakpoint-only(xs) {
-        padding: 10px 12.5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        &:first-child {
+          padding-left: 25px;
+        }
+
+        &:last-child {
+          padding-right: 25px;
+        }
       }
 
       &:not(:last-child) {
@@ -1307,6 +1348,10 @@ table.table.table-sm {
   }
 
   .workbench-table-row {
+    @include media-breakpoint-only(xs) {
+      padding: 0 12.5px;
+    }
+
     &:hover {
       cursor: pointer;
       background: rgba(185, 239, 132, .5);
@@ -1364,6 +1409,10 @@ table.table.table-sm {
       .status-more {
         font-size: $font-size-sm;
         color: $link-color;
+
+        .eo-icon {
+          margin-left: 2px;
+        }
       }
     }
 

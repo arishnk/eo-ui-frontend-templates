@@ -126,6 +126,7 @@
   &.eo-icon-sort-up { @include icon-versions(18px, 18px, "../img/icon_sort_up.svg"); }
   &.eo-icon-success-message { @include icon-versions(32px, 32px, "../img/icon_success_message.svg"); }
   &.eo-icon-email-message { @include icon-versions(32px, 24px, "../img/icon_email_message.svg"); }
+  &.eo-icon-add { @include icon-versions(14px, 14px, "../img/icon_add.svg"); }
 }
 
 a:hover .eo-icon.eo-icon-half-opacity,
