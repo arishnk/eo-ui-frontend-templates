@@ -151,6 +151,7 @@ body {
         background-position: center left;
         background-size: contain;
         background-repeat: no-repeat;
+        margin-top: 7px;
       }
 
       &.text-center {
@@ -172,7 +173,7 @@ body {
 
   body > .main-content > .navbar .product-name {
 
-    //padding-top: 30px;
+    padding-left: 20px !important;
 
     .navbar-brand {
       height: 50px;
@@ -182,6 +183,7 @@ body {
     .product-name-image {
       height: 31px;
       margin-left: 0;
+      margin-top: 30px;
     }
 
   }
@@ -193,6 +195,7 @@ body {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: 0;
+    margin-top: 16px;
   }
 
 }
@@ -323,7 +326,7 @@ h6,
 
     background: transparent;
     color: $link-color;
-    @include box-shadow(none);
+    box-shadow: none;
 
     &:hover {
 
@@ -362,7 +365,7 @@ h6,
 
 .form-control {
 
-  @include box-shadow(none);
+  box-shadow: none;
   border-width: 2px;
   border-top: none;
   border-right: none;
@@ -370,7 +373,7 @@ h6,
   padding-left: 8px;
 
   &:focus {
-    @include box-shadow(none);
+    box-shadow: none;
   }
 
 }
@@ -641,7 +644,7 @@ a.form-control-feedback {
     margin-bottom: 0;
     border: none;
     border-radius: 0;
-    @include box-shadow(none);
+    box-shadow: none;
   }
 
   .bg-white-xs {
@@ -668,7 +671,7 @@ a.form-control-feedback {
     margin-bottom: 0;
     border: none;
     border-radius: 0;
-    @include box-shadow(none);
+    box-shadow: none;
   }
 
   .text-center-sm {
@@ -690,7 +693,7 @@ a.form-control-feedback {
     margin-bottom: 0;
     border: none;
     border-radius: 0;
-    @include box-shadow(none);
+    box-shadow: none;
   }
 
   .text-center-md {
@@ -708,7 +711,7 @@ a.form-control-feedback {
     margin-bottom: 0;
     border: none;
     border-radius: 0;
-    @include box-shadow(none);
+    box-shadow: none;
   }
 
   .text-center-lg {
@@ -953,7 +956,7 @@ hr.hr-dots {
 
 .progress {
 
-  @include box-shadow(none);
+  box-shadow: none;
 
   &.progress-sm {
     height: 6px;
@@ -1094,7 +1097,7 @@ a.form-text {
   padding-right: 20px;
 
   img {
-    margin-top: 17px;
+    margin-top: 3px;
   }
 
 }

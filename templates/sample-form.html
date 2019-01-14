@@ -24,19 +24,15 @@
 <body class="has-footer">
 
   <div class="main-content">
-    <!-- <nav class="navbar navbar-expand">
+    <nav class="navbar">
       <div class="container">
         <div class="row row-no-padding">
-          <div class="navbar-brand col-sm-2 col-lg-3 hidden-xs " href="#" style="background-image: url(../img/icon_bank_of_america.png)"><span class="sr-only">Bank of America</span>
+          <div class="navbar-brand col-6 col-md-2 col-lg-3 d-none d-md-flex" href="#" style="background-image: url(../img/icon_bank_of_america.png)"><span class="sr-only">Bank of America</span></div>
+          <div class="col-6 col-md-5 col-lg-6 col-xl-5 product-name text-center">
+            <div class="navbar-brand hidden-sm d-md-none d-block" href="#" style="background-image: url(../img/icon_bank_of_america.png)"><span class="sr-only">Bank of America</span></div>
+            <div class="product-name-image" style="background-image: url(../img/product_name_digital_closing_portal.svg);"><span class="sr-only">Digitial Closing Portal</span></div>
           </div>
-          <div class="col-8 col-md-5 col-lg-6 col-xl-5 product-name">
-            <div class="navbar-brand hidden-sm d-md-none d-block" href="#" style="background-image: url(../img/icon_bank_of_america.png)"><span class="sr-only">Bank of America</span>
-            </div>
-            <br class="d-block d-sm-none">
-            <div class="product-name-image" style="background-image: url(../img/product_name_digital_closing_portal.svg);"><span class="sr-only">Digitial Closing Portal</span>
-            </div>
-          </div>
-          <ul class="nav navbar-nav col-4 col-md-5 col-lg-4 col-xl-4">
+          <ul class="nav navbar-nav col-6 col-md-5 col-lg-3 col-xl-4">
             <li class="dropdown sign-in-menu float-right nav-item"> <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 
                 <img src="../img/icon_header_powered_by_logo_small.svg" alt="Powered by eOriginal" width="90" class="d-block d-sm-none d-md-none d-lg-none d-xl-none">
@@ -68,13 +64,14 @@
                 </form>
               </div>
             </li>
-            <li class="navbar-secondary-brand hidden-xsd-none d-sm-block float-right nav-item">
-              <img src="../img/icon_header_powered_by_logo.svg" alt="Powered by eOriginal" width="180">
+            <li class="navbar-secondary-brand d-none d-md-flex float-right nav-item">
+              <img src="../img/icon_header_powered_by_logo.svg" alt="Powered by eOriginal" width="160">
             </li>
           </ul>
         </div>
       </div>
-    </nav> -->
+    </nav>
+
     <div class="container">
       <div class="row">
         <div class="col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
@@ -94,7 +91,7 @@
                   <span class="text-muted">(label subtext example)</span>
                 </label>
                 <div class="form-control-wrap">
-                  <input class="form-control" name="accessCode" type="text" id="accessCode" placeholder="" value="">
+                  <input class="form-control" name="accessCode" type="text" id="accessCode" placeholder="" value="" data-container="body" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus">
                 </div>
                 <div class="form-text"></div>
               </div>
@@ -180,6 +177,7 @@
             <div class="pad d-block d-sm-none"></div>
             <hr class="hr-dots">
             <h2>More Fields</h2>
+            <div class="pad"></div>
             <div class="row">
               <div class="form-group col-12">
                 <label class="col-form-label required" for="emailAddress"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
@@ -354,6 +352,7 @@
             <hr class="hr-dots">
             <h2>Alerts</h2>
             <div class="pad"></div>
+
             <div class="alert alert-success" role="alert">
               <h2 class="has-icon">
 
@@ -365,6 +364,28 @@
               <p>Finish setting up your account so you can return to your digital closings
                 on your Closing Center at any time.</p>
             </div>
+
+            <div class="alert alert-success" role="alert">
+              <h2 class="has-icon">
+
+                <span><span class="eo-icon eo-icon-email-message"></span></span>
+
+                <span>We're resetting your password &mdash; Check your email</span>
+
+              </h2>
+            </div>
+
+            <div class="alert alert-success" role="alert">
+              <h2 class="has-icon">
+
+                <span><span class="eo-icon eo-icon-success-message"></span></span>
+
+                <span>Success message here</span>
+
+              </h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipsicing elit.</p>
+            </div>
+
             <div class="alert alert-danger" role="alert">
               <p class="font-xl has-icon"> <span><span class="eo-icon eo-icon-alert-large"></span></span> <span>Please complete the 4 fields below.</span>
               </p>
@@ -473,7 +494,19 @@
 
       $('.sign-in-menu .dropdown-toggle').dropdown('toggle');
 
-    })
+    });
+
+    $(function () {
+      $('#accessCode').popover({
+        placement: function() {
+          if ($(window).width() < 768)
+            return 'top';
+          else
+            return 'right';
+        }
+      })
+    });
+
   </script>
 
 </body>

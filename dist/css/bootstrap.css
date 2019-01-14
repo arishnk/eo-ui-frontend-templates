@@ -10025,6 +10025,7 @@ body > .main-content > .navbar .product-name .product-name-image {
   background-position: center left;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-top: 7px;
 }
 
 body > .main-content > .navbar .product-name.text-center .product-name-image {
@@ -10032,6 +10033,9 @@ body > .main-content > .navbar .product-name.text-center .product-name-image {
 }
 
 @media (min-width: 768px) {
+  body > .main-content > .navbar .product-name {
+    padding-left: 20px !important;
+  }
   body > .main-content > .navbar .product-name .navbar-brand {
     height: 50px;
     margin-left: 0;
@@ -10039,6 +10043,7 @@ body > .main-content > .navbar .product-name.text-center .product-name-image {
   body > .main-content > .navbar .product-name .product-name-image {
     height: 31px;
     margin-left: 0;
+    margin-top: 30px;
   }
 }
 
@@ -10046,6 +10051,7 @@ body > .main-content > .navbar .product-name.text-center .product-name-image {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: 0;
+    margin-top: 16px;
   }
 }
 
@@ -10143,6 +10149,7 @@ h1, h2, h3, h4, h5, h6,
 .btn.btn-blank {
   background: transparent;
   color: #2ea049;
+  box-shadow: none;
 }
 
 .btn.btn-blank:hover {
@@ -10173,11 +10180,16 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .form-control {
+  box-shadow: none;
   border-width: 2px;
   border-top: none;
   border-right: none;
   font-weight: 600;
   padding-left: 8px;
+}
+
+.form-control:focus {
+  box-shadow: none;
 }
 
 .form-control-wrap {
@@ -10426,6 +10438,7 @@ a.form-control-feedback:hover {
     margin-bottom: 0;
     border: none;
     border-radius: 0;
+    box-shadow: none;
   }
   .bg-white-xs {
     background-color: #fff;
@@ -10447,6 +10460,7 @@ a.form-control-feedback:hover {
     margin-bottom: 0;
     border: none;
     border-radius: 0;
+    box-shadow: none;
   }
   .text-center-sm {
     text-align: center;
@@ -10464,6 +10478,7 @@ a.form-control-feedback:hover {
     margin-bottom: 0;
     border: none;
     border-radius: 0;
+    box-shadow: none;
   }
   .text-center-md {
     text-align: center;
@@ -10478,6 +10493,7 @@ a.form-control-feedback:hover {
     margin-bottom: 0;
     border: none;
     border-radius: 0;
+    box-shadow: none;
   }
   .text-center-lg {
     text-align: center;
@@ -10695,6 +10711,10 @@ hr.hr-dots {
   background-image: url("../img/icon_radio_button_on_hover.svg");
 }
 
+.progress {
+  box-shadow: none;
+}
+
 .progress.progress-sm {
   height: 6px;
   margin-top: 6px;
@@ -10820,7 +10840,7 @@ a.form-text {
 }
 
 .navbar-secondary-brand img {
-  margin-top: 17px;
+  margin-top: 3px;
 }
 
 .navbar-nav {
@@ -12439,6 +12459,66 @@ table.table.table-sm thead tr:first-child th {
 .eo-icon.eo-icon-sort-up.eo-icon-xl {
   width: 27px;
   height: 27px;
+}
+
+.eo-icon.eo-icon-success-message {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/icon_success_message.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-success-message.eo-icon-xs {
+  width: 8px;
+  height: 8px;
+}
+
+.eo-icon.eo-icon-success-message.eo-icon-sm {
+  width: 16px;
+  height: 16px;
+}
+
+.eo-icon.eo-icon-success-message.eo-icon-lg {
+  width: 40px;
+  height: 40px;
+}
+
+.eo-icon.eo-icon-success-message.eo-icon-xl {
+  width: 48px;
+  height: 48px;
+}
+
+.eo-icon.eo-icon-email-message {
+  width: 32px;
+  height: 24px;
+  background-image: url("../img/icon_email_message.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-email-message.eo-icon-xs {
+  width: 8px;
+  height: 6px;
+}
+
+.eo-icon.eo-icon-email-message.eo-icon-sm {
+  width: 16px;
+  height: 12px;
+}
+
+.eo-icon.eo-icon-email-message.eo-icon-lg {
+  width: 40px;
+  height: 30px;
+}
+
+.eo-icon.eo-icon-email-message.eo-icon-xl {
+  width: 48px;
+  height: 36px;
 }
 
 a:hover .eo-icon.eo-icon-half-opacity,
