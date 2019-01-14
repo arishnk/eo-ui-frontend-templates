@@ -114,7 +114,7 @@
   }
   &.eo-icon-documents { @include icon-versions(23px, 27px, "../img/icon_documents.svg"); }
   &.eo-icon-documents-updated { @include icon-versions(23px, 27px, "../img/icon_documents_updated.svg"); }
-  &.eo-icon-note-green { @include icon-versions(17px, 18px, "../img/icon_note_green.svg"); }
+  &.eo-icon-note-green { @include icon-versions(15px, 16px, "../img/icon_note_green.svg"); }
   &.eo-icon-trans-closing-completed { @include icon-versions(33px, 35px, "../img/icon_trans_closing_completed.svg"); }
   &.eo-icon-trans-closing-in-process { @include icon-versions(33px, 35px, "../img/icon_trans_closing_in_process.svg"); }
   &.eo-icon-trans-lender { @include icon-versions(33px, 33px, "../img/icon_trans_lender.svg"); }
@@ -126,7 +126,10 @@
   &.eo-icon-sort-up { @include icon-versions(18px, 18px, "../img/icon_sort_up.svg"); }
   &.eo-icon-success-message { @include icon-versions(32px, 32px, "../img/icon_success_message.svg"); }
   &.eo-icon-email-message { @include icon-versions(32px, 24px, "../img/icon_email_message.svg"); }
-  &.eo-icon-add { @include icon-versions(14px, 14px, "../img/icon_add.svg"); }
+  &.eo-icon-add {
+    @include icon-versions(14px, 14px, "../img/icon_add.svg");
+    top: -1px;
+  }
 }
 
 a:hover .eo-icon.eo-icon-half-opacity,

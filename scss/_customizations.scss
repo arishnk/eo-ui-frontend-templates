@@ -311,9 +311,14 @@ h6,
   padding: 10px 18px;
 
   &.btn-secondary {
-    border: 2px solid #d9dee1;
+    border: 1px solid #d9dee1;
     color: #2ea049;
     box-shadow: 0 3px 3px 0 rgba($black, .05);
+
+    &:hover,
+    &:focus {
+      background: $white;
+    }
   }
 
   &.btn-blank {
@@ -1291,6 +1296,22 @@ table.table.table-sm {
 
       &.sortable {
         background: $dark;
+
+        &:hover {
+          cursor: pointer;
+          position: relative;
+          background: $black;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(239, 242, 243, .3);
+          }
+        }
       }
 
       @include media-breakpoint-only(xs) {
@@ -1308,21 +1329,6 @@ table.table.table-sm {
 
       &:not(:last-child) {
         border-right: 1px solid rgba(141, 147, 154, .38);
-      }
-
-      &:hover {
-        cursor: pointer;
-        position: relative;
-
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: rgba(239, 242, 243, .3);
-        }
       }
     }
   }
@@ -1418,7 +1424,11 @@ table.table.table-sm {
 
     .buttons-column {
       .btn {
-        letter-spacing: .5px;
+        letter-spacing: .4px;
+
+        @include media-breakpoint-only(md) {
+          font-size: $font-size-smaller;
+        }
       }
     }
   }
