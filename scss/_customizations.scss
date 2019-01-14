@@ -1264,6 +1264,10 @@ table.table.table-sm {
       background: $black;
       padding: 20px 12.5px;
 
+      &.sortable {
+        background: $dark;
+      }
+
       @include media-breakpoint-only(xs) {
         padding: 10px 12.5px;
       }
@@ -1274,7 +1278,17 @@ table.table.table-sm {
 
       &:hover {
         cursor: pointer;
-        background: $dark;
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(239, 242, 243, .3);
+        }
       }
     }
   }
@@ -1302,7 +1316,7 @@ table.table.table-sm {
   .workbench-table-row {
     &:hover {
       cursor: pointer;
-      background: #b9ef84;
+      background: rgba(185, 239, 132, .5);
       transition: background .3s;
     }
 

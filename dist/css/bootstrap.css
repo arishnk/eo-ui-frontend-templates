@@ -10985,6 +10985,10 @@ table.table.table-sm thead tr:first-child th {
   padding: 20px 12.5px;
 }
 
+.workbench-table .workbench-table-header .workbench-table-cell.sortable {
+  background: #353937;
+}
+
 @media (max-width: 575.98px) {
   .workbench-table .workbench-table-header .workbench-table-cell {
     padding: 10px 12.5px;
@@ -10997,7 +11001,17 @@ table.table.table-sm thead tr:first-child th {
 
 .workbench-table .workbench-table-header .workbench-table-cell:hover {
   cursor: pointer;
-  background: #353937;
+  position: relative;
+}
+
+.workbench-table .workbench-table-header .workbench-table-cell:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(239, 242, 243, 0.3);
 }
 
 .workbench-table .workbench-table-cell {
@@ -11028,7 +11042,7 @@ table.table.table-sm thead tr:first-child th {
 
 .workbench-table .workbench-table-row:hover {
   cursor: pointer;
-  background: #b9ef84;
+  background: rgba(185, 239, 132, 0.5);
   transition: background .3s;
 }
 

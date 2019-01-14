@@ -28,14 +28,14 @@
     return Constructor;
   }
 
-  var cov_p5o2a08zz = function () {
-    var path = "C:\\Users\\ari\\source\\repos\\eo-ui-frontend-templates\\js\\src\\alert.js",
-        hash = "df78fe713208a436c6dfce494cd97cf97f3ddee8",
+  var cov_4i1kqc8j8 = function () {
+    var path = "/Users/jkoulish/Sites/eo-ui-frontend-templates/js/src/alert.js",
+        hash = "23a1b0a47f125ff4b52d5e19f8e2445688211e9b",
         Function = function () {}.constructor,
         global = new Function('return this')(),
         gcv = "__coverage__",
         coverageData = {
-      path: "C:\\Users\\ari\\source\\repos\\eo-ui-frontend-templates\\js\\src\\alert.js",
+      path: "/Users/jkoulish/Sites/eo-ui-frontend-templates/js/src/alert.js",
       statementMap: {
         "0": {
           start: {
@@ -1303,21 +1303,21 @@
    * ------------------------------------------------------------------------
    */
 
-  var NAME = (cov_p5o2a08zz.s[0]++, 'alert');
-  var VERSION = (cov_p5o2a08zz.s[1]++, '4.2.1');
-  var DATA_KEY = (cov_p5o2a08zz.s[2]++, 'bs.alert');
-  var EVENT_KEY = (cov_p5o2a08zz.s[3]++, "." + DATA_KEY);
-  var DATA_API_KEY = (cov_p5o2a08zz.s[4]++, '.data-api');
-  var JQUERY_NO_CONFLICT = (cov_p5o2a08zz.s[5]++, $.fn[NAME]);
-  var Selector = (cov_p5o2a08zz.s[6]++, {
+  var NAME = (cov_4i1kqc8j8.s[0]++, 'alert');
+  var VERSION = (cov_4i1kqc8j8.s[1]++, '4.2.1');
+  var DATA_KEY = (cov_4i1kqc8j8.s[2]++, 'bs.alert');
+  var EVENT_KEY = (cov_4i1kqc8j8.s[3]++, "." + DATA_KEY);
+  var DATA_API_KEY = (cov_4i1kqc8j8.s[4]++, '.data-api');
+  var JQUERY_NO_CONFLICT = (cov_4i1kqc8j8.s[5]++, $.fn[NAME]);
+  var Selector = (cov_4i1kqc8j8.s[6]++, {
     DISMISS: '[data-dismiss="alert"]'
   });
-  var Event = (cov_p5o2a08zz.s[7]++, {
+  var Event = (cov_4i1kqc8j8.s[7]++, {
     CLOSE: "close" + EVENT_KEY,
     CLOSED: "closed" + EVENT_KEY,
     CLICK_DATA_API: "click" + EVENT_KEY + DATA_API_KEY
   });
-  var ClassName = (cov_p5o2a08zz.s[8]++, {
+  var ClassName = (cov_4i1kqc8j8.s[8]++, {
     ALERT: 'alert',
     FADE: 'fade',
     SHOW: 'show'
@@ -1333,8 +1333,8 @@
   /*#__PURE__*/
   function () {
     function Alert(element) {
-      cov_p5o2a08zz.f[0]++;
-      cov_p5o2a08zz.s[9]++;
+      cov_4i1kqc8j8.f[0]++;
+      cov_4i1kqc8j8.s[9]++;
       this._element = element;
     } // Getters
 
@@ -1343,163 +1343,163 @@
 
     // Public
     _proto.close = function close(element) {
-      cov_p5o2a08zz.f[2]++;
-      var rootElement = (cov_p5o2a08zz.s[11]++, this._element);
-      cov_p5o2a08zz.s[12]++;
+      cov_4i1kqc8j8.f[2]++;
+      var rootElement = (cov_4i1kqc8j8.s[11]++, this._element);
+      cov_4i1kqc8j8.s[12]++;
 
       if (element) {
-        cov_p5o2a08zz.b[0][0]++;
-        cov_p5o2a08zz.s[13]++;
+        cov_4i1kqc8j8.b[0][0]++;
+        cov_4i1kqc8j8.s[13]++;
         rootElement = this._getRootElement(element);
       } else {
-        cov_p5o2a08zz.b[0][1]++;
+        cov_4i1kqc8j8.b[0][1]++;
       }
 
-      var customEvent = (cov_p5o2a08zz.s[14]++, this._triggerCloseEvent(rootElement));
-      cov_p5o2a08zz.s[15]++;
+      var customEvent = (cov_4i1kqc8j8.s[14]++, this._triggerCloseEvent(rootElement));
+      cov_4i1kqc8j8.s[15]++;
 
       if (customEvent.isDefaultPrevented()) {
-        cov_p5o2a08zz.b[1][0]++;
-        cov_p5o2a08zz.s[16]++;
+        cov_4i1kqc8j8.b[1][0]++;
+        cov_4i1kqc8j8.s[16]++;
         return;
       } else {
-        cov_p5o2a08zz.b[1][1]++;
+        cov_4i1kqc8j8.b[1][1]++;
       }
 
-      cov_p5o2a08zz.s[17]++;
+      cov_4i1kqc8j8.s[17]++;
 
       this._removeElement(rootElement);
     };
 
     _proto.dispose = function dispose() {
-      cov_p5o2a08zz.f[3]++;
-      cov_p5o2a08zz.s[18]++;
+      cov_4i1kqc8j8.f[3]++;
+      cov_4i1kqc8j8.s[18]++;
       $.removeData(this._element, DATA_KEY);
-      cov_p5o2a08zz.s[19]++;
+      cov_4i1kqc8j8.s[19]++;
       this._element = null;
     }; // Private
 
 
     _proto._getRootElement = function _getRootElement(element) {
-      cov_p5o2a08zz.f[4]++;
-      var selector = (cov_p5o2a08zz.s[20]++, Util.getSelectorFromElement(element));
-      var parent = (cov_p5o2a08zz.s[21]++, false);
-      cov_p5o2a08zz.s[22]++;
+      cov_4i1kqc8j8.f[4]++;
+      var selector = (cov_4i1kqc8j8.s[20]++, Util.getSelectorFromElement(element));
+      var parent = (cov_4i1kqc8j8.s[21]++, false);
+      cov_4i1kqc8j8.s[22]++;
 
       if (selector) {
-        cov_p5o2a08zz.b[2][0]++;
-        cov_p5o2a08zz.s[23]++;
+        cov_4i1kqc8j8.b[2][0]++;
+        cov_4i1kqc8j8.s[23]++;
         parent = document.querySelector(selector);
       } else {
-        cov_p5o2a08zz.b[2][1]++;
+        cov_4i1kqc8j8.b[2][1]++;
       }
 
-      cov_p5o2a08zz.s[24]++;
+      cov_4i1kqc8j8.s[24]++;
 
       if (!parent) {
-        cov_p5o2a08zz.b[3][0]++;
-        cov_p5o2a08zz.s[25]++;
+        cov_4i1kqc8j8.b[3][0]++;
+        cov_4i1kqc8j8.s[25]++;
         parent = $(element).closest("." + ClassName.ALERT)[0];
       } else {
-        cov_p5o2a08zz.b[3][1]++;
+        cov_4i1kqc8j8.b[3][1]++;
       }
 
-      cov_p5o2a08zz.s[26]++;
+      cov_4i1kqc8j8.s[26]++;
       return parent;
     };
 
     _proto._triggerCloseEvent = function _triggerCloseEvent(element) {
-      cov_p5o2a08zz.f[5]++;
-      var closeEvent = (cov_p5o2a08zz.s[27]++, $.Event(Event.CLOSE));
-      cov_p5o2a08zz.s[28]++;
+      cov_4i1kqc8j8.f[5]++;
+      var closeEvent = (cov_4i1kqc8j8.s[27]++, $.Event(Event.CLOSE));
+      cov_4i1kqc8j8.s[28]++;
       $(element).trigger(closeEvent);
-      cov_p5o2a08zz.s[29]++;
+      cov_4i1kqc8j8.s[29]++;
       return closeEvent;
     };
 
     _proto._removeElement = function _removeElement(element) {
       var _this = this;
 
-      cov_p5o2a08zz.f[6]++;
-      cov_p5o2a08zz.s[30]++;
+      cov_4i1kqc8j8.f[6]++;
+      cov_4i1kqc8j8.s[30]++;
       $(element).removeClass(ClassName.SHOW);
-      cov_p5o2a08zz.s[31]++;
+      cov_4i1kqc8j8.s[31]++;
 
       if (!$(element).hasClass(ClassName.FADE)) {
-        cov_p5o2a08zz.b[4][0]++;
-        cov_p5o2a08zz.s[32]++;
+        cov_4i1kqc8j8.b[4][0]++;
+        cov_4i1kqc8j8.s[32]++;
 
         this._destroyElement(element);
 
-        cov_p5o2a08zz.s[33]++;
+        cov_4i1kqc8j8.s[33]++;
         return;
       } else {
-        cov_p5o2a08zz.b[4][1]++;
+        cov_4i1kqc8j8.b[4][1]++;
       }
 
-      var transitionDuration = (cov_p5o2a08zz.s[34]++, Util.getTransitionDurationFromElement(element));
-      cov_p5o2a08zz.s[35]++;
+      var transitionDuration = (cov_4i1kqc8j8.s[34]++, Util.getTransitionDurationFromElement(element));
+      cov_4i1kqc8j8.s[35]++;
       $(element).one(Util.TRANSITION_END, function (event) {
-        cov_p5o2a08zz.f[7]++;
-        cov_p5o2a08zz.s[36]++;
+        cov_4i1kqc8j8.f[7]++;
+        cov_4i1kqc8j8.s[36]++;
         return _this._destroyElement(element, event);
       }).emulateTransitionEnd(transitionDuration);
     };
 
     _proto._destroyElement = function _destroyElement(element) {
-      cov_p5o2a08zz.f[8]++;
-      cov_p5o2a08zz.s[37]++;
+      cov_4i1kqc8j8.f[8]++;
+      cov_4i1kqc8j8.s[37]++;
       $(element).detach().trigger(Event.CLOSED).remove();
     }; // Static
 
 
     Alert._jQueryInterface = function _jQueryInterface(config) {
-      cov_p5o2a08zz.f[9]++;
-      cov_p5o2a08zz.s[38]++;
+      cov_4i1kqc8j8.f[9]++;
+      cov_4i1kqc8j8.s[38]++;
       return this.each(function () {
-        cov_p5o2a08zz.f[10]++;
-        var $element = (cov_p5o2a08zz.s[39]++, $(this));
-        var data = (cov_p5o2a08zz.s[40]++, $element.data(DATA_KEY));
-        cov_p5o2a08zz.s[41]++;
+        cov_4i1kqc8j8.f[10]++;
+        var $element = (cov_4i1kqc8j8.s[39]++, $(this));
+        var data = (cov_4i1kqc8j8.s[40]++, $element.data(DATA_KEY));
+        cov_4i1kqc8j8.s[41]++;
 
         if (!data) {
-          cov_p5o2a08zz.b[5][0]++;
-          cov_p5o2a08zz.s[42]++;
+          cov_4i1kqc8j8.b[5][0]++;
+          cov_4i1kqc8j8.s[42]++;
           data = new Alert(this);
-          cov_p5o2a08zz.s[43]++;
+          cov_4i1kqc8j8.s[43]++;
           $element.data(DATA_KEY, data);
         } else {
-          cov_p5o2a08zz.b[5][1]++;
+          cov_4i1kqc8j8.b[5][1]++;
         }
 
-        cov_p5o2a08zz.s[44]++;
+        cov_4i1kqc8j8.s[44]++;
 
         if (config === 'close') {
-          cov_p5o2a08zz.b[6][0]++;
-          cov_p5o2a08zz.s[45]++;
+          cov_4i1kqc8j8.b[6][0]++;
+          cov_4i1kqc8j8.s[45]++;
           data[config](this);
         } else {
-          cov_p5o2a08zz.b[6][1]++;
+          cov_4i1kqc8j8.b[6][1]++;
         }
       });
     };
 
     Alert._handleDismiss = function _handleDismiss(alertInstance) {
-      cov_p5o2a08zz.f[11]++;
-      cov_p5o2a08zz.s[46]++;
+      cov_4i1kqc8j8.f[11]++;
+      cov_4i1kqc8j8.s[46]++;
       return function (event) {
-        cov_p5o2a08zz.f[12]++;
-        cov_p5o2a08zz.s[47]++;
+        cov_4i1kqc8j8.f[12]++;
+        cov_4i1kqc8j8.s[47]++;
 
         if (event) {
-          cov_p5o2a08zz.b[7][0]++;
-          cov_p5o2a08zz.s[48]++;
+          cov_4i1kqc8j8.b[7][0]++;
+          cov_4i1kqc8j8.s[48]++;
           event.preventDefault();
         } else {
-          cov_p5o2a08zz.b[7][1]++;
+          cov_4i1kqc8j8.b[7][1]++;
         }
 
-        cov_p5o2a08zz.s[49]++;
+        cov_4i1kqc8j8.s[49]++;
         alertInstance.close(this);
       };
     };
@@ -1507,8 +1507,8 @@
     _createClass(Alert, null, [{
       key: "VERSION",
       get: function get() {
-        cov_p5o2a08zz.f[1]++;
-        cov_p5o2a08zz.s[10]++;
+        cov_4i1kqc8j8.f[1]++;
+        cov_4i1kqc8j8.s[10]++;
         return VERSION;
       }
     }]);
@@ -1522,7 +1522,7 @@
    */
 
 
-  cov_p5o2a08zz.s[50]++;
+  cov_4i1kqc8j8.s[50]++;
   $(document).on(Event.CLICK_DATA_API, Selector.DISMISS, Alert._handleDismiss(new Alert()));
   /**
    * ------------------------------------------------------------------------
@@ -1530,17 +1530,17 @@
    * ------------------------------------------------------------------------
    */
 
-  cov_p5o2a08zz.s[51]++;
+  cov_4i1kqc8j8.s[51]++;
   $.fn[NAME] = Alert._jQueryInterface;
-  cov_p5o2a08zz.s[52]++;
+  cov_4i1kqc8j8.s[52]++;
   $.fn[NAME].Constructor = Alert;
-  cov_p5o2a08zz.s[53]++;
+  cov_4i1kqc8j8.s[53]++;
 
   $.fn[NAME].noConflict = function () {
-    cov_p5o2a08zz.f[13]++;
-    cov_p5o2a08zz.s[54]++;
+    cov_4i1kqc8j8.f[13]++;
+    cov_4i1kqc8j8.s[54]++;
     $.fn[NAME] = JQUERY_NO_CONFLICT;
-    cov_p5o2a08zz.s[55]++;
+    cov_4i1kqc8j8.s[55]++;
     return Alert._jQueryInterface;
   };
 
