@@ -5,7 +5,7 @@ body {
 
   > .footer {
 
-    padding-top: 60px;
+    padding-top: 40px;
     color: $gray-400;
     font-weight: 500;
 
@@ -30,7 +30,7 @@ body {
 
     .text-muted {
 
-      color: $gray-400;
+      color: $gray-400 !important;
 
       a {
         color: $gray-400;

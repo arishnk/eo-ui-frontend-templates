@@ -9894,7 +9894,7 @@ body.has-footer {
 }
 
 body > .footer {
-  padding-top: 60px;
+  padding-top: 40px;
   color: #c0c4c8;
   font-weight: 500;
 }
@@ -9919,7 +9919,7 @@ body > .footer a {
 }
 
 body > .footer .text-muted {
-  color: #c0c4c8;
+  color: #c0c4c8 !important;
 }
 
 body > .footer .text-muted a {
