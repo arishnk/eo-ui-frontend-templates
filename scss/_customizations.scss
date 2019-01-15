@@ -1217,6 +1217,7 @@ table.table.table-sm {
     opacity: .14;
     background-image: url("../img/angled_white_dot_pattern.png");
     background-position-y: calc(65% + 5px);
+    transition: background-position 250ms;
 
     @include media-breakpoint-up(md) {
       background-position-y: 65%;
@@ -1241,6 +1242,12 @@ table.table.table-sm {
     }
   }
 
+  .workbench-banner-form {
+
+    padding-bottom: 43px;
+
+  }
+
   .workbench-banner-left .workbench-banner-left-text {
     font-size: 30px;
     font-weight: $font-weight-normal;
@@ -1252,6 +1259,17 @@ table.table.table-sm {
     letter-spacing: .4px;
     color: $white;
   }
+
+  &.workbench-banner-open::before {
+
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-up(md) {
+      background-position-y: 100%;
+    }
+  }
+
 }
 
 .workbench-main {
@@ -1439,4 +1457,29 @@ table.table.table-sm {
 .navbar-expand > .container-fluid {
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+
+  background-color: #57a40a;
+
+  &::before {
+    display: none;
+  }
+
+}
+
+.bootstrap-datetimepicker-widget table thead tr:first-child {
+  background-color: #d9dee1;
+}
+
+.bootstrap-datetimepicker-widget table td.old,
+.bootstrap-datetimepicker-widget table td.new {
+  background-color: #d0f2b1;
+  color: #8d939a;
+}
+
+.bootstrap-datetimepicker-widget table td.today::before {
+  border-bottom-color: #57a40a;
 }

@@ -130,6 +130,15 @@
     @include icon-versions(14px, 14px, "../img/icon_add.svg");
     top: -1px;
   }
+  &.eo-icon-previous-arrow {
+    @include icon-versions(20px, 20px, "../img/icon_previous_arrow.svg");
+  }
+  &.eo-icon-next-arrow {
+    @include icon-versions(20px, 20px, "../img/icon_next_arrow.svg");
+  }
+  &.eo-icon-add-closing-date-green {
+    @include icon-versions(25px, 18px, "../img/icon_add_closing_date_green.svg");
+  }
 }
 
 a:hover .eo-icon.eo-icon-half-opacity,

@@ -62,14 +62,14 @@
     return target;
   }
 
-  var cov_22sljdiynp = function () {
-    var path = "/Users/jkoulish/Sites/eo-ui-frontend-templates/js/src/toast.js",
-        hash = "a022e5c1405f0ee1d6718c8c96063990cc057da3",
+  var cov_3kr2e0psp = function () {
+    var path = "C:\\Users\\ari\\source\\repos\\eo-ui-frontend-templates\\js\\src\\toast.js",
+        hash = "cf55c5b916bf0488e114e48aec0b00c91b28401d",
         Function = function () {}.constructor,
         global = new Function('return this')(),
         gcv = "__coverage__",
         coverageData = {
-      path: "/Users/jkoulish/Sites/eo-ui-frontend-templates/js/src/toast.js",
+      path: "C:\\Users\\ari\\source\\repos\\eo-ui-frontend-templates\\js\\src\\toast.js",
       statementMap: {
         "0": {
           start: {
@@ -1766,35 +1766,35 @@
    * ------------------------------------------------------------------------
    */
 
-  var NAME = (cov_22sljdiynp.s[0]++, 'toast');
-  var VERSION = (cov_22sljdiynp.s[1]++, '4.2.1');
-  var DATA_KEY = (cov_22sljdiynp.s[2]++, 'bs.toast');
-  var EVENT_KEY = (cov_22sljdiynp.s[3]++, "." + DATA_KEY);
-  var JQUERY_NO_CONFLICT = (cov_22sljdiynp.s[4]++, $.fn[NAME]);
-  var Event = (cov_22sljdiynp.s[5]++, {
+  var NAME = (cov_3kr2e0psp.s[0]++, 'toast');
+  var VERSION = (cov_3kr2e0psp.s[1]++, '4.2.1');
+  var DATA_KEY = (cov_3kr2e0psp.s[2]++, 'bs.toast');
+  var EVENT_KEY = (cov_3kr2e0psp.s[3]++, "." + DATA_KEY);
+  var JQUERY_NO_CONFLICT = (cov_3kr2e0psp.s[4]++, $.fn[NAME]);
+  var Event = (cov_3kr2e0psp.s[5]++, {
     CLICK_DISMISS: "click.dismiss" + EVENT_KEY,
     HIDE: "hide" + EVENT_KEY,
     HIDDEN: "hidden" + EVENT_KEY,
     SHOW: "show" + EVENT_KEY,
     SHOWN: "shown" + EVENT_KEY
   });
-  var ClassName = (cov_22sljdiynp.s[6]++, {
+  var ClassName = (cov_3kr2e0psp.s[6]++, {
     FADE: 'fade',
     HIDE: 'hide',
     SHOW: 'show',
     SHOWING: 'showing'
   });
-  var DefaultType = (cov_22sljdiynp.s[7]++, {
+  var DefaultType = (cov_3kr2e0psp.s[7]++, {
     animation: 'boolean',
     autohide: 'boolean',
     delay: 'number'
   });
-  var Default = (cov_22sljdiynp.s[8]++, {
+  var Default = (cov_3kr2e0psp.s[8]++, {
     animation: true,
     autohide: true,
     delay: 500
   });
-  var Selector = (cov_22sljdiynp.s[9]++, {
+  var Selector = (cov_3kr2e0psp.s[9]++, {
     DATA_DISMISS: '[data-dismiss="toast"]'
     /**
      * ------------------------------------------------------------------------
@@ -1808,14 +1808,14 @@
   /*#__PURE__*/
   function () {
     function Toast(element, config) {
-      cov_22sljdiynp.f[0]++;
-      cov_22sljdiynp.s[10]++;
+      cov_3kr2e0psp.f[0]++;
+      cov_3kr2e0psp.s[10]++;
       this._element = element;
-      cov_22sljdiynp.s[11]++;
+      cov_3kr2e0psp.s[11]++;
       this._config = this._getConfig(config);
-      cov_22sljdiynp.s[12]++;
+      cov_3kr2e0psp.s[12]++;
       this._timeout = null;
-      cov_22sljdiynp.s[13]++;
+      cov_3kr2e0psp.s[13]++;
 
       this._setListeners();
     } // Getters
@@ -1827,64 +1827,64 @@
     _proto.show = function show() {
       var _this = this;
 
-      cov_22sljdiynp.f[3]++;
-      cov_22sljdiynp.s[16]++;
+      cov_3kr2e0psp.f[3]++;
+      cov_3kr2e0psp.s[16]++;
       $(this._element).trigger(Event.SHOW);
-      cov_22sljdiynp.s[17]++;
+      cov_3kr2e0psp.s[17]++;
 
       if (this._config.animation) {
-        cov_22sljdiynp.b[0][0]++;
-        cov_22sljdiynp.s[18]++;
+        cov_3kr2e0psp.b[0][0]++;
+        cov_3kr2e0psp.s[18]++;
 
         this._element.classList.add(ClassName.FADE);
       } else {
-        cov_22sljdiynp.b[0][1]++;
+        cov_3kr2e0psp.b[0][1]++;
       }
 
-      cov_22sljdiynp.s[19]++;
+      cov_3kr2e0psp.s[19]++;
 
       var complete = function complete() {
-        cov_22sljdiynp.f[4]++;
-        cov_22sljdiynp.s[20]++;
+        cov_3kr2e0psp.f[4]++;
+        cov_3kr2e0psp.s[20]++;
 
         _this._element.classList.remove(ClassName.SHOWING);
 
-        cov_22sljdiynp.s[21]++;
+        cov_3kr2e0psp.s[21]++;
 
         _this._element.classList.add(ClassName.SHOW);
 
-        cov_22sljdiynp.s[22]++;
+        cov_3kr2e0psp.s[22]++;
         $(_this._element).trigger(Event.SHOWN);
-        cov_22sljdiynp.s[23]++;
+        cov_3kr2e0psp.s[23]++;
 
         if (_this._config.autohide) {
-          cov_22sljdiynp.b[1][0]++;
-          cov_22sljdiynp.s[24]++;
+          cov_3kr2e0psp.b[1][0]++;
+          cov_3kr2e0psp.s[24]++;
 
           _this.hide();
         } else {
-          cov_22sljdiynp.b[1][1]++;
+          cov_3kr2e0psp.b[1][1]++;
         }
       };
 
-      cov_22sljdiynp.s[25]++;
+      cov_3kr2e0psp.s[25]++;
 
       this._element.classList.remove(ClassName.HIDE);
 
-      cov_22sljdiynp.s[26]++;
+      cov_3kr2e0psp.s[26]++;
 
       this._element.classList.add(ClassName.SHOWING);
 
-      cov_22sljdiynp.s[27]++;
+      cov_3kr2e0psp.s[27]++;
 
       if (this._config.animation) {
-        cov_22sljdiynp.b[2][0]++;
-        var transitionDuration = (cov_22sljdiynp.s[28]++, Util.getTransitionDurationFromElement(this._element));
-        cov_22sljdiynp.s[29]++;
+        cov_3kr2e0psp.b[2][0]++;
+        var transitionDuration = (cov_3kr2e0psp.s[28]++, Util.getTransitionDurationFromElement(this._element));
+        cov_3kr2e0psp.s[29]++;
         $(this._element).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
       } else {
-        cov_22sljdiynp.b[2][1]++;
-        cov_22sljdiynp.s[30]++;
+        cov_3kr2e0psp.b[2][1]++;
+        cov_3kr2e0psp.s[30]++;
         complete();
       }
     };
@@ -1892,32 +1892,32 @@
     _proto.hide = function hide(withoutTimeout) {
       var _this2 = this;
 
-      cov_22sljdiynp.f[5]++;
-      cov_22sljdiynp.s[31]++;
+      cov_3kr2e0psp.f[5]++;
+      cov_3kr2e0psp.s[31]++;
 
       if (!this._element.classList.contains(ClassName.SHOW)) {
-        cov_22sljdiynp.b[3][0]++;
-        cov_22sljdiynp.s[32]++;
+        cov_3kr2e0psp.b[3][0]++;
+        cov_3kr2e0psp.s[32]++;
         return;
       } else {
-        cov_22sljdiynp.b[3][1]++;
+        cov_3kr2e0psp.b[3][1]++;
       }
 
-      cov_22sljdiynp.s[33]++;
+      cov_3kr2e0psp.s[33]++;
       $(this._element).trigger(Event.HIDE);
-      cov_22sljdiynp.s[34]++;
+      cov_3kr2e0psp.s[34]++;
 
       if (withoutTimeout) {
-        cov_22sljdiynp.b[4][0]++;
-        cov_22sljdiynp.s[35]++;
+        cov_3kr2e0psp.b[4][0]++;
+        cov_3kr2e0psp.s[35]++;
 
         this._close();
       } else {
-        cov_22sljdiynp.b[4][1]++;
-        cov_22sljdiynp.s[36]++;
+        cov_3kr2e0psp.b[4][1]++;
+        cov_3kr2e0psp.s[36]++;
         this._timeout = setTimeout(function () {
-          cov_22sljdiynp.f[6]++;
-          cov_22sljdiynp.s[37]++;
+          cov_3kr2e0psp.f[6]++;
+          cov_3kr2e0psp.s[37]++;
 
           _this2._close();
         }, this._config.delay);
@@ -1925,51 +1925,51 @@
     };
 
     _proto.dispose = function dispose() {
-      cov_22sljdiynp.f[7]++;
-      cov_22sljdiynp.s[38]++;
+      cov_3kr2e0psp.f[7]++;
+      cov_3kr2e0psp.s[38]++;
       clearTimeout(this._timeout);
-      cov_22sljdiynp.s[39]++;
+      cov_3kr2e0psp.s[39]++;
       this._timeout = null;
-      cov_22sljdiynp.s[40]++;
+      cov_3kr2e0psp.s[40]++;
 
       if (this._element.classList.contains(ClassName.SHOW)) {
-        cov_22sljdiynp.b[5][0]++;
-        cov_22sljdiynp.s[41]++;
+        cov_3kr2e0psp.b[5][0]++;
+        cov_3kr2e0psp.s[41]++;
 
         this._element.classList.remove(ClassName.SHOW);
       } else {
-        cov_22sljdiynp.b[5][1]++;
+        cov_3kr2e0psp.b[5][1]++;
       }
 
-      cov_22sljdiynp.s[42]++;
+      cov_3kr2e0psp.s[42]++;
       $(this._element).off(Event.CLICK_DISMISS);
-      cov_22sljdiynp.s[43]++;
+      cov_3kr2e0psp.s[43]++;
       $.removeData(this._element, DATA_KEY);
-      cov_22sljdiynp.s[44]++;
+      cov_3kr2e0psp.s[44]++;
       this._element = null;
-      cov_22sljdiynp.s[45]++;
+      cov_3kr2e0psp.s[45]++;
       this._config = null;
     }; // Private
 
 
     _proto._getConfig = function _getConfig(config) {
-      cov_22sljdiynp.f[8]++;
-      cov_22sljdiynp.s[46]++;
-      config = _objectSpread({}, Default, $(this._element).data(), (cov_22sljdiynp.b[7][0]++, typeof config === 'object') && (cov_22sljdiynp.b[7][1]++, config) ? (cov_22sljdiynp.b[6][0]++, config) : (cov_22sljdiynp.b[6][1]++, {}));
-      cov_22sljdiynp.s[47]++;
+      cov_3kr2e0psp.f[8]++;
+      cov_3kr2e0psp.s[46]++;
+      config = _objectSpread({}, Default, $(this._element).data(), (cov_3kr2e0psp.b[7][0]++, typeof config === 'object') && (cov_3kr2e0psp.b[7][1]++, config) ? (cov_3kr2e0psp.b[6][0]++, config) : (cov_3kr2e0psp.b[6][1]++, {}));
+      cov_3kr2e0psp.s[47]++;
       Util.typeCheckConfig(NAME, config, this.constructor.DefaultType);
-      cov_22sljdiynp.s[48]++;
+      cov_3kr2e0psp.s[48]++;
       return config;
     };
 
     _proto._setListeners = function _setListeners() {
       var _this3 = this;
 
-      cov_22sljdiynp.f[9]++;
-      cov_22sljdiynp.s[49]++;
+      cov_3kr2e0psp.f[9]++;
+      cov_3kr2e0psp.s[49]++;
       $(this._element).on(Event.CLICK_DISMISS, Selector.DATA_DISMISS, function () {
-        cov_22sljdiynp.f[10]++;
-        cov_22sljdiynp.s[50]++;
+        cov_3kr2e0psp.f[10]++;
+        cov_3kr2e0psp.s[50]++;
         return _this3.hide(true);
       });
     };
@@ -1977,78 +1977,78 @@
     _proto._close = function _close() {
       var _this4 = this;
 
-      cov_22sljdiynp.f[11]++;
-      cov_22sljdiynp.s[51]++;
+      cov_3kr2e0psp.f[11]++;
+      cov_3kr2e0psp.s[51]++;
 
       var complete = function complete() {
-        cov_22sljdiynp.f[12]++;
-        cov_22sljdiynp.s[52]++;
+        cov_3kr2e0psp.f[12]++;
+        cov_3kr2e0psp.s[52]++;
 
         _this4._element.classList.add(ClassName.HIDE);
 
-        cov_22sljdiynp.s[53]++;
+        cov_3kr2e0psp.s[53]++;
         $(_this4._element).trigger(Event.HIDDEN);
       };
 
-      cov_22sljdiynp.s[54]++;
+      cov_3kr2e0psp.s[54]++;
 
       this._element.classList.remove(ClassName.SHOW);
 
-      cov_22sljdiynp.s[55]++;
+      cov_3kr2e0psp.s[55]++;
 
       if (this._config.animation) {
-        cov_22sljdiynp.b[8][0]++;
-        var transitionDuration = (cov_22sljdiynp.s[56]++, Util.getTransitionDurationFromElement(this._element));
-        cov_22sljdiynp.s[57]++;
+        cov_3kr2e0psp.b[8][0]++;
+        var transitionDuration = (cov_3kr2e0psp.s[56]++, Util.getTransitionDurationFromElement(this._element));
+        cov_3kr2e0psp.s[57]++;
         $(this._element).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
       } else {
-        cov_22sljdiynp.b[8][1]++;
-        cov_22sljdiynp.s[58]++;
+        cov_3kr2e0psp.b[8][1]++;
+        cov_3kr2e0psp.s[58]++;
         complete();
       }
     }; // Static
 
 
     Toast._jQueryInterface = function _jQueryInterface(config) {
-      cov_22sljdiynp.f[13]++;
-      cov_22sljdiynp.s[59]++;
+      cov_3kr2e0psp.f[13]++;
+      cov_3kr2e0psp.s[59]++;
       return this.each(function () {
-        cov_22sljdiynp.f[14]++;
-        var $element = (cov_22sljdiynp.s[60]++, $(this));
-        var data = (cov_22sljdiynp.s[61]++, $element.data(DATA_KEY));
+        cov_3kr2e0psp.f[14]++;
+        var $element = (cov_3kr2e0psp.s[60]++, $(this));
+        var data = (cov_3kr2e0psp.s[61]++, $element.data(DATA_KEY));
 
-        var _config = (cov_22sljdiynp.s[62]++, (cov_22sljdiynp.b[9][0]++, typeof config === 'object') && (cov_22sljdiynp.b[9][1]++, config));
+        var _config = (cov_3kr2e0psp.s[62]++, (cov_3kr2e0psp.b[9][0]++, typeof config === 'object') && (cov_3kr2e0psp.b[9][1]++, config));
 
-        cov_22sljdiynp.s[63]++;
+        cov_3kr2e0psp.s[63]++;
 
         if (!data) {
-          cov_22sljdiynp.b[10][0]++;
-          cov_22sljdiynp.s[64]++;
+          cov_3kr2e0psp.b[10][0]++;
+          cov_3kr2e0psp.s[64]++;
           data = new Toast(this, _config);
-          cov_22sljdiynp.s[65]++;
+          cov_3kr2e0psp.s[65]++;
           $element.data(DATA_KEY, data);
         } else {
-          cov_22sljdiynp.b[10][1]++;
+          cov_3kr2e0psp.b[10][1]++;
         }
 
-        cov_22sljdiynp.s[66]++;
+        cov_3kr2e0psp.s[66]++;
 
         if (typeof config === 'string') {
-          cov_22sljdiynp.b[11][0]++;
-          cov_22sljdiynp.s[67]++;
+          cov_3kr2e0psp.b[11][0]++;
+          cov_3kr2e0psp.s[67]++;
 
           if (typeof data[config] === 'undefined') {
-            cov_22sljdiynp.b[12][0]++;
-            cov_22sljdiynp.s[68]++;
+            cov_3kr2e0psp.b[12][0]++;
+            cov_3kr2e0psp.s[68]++;
             throw new TypeError("No method named \"" + config + "\"");
           } else {
-            cov_22sljdiynp.b[12][1]++;
+            cov_3kr2e0psp.b[12][1]++;
           }
 
-          cov_22sljdiynp.s[69]++;
+          cov_3kr2e0psp.s[69]++;
           data[config](this);
         } else {
-          cov_22sljdiynp.b[11][1]++;
+          cov_3kr2e0psp.b[11][1]++;
         }
       });
     };
@@ -2056,15 +2056,15 @@
     _createClass(Toast, null, [{
       key: "VERSION",
       get: function get() {
-        cov_22sljdiynp.f[1]++;
-        cov_22sljdiynp.s[14]++;
+        cov_3kr2e0psp.f[1]++;
+        cov_3kr2e0psp.s[14]++;
         return VERSION;
       }
     }, {
       key: "DefaultType",
       get: function get() {
-        cov_22sljdiynp.f[2]++;
-        cov_22sljdiynp.s[15]++;
+        cov_3kr2e0psp.f[2]++;
+        cov_3kr2e0psp.s[15]++;
         return DefaultType;
       }
     }]);
@@ -2078,17 +2078,17 @@
    */
 
 
-  cov_22sljdiynp.s[70]++;
+  cov_3kr2e0psp.s[70]++;
   $.fn[NAME] = Toast._jQueryInterface;
-  cov_22sljdiynp.s[71]++;
+  cov_3kr2e0psp.s[71]++;
   $.fn[NAME].Constructor = Toast;
-  cov_22sljdiynp.s[72]++;
+  cov_3kr2e0psp.s[72]++;
 
   $.fn[NAME].noConflict = function () {
-    cov_22sljdiynp.f[15]++;
-    cov_22sljdiynp.s[73]++;
+    cov_3kr2e0psp.f[15]++;
+    cov_3kr2e0psp.s[73]++;
     $.fn[NAME] = JQUERY_NO_CONFLICT;
-    cov_22sljdiynp.s[74]++;
+    cov_3kr2e0psp.s[74]++;
     return Toast._jQueryInterface;
   };
 

@@ -12,6 +12,7 @@
   <title></title>
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,500i,600,600i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
   <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
@@ -51,12 +52,153 @@
             <span class="eo-icon eo-icon-closing-medium"></span>
           </div>
           <div class="workbench-banner-right">
-            <a href="#" class="workbench-banner-right-text">
-              <span class="eo-icon eo-icon-add"></span>
+            <a class="workbench-banner-right-text" data-toggle="collapse" href="#addAClosing" role="button" aria-expanded="false" aria-controls="addAClosing"><span class="eo-icon eo-icon-add"></span></a>
+            <a class="workbench-banner-right-text" data-toggle="collapse" href="#addAClosing" role="button" aria-expanded="false" aria-controls="addAClosing">
               <span>Add closing</span>
             </a>
           </div>
         </div>
+
+        <div class="row">
+
+          <div class="collapse" id="addAClosing">
+
+            <div class="workbench-banner-form">
+
+              <div class="card card-sm card-body rounded-0 px-5 py-4">
+
+                <h2>Add a closing</h2>
+
+                <form class="form">
+
+                  <div class="row">
+                    <div class="col-lg-7 pr-lg-5">
+
+                      <p>Please enter the access code and one borrower&apos;s information from the email you received.</p>
+
+                      <div class="row">
+                        <div class="form-group col-md-6">
+                          <label class="col-form-label required" for="accessCode"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                            Access code
+                            <span class="text-muted">(label subtext example)</span>
+                          </label>
+                          <div class="form-control-wrap">
+                            <input class="form-control" name="accessCode" type="text" id="accessCode" placeholder="" value="" data-container="body" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus">
+                          </div>
+                          <div class="form-text"></div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-md-6">
+                          <label class="col-form-label" for="firstName">
+                            Borrower&apos;s
+                            first name</label>
+                          <div class="form-control-wrap">
+                            <input class="form-control" name="firstName" type="text" id="firstName" placeholder="" value="">
+                          </div>
+                          <div class="form-text"></div>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label class="col-form-label" for="lastName">
+                            Borrower&apos;s
+                            last name</label>
+                          <div class="form-control-wrap">
+                            <input class="form-control" name="lastName" type="text" id="lastName" placeholder="" value="">
+                          </div>
+                          <div class="form-text"></div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-12">
+                          <label class="col-form-label" for="emailAddress2">
+                            Borrower&apos;s
+                            email address</label>
+                          <div class="form-control-wrap">
+                            <input class="form-control" name="emailAddress2" type="email" id="emailAddress2" placeholder="" value="">
+                          </div>
+                          <div class="form-text"></div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-12">
+                          <label class="col-form-label" for="organizationsName">
+                            Organization&apos;s
+                            name</label>
+                          <div class="form-control-wrap">
+                            <input class="form-control" name="organizationsName" type="email" id="organizationsName" placeholder="" value="">
+                          </div>
+                          <div class="form-text"></div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="col-lg-5 border-left">
+
+                      <p>If you know the closing date, you can enter it here, to see your closings sorted by date.</p>
+
+                      <p>
+                        <a data-toggle="collapse" href="#closingDateFields" role="button" aria-expanded="false" aria-controls="closingDateFields"><span class="eo-icon eo-icon-add-closing-date-green"></span></a>
+                        <a data-toggle="collapse" href="#closingDateFields" role="button" aria-expanded="false" aria-controls="closingDateFields">Add date/time</a>
+                      </p>
+
+                      <div id="closingDateFields" class="collapse">
+
+                        <div class="row align-items-end">
+
+                          <div class="col-sm-6 col-lg-12 col-xl-6">
+                            <div id="closingDatePicker"></div>
+                          </div>
+
+                          <div class="col-sm-6 col-lg-12 col-xl-6">
+
+                            <div class="row">
+                              <div class="form-group col-12">
+                                <label class="col-form-label required" for="hour"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>Time</label>
+                                <div class="form-control-wrap">
+                                  <select class="form-control form-control-short" name="hour" id="hour"><option>12</option></select>
+                                    <select class="form-control form-control-short" name="minute" id="minute"><option>59</option></select>
+                                </div>
+                                <div class="form-text"></div>
+                              </div>
+                            </div>
+
+                            <div class="row">
+                              <div class="form-group col-12">
+                                <label class="col-form-label required" for="timezone"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                                  Time zone</label>
+                                <div class="form-control-wrap">
+                                  <select class="form-control form-control-short" name="timezone" id="timezone"><option>CET</option></select>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="pad"></div>
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary px-5">Save</button>
+                    <button type="button" id="cancel" class="btn btn-blank" data-toggle="collapse" data-target="#addAClosing" role="button" aria-expanded="false" aria-controls="addAClosing">Cancel</button>
+                  </div>
+
+                </form>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
     </div>
 
@@ -435,12 +577,49 @@
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
   <script src="../dist/js/bootstrap.min.js"></script>
 
   <script>
-    $('[data-toggle="tooltip"]').tooltip()
+
+    $('[data-toggle="tooltip"]').tooltip();
+
+    $('#addAClosing')
+      .on('show.bs.collapse hide.bs.collapse', function (e) {
+
+        e.stopPropagation();
+
+        $('[href="#addAClosing"]')
+          .toggleClass('d-none');
+        $(this).parents('.workbench-banner')
+          .toggleClass('workbench-banner-open');
+      });
+
+    $('#closingDateFields')
+      .on('show.bs.collapse hide.bs.collapse', function (e) {
+
+        e.stopPropagation();
+
+        $('[href="#closingDateFields"]')
+          .toggleClass('d-none');
+      });
+
+    $('#closingDatePicker').datetimepicker({
+      allowMultidate: true,
+      multidateSeparator: ',',
+      inline: true,
+      format: 'L',
+      icons: {
+        next: "eo-icon eo-icon-next-arrow",
+        previous: "eo-icon eo-icon-previous-arrow",
+      },
+      defaultDate: "01/01/2019",
+    });
+
   </script>
+
 </body>
 
 
