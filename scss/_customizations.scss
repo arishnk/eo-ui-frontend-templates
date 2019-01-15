@@ -620,6 +620,7 @@ a.form-control-feedback {
 
 .card {
 
+  position: relative;
   border-radius: 9px;
   @include box-shadow(0 5px 10px 0 rgba(0, 0, 0, .2));
   padding: 25px 40px 35px;
@@ -630,6 +631,12 @@ a.form-control-feedback {
 
   &.card-sm {
     padding: 15px 25px 20px;
+  }
+
+  > .card-close {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
 }
@@ -699,6 +706,10 @@ a.form-control-feedback {
     text-align: center;
   }
 
+  .border-lg-left {
+    border-left: 1px solid #d9dee1 !important;
+  }
+
 }
 
 @include media-breakpoint-up(xl) {
@@ -715,6 +726,10 @@ a.form-control-feedback {
 
   .text-center-lg {
     text-align: center;
+  }
+
+  .border-xl-left {
+    border-left: 1px solid #d9dee1 !important;
   }
 
 }
@@ -1208,15 +1223,18 @@ table.table.table-sm {
 
   &::before {
     content: "";
+    pointer-events: none;
     display: block;
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 237px;
+    width: 100%;
     height: 100%;
     opacity: .14;
     background-image: url("../img/angled_white_dot_pattern.png");
     background-position-y: calc(65% + 5px);
+    transition: background-position 250ms;
+    background-repeat: no-repeat;
 
     @include media-breakpoint-up(md) {
       background-position-y: 65%;
@@ -1241,6 +1259,12 @@ table.table.table-sm {
     }
   }
 
+  .workbench-banner-form {
+
+    padding-bottom: 43px;
+
+  }
+
   .workbench-banner-left .workbench-banner-left-text {
     font-size: 30px;
     font-weight: $font-weight-normal;
@@ -1252,6 +1276,17 @@ table.table.table-sm {
     letter-spacing: .4px;
     color: $white;
   }
+
+  &.workbench-banner-open::before {
+
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-up(md) {
+      background-position-y: 100%;
+    }
+  }
+
 }
 
 .workbench-main {
@@ -1439,4 +1474,33 @@ table.table.table-sm {
 .navbar-expand > .container-fluid {
   padding-left: 25px;
   padding-right: 25px;
+}
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+
+  background-color: #57a40a;
+
+  &::before {
+    display: none;
+  }
+
+}
+
+.bootstrap-datetimepicker-widget table thead tr:first-child {
+  background-color: #d9dee1;
+}
+
+.bootstrap-datetimepicker-widget table td.old,
+.bootstrap-datetimepicker-widget table td.new {
+  background-color: #d0f2b1;
+  color: #8d939a;
+}
+
+.bootstrap-datetimepicker-widget table td.today::before {
+  border-bottom-color: #57a40a;
+}
+
+.bootstrap-datetimepicker-widget table td.day {
+  border: 6px solid #fff;
 }

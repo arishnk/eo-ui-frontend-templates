@@ -63,14 +63,14 @@
     return target;
   }
 
-  var cov_1xvtnn1bxa = function () {
-    var path = "/Users/jkoulish/Sites/eo-ui-frontend-templates/js/src/tooltip.js",
-        hash = "0ee6ae6901133b032ec0e0648c64c9bae52dba7d",
+  var cov_2ar62w3fuq = function () {
+    var path = "C:\\Users\\ari\\source\\repos\\eo-ui-frontend-templates\\js\\src\\tooltip.js",
+        hash = "2163d7cb8da9fbde1635f481b0905f54b5cdc82a",
         Function = function () {}.constructor,
         global = new Function('return this')(),
         gcv = "__coverage__",
         coverageData = {
-      path: "/Users/jkoulish/Sites/eo-ui-frontend-templates/js/src/tooltip.js",
+      path: "C:\\Users\\ari\\source\\repos\\eo-ui-frontend-templates\\js\\src\\tooltip.js",
       statementMap: {
         "0": {
           start: {
@@ -7123,14 +7123,14 @@
    * ------------------------------------------------------------------------
    */
 
-  var NAME = (cov_1xvtnn1bxa.s[0]++, 'tooltip');
-  var VERSION = (cov_1xvtnn1bxa.s[1]++, '4.2.1');
-  var DATA_KEY = (cov_1xvtnn1bxa.s[2]++, 'bs.tooltip');
-  var EVENT_KEY = (cov_1xvtnn1bxa.s[3]++, "." + DATA_KEY);
-  var JQUERY_NO_CONFLICT = (cov_1xvtnn1bxa.s[4]++, $.fn[NAME]);
-  var CLASS_PREFIX = (cov_1xvtnn1bxa.s[5]++, 'bs-tooltip');
-  var BSCLS_PREFIX_REGEX = (cov_1xvtnn1bxa.s[6]++, new RegExp("(^|\\s)" + CLASS_PREFIX + "\\S+", 'g'));
-  var DefaultType = (cov_1xvtnn1bxa.s[7]++, {
+  var NAME = (cov_2ar62w3fuq.s[0]++, 'tooltip');
+  var VERSION = (cov_2ar62w3fuq.s[1]++, '4.2.1');
+  var DATA_KEY = (cov_2ar62w3fuq.s[2]++, 'bs.tooltip');
+  var EVENT_KEY = (cov_2ar62w3fuq.s[3]++, "." + DATA_KEY);
+  var JQUERY_NO_CONFLICT = (cov_2ar62w3fuq.s[4]++, $.fn[NAME]);
+  var CLASS_PREFIX = (cov_2ar62w3fuq.s[5]++, 'bs-tooltip');
+  var BSCLS_PREFIX_REGEX = (cov_2ar62w3fuq.s[6]++, new RegExp("(^|\\s)" + CLASS_PREFIX + "\\S+", 'g'));
+  var DefaultType = (cov_2ar62w3fuq.s[7]++, {
     animation: 'boolean',
     template: 'string',
     title: '(string|element|function)',
@@ -7144,14 +7144,14 @@
     fallbackPlacement: '(string|array)',
     boundary: '(string|element)'
   });
-  var AttachmentMap = (cov_1xvtnn1bxa.s[8]++, {
+  var AttachmentMap = (cov_2ar62w3fuq.s[8]++, {
     AUTO: 'auto',
     TOP: 'top',
     RIGHT: 'right',
     BOTTOM: 'bottom',
     LEFT: 'left'
   });
-  var Default = (cov_1xvtnn1bxa.s[9]++, {
+  var Default = (cov_2ar62w3fuq.s[9]++, {
     animation: true,
     template: '<div class="tooltip" role="tooltip">' + '<div class="arrow"></div>' + '<div class="tooltip-inner"></div></div>',
     trigger: 'hover focus',
@@ -7165,11 +7165,11 @@
     fallbackPlacement: 'flip',
     boundary: 'scrollParent'
   });
-  var HoverState = (cov_1xvtnn1bxa.s[10]++, {
+  var HoverState = (cov_2ar62w3fuq.s[10]++, {
     SHOW: 'show',
     OUT: 'out'
   });
-  var Event = (cov_1xvtnn1bxa.s[11]++, {
+  var Event = (cov_2ar62w3fuq.s[11]++, {
     HIDE: "hide" + EVENT_KEY,
     HIDDEN: "hidden" + EVENT_KEY,
     SHOW: "show" + EVENT_KEY,
@@ -7181,16 +7181,16 @@
     MOUSEENTER: "mouseenter" + EVENT_KEY,
     MOUSELEAVE: "mouseleave" + EVENT_KEY
   });
-  var ClassName = (cov_1xvtnn1bxa.s[12]++, {
+  var ClassName = (cov_2ar62w3fuq.s[12]++, {
     FADE: 'fade',
     SHOW: 'show'
   });
-  var Selector = (cov_1xvtnn1bxa.s[13]++, {
+  var Selector = (cov_2ar62w3fuq.s[13]++, {
     TOOLTIP: '.tooltip',
     TOOLTIP_INNER: '.tooltip-inner',
     ARROW: '.arrow'
   });
-  var Trigger = (cov_1xvtnn1bxa.s[14]++, {
+  var Trigger = (cov_2ar62w3fuq.s[14]++, {
     HOVER: 'hover',
     FOCUS: 'focus',
     CLICK: 'click',
@@ -7207,40 +7207,40 @@
   /*#__PURE__*/
   function () {
     function Tooltip(element, config) {
-      cov_1xvtnn1bxa.f[0]++;
-      cov_1xvtnn1bxa.s[15]++;
+      cov_2ar62w3fuq.f[0]++;
+      cov_2ar62w3fuq.s[15]++;
 
       /**
        * Check for Popper dependency
        * Popper - https://popper.js.org
        */
       if (typeof Popper === 'undefined') {
-        cov_1xvtnn1bxa.b[0][0]++;
-        cov_1xvtnn1bxa.s[16]++;
+        cov_2ar62w3fuq.b[0][0]++;
+        cov_2ar62w3fuq.s[16]++;
         throw new TypeError('Bootstrap\'s tooltips require Popper.js (https://popper.js.org/)');
       } else {
-        cov_1xvtnn1bxa.b[0][1]++;
+        cov_2ar62w3fuq.b[0][1]++;
       } // private
 
 
-      cov_1xvtnn1bxa.s[17]++;
+      cov_2ar62w3fuq.s[17]++;
       this._isEnabled = true;
-      cov_1xvtnn1bxa.s[18]++;
+      cov_2ar62w3fuq.s[18]++;
       this._timeout = 0;
-      cov_1xvtnn1bxa.s[19]++;
+      cov_2ar62w3fuq.s[19]++;
       this._hoverState = '';
-      cov_1xvtnn1bxa.s[20]++;
+      cov_2ar62w3fuq.s[20]++;
       this._activeTrigger = {};
-      cov_1xvtnn1bxa.s[21]++;
+      cov_2ar62w3fuq.s[21]++;
       this._popper = null; // Protected
 
-      cov_1xvtnn1bxa.s[22]++;
+      cov_2ar62w3fuq.s[22]++;
       this.element = element;
-      cov_1xvtnn1bxa.s[23]++;
+      cov_2ar62w3fuq.s[23]++;
       this.config = this._getConfig(config);
-      cov_1xvtnn1bxa.s[24]++;
+      cov_2ar62w3fuq.s[24]++;
       this.tip = null;
-      cov_1xvtnn1bxa.s[25]++;
+      cov_2ar62w3fuq.s[25]++;
 
       this._setListeners();
     } // Getters
@@ -7250,210 +7250,210 @@
 
     // Public
     _proto.enable = function enable() {
-      cov_1xvtnn1bxa.f[8]++;
-      cov_1xvtnn1bxa.s[33]++;
+      cov_2ar62w3fuq.f[8]++;
+      cov_2ar62w3fuq.s[33]++;
       this._isEnabled = true;
     };
 
     _proto.disable = function disable() {
-      cov_1xvtnn1bxa.f[9]++;
-      cov_1xvtnn1bxa.s[34]++;
+      cov_2ar62w3fuq.f[9]++;
+      cov_2ar62w3fuq.s[34]++;
       this._isEnabled = false;
     };
 
     _proto.toggleEnabled = function toggleEnabled() {
-      cov_1xvtnn1bxa.f[10]++;
-      cov_1xvtnn1bxa.s[35]++;
+      cov_2ar62w3fuq.f[10]++;
+      cov_2ar62w3fuq.s[35]++;
       this._isEnabled = !this._isEnabled;
     };
 
     _proto.toggle = function toggle(event) {
-      cov_1xvtnn1bxa.f[11]++;
-      cov_1xvtnn1bxa.s[36]++;
+      cov_2ar62w3fuq.f[11]++;
+      cov_2ar62w3fuq.s[36]++;
 
       if (!this._isEnabled) {
-        cov_1xvtnn1bxa.b[1][0]++;
-        cov_1xvtnn1bxa.s[37]++;
+        cov_2ar62w3fuq.b[1][0]++;
+        cov_2ar62w3fuq.s[37]++;
         return;
       } else {
-        cov_1xvtnn1bxa.b[1][1]++;
+        cov_2ar62w3fuq.b[1][1]++;
       }
 
-      cov_1xvtnn1bxa.s[38]++;
+      cov_2ar62w3fuq.s[38]++;
 
       if (event) {
-        cov_1xvtnn1bxa.b[2][0]++;
-        var dataKey = (cov_1xvtnn1bxa.s[39]++, this.constructor.DATA_KEY);
-        var context = (cov_1xvtnn1bxa.s[40]++, $(event.currentTarget).data(dataKey));
-        cov_1xvtnn1bxa.s[41]++;
+        cov_2ar62w3fuq.b[2][0]++;
+        var dataKey = (cov_2ar62w3fuq.s[39]++, this.constructor.DATA_KEY);
+        var context = (cov_2ar62w3fuq.s[40]++, $(event.currentTarget).data(dataKey));
+        cov_2ar62w3fuq.s[41]++;
 
         if (!context) {
-          cov_1xvtnn1bxa.b[3][0]++;
-          cov_1xvtnn1bxa.s[42]++;
+          cov_2ar62w3fuq.b[3][0]++;
+          cov_2ar62w3fuq.s[42]++;
           context = new this.constructor(event.currentTarget, this._getDelegateConfig());
-          cov_1xvtnn1bxa.s[43]++;
+          cov_2ar62w3fuq.s[43]++;
           $(event.currentTarget).data(dataKey, context);
         } else {
-          cov_1xvtnn1bxa.b[3][1]++;
+          cov_2ar62w3fuq.b[3][1]++;
         }
 
-        cov_1xvtnn1bxa.s[44]++;
+        cov_2ar62w3fuq.s[44]++;
         context._activeTrigger.click = !context._activeTrigger.click;
-        cov_1xvtnn1bxa.s[45]++;
+        cov_2ar62w3fuq.s[45]++;
 
         if (context._isWithActiveTrigger()) {
-          cov_1xvtnn1bxa.b[4][0]++;
-          cov_1xvtnn1bxa.s[46]++;
+          cov_2ar62w3fuq.b[4][0]++;
+          cov_2ar62w3fuq.s[46]++;
 
           context._enter(null, context);
         } else {
-          cov_1xvtnn1bxa.b[4][1]++;
-          cov_1xvtnn1bxa.s[47]++;
+          cov_2ar62w3fuq.b[4][1]++;
+          cov_2ar62w3fuq.s[47]++;
 
           context._leave(null, context);
         }
       } else {
-        cov_1xvtnn1bxa.b[2][1]++;
-        cov_1xvtnn1bxa.s[48]++;
+        cov_2ar62w3fuq.b[2][1]++;
+        cov_2ar62w3fuq.s[48]++;
 
         if ($(this.getTipElement()).hasClass(ClassName.SHOW)) {
-          cov_1xvtnn1bxa.b[5][0]++;
-          cov_1xvtnn1bxa.s[49]++;
+          cov_2ar62w3fuq.b[5][0]++;
+          cov_2ar62w3fuq.s[49]++;
 
           this._leave(null, this);
 
-          cov_1xvtnn1bxa.s[50]++;
+          cov_2ar62w3fuq.s[50]++;
           return;
         } else {
-          cov_1xvtnn1bxa.b[5][1]++;
+          cov_2ar62w3fuq.b[5][1]++;
         }
 
-        cov_1xvtnn1bxa.s[51]++;
+        cov_2ar62w3fuq.s[51]++;
 
         this._enter(null, this);
       }
     };
 
     _proto.dispose = function dispose() {
-      cov_1xvtnn1bxa.f[12]++;
-      cov_1xvtnn1bxa.s[52]++;
+      cov_2ar62w3fuq.f[12]++;
+      cov_2ar62w3fuq.s[52]++;
       clearTimeout(this._timeout);
-      cov_1xvtnn1bxa.s[53]++;
+      cov_2ar62w3fuq.s[53]++;
       $.removeData(this.element, this.constructor.DATA_KEY);
-      cov_1xvtnn1bxa.s[54]++;
+      cov_2ar62w3fuq.s[54]++;
       $(this.element).off(this.constructor.EVENT_KEY);
-      cov_1xvtnn1bxa.s[55]++;
+      cov_2ar62w3fuq.s[55]++;
       $(this.element).closest('.modal').off('hide.bs.modal');
-      cov_1xvtnn1bxa.s[56]++;
+      cov_2ar62w3fuq.s[56]++;
 
       if (this.tip) {
-        cov_1xvtnn1bxa.b[6][0]++;
-        cov_1xvtnn1bxa.s[57]++;
+        cov_2ar62w3fuq.b[6][0]++;
+        cov_2ar62w3fuq.s[57]++;
         $(this.tip).remove();
       } else {
-        cov_1xvtnn1bxa.b[6][1]++;
+        cov_2ar62w3fuq.b[6][1]++;
       }
 
-      cov_1xvtnn1bxa.s[58]++;
+      cov_2ar62w3fuq.s[58]++;
       this._isEnabled = null;
-      cov_1xvtnn1bxa.s[59]++;
+      cov_2ar62w3fuq.s[59]++;
       this._timeout = null;
-      cov_1xvtnn1bxa.s[60]++;
+      cov_2ar62w3fuq.s[60]++;
       this._hoverState = null;
-      cov_1xvtnn1bxa.s[61]++;
+      cov_2ar62w3fuq.s[61]++;
       this._activeTrigger = null;
-      cov_1xvtnn1bxa.s[62]++;
+      cov_2ar62w3fuq.s[62]++;
 
       if (this._popper !== null) {
-        cov_1xvtnn1bxa.b[7][0]++;
-        cov_1xvtnn1bxa.s[63]++;
+        cov_2ar62w3fuq.b[7][0]++;
+        cov_2ar62w3fuq.s[63]++;
 
         this._popper.destroy();
       } else {
-        cov_1xvtnn1bxa.b[7][1]++;
+        cov_2ar62w3fuq.b[7][1]++;
       }
 
-      cov_1xvtnn1bxa.s[64]++;
+      cov_2ar62w3fuq.s[64]++;
       this._popper = null;
-      cov_1xvtnn1bxa.s[65]++;
+      cov_2ar62w3fuq.s[65]++;
       this.element = null;
-      cov_1xvtnn1bxa.s[66]++;
+      cov_2ar62w3fuq.s[66]++;
       this.config = null;
-      cov_1xvtnn1bxa.s[67]++;
+      cov_2ar62w3fuq.s[67]++;
       this.tip = null;
     };
 
     _proto.show = function show() {
       var _this = this;
 
-      cov_1xvtnn1bxa.f[13]++;
-      cov_1xvtnn1bxa.s[68]++;
+      cov_2ar62w3fuq.f[13]++;
+      cov_2ar62w3fuq.s[68]++;
 
       if ($(this.element).css('display') === 'none') {
-        cov_1xvtnn1bxa.b[8][0]++;
-        cov_1xvtnn1bxa.s[69]++;
+        cov_2ar62w3fuq.b[8][0]++;
+        cov_2ar62w3fuq.s[69]++;
         throw new Error('Please use show on visible elements');
       } else {
-        cov_1xvtnn1bxa.b[8][1]++;
+        cov_2ar62w3fuq.b[8][1]++;
       }
 
-      var showEvent = (cov_1xvtnn1bxa.s[70]++, $.Event(this.constructor.Event.SHOW));
-      cov_1xvtnn1bxa.s[71]++;
+      var showEvent = (cov_2ar62w3fuq.s[70]++, $.Event(this.constructor.Event.SHOW));
+      cov_2ar62w3fuq.s[71]++;
 
-      if ((cov_1xvtnn1bxa.b[10][0]++, this.isWithContent()) && (cov_1xvtnn1bxa.b[10][1]++, this._isEnabled)) {
-        cov_1xvtnn1bxa.b[9][0]++;
-        cov_1xvtnn1bxa.s[72]++;
+      if ((cov_2ar62w3fuq.b[10][0]++, this.isWithContent()) && (cov_2ar62w3fuq.b[10][1]++, this._isEnabled)) {
+        cov_2ar62w3fuq.b[9][0]++;
+        cov_2ar62w3fuq.s[72]++;
         $(this.element).trigger(showEvent);
-        var shadowRoot = (cov_1xvtnn1bxa.s[73]++, Util.findShadowRoot(this.element));
-        var isInTheDom = (cov_1xvtnn1bxa.s[74]++, $.contains(shadowRoot !== null ? (cov_1xvtnn1bxa.b[11][0]++, shadowRoot) : (cov_1xvtnn1bxa.b[11][1]++, this.element.ownerDocument.documentElement), this.element));
-        cov_1xvtnn1bxa.s[75]++;
+        var shadowRoot = (cov_2ar62w3fuq.s[73]++, Util.findShadowRoot(this.element));
+        var isInTheDom = (cov_2ar62w3fuq.s[74]++, $.contains(shadowRoot !== null ? (cov_2ar62w3fuq.b[11][0]++, shadowRoot) : (cov_2ar62w3fuq.b[11][1]++, this.element.ownerDocument.documentElement), this.element));
+        cov_2ar62w3fuq.s[75]++;
 
-        if ((cov_1xvtnn1bxa.b[13][0]++, showEvent.isDefaultPrevented()) || (cov_1xvtnn1bxa.b[13][1]++, !isInTheDom)) {
-          cov_1xvtnn1bxa.b[12][0]++;
-          cov_1xvtnn1bxa.s[76]++;
+        if ((cov_2ar62w3fuq.b[13][0]++, showEvent.isDefaultPrevented()) || (cov_2ar62w3fuq.b[13][1]++, !isInTheDom)) {
+          cov_2ar62w3fuq.b[12][0]++;
+          cov_2ar62w3fuq.s[76]++;
           return;
         } else {
-          cov_1xvtnn1bxa.b[12][1]++;
+          cov_2ar62w3fuq.b[12][1]++;
         }
 
-        var tip = (cov_1xvtnn1bxa.s[77]++, this.getTipElement());
-        var tipId = (cov_1xvtnn1bxa.s[78]++, Util.getUID(this.constructor.NAME));
-        cov_1xvtnn1bxa.s[79]++;
+        var tip = (cov_2ar62w3fuq.s[77]++, this.getTipElement());
+        var tipId = (cov_2ar62w3fuq.s[78]++, Util.getUID(this.constructor.NAME));
+        cov_2ar62w3fuq.s[79]++;
         tip.setAttribute('id', tipId);
-        cov_1xvtnn1bxa.s[80]++;
+        cov_2ar62w3fuq.s[80]++;
         this.element.setAttribute('aria-describedby', tipId);
-        cov_1xvtnn1bxa.s[81]++;
+        cov_2ar62w3fuq.s[81]++;
         this.setContent();
-        cov_1xvtnn1bxa.s[82]++;
+        cov_2ar62w3fuq.s[82]++;
 
         if (this.config.animation) {
-          cov_1xvtnn1bxa.b[14][0]++;
-          cov_1xvtnn1bxa.s[83]++;
+          cov_2ar62w3fuq.b[14][0]++;
+          cov_2ar62w3fuq.s[83]++;
           $(tip).addClass(ClassName.FADE);
         } else {
-          cov_1xvtnn1bxa.b[14][1]++;
+          cov_2ar62w3fuq.b[14][1]++;
         }
 
-        var placement = (cov_1xvtnn1bxa.s[84]++, typeof this.config.placement === 'function' ? (cov_1xvtnn1bxa.b[15][0]++, this.config.placement.call(this, tip, this.element)) : (cov_1xvtnn1bxa.b[15][1]++, this.config.placement));
-        var attachment = (cov_1xvtnn1bxa.s[85]++, this._getAttachment(placement));
-        cov_1xvtnn1bxa.s[86]++;
+        var placement = (cov_2ar62w3fuq.s[84]++, typeof this.config.placement === 'function' ? (cov_2ar62w3fuq.b[15][0]++, this.config.placement.call(this, tip, this.element)) : (cov_2ar62w3fuq.b[15][1]++, this.config.placement));
+        var attachment = (cov_2ar62w3fuq.s[85]++, this._getAttachment(placement));
+        cov_2ar62w3fuq.s[86]++;
         this.addAttachmentClass(attachment);
-        var container = (cov_1xvtnn1bxa.s[87]++, this._getContainer());
-        cov_1xvtnn1bxa.s[88]++;
+        var container = (cov_2ar62w3fuq.s[87]++, this._getContainer());
+        cov_2ar62w3fuq.s[88]++;
         $(tip).data(this.constructor.DATA_KEY, this);
-        cov_1xvtnn1bxa.s[89]++;
+        cov_2ar62w3fuq.s[89]++;
 
         if (!$.contains(this.element.ownerDocument.documentElement, this.tip)) {
-          cov_1xvtnn1bxa.b[16][0]++;
-          cov_1xvtnn1bxa.s[90]++;
+          cov_2ar62w3fuq.b[16][0]++;
+          cov_2ar62w3fuq.s[90]++;
           $(tip).appendTo(container);
         } else {
-          cov_1xvtnn1bxa.b[16][1]++;
+          cov_2ar62w3fuq.b[16][1]++;
         }
 
-        cov_1xvtnn1bxa.s[91]++;
+        cov_2ar62w3fuq.s[91]++;
         $(this.element).trigger(this.constructor.Event.INSERTED);
-        cov_1xvtnn1bxa.s[92]++;
+        cov_2ar62w3fuq.s[92]++;
         this._popper = new Popper(this.element, tip, {
           placement: attachment,
           modifiers: {
@@ -7471,738 +7471,738 @@
             }
           },
           onCreate: function onCreate(data) {
-            cov_1xvtnn1bxa.f[14]++;
-            cov_1xvtnn1bxa.s[93]++;
+            cov_2ar62w3fuq.f[14]++;
+            cov_2ar62w3fuq.s[93]++;
 
             if (data.originalPlacement !== data.placement) {
-              cov_1xvtnn1bxa.b[17][0]++;
-              cov_1xvtnn1bxa.s[94]++;
+              cov_2ar62w3fuq.b[17][0]++;
+              cov_2ar62w3fuq.s[94]++;
 
               _this._handlePopperPlacementChange(data);
             } else {
-              cov_1xvtnn1bxa.b[17][1]++;
+              cov_2ar62w3fuq.b[17][1]++;
             }
           },
           onUpdate: function onUpdate(data) {
-            cov_1xvtnn1bxa.f[15]++;
-            cov_1xvtnn1bxa.s[95]++;
+            cov_2ar62w3fuq.f[15]++;
+            cov_2ar62w3fuq.s[95]++;
             return _this._handlePopperPlacementChange(data);
           }
         });
-        cov_1xvtnn1bxa.s[96]++;
+        cov_2ar62w3fuq.s[96]++;
         $(tip).addClass(ClassName.SHOW); // If this is a touch-enabled device we add extra
         // empty mouseover listeners to the body's immediate children;
         // only needed because of broken event delegation on iOS
         // https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
 
-        cov_1xvtnn1bxa.s[97]++;
+        cov_2ar62w3fuq.s[97]++;
 
         if ('ontouchstart' in document.documentElement) {
-          cov_1xvtnn1bxa.b[18][0]++;
-          cov_1xvtnn1bxa.s[98]++;
+          cov_2ar62w3fuq.b[18][0]++;
+          cov_2ar62w3fuq.s[98]++;
           $(document.body).children().on('mouseover', null, $.noop);
         } else {
-          cov_1xvtnn1bxa.b[18][1]++;
+          cov_2ar62w3fuq.b[18][1]++;
         }
 
-        cov_1xvtnn1bxa.s[99]++;
+        cov_2ar62w3fuq.s[99]++;
 
         var complete = function complete() {
-          cov_1xvtnn1bxa.f[16]++;
-          cov_1xvtnn1bxa.s[100]++;
+          cov_2ar62w3fuq.f[16]++;
+          cov_2ar62w3fuq.s[100]++;
 
           if (_this.config.animation) {
-            cov_1xvtnn1bxa.b[19][0]++;
-            cov_1xvtnn1bxa.s[101]++;
+            cov_2ar62w3fuq.b[19][0]++;
+            cov_2ar62w3fuq.s[101]++;
 
             _this._fixTransition();
           } else {
-            cov_1xvtnn1bxa.b[19][1]++;
+            cov_2ar62w3fuq.b[19][1]++;
           }
 
-          var prevHoverState = (cov_1xvtnn1bxa.s[102]++, _this._hoverState);
-          cov_1xvtnn1bxa.s[103]++;
+          var prevHoverState = (cov_2ar62w3fuq.s[102]++, _this._hoverState);
+          cov_2ar62w3fuq.s[103]++;
           _this._hoverState = null;
-          cov_1xvtnn1bxa.s[104]++;
+          cov_2ar62w3fuq.s[104]++;
           $(_this.element).trigger(_this.constructor.Event.SHOWN);
-          cov_1xvtnn1bxa.s[105]++;
+          cov_2ar62w3fuq.s[105]++;
 
           if (prevHoverState === HoverState.OUT) {
-            cov_1xvtnn1bxa.b[20][0]++;
-            cov_1xvtnn1bxa.s[106]++;
+            cov_2ar62w3fuq.b[20][0]++;
+            cov_2ar62w3fuq.s[106]++;
 
             _this._leave(null, _this);
           } else {
-            cov_1xvtnn1bxa.b[20][1]++;
+            cov_2ar62w3fuq.b[20][1]++;
           }
         };
 
-        cov_1xvtnn1bxa.s[107]++;
+        cov_2ar62w3fuq.s[107]++;
 
         if ($(this.tip).hasClass(ClassName.FADE)) {
-          cov_1xvtnn1bxa.b[21][0]++;
-          var transitionDuration = (cov_1xvtnn1bxa.s[108]++, Util.getTransitionDurationFromElement(this.tip));
-          cov_1xvtnn1bxa.s[109]++;
+          cov_2ar62w3fuq.b[21][0]++;
+          var transitionDuration = (cov_2ar62w3fuq.s[108]++, Util.getTransitionDurationFromElement(this.tip));
+          cov_2ar62w3fuq.s[109]++;
           $(this.tip).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
         } else {
-          cov_1xvtnn1bxa.b[21][1]++;
-          cov_1xvtnn1bxa.s[110]++;
+          cov_2ar62w3fuq.b[21][1]++;
+          cov_2ar62w3fuq.s[110]++;
           complete();
         }
       } else {
-        cov_1xvtnn1bxa.b[9][1]++;
+        cov_2ar62w3fuq.b[9][1]++;
       }
     };
 
     _proto.hide = function hide(callback) {
       var _this2 = this;
 
-      cov_1xvtnn1bxa.f[17]++;
-      var tip = (cov_1xvtnn1bxa.s[111]++, this.getTipElement());
-      var hideEvent = (cov_1xvtnn1bxa.s[112]++, $.Event(this.constructor.Event.HIDE));
-      cov_1xvtnn1bxa.s[113]++;
+      cov_2ar62w3fuq.f[17]++;
+      var tip = (cov_2ar62w3fuq.s[111]++, this.getTipElement());
+      var hideEvent = (cov_2ar62w3fuq.s[112]++, $.Event(this.constructor.Event.HIDE));
+      cov_2ar62w3fuq.s[113]++;
 
       var complete = function complete() {
-        cov_1xvtnn1bxa.f[18]++;
-        cov_1xvtnn1bxa.s[114]++;
+        cov_2ar62w3fuq.f[18]++;
+        cov_2ar62w3fuq.s[114]++;
 
-        if ((cov_1xvtnn1bxa.b[23][0]++, _this2._hoverState !== HoverState.SHOW) && (cov_1xvtnn1bxa.b[23][1]++, tip.parentNode)) {
-          cov_1xvtnn1bxa.b[22][0]++;
-          cov_1xvtnn1bxa.s[115]++;
+        if ((cov_2ar62w3fuq.b[23][0]++, _this2._hoverState !== HoverState.SHOW) && (cov_2ar62w3fuq.b[23][1]++, tip.parentNode)) {
+          cov_2ar62w3fuq.b[22][0]++;
+          cov_2ar62w3fuq.s[115]++;
           tip.parentNode.removeChild(tip);
         } else {
-          cov_1xvtnn1bxa.b[22][1]++;
+          cov_2ar62w3fuq.b[22][1]++;
         }
 
-        cov_1xvtnn1bxa.s[116]++;
+        cov_2ar62w3fuq.s[116]++;
 
         _this2._cleanTipClass();
 
-        cov_1xvtnn1bxa.s[117]++;
+        cov_2ar62w3fuq.s[117]++;
 
         _this2.element.removeAttribute('aria-describedby');
 
-        cov_1xvtnn1bxa.s[118]++;
+        cov_2ar62w3fuq.s[118]++;
         $(_this2.element).trigger(_this2.constructor.Event.HIDDEN);
-        cov_1xvtnn1bxa.s[119]++;
+        cov_2ar62w3fuq.s[119]++;
 
         if (_this2._popper !== null) {
-          cov_1xvtnn1bxa.b[24][0]++;
-          cov_1xvtnn1bxa.s[120]++;
+          cov_2ar62w3fuq.b[24][0]++;
+          cov_2ar62w3fuq.s[120]++;
 
           _this2._popper.destroy();
         } else {
-          cov_1xvtnn1bxa.b[24][1]++;
+          cov_2ar62w3fuq.b[24][1]++;
         }
 
-        cov_1xvtnn1bxa.s[121]++;
+        cov_2ar62w3fuq.s[121]++;
 
         if (callback) {
-          cov_1xvtnn1bxa.b[25][0]++;
-          cov_1xvtnn1bxa.s[122]++;
+          cov_2ar62w3fuq.b[25][0]++;
+          cov_2ar62w3fuq.s[122]++;
           callback();
         } else {
-          cov_1xvtnn1bxa.b[25][1]++;
+          cov_2ar62w3fuq.b[25][1]++;
         }
       };
 
-      cov_1xvtnn1bxa.s[123]++;
+      cov_2ar62w3fuq.s[123]++;
       $(this.element).trigger(hideEvent);
-      cov_1xvtnn1bxa.s[124]++;
+      cov_2ar62w3fuq.s[124]++;
 
       if (hideEvent.isDefaultPrevented()) {
-        cov_1xvtnn1bxa.b[26][0]++;
-        cov_1xvtnn1bxa.s[125]++;
+        cov_2ar62w3fuq.b[26][0]++;
+        cov_2ar62w3fuq.s[125]++;
         return;
       } else {
-        cov_1xvtnn1bxa.b[26][1]++;
+        cov_2ar62w3fuq.b[26][1]++;
       }
 
-      cov_1xvtnn1bxa.s[126]++;
+      cov_2ar62w3fuq.s[126]++;
       $(tip).removeClass(ClassName.SHOW); // If this is a touch-enabled device we remove the extra
       // empty mouseover listeners we added for iOS support
 
-      cov_1xvtnn1bxa.s[127]++;
+      cov_2ar62w3fuq.s[127]++;
 
       if ('ontouchstart' in document.documentElement) {
-        cov_1xvtnn1bxa.b[27][0]++;
-        cov_1xvtnn1bxa.s[128]++;
+        cov_2ar62w3fuq.b[27][0]++;
+        cov_2ar62w3fuq.s[128]++;
         $(document.body).children().off('mouseover', null, $.noop);
       } else {
-        cov_1xvtnn1bxa.b[27][1]++;
+        cov_2ar62w3fuq.b[27][1]++;
       }
 
-      cov_1xvtnn1bxa.s[129]++;
+      cov_2ar62w3fuq.s[129]++;
       this._activeTrigger[Trigger.CLICK] = false;
-      cov_1xvtnn1bxa.s[130]++;
+      cov_2ar62w3fuq.s[130]++;
       this._activeTrigger[Trigger.FOCUS] = false;
-      cov_1xvtnn1bxa.s[131]++;
+      cov_2ar62w3fuq.s[131]++;
       this._activeTrigger[Trigger.HOVER] = false;
-      cov_1xvtnn1bxa.s[132]++;
+      cov_2ar62w3fuq.s[132]++;
 
       if ($(this.tip).hasClass(ClassName.FADE)) {
-        cov_1xvtnn1bxa.b[28][0]++;
-        var transitionDuration = (cov_1xvtnn1bxa.s[133]++, Util.getTransitionDurationFromElement(tip));
-        cov_1xvtnn1bxa.s[134]++;
+        cov_2ar62w3fuq.b[28][0]++;
+        var transitionDuration = (cov_2ar62w3fuq.s[133]++, Util.getTransitionDurationFromElement(tip));
+        cov_2ar62w3fuq.s[134]++;
         $(tip).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
       } else {
-        cov_1xvtnn1bxa.b[28][1]++;
-        cov_1xvtnn1bxa.s[135]++;
+        cov_2ar62w3fuq.b[28][1]++;
+        cov_2ar62w3fuq.s[135]++;
         complete();
       }
 
-      cov_1xvtnn1bxa.s[136]++;
+      cov_2ar62w3fuq.s[136]++;
       this._hoverState = '';
     };
 
     _proto.update = function update() {
-      cov_1xvtnn1bxa.f[19]++;
-      cov_1xvtnn1bxa.s[137]++;
+      cov_2ar62w3fuq.f[19]++;
+      cov_2ar62w3fuq.s[137]++;
 
       if (this._popper !== null) {
-        cov_1xvtnn1bxa.b[29][0]++;
-        cov_1xvtnn1bxa.s[138]++;
+        cov_2ar62w3fuq.b[29][0]++;
+        cov_2ar62w3fuq.s[138]++;
 
         this._popper.scheduleUpdate();
       } else {
-        cov_1xvtnn1bxa.b[29][1]++;
+        cov_2ar62w3fuq.b[29][1]++;
       }
     }; // Protected
 
 
     _proto.isWithContent = function isWithContent() {
-      cov_1xvtnn1bxa.f[20]++;
-      cov_1xvtnn1bxa.s[139]++;
+      cov_2ar62w3fuq.f[20]++;
+      cov_2ar62w3fuq.s[139]++;
       return Boolean(this.getTitle());
     };
 
     _proto.addAttachmentClass = function addAttachmentClass(attachment) {
-      cov_1xvtnn1bxa.f[21]++;
-      cov_1xvtnn1bxa.s[140]++;
+      cov_2ar62w3fuq.f[21]++;
+      cov_2ar62w3fuq.s[140]++;
       $(this.getTipElement()).addClass(CLASS_PREFIX + "-" + attachment);
     };
 
     _proto.getTipElement = function getTipElement() {
-      cov_1xvtnn1bxa.f[22]++;
-      cov_1xvtnn1bxa.s[141]++;
-      this.tip = (cov_1xvtnn1bxa.b[30][0]++, this.tip) || (cov_1xvtnn1bxa.b[30][1]++, $(this.config.template)[0]);
-      cov_1xvtnn1bxa.s[142]++;
+      cov_2ar62w3fuq.f[22]++;
+      cov_2ar62w3fuq.s[141]++;
+      this.tip = (cov_2ar62w3fuq.b[30][0]++, this.tip) || (cov_2ar62w3fuq.b[30][1]++, $(this.config.template)[0]);
+      cov_2ar62w3fuq.s[142]++;
       return this.tip;
     };
 
     _proto.setContent = function setContent() {
-      cov_1xvtnn1bxa.f[23]++;
-      var tip = (cov_1xvtnn1bxa.s[143]++, this.getTipElement());
-      cov_1xvtnn1bxa.s[144]++;
+      cov_2ar62w3fuq.f[23]++;
+      var tip = (cov_2ar62w3fuq.s[143]++, this.getTipElement());
+      cov_2ar62w3fuq.s[144]++;
       this.setElementContent($(tip.querySelectorAll(Selector.TOOLTIP_INNER)), this.getTitle());
-      cov_1xvtnn1bxa.s[145]++;
+      cov_2ar62w3fuq.s[145]++;
       $(tip).removeClass(ClassName.FADE + " " + ClassName.SHOW);
     };
 
     _proto.setElementContent = function setElementContent($element, content) {
-      cov_1xvtnn1bxa.f[24]++;
-      var html = (cov_1xvtnn1bxa.s[146]++, this.config.html);
-      cov_1xvtnn1bxa.s[147]++;
+      cov_2ar62w3fuq.f[24]++;
+      var html = (cov_2ar62w3fuq.s[146]++, this.config.html);
+      cov_2ar62w3fuq.s[147]++;
 
-      if ((cov_1xvtnn1bxa.b[32][0]++, typeof content === 'object') && ((cov_1xvtnn1bxa.b[32][1]++, content.nodeType) || (cov_1xvtnn1bxa.b[32][2]++, content.jquery))) {
-        cov_1xvtnn1bxa.b[31][0]++;
-        cov_1xvtnn1bxa.s[148]++;
+      if ((cov_2ar62w3fuq.b[32][0]++, typeof content === 'object') && ((cov_2ar62w3fuq.b[32][1]++, content.nodeType) || (cov_2ar62w3fuq.b[32][2]++, content.jquery))) {
+        cov_2ar62w3fuq.b[31][0]++;
+        cov_2ar62w3fuq.s[148]++;
 
         // Content is a DOM node or a jQuery
         if (html) {
-          cov_1xvtnn1bxa.b[33][0]++;
-          cov_1xvtnn1bxa.s[149]++;
+          cov_2ar62w3fuq.b[33][0]++;
+          cov_2ar62w3fuq.s[149]++;
 
           if (!$(content).parent().is($element)) {
-            cov_1xvtnn1bxa.b[34][0]++;
-            cov_1xvtnn1bxa.s[150]++;
+            cov_2ar62w3fuq.b[34][0]++;
+            cov_2ar62w3fuq.s[150]++;
             $element.empty().append(content);
           } else {
-            cov_1xvtnn1bxa.b[34][1]++;
+            cov_2ar62w3fuq.b[34][1]++;
           }
         } else {
-          cov_1xvtnn1bxa.b[33][1]++;
-          cov_1xvtnn1bxa.s[151]++;
+          cov_2ar62w3fuq.b[33][1]++;
+          cov_2ar62w3fuq.s[151]++;
           $element.text($(content).text());
         }
       } else {
-        cov_1xvtnn1bxa.b[31][1]++;
-        cov_1xvtnn1bxa.s[152]++;
-        $element[html ? (cov_1xvtnn1bxa.b[35][0]++, 'html') : (cov_1xvtnn1bxa.b[35][1]++, 'text')](content);
+        cov_2ar62w3fuq.b[31][1]++;
+        cov_2ar62w3fuq.s[152]++;
+        $element[html ? (cov_2ar62w3fuq.b[35][0]++, 'html') : (cov_2ar62w3fuq.b[35][1]++, 'text')](content);
       }
     };
 
     _proto.getTitle = function getTitle() {
-      cov_1xvtnn1bxa.f[25]++;
-      var title = (cov_1xvtnn1bxa.s[153]++, this.element.getAttribute('data-original-title'));
-      cov_1xvtnn1bxa.s[154]++;
+      cov_2ar62w3fuq.f[25]++;
+      var title = (cov_2ar62w3fuq.s[153]++, this.element.getAttribute('data-original-title'));
+      cov_2ar62w3fuq.s[154]++;
 
       if (!title) {
-        cov_1xvtnn1bxa.b[36][0]++;
-        cov_1xvtnn1bxa.s[155]++;
-        title = typeof this.config.title === 'function' ? (cov_1xvtnn1bxa.b[37][0]++, this.config.title.call(this.element)) : (cov_1xvtnn1bxa.b[37][1]++, this.config.title);
+        cov_2ar62w3fuq.b[36][0]++;
+        cov_2ar62w3fuq.s[155]++;
+        title = typeof this.config.title === 'function' ? (cov_2ar62w3fuq.b[37][0]++, this.config.title.call(this.element)) : (cov_2ar62w3fuq.b[37][1]++, this.config.title);
       } else {
-        cov_1xvtnn1bxa.b[36][1]++;
+        cov_2ar62w3fuq.b[36][1]++;
       }
 
-      cov_1xvtnn1bxa.s[156]++;
+      cov_2ar62w3fuq.s[156]++;
       return title;
     }; // Private
 
 
     _proto._getContainer = function _getContainer() {
-      cov_1xvtnn1bxa.f[26]++;
-      cov_1xvtnn1bxa.s[157]++;
+      cov_2ar62w3fuq.f[26]++;
+      cov_2ar62w3fuq.s[157]++;
 
       if (this.config.container === false) {
-        cov_1xvtnn1bxa.b[38][0]++;
-        cov_1xvtnn1bxa.s[158]++;
+        cov_2ar62w3fuq.b[38][0]++;
+        cov_2ar62w3fuq.s[158]++;
         return document.body;
       } else {
-        cov_1xvtnn1bxa.b[38][1]++;
+        cov_2ar62w3fuq.b[38][1]++;
       }
 
-      cov_1xvtnn1bxa.s[159]++;
+      cov_2ar62w3fuq.s[159]++;
 
       if (Util.isElement(this.config.container)) {
-        cov_1xvtnn1bxa.b[39][0]++;
-        cov_1xvtnn1bxa.s[160]++;
+        cov_2ar62w3fuq.b[39][0]++;
+        cov_2ar62w3fuq.s[160]++;
         return $(this.config.container);
       } else {
-        cov_1xvtnn1bxa.b[39][1]++;
+        cov_2ar62w3fuq.b[39][1]++;
       }
 
-      cov_1xvtnn1bxa.s[161]++;
+      cov_2ar62w3fuq.s[161]++;
       return $(document).find(this.config.container);
     };
 
     _proto._getAttachment = function _getAttachment(placement) {
-      cov_1xvtnn1bxa.f[27]++;
-      cov_1xvtnn1bxa.s[162]++;
+      cov_2ar62w3fuq.f[27]++;
+      cov_2ar62w3fuq.s[162]++;
       return AttachmentMap[placement.toUpperCase()];
     };
 
     _proto._setListeners = function _setListeners() {
       var _this3 = this;
 
-      cov_1xvtnn1bxa.f[28]++;
-      var triggers = (cov_1xvtnn1bxa.s[163]++, this.config.trigger.split(' '));
-      cov_1xvtnn1bxa.s[164]++;
+      cov_2ar62w3fuq.f[28]++;
+      var triggers = (cov_2ar62w3fuq.s[163]++, this.config.trigger.split(' '));
+      cov_2ar62w3fuq.s[164]++;
       triggers.forEach(function (trigger) {
-        cov_1xvtnn1bxa.f[29]++;
-        cov_1xvtnn1bxa.s[165]++;
+        cov_2ar62w3fuq.f[29]++;
+        cov_2ar62w3fuq.s[165]++;
 
         if (trigger === 'click') {
-          cov_1xvtnn1bxa.b[40][0]++;
-          cov_1xvtnn1bxa.s[166]++;
+          cov_2ar62w3fuq.b[40][0]++;
+          cov_2ar62w3fuq.s[166]++;
           $(_this3.element).on(_this3.constructor.Event.CLICK, _this3.config.selector, function (event) {
-            cov_1xvtnn1bxa.f[30]++;
-            cov_1xvtnn1bxa.s[167]++;
+            cov_2ar62w3fuq.f[30]++;
+            cov_2ar62w3fuq.s[167]++;
             return _this3.toggle(event);
           });
         } else {
-          cov_1xvtnn1bxa.b[40][1]++;
-          cov_1xvtnn1bxa.s[168]++;
+          cov_2ar62w3fuq.b[40][1]++;
+          cov_2ar62w3fuq.s[168]++;
 
           if (trigger !== Trigger.MANUAL) {
-            cov_1xvtnn1bxa.b[41][0]++;
-            var eventIn = (cov_1xvtnn1bxa.s[169]++, trigger === Trigger.HOVER ? (cov_1xvtnn1bxa.b[42][0]++, _this3.constructor.Event.MOUSEENTER) : (cov_1xvtnn1bxa.b[42][1]++, _this3.constructor.Event.FOCUSIN));
-            var eventOut = (cov_1xvtnn1bxa.s[170]++, trigger === Trigger.HOVER ? (cov_1xvtnn1bxa.b[43][0]++, _this3.constructor.Event.MOUSELEAVE) : (cov_1xvtnn1bxa.b[43][1]++, _this3.constructor.Event.FOCUSOUT));
-            cov_1xvtnn1bxa.s[171]++;
+            cov_2ar62w3fuq.b[41][0]++;
+            var eventIn = (cov_2ar62w3fuq.s[169]++, trigger === Trigger.HOVER ? (cov_2ar62w3fuq.b[42][0]++, _this3.constructor.Event.MOUSEENTER) : (cov_2ar62w3fuq.b[42][1]++, _this3.constructor.Event.FOCUSIN));
+            var eventOut = (cov_2ar62w3fuq.s[170]++, trigger === Trigger.HOVER ? (cov_2ar62w3fuq.b[43][0]++, _this3.constructor.Event.MOUSELEAVE) : (cov_2ar62w3fuq.b[43][1]++, _this3.constructor.Event.FOCUSOUT));
+            cov_2ar62w3fuq.s[171]++;
             $(_this3.element).on(eventIn, _this3.config.selector, function (event) {
-              cov_1xvtnn1bxa.f[31]++;
-              cov_1xvtnn1bxa.s[172]++;
+              cov_2ar62w3fuq.f[31]++;
+              cov_2ar62w3fuq.s[172]++;
               return _this3._enter(event);
             }).on(eventOut, _this3.config.selector, function (event) {
-              cov_1xvtnn1bxa.f[32]++;
-              cov_1xvtnn1bxa.s[173]++;
+              cov_2ar62w3fuq.f[32]++;
+              cov_2ar62w3fuq.s[173]++;
               return _this3._leave(event);
             });
           } else {
-            cov_1xvtnn1bxa.b[41][1]++;
+            cov_2ar62w3fuq.b[41][1]++;
           }
         }
       });
-      cov_1xvtnn1bxa.s[174]++;
+      cov_2ar62w3fuq.s[174]++;
       $(this.element).closest('.modal').on('hide.bs.modal', function () {
-        cov_1xvtnn1bxa.f[33]++;
-        cov_1xvtnn1bxa.s[175]++;
+        cov_2ar62w3fuq.f[33]++;
+        cov_2ar62w3fuq.s[175]++;
 
         if (_this3.element) {
-          cov_1xvtnn1bxa.b[44][0]++;
-          cov_1xvtnn1bxa.s[176]++;
+          cov_2ar62w3fuq.b[44][0]++;
+          cov_2ar62w3fuq.s[176]++;
 
           _this3.hide();
         } else {
-          cov_1xvtnn1bxa.b[44][1]++;
+          cov_2ar62w3fuq.b[44][1]++;
         }
       });
-      cov_1xvtnn1bxa.s[177]++;
+      cov_2ar62w3fuq.s[177]++;
 
       if (this.config.selector) {
-        cov_1xvtnn1bxa.b[45][0]++;
-        cov_1xvtnn1bxa.s[178]++;
+        cov_2ar62w3fuq.b[45][0]++;
+        cov_2ar62w3fuq.s[178]++;
         this.config = _objectSpread({}, this.config, {
           trigger: 'manual',
           selector: ''
         });
       } else {
-        cov_1xvtnn1bxa.b[45][1]++;
-        cov_1xvtnn1bxa.s[179]++;
+        cov_2ar62w3fuq.b[45][1]++;
+        cov_2ar62w3fuq.s[179]++;
 
         this._fixTitle();
       }
     };
 
     _proto._fixTitle = function _fixTitle() {
-      cov_1xvtnn1bxa.f[34]++;
-      var titleType = (cov_1xvtnn1bxa.s[180]++, typeof this.element.getAttribute('data-original-title'));
-      cov_1xvtnn1bxa.s[181]++;
+      cov_2ar62w3fuq.f[34]++;
+      var titleType = (cov_2ar62w3fuq.s[180]++, typeof this.element.getAttribute('data-original-title'));
+      cov_2ar62w3fuq.s[181]++;
 
-      if ((cov_1xvtnn1bxa.b[47][0]++, this.element.getAttribute('title')) || (cov_1xvtnn1bxa.b[47][1]++, titleType !== 'string')) {
-        cov_1xvtnn1bxa.b[46][0]++;
-        cov_1xvtnn1bxa.s[182]++;
-        this.element.setAttribute('data-original-title', (cov_1xvtnn1bxa.b[48][0]++, this.element.getAttribute('title')) || (cov_1xvtnn1bxa.b[48][1]++, ''));
-        cov_1xvtnn1bxa.s[183]++;
+      if ((cov_2ar62w3fuq.b[47][0]++, this.element.getAttribute('title')) || (cov_2ar62w3fuq.b[47][1]++, titleType !== 'string')) {
+        cov_2ar62w3fuq.b[46][0]++;
+        cov_2ar62w3fuq.s[182]++;
+        this.element.setAttribute('data-original-title', (cov_2ar62w3fuq.b[48][0]++, this.element.getAttribute('title')) || (cov_2ar62w3fuq.b[48][1]++, ''));
+        cov_2ar62w3fuq.s[183]++;
         this.element.setAttribute('title', '');
       } else {
-        cov_1xvtnn1bxa.b[46][1]++;
+        cov_2ar62w3fuq.b[46][1]++;
       }
     };
 
     _proto._enter = function _enter(event, context) {
-      cov_1xvtnn1bxa.f[35]++;
-      var dataKey = (cov_1xvtnn1bxa.s[184]++, this.constructor.DATA_KEY);
-      cov_1xvtnn1bxa.s[185]++;
-      context = (cov_1xvtnn1bxa.b[49][0]++, context) || (cov_1xvtnn1bxa.b[49][1]++, $(event.currentTarget).data(dataKey));
-      cov_1xvtnn1bxa.s[186]++;
+      cov_2ar62w3fuq.f[35]++;
+      var dataKey = (cov_2ar62w3fuq.s[184]++, this.constructor.DATA_KEY);
+      cov_2ar62w3fuq.s[185]++;
+      context = (cov_2ar62w3fuq.b[49][0]++, context) || (cov_2ar62w3fuq.b[49][1]++, $(event.currentTarget).data(dataKey));
+      cov_2ar62w3fuq.s[186]++;
 
       if (!context) {
-        cov_1xvtnn1bxa.b[50][0]++;
-        cov_1xvtnn1bxa.s[187]++;
+        cov_2ar62w3fuq.b[50][0]++;
+        cov_2ar62w3fuq.s[187]++;
         context = new this.constructor(event.currentTarget, this._getDelegateConfig());
-        cov_1xvtnn1bxa.s[188]++;
+        cov_2ar62w3fuq.s[188]++;
         $(event.currentTarget).data(dataKey, context);
       } else {
-        cov_1xvtnn1bxa.b[50][1]++;
+        cov_2ar62w3fuq.b[50][1]++;
       }
 
-      cov_1xvtnn1bxa.s[189]++;
+      cov_2ar62w3fuq.s[189]++;
 
       if (event) {
-        cov_1xvtnn1bxa.b[51][0]++;
-        cov_1xvtnn1bxa.s[190]++;
-        context._activeTrigger[event.type === 'focusin' ? (cov_1xvtnn1bxa.b[52][0]++, Trigger.FOCUS) : (cov_1xvtnn1bxa.b[52][1]++, Trigger.HOVER)] = true;
+        cov_2ar62w3fuq.b[51][0]++;
+        cov_2ar62w3fuq.s[190]++;
+        context._activeTrigger[event.type === 'focusin' ? (cov_2ar62w3fuq.b[52][0]++, Trigger.FOCUS) : (cov_2ar62w3fuq.b[52][1]++, Trigger.HOVER)] = true;
       } else {
-        cov_1xvtnn1bxa.b[51][1]++;
+        cov_2ar62w3fuq.b[51][1]++;
       }
 
-      cov_1xvtnn1bxa.s[191]++;
+      cov_2ar62w3fuq.s[191]++;
 
-      if ((cov_1xvtnn1bxa.b[54][0]++, $(context.getTipElement()).hasClass(ClassName.SHOW)) || (cov_1xvtnn1bxa.b[54][1]++, context._hoverState === HoverState.SHOW)) {
-        cov_1xvtnn1bxa.b[53][0]++;
-        cov_1xvtnn1bxa.s[192]++;
+      if ((cov_2ar62w3fuq.b[54][0]++, $(context.getTipElement()).hasClass(ClassName.SHOW)) || (cov_2ar62w3fuq.b[54][1]++, context._hoverState === HoverState.SHOW)) {
+        cov_2ar62w3fuq.b[53][0]++;
+        cov_2ar62w3fuq.s[192]++;
         context._hoverState = HoverState.SHOW;
-        cov_1xvtnn1bxa.s[193]++;
+        cov_2ar62w3fuq.s[193]++;
         return;
       } else {
-        cov_1xvtnn1bxa.b[53][1]++;
+        cov_2ar62w3fuq.b[53][1]++;
       }
 
-      cov_1xvtnn1bxa.s[194]++;
+      cov_2ar62w3fuq.s[194]++;
       clearTimeout(context._timeout);
-      cov_1xvtnn1bxa.s[195]++;
+      cov_2ar62w3fuq.s[195]++;
       context._hoverState = HoverState.SHOW;
-      cov_1xvtnn1bxa.s[196]++;
+      cov_2ar62w3fuq.s[196]++;
 
-      if ((cov_1xvtnn1bxa.b[56][0]++, !context.config.delay) || (cov_1xvtnn1bxa.b[56][1]++, !context.config.delay.show)) {
-        cov_1xvtnn1bxa.b[55][0]++;
-        cov_1xvtnn1bxa.s[197]++;
+      if ((cov_2ar62w3fuq.b[56][0]++, !context.config.delay) || (cov_2ar62w3fuq.b[56][1]++, !context.config.delay.show)) {
+        cov_2ar62w3fuq.b[55][0]++;
+        cov_2ar62w3fuq.s[197]++;
         context.show();
-        cov_1xvtnn1bxa.s[198]++;
+        cov_2ar62w3fuq.s[198]++;
         return;
       } else {
-        cov_1xvtnn1bxa.b[55][1]++;
+        cov_2ar62w3fuq.b[55][1]++;
       }
 
-      cov_1xvtnn1bxa.s[199]++;
+      cov_2ar62w3fuq.s[199]++;
       context._timeout = setTimeout(function () {
-        cov_1xvtnn1bxa.f[36]++;
-        cov_1xvtnn1bxa.s[200]++;
+        cov_2ar62w3fuq.f[36]++;
+        cov_2ar62w3fuq.s[200]++;
 
         if (context._hoverState === HoverState.SHOW) {
-          cov_1xvtnn1bxa.b[57][0]++;
-          cov_1xvtnn1bxa.s[201]++;
+          cov_2ar62w3fuq.b[57][0]++;
+          cov_2ar62w3fuq.s[201]++;
           context.show();
         } else {
-          cov_1xvtnn1bxa.b[57][1]++;
+          cov_2ar62w3fuq.b[57][1]++;
         }
       }, context.config.delay.show);
     };
 
     _proto._leave = function _leave(event, context) {
-      cov_1xvtnn1bxa.f[37]++;
-      var dataKey = (cov_1xvtnn1bxa.s[202]++, this.constructor.DATA_KEY);
-      cov_1xvtnn1bxa.s[203]++;
-      context = (cov_1xvtnn1bxa.b[58][0]++, context) || (cov_1xvtnn1bxa.b[58][1]++, $(event.currentTarget).data(dataKey));
-      cov_1xvtnn1bxa.s[204]++;
+      cov_2ar62w3fuq.f[37]++;
+      var dataKey = (cov_2ar62w3fuq.s[202]++, this.constructor.DATA_KEY);
+      cov_2ar62w3fuq.s[203]++;
+      context = (cov_2ar62w3fuq.b[58][0]++, context) || (cov_2ar62w3fuq.b[58][1]++, $(event.currentTarget).data(dataKey));
+      cov_2ar62w3fuq.s[204]++;
 
       if (!context) {
-        cov_1xvtnn1bxa.b[59][0]++;
-        cov_1xvtnn1bxa.s[205]++;
+        cov_2ar62w3fuq.b[59][0]++;
+        cov_2ar62w3fuq.s[205]++;
         context = new this.constructor(event.currentTarget, this._getDelegateConfig());
-        cov_1xvtnn1bxa.s[206]++;
+        cov_2ar62w3fuq.s[206]++;
         $(event.currentTarget).data(dataKey, context);
       } else {
-        cov_1xvtnn1bxa.b[59][1]++;
+        cov_2ar62w3fuq.b[59][1]++;
       }
 
-      cov_1xvtnn1bxa.s[207]++;
+      cov_2ar62w3fuq.s[207]++;
 
       if (event) {
-        cov_1xvtnn1bxa.b[60][0]++;
-        cov_1xvtnn1bxa.s[208]++;
-        context._activeTrigger[event.type === 'focusout' ? (cov_1xvtnn1bxa.b[61][0]++, Trigger.FOCUS) : (cov_1xvtnn1bxa.b[61][1]++, Trigger.HOVER)] = false;
+        cov_2ar62w3fuq.b[60][0]++;
+        cov_2ar62w3fuq.s[208]++;
+        context._activeTrigger[event.type === 'focusout' ? (cov_2ar62w3fuq.b[61][0]++, Trigger.FOCUS) : (cov_2ar62w3fuq.b[61][1]++, Trigger.HOVER)] = false;
       } else {
-        cov_1xvtnn1bxa.b[60][1]++;
+        cov_2ar62w3fuq.b[60][1]++;
       }
 
-      cov_1xvtnn1bxa.s[209]++;
+      cov_2ar62w3fuq.s[209]++;
 
       if (context._isWithActiveTrigger()) {
-        cov_1xvtnn1bxa.b[62][0]++;
-        cov_1xvtnn1bxa.s[210]++;
+        cov_2ar62w3fuq.b[62][0]++;
+        cov_2ar62w3fuq.s[210]++;
         return;
       } else {
-        cov_1xvtnn1bxa.b[62][1]++;
+        cov_2ar62w3fuq.b[62][1]++;
       }
 
-      cov_1xvtnn1bxa.s[211]++;
+      cov_2ar62w3fuq.s[211]++;
       clearTimeout(context._timeout);
-      cov_1xvtnn1bxa.s[212]++;
+      cov_2ar62w3fuq.s[212]++;
       context._hoverState = HoverState.OUT;
-      cov_1xvtnn1bxa.s[213]++;
+      cov_2ar62w3fuq.s[213]++;
 
-      if ((cov_1xvtnn1bxa.b[64][0]++, !context.config.delay) || (cov_1xvtnn1bxa.b[64][1]++, !context.config.delay.hide)) {
-        cov_1xvtnn1bxa.b[63][0]++;
-        cov_1xvtnn1bxa.s[214]++;
+      if ((cov_2ar62w3fuq.b[64][0]++, !context.config.delay) || (cov_2ar62w3fuq.b[64][1]++, !context.config.delay.hide)) {
+        cov_2ar62w3fuq.b[63][0]++;
+        cov_2ar62w3fuq.s[214]++;
         context.hide();
-        cov_1xvtnn1bxa.s[215]++;
+        cov_2ar62w3fuq.s[215]++;
         return;
       } else {
-        cov_1xvtnn1bxa.b[63][1]++;
+        cov_2ar62w3fuq.b[63][1]++;
       }
 
-      cov_1xvtnn1bxa.s[216]++;
+      cov_2ar62w3fuq.s[216]++;
       context._timeout = setTimeout(function () {
-        cov_1xvtnn1bxa.f[38]++;
-        cov_1xvtnn1bxa.s[217]++;
+        cov_2ar62w3fuq.f[38]++;
+        cov_2ar62w3fuq.s[217]++;
 
         if (context._hoverState === HoverState.OUT) {
-          cov_1xvtnn1bxa.b[65][0]++;
-          cov_1xvtnn1bxa.s[218]++;
+          cov_2ar62w3fuq.b[65][0]++;
+          cov_2ar62w3fuq.s[218]++;
           context.hide();
         } else {
-          cov_1xvtnn1bxa.b[65][1]++;
+          cov_2ar62w3fuq.b[65][1]++;
         }
       }, context.config.delay.hide);
     };
 
     _proto._isWithActiveTrigger = function _isWithActiveTrigger() {
-      cov_1xvtnn1bxa.f[39]++;
-      cov_1xvtnn1bxa.s[219]++;
+      cov_2ar62w3fuq.f[39]++;
+      cov_2ar62w3fuq.s[219]++;
 
       for (var trigger in this._activeTrigger) {
-        cov_1xvtnn1bxa.s[220]++;
+        cov_2ar62w3fuq.s[220]++;
 
         if (this._activeTrigger[trigger]) {
-          cov_1xvtnn1bxa.b[66][0]++;
-          cov_1xvtnn1bxa.s[221]++;
+          cov_2ar62w3fuq.b[66][0]++;
+          cov_2ar62w3fuq.s[221]++;
           return true;
         } else {
-          cov_1xvtnn1bxa.b[66][1]++;
+          cov_2ar62w3fuq.b[66][1]++;
         }
       }
 
-      cov_1xvtnn1bxa.s[222]++;
+      cov_2ar62w3fuq.s[222]++;
       return false;
     };
 
     _proto._getConfig = function _getConfig(config) {
-      cov_1xvtnn1bxa.f[40]++;
-      cov_1xvtnn1bxa.s[223]++;
-      config = _objectSpread({}, this.constructor.Default, $(this.element).data(), (cov_1xvtnn1bxa.b[68][0]++, typeof config === 'object') && (cov_1xvtnn1bxa.b[68][1]++, config) ? (cov_1xvtnn1bxa.b[67][0]++, config) : (cov_1xvtnn1bxa.b[67][1]++, {}));
-      cov_1xvtnn1bxa.s[224]++;
+      cov_2ar62w3fuq.f[40]++;
+      cov_2ar62w3fuq.s[223]++;
+      config = _objectSpread({}, this.constructor.Default, $(this.element).data(), (cov_2ar62w3fuq.b[68][0]++, typeof config === 'object') && (cov_2ar62w3fuq.b[68][1]++, config) ? (cov_2ar62w3fuq.b[67][0]++, config) : (cov_2ar62w3fuq.b[67][1]++, {}));
+      cov_2ar62w3fuq.s[224]++;
 
       if (typeof config.delay === 'number') {
-        cov_1xvtnn1bxa.b[69][0]++;
-        cov_1xvtnn1bxa.s[225]++;
+        cov_2ar62w3fuq.b[69][0]++;
+        cov_2ar62w3fuq.s[225]++;
         config.delay = {
           show: config.delay,
           hide: config.delay
         };
       } else {
-        cov_1xvtnn1bxa.b[69][1]++;
+        cov_2ar62w3fuq.b[69][1]++;
       }
 
-      cov_1xvtnn1bxa.s[226]++;
+      cov_2ar62w3fuq.s[226]++;
 
       if (typeof config.title === 'number') {
-        cov_1xvtnn1bxa.b[70][0]++;
-        cov_1xvtnn1bxa.s[227]++;
+        cov_2ar62w3fuq.b[70][0]++;
+        cov_2ar62w3fuq.s[227]++;
         config.title = config.title.toString();
       } else {
-        cov_1xvtnn1bxa.b[70][1]++;
+        cov_2ar62w3fuq.b[70][1]++;
       }
 
-      cov_1xvtnn1bxa.s[228]++;
+      cov_2ar62w3fuq.s[228]++;
 
       if (typeof config.content === 'number') {
-        cov_1xvtnn1bxa.b[71][0]++;
-        cov_1xvtnn1bxa.s[229]++;
+        cov_2ar62w3fuq.b[71][0]++;
+        cov_2ar62w3fuq.s[229]++;
         config.content = config.content.toString();
       } else {
-        cov_1xvtnn1bxa.b[71][1]++;
+        cov_2ar62w3fuq.b[71][1]++;
       }
 
-      cov_1xvtnn1bxa.s[230]++;
+      cov_2ar62w3fuq.s[230]++;
       Util.typeCheckConfig(NAME, config, this.constructor.DefaultType);
-      cov_1xvtnn1bxa.s[231]++;
+      cov_2ar62w3fuq.s[231]++;
       return config;
     };
 
     _proto._getDelegateConfig = function _getDelegateConfig() {
-      cov_1xvtnn1bxa.f[41]++;
-      var config = (cov_1xvtnn1bxa.s[232]++, {});
-      cov_1xvtnn1bxa.s[233]++;
+      cov_2ar62w3fuq.f[41]++;
+      var config = (cov_2ar62w3fuq.s[232]++, {});
+      cov_2ar62w3fuq.s[233]++;
 
       if (this.config) {
-        cov_1xvtnn1bxa.b[72][0]++;
-        cov_1xvtnn1bxa.s[234]++;
+        cov_2ar62w3fuq.b[72][0]++;
+        cov_2ar62w3fuq.s[234]++;
 
         for (var key in this.config) {
-          cov_1xvtnn1bxa.s[235]++;
+          cov_2ar62w3fuq.s[235]++;
 
           if (this.constructor.Default[key] !== this.config[key]) {
-            cov_1xvtnn1bxa.b[73][0]++;
-            cov_1xvtnn1bxa.s[236]++;
+            cov_2ar62w3fuq.b[73][0]++;
+            cov_2ar62w3fuq.s[236]++;
             config[key] = this.config[key];
           } else {
-            cov_1xvtnn1bxa.b[73][1]++;
+            cov_2ar62w3fuq.b[73][1]++;
           }
         }
       } else {
-        cov_1xvtnn1bxa.b[72][1]++;
+        cov_2ar62w3fuq.b[72][1]++;
       }
 
-      cov_1xvtnn1bxa.s[237]++;
+      cov_2ar62w3fuq.s[237]++;
       return config;
     };
 
     _proto._cleanTipClass = function _cleanTipClass() {
-      cov_1xvtnn1bxa.f[42]++;
-      var $tip = (cov_1xvtnn1bxa.s[238]++, $(this.getTipElement()));
-      var tabClass = (cov_1xvtnn1bxa.s[239]++, $tip.attr('class').match(BSCLS_PREFIX_REGEX));
-      cov_1xvtnn1bxa.s[240]++;
+      cov_2ar62w3fuq.f[42]++;
+      var $tip = (cov_2ar62w3fuq.s[238]++, $(this.getTipElement()));
+      var tabClass = (cov_2ar62w3fuq.s[239]++, $tip.attr('class').match(BSCLS_PREFIX_REGEX));
+      cov_2ar62w3fuq.s[240]++;
 
-      if ((cov_1xvtnn1bxa.b[75][0]++, tabClass !== null) && (cov_1xvtnn1bxa.b[75][1]++, tabClass.length)) {
-        cov_1xvtnn1bxa.b[74][0]++;
-        cov_1xvtnn1bxa.s[241]++;
+      if ((cov_2ar62w3fuq.b[75][0]++, tabClass !== null) && (cov_2ar62w3fuq.b[75][1]++, tabClass.length)) {
+        cov_2ar62w3fuq.b[74][0]++;
+        cov_2ar62w3fuq.s[241]++;
         $tip.removeClass(tabClass.join(''));
       } else {
-        cov_1xvtnn1bxa.b[74][1]++;
+        cov_2ar62w3fuq.b[74][1]++;
       }
     };
 
     _proto._handlePopperPlacementChange = function _handlePopperPlacementChange(popperData) {
-      cov_1xvtnn1bxa.f[43]++;
-      var popperInstance = (cov_1xvtnn1bxa.s[242]++, popperData.instance);
-      cov_1xvtnn1bxa.s[243]++;
+      cov_2ar62w3fuq.f[43]++;
+      var popperInstance = (cov_2ar62w3fuq.s[242]++, popperData.instance);
+      cov_2ar62w3fuq.s[243]++;
       this.tip = popperInstance.popper;
-      cov_1xvtnn1bxa.s[244]++;
+      cov_2ar62w3fuq.s[244]++;
 
       this._cleanTipClass();
 
-      cov_1xvtnn1bxa.s[245]++;
+      cov_2ar62w3fuq.s[245]++;
       this.addAttachmentClass(this._getAttachment(popperData.placement));
     };
 
     _proto._fixTransition = function _fixTransition() {
-      cov_1xvtnn1bxa.f[44]++;
-      var tip = (cov_1xvtnn1bxa.s[246]++, this.getTipElement());
-      var initConfigAnimation = (cov_1xvtnn1bxa.s[247]++, this.config.animation);
-      cov_1xvtnn1bxa.s[248]++;
+      cov_2ar62w3fuq.f[44]++;
+      var tip = (cov_2ar62w3fuq.s[246]++, this.getTipElement());
+      var initConfigAnimation = (cov_2ar62w3fuq.s[247]++, this.config.animation);
+      cov_2ar62w3fuq.s[248]++;
 
       if (tip.getAttribute('x-placement') !== null) {
-        cov_1xvtnn1bxa.b[76][0]++;
-        cov_1xvtnn1bxa.s[249]++;
+        cov_2ar62w3fuq.b[76][0]++;
+        cov_2ar62w3fuq.s[249]++;
         return;
       } else {
-        cov_1xvtnn1bxa.b[76][1]++;
+        cov_2ar62w3fuq.b[76][1]++;
       }
 
-      cov_1xvtnn1bxa.s[250]++;
+      cov_2ar62w3fuq.s[250]++;
       $(tip).removeClass(ClassName.FADE);
-      cov_1xvtnn1bxa.s[251]++;
+      cov_2ar62w3fuq.s[251]++;
       this.config.animation = false;
-      cov_1xvtnn1bxa.s[252]++;
+      cov_2ar62w3fuq.s[252]++;
       this.hide();
-      cov_1xvtnn1bxa.s[253]++;
+      cov_2ar62w3fuq.s[253]++;
       this.show();
-      cov_1xvtnn1bxa.s[254]++;
+      cov_2ar62w3fuq.s[254]++;
       this.config.animation = initConfigAnimation;
     }; // Static
 
 
     Tooltip._jQueryInterface = function _jQueryInterface(config) {
-      cov_1xvtnn1bxa.f[45]++;
-      cov_1xvtnn1bxa.s[255]++;
+      cov_2ar62w3fuq.f[45]++;
+      cov_2ar62w3fuq.s[255]++;
       return this.each(function () {
-        cov_1xvtnn1bxa.f[46]++;
-        var data = (cov_1xvtnn1bxa.s[256]++, $(this).data(DATA_KEY));
+        cov_2ar62w3fuq.f[46]++;
+        var data = (cov_2ar62w3fuq.s[256]++, $(this).data(DATA_KEY));
 
-        var _config = (cov_1xvtnn1bxa.s[257]++, (cov_1xvtnn1bxa.b[77][0]++, typeof config === 'object') && (cov_1xvtnn1bxa.b[77][1]++, config));
+        var _config = (cov_2ar62w3fuq.s[257]++, (cov_2ar62w3fuq.b[77][0]++, typeof config === 'object') && (cov_2ar62w3fuq.b[77][1]++, config));
 
-        cov_1xvtnn1bxa.s[258]++;
+        cov_2ar62w3fuq.s[258]++;
 
-        if ((cov_1xvtnn1bxa.b[79][0]++, !data) && (cov_1xvtnn1bxa.b[79][1]++, /dispose|hide/.test(config))) {
-          cov_1xvtnn1bxa.b[78][0]++;
-          cov_1xvtnn1bxa.s[259]++;
+        if ((cov_2ar62w3fuq.b[79][0]++, !data) && (cov_2ar62w3fuq.b[79][1]++, /dispose|hide/.test(config))) {
+          cov_2ar62w3fuq.b[78][0]++;
+          cov_2ar62w3fuq.s[259]++;
           return;
         } else {
-          cov_1xvtnn1bxa.b[78][1]++;
+          cov_2ar62w3fuq.b[78][1]++;
         }
 
-        cov_1xvtnn1bxa.s[260]++;
+        cov_2ar62w3fuq.s[260]++;
 
         if (!data) {
-          cov_1xvtnn1bxa.b[80][0]++;
-          cov_1xvtnn1bxa.s[261]++;
+          cov_2ar62w3fuq.b[80][0]++;
+          cov_2ar62w3fuq.s[261]++;
           data = new Tooltip(this, _config);
-          cov_1xvtnn1bxa.s[262]++;
+          cov_2ar62w3fuq.s[262]++;
           $(this).data(DATA_KEY, data);
         } else {
-          cov_1xvtnn1bxa.b[80][1]++;
+          cov_2ar62w3fuq.b[80][1]++;
         }
 
-        cov_1xvtnn1bxa.s[263]++;
+        cov_2ar62w3fuq.s[263]++;
 
         if (typeof config === 'string') {
-          cov_1xvtnn1bxa.b[81][0]++;
-          cov_1xvtnn1bxa.s[264]++;
+          cov_2ar62w3fuq.b[81][0]++;
+          cov_2ar62w3fuq.s[264]++;
 
           if (typeof data[config] === 'undefined') {
-            cov_1xvtnn1bxa.b[82][0]++;
-            cov_1xvtnn1bxa.s[265]++;
+            cov_2ar62w3fuq.b[82][0]++;
+            cov_2ar62w3fuq.s[265]++;
             throw new TypeError("No method named \"" + config + "\"");
           } else {
-            cov_1xvtnn1bxa.b[82][1]++;
+            cov_2ar62w3fuq.b[82][1]++;
           }
 
-          cov_1xvtnn1bxa.s[266]++;
+          cov_2ar62w3fuq.s[266]++;
           data[config]();
         } else {
-          cov_1xvtnn1bxa.b[81][1]++;
+          cov_2ar62w3fuq.b[81][1]++;
         }
       });
     };
@@ -8210,50 +8210,50 @@
     _createClass(Tooltip, null, [{
       key: "VERSION",
       get: function get() {
-        cov_1xvtnn1bxa.f[1]++;
-        cov_1xvtnn1bxa.s[26]++;
+        cov_2ar62w3fuq.f[1]++;
+        cov_2ar62w3fuq.s[26]++;
         return VERSION;
       }
     }, {
       key: "Default",
       get: function get() {
-        cov_1xvtnn1bxa.f[2]++;
-        cov_1xvtnn1bxa.s[27]++;
+        cov_2ar62w3fuq.f[2]++;
+        cov_2ar62w3fuq.s[27]++;
         return Default;
       }
     }, {
       key: "NAME",
       get: function get() {
-        cov_1xvtnn1bxa.f[3]++;
-        cov_1xvtnn1bxa.s[28]++;
+        cov_2ar62w3fuq.f[3]++;
+        cov_2ar62w3fuq.s[28]++;
         return NAME;
       }
     }, {
       key: "DATA_KEY",
       get: function get() {
-        cov_1xvtnn1bxa.f[4]++;
-        cov_1xvtnn1bxa.s[29]++;
+        cov_2ar62w3fuq.f[4]++;
+        cov_2ar62w3fuq.s[29]++;
         return DATA_KEY;
       }
     }, {
       key: "Event",
       get: function get() {
-        cov_1xvtnn1bxa.f[5]++;
-        cov_1xvtnn1bxa.s[30]++;
+        cov_2ar62w3fuq.f[5]++;
+        cov_2ar62w3fuq.s[30]++;
         return Event;
       }
     }, {
       key: "EVENT_KEY",
       get: function get() {
-        cov_1xvtnn1bxa.f[6]++;
-        cov_1xvtnn1bxa.s[31]++;
+        cov_2ar62w3fuq.f[6]++;
+        cov_2ar62w3fuq.s[31]++;
         return EVENT_KEY;
       }
     }, {
       key: "DefaultType",
       get: function get() {
-        cov_1xvtnn1bxa.f[7]++;
-        cov_1xvtnn1bxa.s[32]++;
+        cov_2ar62w3fuq.f[7]++;
+        cov_2ar62w3fuq.s[32]++;
         return DefaultType;
       }
     }]);
@@ -8267,17 +8267,17 @@
    */
 
 
-  cov_1xvtnn1bxa.s[267]++;
+  cov_2ar62w3fuq.s[267]++;
   $.fn[NAME] = Tooltip._jQueryInterface;
-  cov_1xvtnn1bxa.s[268]++;
+  cov_2ar62w3fuq.s[268]++;
   $.fn[NAME].Constructor = Tooltip;
-  cov_1xvtnn1bxa.s[269]++;
+  cov_2ar62w3fuq.s[269]++;
 
   $.fn[NAME].noConflict = function () {
-    cov_1xvtnn1bxa.f[47]++;
-    cov_1xvtnn1bxa.s[270]++;
+    cov_2ar62w3fuq.f[47]++;
+    cov_2ar62w3fuq.s[270]++;
     $.fn[NAME] = JQUERY_NO_CONFLICT;
-    cov_1xvtnn1bxa.s[271]++;
+    cov_2ar62w3fuq.s[271]++;
     return Tooltip._jQueryInterface;
   };
 
