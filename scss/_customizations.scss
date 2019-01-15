@@ -620,6 +620,7 @@ a.form-control-feedback {
 
 .card {
 
+  position: relative;
   border-radius: 9px;
   @include box-shadow(0 5px 10px 0 rgba(0, 0, 0, .2));
   padding: 25px 40px 35px;
@@ -630,6 +631,12 @@ a.form-control-feedback {
 
   &.card-sm {
     padding: 15px 25px 20px;
+  }
+
+  > .card-close {
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 
 }
@@ -1484,4 +1491,8 @@ table.table.table-sm {
 
 .bootstrap-datetimepicker-widget table td.today::before {
   border-bottom-color: #57a40a;
+}
+
+.bootstrap-datetimepicker-widget table td.day {
+  border: 6px solid #fff;
 }

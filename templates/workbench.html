@@ -67,6 +67,11 @@
 
               <div class="card card-sm card-body rounded-0 px-5 py-4">
 
+                <button class="btn btn-blank btn-muted card-close" role="button" data-toggle="collapse" data-target="#addAClosing"  aria-expanded="false" aria-controls="addAClosing">
+                  <span class="sr-only">Close</span>
+                  <span class="eo-icon eo-icon-remove-large eo-icon-half-opacity"></span>
+                </button>
+
                 <h2>Add a closing</h2>
 
                 <form class="form">
@@ -154,7 +159,7 @@
                             <div class="row">
                               <div class="pad-sm d-xs-block"></div>
                               <div class="form-group col-12">
-                                <label class="col-form-label required" for="hour"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>Time</label>
+                                <label class="col-form-label" for="hour">Time</label>
                                 <div class="form-control-wrap">
                                   <select class="form-control form-control-short" name="hour" id="hour"><option></option></select>
                                     <select class="form-control form-control-short" name="minute" id="minute"><option></option></select>
@@ -165,8 +170,7 @@
 
                             <div class="row">
                               <div class="form-group col-">
-                                <label class="col-form-label required" for="timezone"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
-                                  Time zone</label>
+                                <label class="col-form-label" for="timezone">Time zone</label>
                                 <div class="form-control-wrap">
                                   <select class="form-control form-control-short" name="timezone" id="timezone"><option>ET</option></select>
                                 </div>
