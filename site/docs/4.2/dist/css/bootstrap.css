@@ -12741,6 +12741,7 @@ table.table.table-sm thead tr:first-child th {
   vertical-align: middle;
   background-repeat: no-repeat;
   position: relative;
+  top: -1px;
 }
 
 .eo-icon.eo-icon-add-closing-date-green.eo-icon-xs {

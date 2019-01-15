@@ -138,6 +138,7 @@
   }
   &.eo-icon-add-closing-date-green {
     @include icon-versions(25px, 18px, "../img/icon_add_closing_date_green.svg");
+    top: -1px;
   }
 }
 
