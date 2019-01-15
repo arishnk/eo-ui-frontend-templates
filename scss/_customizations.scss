@@ -1490,6 +1490,7 @@ table.table.table-sm {
 
 .bootstrap-datetimepicker-widget table td.today::before {
   border-bottom-color: #57a40a;
+  display: none;
 }
 
 .bootstrap-datetimepicker-widget table td.old,
@@ -1522,8 +1523,4 @@ table.table.table-sm {
 .bootstrap-datetimepicker-widget table td.day.old,
 .bootstrap-datetimepicker-widget table td.day.new {
   font-weight: 400;
-}
-
-.bootstrap-datetimepicker-widget table td.today:before {
-  display: none;
 }

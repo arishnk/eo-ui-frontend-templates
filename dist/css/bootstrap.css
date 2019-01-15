@@ -11206,6 +11206,7 @@ table.table.table-sm thead tr:first-child th {
 
 .bootstrap-datetimepicker-widget table td.today::before {
   border-bottom-color: #57a40a;
+  display: none;
 }
 
 .bootstrap-datetimepicker-widget table td.old,
