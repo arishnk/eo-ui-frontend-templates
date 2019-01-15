@@ -1496,10 +1496,33 @@ table.table.table-sm {
   padding-right: 25px;
 }
 
-.bootstrap-datetimepicker-widget table td.active,
-.bootstrap-datetimepicker-widget table td.active:hover {
+.bootstrap-datetimepicker-widget table {
+  border: 1px solid #d9dee1;
+}
+
+.bootstrap-datetimepicker-widget table th {
+  border-bottom: none;
+}
+
+.bootstrap-datetimepicker-widget table thead tr:first-child {
+  background-color: #d9dee1;
+}
+
+.bootstrap-datetimepicker-widget table td.today::before {
+  border-bottom-color: #57a40a;
+  display: none;
+}
+
+.bootstrap-datetimepicker-widget table td.old,
+.bootstrap-datetimepicker-widget table td.new {
+  color: #353937;
+}
+
+.bootstrap-datetimepicker-widget table td.day.active,
+.bootstrap-datetimepicker-widget table td.day.active:hover {
 
   background-color: #57a40a;
+  color: #fff;
 
   &::before {
     display: none;
@@ -1507,20 +1530,17 @@ table.table.table-sm {
 
 }
 
-.bootstrap-datetimepicker-widget table thead tr:first-child {
-  background-color: #d9dee1;
+.bootstrap-datetimepicker-widget table td.day {
+  color: #2ea049;
+  border: none;
+  font-weight: 600;
 }
 
-.bootstrap-datetimepicker-widget table td.old,
-.bootstrap-datetimepicker-widget table td.new {
-  background-color: #d0f2b1;
+.bootstrap-datetimepicker-widget table td.day.disabled {
   color: #8d939a;
 }
 
-.bootstrap-datetimepicker-widget table td.today::before {
-  border-bottom-color: #57a40a;
-}
-
-.bootstrap-datetimepicker-widget table td.day {
-  border: 6px solid #fff;
+.bootstrap-datetimepicker-widget table td.day.old,
+.bootstrap-datetimepicker-widget table td.day.new {
+  font-weight: 400;
 }
