@@ -10492,6 +10492,9 @@ a.form-control-feedback:hover {
   .text-center-md {
     text-align: center;
   }
+  .border-lg-left {
+    border-left: 1px solid #d9dee1 !important;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -10506,6 +10509,9 @@ a.form-control-feedback:hover {
   }
   .text-center-lg {
     text-align: center;
+  }
+  .border-xl-left {
+    border-left: 1px solid #d9dee1 !important;
   }
 }
 

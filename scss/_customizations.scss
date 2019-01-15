@@ -706,6 +706,10 @@ a.form-control-feedback {
     text-align: center;
   }
 
+  .border-lg-left {
+    border-left: 1px solid #d9dee1 !important;
+  }
+
 }
 
 @include media-breakpoint-up(xl) {
@@ -722,6 +726,10 @@ a.form-control-feedback {
 
   .text-center-lg {
     text-align: center;
+  }
+
+  .border-xl-left {
+    border-left: 1px solid #d9dee1 !important;
   }
 
 }
