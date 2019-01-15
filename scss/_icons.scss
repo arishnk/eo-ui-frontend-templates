@@ -140,6 +140,7 @@
     @include icon-versions(25px, 18px, "../img/icon_add_closing_date_green.svg");
     top: -1px;
   }
+  &.eo-icon-add-note-dark-gray { @include icon-versions(19px, 19px, "../img/icon_add_note_dark_gray.svg"); }
 }
 
 a:hover .eo-icon.eo-icon-half-opacity,

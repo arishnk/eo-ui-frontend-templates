@@ -5678,8 +5678,8 @@ a.close.disabled {
   pointer-events: auto;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 9px;
   outline: 0;
 }
 
@@ -5708,15 +5708,15 @@ a.close.disabled {
   align-items: flex-start;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 1rem 1rem;
+  padding: 10px 1rem;
   border-bottom: 1px solid #e9ecef;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
 }
 
 .modal-header .close {
-  padding: 1rem 1rem;
-  margin: -1rem -1rem -1rem auto;
+  padding: 10px 1rem;
+  margin: -10px -1rem -10px auto;
 }
 
 .modal-title {
@@ -5740,8 +5740,8 @@ a.close.disabled {
   justify-content: flex-end;
   padding: 1rem;
   border-top: 1px solid #e9ecef;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 9px;
+  border-bottom-left-radius: 9px;
 }
 
 .modal-footer > :not(:first-child) {
@@ -11452,6 +11452,36 @@ a.text-dark:hover, a.text-dark:focus {
   height: 27px;
 }
 
+.eo-icon.eo-icon-add-note-dark-gray {
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon_add_note_dark_gray.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-add-note-dark-gray.eo-icon-xs {
+  width: 4.75px;
+  height: 4.75px;
+}
+
+.eo-icon.eo-icon-add-note-dark-gray.eo-icon-sm {
+  width: 9.5px;
+  height: 9.5px;
+}
+
+.eo-icon.eo-icon-add-note-dark-gray.eo-icon-lg {
+  width: 23.75px;
+  height: 23.75px;
+}
+
+.eo-icon.eo-icon-add-note-dark-gray.eo-icon-xl {
+  width: 28.5px;
+  height: 28.5px;
+}
+
 a:hover .eo-icon.eo-icon-half-opacity,
 button:hover .eo-icon.eo-icon-half-opacity,
 a:focus .eo-icon.eo-icon-half-opacity,
@@ -12801,6 +12831,32 @@ table.table.table-sm thead tr:first-child th {
   .workbench-table .workbench-table-row .buttons-column .btn {
     font-size: 0.8125rem;
   }
+}
+
+.modal .modal-content {
+  border-radius: 9px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal .modal-header {
+  background: #daf7bf;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.modal .modal-header .modal-title {
+  font-size: 0.8125rem;
+  color: #5a5e5a;
+  line-height: 18px;
+}
+
+.modal textarea.form-control {
+  border: 2px solid #0abae5;
+  font-size: 0.8125rem;
+  color: #000;
 }
 
 .navbar-expand > .container,

@@ -291,7 +291,7 @@
                   </a>
                   <div class="dropdown-menu" aria-labelledby="moreActionsDropdownExample">
                     <a class="dropdown-item" href="#">Add closing date</a>
-                    <a class="dropdown-item add-note-trigger" href="#">Add note</a>
+                    <a class="dropdown-item add-note-trigger" data-toggle="modal" data-target="#addNoteModal" data-backdrop="false" href="#">Add note</a>
                     <a class="dropdown-item" href="#">Remove closing</a>
                   </div>
                 </div>
@@ -588,6 +588,29 @@
 
   </div>
 
+  <div class="modal fade" id="addNoteModal" role="dialog" aria-labelledby="addNoteTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="eo-icon eo-icon-add-note-dark-gray"></span>
+          <span class="modal-title pl-2 font-weight-semibold" id="addNoteTitle">Add internal note</span>
+        </div>
+        <div class="modal-body">
+
+          <form class="form">
+            <div class="form-group">
+              <textarea class="form-control" id="newNoteText" rows="3"></textarea>
+            </div>
+            <div class="form-group form-group row row-no-padding mb-2">
+              <button type="submit" id="saveNote" class="btn btn-primary px-5">Save</button>
+              <button type="button" id="cancelAddNote" class="btn btn-blank" data-dismiss="modal">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -633,6 +656,12 @@
       },
       defaultDate: false,
       minDate: moment(new Date(), 'MM-DD-YYYY')
+    });
+
+
+
+    $('#addNoteModal').on('shown.bs.modal', function(e) {
+      $('#newNoteText').focus();
     });
 
   </script>
