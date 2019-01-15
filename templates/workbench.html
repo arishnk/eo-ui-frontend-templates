@@ -286,8 +286,14 @@
               <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
                 <span class="status-text">Closing in progress</span>
                 <div class="status-more d-none d-md-block">
-                  <a href="#">More actions</a>
-                  <span class="eo-icon eo-icon-menu-arrow-down-green"></span>
+                  <a href="#" class="more-actions-toggle" id="moreActionsDropdownExample" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>More actions</span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="moreActionsDropdownExample">
+                    <a class="dropdown-item" href="#">Add closing date</a>
+                    <a class="dropdown-item add-note-trigger" href="#">Add note</a>
+                    <a class="dropdown-item" href="#">Remove closing</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -592,15 +598,17 @@
 
   <script>
 
+    // activate tooltips
     $('[data-toggle="tooltip"]').tooltip();
 
+    // behavior for add closing form
     $('#addAClosing')
       .on('show.bs.collapse hide.bs.collapse', function (e) {
 
         e.stopPropagation();
 
         $('[href="#addAClosing"]')
-          .toggleClass('d-none');
+          .toggleClass('invisible');
         $(this).parents('.workbench-banner')
           .toggleClass('workbench-banner-open');
       });
