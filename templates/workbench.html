@@ -62,148 +62,150 @@
         </div> <!-- .workbench-banner-content -->
 
         <div class="row">
+          <div class="col-12 no-xs-padding">
 
-          <div class="collapse" id="addAClosing">
+            <div class="collapse" id="addAClosing">
 
-            <div class="workbench-banner-form">
+              <div class="workbench-banner-form">
 
-              <div class="card card-sm card-body rounded-0 px-5 py-4">
+                <div class="card card-sm card-body rounded-0 px-5 py-4">
 
-                <button class="btn btn-blank btn-muted card-close" role="button" data-toggle="collapse" data-target="#addAClosing"  aria-expanded="false" aria-controls="addAClosing">
-                  <span class="sr-only">Close</span>
-                  <span class="eo-icon eo-icon-remove-large eo-icon-half-opacity"></span>
-                </button>
+                  <button class="btn btn-blank btn-muted card-close" role="button" data-toggle="collapse" data-target="#addAClosing"  aria-expanded="false" aria-controls="addAClosing">
+                    <span class="sr-only">Close</span>
+                    <span class="eo-icon eo-icon-remove-large eo-icon-half-opacity"></span>
+                  </button>
 
-                <h2>Add a closing</h2>
+                  <h2>Add a closing</h2>
 
-                <form class="form">
+                  <form class="form">
 
-                  <div class="row">
-                    <div class="col-lg-7 pr-lg-5">
+                    <div class="row">
+                      <div class="col-lg-7 pr-lg-5">
 
-                      <p>Please enter the access code and one borrower&apos;s information from the email you received.</p>
+                        <p>Please enter the access code and one borrower&apos;s information from the email you received.</p>
 
-                      <div class="row">
-                        <div class="form-group col-md-6">
-                          <label class="col-form-label required" for="accessCode"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
-                            Access code
-                          </label>
-                          <div class="form-control-wrap">
-                            <input class="form-control" name="accessCode" type="text" id="accessCode" placeholder="" value="" data-container="body" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus">
+                        <div class="row">
+                          <div class="form-group col-md-6">
+                            <label class="col-form-label required" for="accessCode"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                              Access code
+                            </label>
+                            <div class="form-control-wrap">
+                              <input class="form-control" name="accessCode" type="text" id="accessCode" placeholder="" value="" data-container="body" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus">
+                            </div>
+                            <div class="form-text"></div>
                           </div>
-                          <div class="form-text"></div>
                         </div>
+                        <div class="row">
+                          <div class="form-group col-md-6">
+                            <label class="col-form-label required" for="firstName"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                              Borrower&apos;s
+                              first name</label>
+                            <div class="form-control-wrap">
+                              <input class="form-control" name="firstName" type="text" id="firstName" placeholder="" value="">
+                            </div>
+                            <div class="form-text"></div>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label class="col-form-label required" for="lastName"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                              Borrower&apos;s
+                              last name</label>
+                            <div class="form-control-wrap">
+                              <input class="form-control" name="lastName" type="text" id="lastName" placeholder="" value="">
+                            </div>
+                            <div class="form-text"></div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-12">
+                            <label class="col-form-label required" for="emailAddress2"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                              Borrower&apos;s
+                              email address</label>
+                            <div class="form-control-wrap">
+                              <input class="form-control" name="emailAddress2" type="email" id="emailAddress2" placeholder="" value="">
+                            </div>
+                            <div class="form-text"></div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-12">
+                            <label class="col-form-label required" for="organizationsName"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                              Organization&apos;s
+                              name</label>
+                            <div class="form-control-wrap">
+                              <input class="form-control" name="organizationsName" type="email" id="organizationsName" placeholder="" value="">
+                            </div>
+                            <div class="form-text"></div>
+                          </div>
+                        </div>
+
                       </div>
-                      <div class="row">
-                        <div class="form-group col-md-6">
-                          <label class="col-form-label required" for="firstName"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
-                            Borrower&apos;s
-                            first name</label>
-                          <div class="form-control-wrap">
-                            <input class="form-control" name="firstName" type="text" id="firstName" placeholder="" value="">
+
+                      <div class="col-lg-5 border-lg-left border-xl-left">
+
+                        <p>If you know the closing date, you can enter it here, to see your closings sorted by date.</p>
+
+                        <p>
+                          <a data-toggle="collapse" href="#closingDateFields" role="button" aria-expanded="false" aria-controls="closingDateFields" class="mr-1"><span class="eo-icon eo-icon-add-closing-date-green"></span></a>
+                          <a data-toggle="collapse" href="#closingDateFields" role="button" aria-expanded="false" aria-controls="closingDateFields">Add date/time</a>
+                        </p>
+
+                        <div id="closingDateFields" class="collapse">
+
+                          <div class="row align-items-end">
+
+                            <div class="col-sm-6 col-lg-12 col-xl-6">
+                              <div id="closingDatePicker"></div>
+                            </div>
+
+                            <div class="col-sm-6 col-lg-12 col-xl-6">
+
+                              <div class="row">
+                                <div class="form-group col-12">
+                                  <div class="pad-sm d-xs-block"></div>
+                                  <label class="col-form-label" for="hour">Time</label>
+                                  <div class="form-control-wrap">
+                                    <select class="form-control form-control-short" name="hour" id="hour"><option></option></select>
+                                      <select class="form-control form-control-short" name="minute" id="minute"><option></option></select>
+                                  </div>
+                                  <div class="form-text"></div>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="form-group col-12">
+                                  <label class="col-form-label" for="timezone">Time zone</label>
+                                  <div class="form-control-wrap">
+                                    <select class="form-control form-control-short" name="timezone" id="timezone"><option>ET</option></select>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+
                           </div>
-                          <div class="form-text"></div>
+
                         </div>
-                        <div class="form-group col-md-6">
-                          <label class="col-form-label required" for="lastName"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
-                            Borrower&apos;s
-                            last name</label>
-                          <div class="form-control-wrap">
-                            <input class="form-control" name="lastName" type="text" id="lastName" placeholder="" value="">
-                          </div>
-                          <div class="form-text"></div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="form-group col-12">
-                          <label class="col-form-label required" for="emailAddress2"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
-                            Borrower&apos;s
-                            email address</label>
-                          <div class="form-control-wrap">
-                            <input class="form-control" name="emailAddress2" type="email" id="emailAddress2" placeholder="" value="">
-                          </div>
-                          <div class="form-text"></div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="form-group col-12">
-                          <label class="col-form-label required" for="organizationsName"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
-                            Organization&apos;s
-                            name</label>
-                          <div class="form-control-wrap">
-                            <input class="form-control" name="organizationsName" type="email" id="organizationsName" placeholder="" value="">
-                          </div>
-                          <div class="form-text"></div>
-                        </div>
+
                       </div>
 
                     </div>
 
-                    <div class="col-lg-5 border-lg-left border-xl-left">
+                    <div class="pad"></div>
 
-                      <p>If you know the closing date, you can enter it here, to see your closings sorted by date.</p>
-
-                      <p>
-                        <a data-toggle="collapse" href="#closingDateFields" role="button" aria-expanded="false" aria-controls="closingDateFields" class="mr-1"><span class="eo-icon eo-icon-add-closing-date-green"></span></a>
-                        <a data-toggle="collapse" href="#closingDateFields" role="button" aria-expanded="false" aria-controls="closingDateFields">Add date/time</a>
-                      </p>
-
-                      <div id="closingDateFields" class="collapse">
-
-                        <div class="row align-items-end">
-
-                          <div class="col-sm-6 col-lg-12 col-xl-6">
-                            <div id="closingDatePicker"></div>
-                          </div>
-
-                          <div class="col-sm-6 col-lg-12 col-xl-6">
-
-                            <div class="row">
-                              <div class="form-group col-12">
-                                <div class="pad-sm d-xs-block"></div>
-                                <label class="col-form-label" for="hour">Time</label>
-                                <div class="form-control-wrap">
-                                  <select class="form-control form-control-short" name="hour" id="hour"><option></option></select>
-                                    <select class="form-control form-control-short" name="minute" id="minute"><option></option></select>
-                                </div>
-                                <div class="form-text"></div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="form-group col-12">
-                                <label class="col-form-label" for="timezone">Time zone</label>
-                                <div class="form-control-wrap">
-                                  <select class="form-control form-control-short" name="timezone" id="timezone"><option>ET</option></select>
-                                </div>
-                              </div>
-                            </div>
-
-                          </div>
-
-                        </div>
-
-                      </div>
-
+                    <div class="form-group">
+                      <button type="button" class="btn btn-primary px-5"data-toggle="collapse" data-target="#addAClosing" role="button" aria-expanded="false" aria-controls="addAClosing">Save</button>
+                      <button type="button" id="cancel" class="btn btn-blank" data-toggle="collapse" data-target="#addAClosing" role="button" aria-expanded="false" aria-controls="addAClosing">Cancel</button>
                     </div>
 
-                  </div>
+                    <div class="pad"></div>
+                    <p class="small"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span> Required field</p>
 
-                  <div class="pad"></div>
+                  </form>
 
-                  <div class="form-group">
-                    <button type="button" class="btn btn-primary px-5"data-toggle="collapse" data-target="#addAClosing" role="button" aria-expanded="false" aria-controls="addAClosing">Save</button>
-                    <button type="button" id="cancel" class="btn btn-blank" data-toggle="collapse" data-target="#addAClosing" role="button" aria-expanded="false" aria-controls="addAClosing">Cancel</button>
-                  </div>
-
-                  <div class="pad"></div>
-                  <p class="small"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span> Required field</p>
-
-                </form>
-
-              </div>
-            </div> <!-- .workbench-banner-form -->
-          </div> <!-- .collapse #addAClosing -->
+                </div>
+              </div> <!-- .workbench-banner-form -->
+            </div> <!-- .collapse #addAClosing -->
+          </div> <!-- .col-12 -->
         </div> <!-- .row -->
       </div> <!-- .container -->
     </div> <!-- .workbench-banner -->
