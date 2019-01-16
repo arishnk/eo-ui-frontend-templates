@@ -72,6 +72,7 @@
     top: -2px;
   }
   &.eo-icon-alert-large { @include icon-versions(32px, 32px, "../img/icon_alert_large.svg"); }
+  &.eo-icon-alert-large-red { @include icon-versions(32px, 32px, "../img/icon_alert_large_red.svg"); }
   &.eo-icon-asterisk {
     @include icon-versions(9px, 9px, "../img/icon_asterisk.svg");
     top: -1px;
@@ -125,6 +126,7 @@
   &.eo-icon-sort-down { @include icon-versions(18px, 18px, "../img/icon_sort_down.svg"); }
   &.eo-icon-sort-up { @include icon-versions(18px, 18px, "../img/icon_sort_up.svg"); }
   &.eo-icon-success-message { @include icon-versions(32px, 32px, "../img/icon_success_message.svg"); }
+  &.eo-icon-success-message-green { @include icon-versions(32px, 32px, "../img/icon_success_message_green.svg"); }
   &.eo-icon-email-message { @include icon-versions(32px, 24px, "../img/icon_email_message.svg"); }
   &.eo-icon-add {
     @include icon-versions(14px, 14px, "../img/icon_add.svg");

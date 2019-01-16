@@ -291,7 +291,7 @@
                   </a>
                   <div class="dropdown-menu" aria-labelledby="moreActionsDropdownExample">
                     <a class="dropdown-item" href="#">Add closing date</a>
-                    <a class="dropdown-item add-note-trigger" data-toggle="modal" data-target="#addNoteModal" data-backdrop="false" href="#">Add note</a>
+                    <a class="dropdown-item add-note-trigger" data-toggle="modal" data-target="#addNoteModal" href="#">Add note</a>
                     <a class="dropdown-item" href="#">Remove closing</a>
                   </div>
                 </div>
@@ -659,9 +659,17 @@
     });
 
 
-
-    $('#addNoteModal').on('shown.bs.modal', function(e) {
+    $('#addNoteModal')
+    .on('show.bs.modal', function(e) {
+      var link = $(e.relatedTarget);
+      var row = link.parents('.workbench-table-row');
+      row.addClass('hover');
+    })
+    .on('shown.bs.modal', function(e) {
       $('#newNoteText').focus();
+    })
+    .on('hide.bs.modal', function(e) {
+      $('.workbench-table-row').removeClass('hover');
     });
 
   </script>

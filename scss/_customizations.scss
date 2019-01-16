@@ -1410,6 +1410,11 @@ table.table.table-sm {
       transition: background .3s;
     }
 
+    &.hover {
+      background: rgba(185, 239, 132, 1);
+      transition: background .3s;
+    }
+
     .name-column {
       .cell-text {
         font-size: $font-size-smaller;
@@ -1516,6 +1521,14 @@ table.table.table-sm {
   }
 }
 
+.modal-backdrop {
+  background-color: $white;
+
+  &.show {
+    opacity: .4;
+  }
+}
+
 .navbar-expand > .container,
 .navbar-expand > .container-fluid {
   padding-left: 25px;
@@ -1569,4 +1582,38 @@ table.table.table-sm {
 .bootstrap-datetimepicker-widget table td.day.old,
 .bootstrap-datetimepicker-widget table td.day.new {
   font-weight: 400;
+}
+
+.toast-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.toast {
+  border-radius: $border-radius;
+  box-shadow: $toast-box-shadow;
+
+  &.hide {
+    display: none !important;
+  }
+
+  .toast-header {
+    padding: 0;
+    width: 45px;
+    position: relative;
+    border-bottom: 0;
+    border-left: 1px solid $gray-300;
+
+    .toast-close {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      border-radius: 0;
+      text-align: center;
+      padding: 0 15px;
+    }
+  }
 }

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title></title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,500i,600,600i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+  <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="has-footer">
+
+  <div class="main-content">
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center">Site Component Demos</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 text-center"><h2>Toast Messages</h2></div>
+        <div class="col text-center"><button class="btn btn-primary" id="triggerSuccessToast">Click for success message</button></div>
+        <div class="col text-center"><button class="btn btn-danger" id="triggerErrorToast">Click for error message</button></div>
+      </div>
+
+      <div aria-live="polite" aria-atomic="true" class="toast-container">
+
+        <div class="toast toast-success d-flex flex-row-reverse hide" id="sampleSuccessToast" role="status" aria-live="polite" aria-atomic="true" data-delay="1000">
+          <div class="toast-header"><button class="btn btn-blank btn-muted toast-close bg-light" role="button" data-dismiss="toast" aria-label="Close"><span class="eo-icon eo-icon-remove-large eo-icon-half-opacity"></span></button></div>
+          <div class="toast-body d-flex justify-content-between align-items-center">
+            <div class="toast-main d-flex align-items-center">
+              <span class="eo-icon eo-icon-success-message-green"></span>
+              <div class="toast-message pl-2">Confirmation message. Success!!!</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="toast toast-error d-flex flex-row-reverse justify-content-between hide" id="sampleErrorToast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="1000">
+          <div class="toast-header"><button class="btn btn-blank btn-muted toast-close bg-light" role="button" data-dismiss="toast" aria-label="Close"><span class="eo-icon eo-icon-remove-large eo-icon-half-opacity"></span></button></div>
+          <div class="toast-body d-flex justify-content-between align-items-center">
+            <div class="toast-main d-flex align-items-center">
+              <span class="eo-icon eo-icon-alert-large-red"></span>
+              <div class="toast-message pl-2">Alert message</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="../img/icon_footer_logo_w_tagline.svg" alt="eOriginal: Trust the Asset. Trust the Transaction.TM" width="223" class="float-right d-none d-md-block d-lg-none d-xl-none">
+          <h4>Virginia Residential Mortgage</h4>
+          <span class="small text-muted">Licensee NML License #3212</span>
+          <div class="pad d-md-none d-block"></div>
+          <div class="d-none d-md-block">
+            <div class="pad-lg"></div>
+            <p><span class="eo-icon eo-icon-equal-housing-lender"></span></p>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <img src="../img/icon_footer_logo_w_tagline.svg" width="223" class="float-right d-none d-lg-block" alt="eOriginal: Trust the Asset. Trust the Transaction.TM"> <address>
+
+            2700 Wilson Blvd.<br>
+
+            Arlington, VA 22201
+
+          </address>
+          <p> <a href="tel:866.364.3578" class="link-phone">866.364.3578</a>
+          </p>
+          <p> <a href="mailto:info@theLender.com" class="link-email">info@theLender.com</a>
+          </p>
+          <div class="pad d-md-none"></div>
+          <img src="../img/icon_footer_logo_w_tagline.svg" width="223" class="d-md-none" alt="eOriginal: Trust the Asset. Trust the Transaction.TM">
+        </div>
+      </div>
+    </div>
+    <div class="footer-decoration"></div>
+    <div class="container text-muted">
+      <div class="row">
+        <div class="col-md-7 order-sm-2">
+          <ul class="list-inline list-inline-piped float-md-right float-lg-right float-xl-right small">
+            <li class="list-inline-item"><a href="#">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item"><a href="#">Intellectual Property</a>
+            </li>
+            <li class="list-inline-item"><a href="#">Terms &amp; Conditions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-5 order-sm-1">
+          <p class="small">&#xA9; 2019 <span class="white">eOriginal</span>, Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="../dist/js/bootstrap.min.js"></script>
+
+  <script>
+
+    $('#triggerSuccessToast').click(function(e) {
+      $('#sampleSuccessToast').toast('show');
+    });
+
+    $('#triggerErrorToast').click(function(e) {
+      $('#sampleErrorToast').toast('show');
+    });
+
+  </script>
+
+</body>
+</html>

@@ -5566,9 +5566,9 @@ a.close.disabled {
   font-size: 0.875rem;
   background-color: rgba(255, 255, 255, 0.85);
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 0.25rem;
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  border: 1px solid #c0c4c8;
+  border-radius: 6px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   opacity: 0;
@@ -9977,6 +9977,36 @@ a.text-dark:hover, a.text-dark:focus {
   height: 48px;
 }
 
+.eo-icon.eo-icon-alert-large-red {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/icon_alert_large_red.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-alert-large-red.eo-icon-xs {
+  width: 8px;
+  height: 8px;
+}
+
+.eo-icon.eo-icon-alert-large-red.eo-icon-sm {
+  width: 16px;
+  height: 16px;
+}
+
+.eo-icon.eo-icon-alert-large-red.eo-icon-lg {
+  width: 40px;
+  height: 40px;
+}
+
+.eo-icon.eo-icon-alert-large-red.eo-icon-xl {
+  width: 48px;
+  height: 48px;
+}
+
 .eo-icon.eo-icon-asterisk {
   width: 9px;
   height: 9px;
@@ -11296,6 +11326,36 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .eo-icon.eo-icon-success-message.eo-icon-xl {
+  width: 48px;
+  height: 48px;
+}
+
+.eo-icon.eo-icon-success-message-green {
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/icon_success_message_green.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-success-message-green.eo-icon-xs {
+  width: 8px;
+  height: 8px;
+}
+
+.eo-icon.eo-icon-success-message-green.eo-icon-sm {
+  width: 16px;
+  height: 16px;
+}
+
+.eo-icon.eo-icon-success-message-green.eo-icon-lg {
+  width: 40px;
+  height: 40px;
+}
+
+.eo-icon.eo-icon-success-message-green.eo-icon-xl {
   width: 48px;
   height: 48px;
 }
@@ -12740,6 +12800,11 @@ table.table.table-sm thead tr:first-child th {
   transition: background .3s;
 }
 
+.workbench-table .workbench-table-row.hover {
+  background: #b9ef84;
+  transition: background .3s;
+}
+
 .workbench-table .workbench-table-row .name-column .cell-text {
   font-size: 0.8125rem;
   color: #2ea049;
@@ -12859,6 +12924,14 @@ table.table.table-sm thead tr:first-child th {
   color: #000;
 }
 
+.modal-backdrop {
+  background-color: #fff;
+}
+
+.modal-backdrop.show {
+  opacity: .4;
+}
+
 .navbar-expand > .container,
 .navbar-expand > .container-fluid {
   padding-left: 25px;
@@ -12911,5 +12984,40 @@ table.table.table-sm thead tr:first-child th {
 .bootstrap-datetimepicker-widget table td.day.old,
 .bootstrap-datetimepicker-widget table td.day.new {
   font-weight: 400;
+}
+
+.toast-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.toast {
+  border-radius: 6px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.toast.hide {
+  display: none !important;
+}
+
+.toast .toast-header {
+  padding: 0;
+  width: 45px;
+  position: relative;
+  border-bottom: 0;
+  border-left: 1px solid #d9dee1;
+}
+
+.toast .toast-header .toast-close {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: 0;
+  text-align: center;
+  padding: 0 15px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
