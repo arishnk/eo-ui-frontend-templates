@@ -12854,6 +12854,15 @@ table.table.table-sm thead tr:first-child th {
   transition: background .3s;
 }
 
+.workbench-table .workbench-table-row.new {
+  background: #b9ef84;
+}
+
+.workbench-table .workbench-table-row.new.bg-fade {
+  background: transparent;
+  transition: background 2s;
+}
+
 .workbench-table .workbench-table-row .name-column .cell-text {
   font-size: 0.8125rem;
   color: #2ea049;

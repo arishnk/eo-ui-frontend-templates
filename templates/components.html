@@ -57,11 +57,100 @@
 
       </div>
 
+      <div class="pad"></div>
+
+      <div class="row">
+        <div class="col-12 text-center"><h2>Add New Table Row Behavior</h2></div>
+        <div class="col-12 text-center pb-3"><button class="btn btn-primary" id="addTableRow">Click to add a row</button></div>
+
+        <div class="col-12">
+          <div class="container workbench-table">
+            <div class="row text-light workbench-table-header">
+              <div class="workbench-table-cell col name-column d-flex justify-content-between align-items-center">
+                <span class="cell-text text-uppercase font-weight-semibold">Primary Borrower</span>
+              </div>
+              <div class="workbench-table-cell col sortable date-column d-flex justify-content-between align-items-center">
+                <span class="cell-text text-uppercase font-weight-semibold">Closing Date</span>
+                <span class="eo-icon eo-icon-sort-up d-none d-sm-block"></span>
+              </div>
+              <div class="workbench-table-cell col lender-column d-none d-xl-block">
+                <span class="cell-text text-uppercase font-weight-semibold">Lender</span>
+              </div>
+              <div class="workbench-table-cell col documents-column d-none d-lg-block">
+                <span class="cell-text text-uppercase font-weight-semibold">Documents</span>
+              </div>
+              <div class="workbench-table-cell col sortable status-column d-flex justify-content-between align-items-center">
+                <span class="cell-text text-uppercase font-weight-semibold">Status</span>
+                <span class="eo-icon eo-icon-sort-down d-none d-sm-block"></span>
+              </div>
+              <div class="workbench-table-cell col buttons-column d-none d-md-block">
+                <span class="cell-text sr-only">Action Buttons</span>
+              </div>
+            </div>
+
+            <div class="row new d-none border-bottom align-items-center workbench-table-row">
+              <div class="workbench-table-cell col name-column">
+                <div class="cell-text font-weight-semibold">
+                  <span class="lastname">Rodriguez</span>, <span class="firstname">Marco</span>
+                </div>
+              </div>
+              <div class="workbench-table-cell col date-column">
+                <div class="cell-text">
+                </div>
+              </div>
+              <div class="workbench-table-cell col lender-column d-none d-xl-block">
+                <div class="cell-text">
+                  <img src="../img/icon_fannie_mae_logo_small.png" alt="Fannie Mae" />
+                </div>
+              </div>
+              <div class="workbench-table-cell col documents-column d-none d-lg-block">
+                <div class="cell-text d-flex align-items-center">
+                  <span class="eo-icon eo-icon-documents"></span>
+                  <span class="docs pl-2">
+                    <span class="docs-value font-weight-semibold">12</span>
+                    <span class="docs-label">docs</span>
+                  </span>
+                  <span class="comma">,</span>
+                  <span class="pages pl-1">
+                    <span class="docs-value font-weight-semibold">103</span>
+                    <span class="docs-label">pg</span>
+                  </span>
+                </div>
+              </div>
+              <div class="workbench-table-cell col status-column">
+                <div class="cell-text d-flex align-items-center">
+                  <span class="eo-icon eo-icon-trans-closing-in-process"></span>
+                  <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
+                    <span class="status-text">Closing in progress</span>
+                    <div class="status-more d-none d-md-block">
+                      <a href="#" class="more-actions-toggle" id="moreActionsDropdownExample" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>More actions</span>
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="moreActionsDropdownExample">
+                        <a class="dropdown-item" href="#">Add closing date</a>
+                        <a class="dropdown-item add-note-trigger" data-toggle="modal" data-target="#addNoteModal" data-backdrop="static" href="#">Add note</a>
+                        <a class="dropdown-item" href="#">Remove closing</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="workbench-table-cell col buttons-column d-none d-md-block">
+                <div class="cell-text">
+                  <button class="btn btn-primary btn-block">Complete closing</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
     </div>
 
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="../dist/js/bootstrap.min.js"></script>
 
@@ -73,6 +162,16 @@
 
     $('#triggerErrorToast').click(function(e) {
       $('#sampleErrorToast').toast('show');
+    });
+
+    $('#addTableRow').click(function(e) {
+      $('.workbench-table-row').removeClass('d-none');
+      setTimeout(function() {
+        $('.workbench-table-row').addClass('bg-fade');
+      }, 3000);
+      setTimeout(function() {
+        $('.workbench-table-row').removeClass('new bg-fade');
+      }, 5000);
     });
 
   </script>

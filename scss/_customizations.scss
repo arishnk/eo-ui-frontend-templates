@@ -1435,6 +1435,15 @@ table.table.table-sm {
       transition: background .3s;
     }
 
+    &.new {
+      background: rgba(185, 239, 132, 1);
+
+      &.bg-fade {
+        background: transparent;
+        transition: background 2s;
+      }
+    }
+
     .name-column {
       .cell-text {
         font-size: $font-size-smaller;
