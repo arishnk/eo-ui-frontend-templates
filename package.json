@@ -83,7 +83,7 @@
     "watch": "npm-run-all --parallel watch-*",
     "watch-css-main": "nodemon --watch scss/ --ext scss --exec \"npm run css-main\"",
     "watch-css-docs": "nodemon --watch \"site/docs/**/assets/scss/\" --ext scss --exec \"npm run css-docs\"",
-    "watch-img-main": "nodemon --watch img/ --exec \"npm run img-main\"",
+    "watch-img-main": "nodemon --watch img/ --ext svg,jpg,png --exec \"npm run img-main\"",
     "watch-js-main": "nodemon --watch js/src/ --ext js --exec \"npm run js-compile\"",
     "watch-js-docs": "nodemon --watch \"site/docs/**/assets/js/src/\" --ext js --exec \"npm run js-docs\""
   },
