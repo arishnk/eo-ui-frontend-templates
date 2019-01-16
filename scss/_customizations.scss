@@ -1373,8 +1373,11 @@ table.table.table-sm {
       background: $black;
       padding: 20px 12.5px;
 
-      &.sortable {
+      &.sorted {
         background: $dark;
+      }
+
+      &.sortable {
 
         &:hover {
           cursor: pointer;
