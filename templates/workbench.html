@@ -337,9 +337,9 @@
                     <span class="docs-value font-weight-semibold">76</span>
                     <span class="docs-label">pg</span>
                   </span>
-                  <span class="msg ml-auto">
+                  <span class="notes ml-auto" data-toggle="popover">
                     <span class="eo-icon eo-icon-note-green"></span>
-                    <span class="num-msgs">2</span>
+                    <span class="num-notes">2</span>
                   </span>
                 </div>
               </div>
@@ -486,7 +486,7 @@
               </div>
               <div class="workbench-table-cell col buttons-column d-none d-md-block">
                 <div class="cell-text">
-                  <button class="btn btn-secondary btn-block remove-closing-trigger" data-toggle="popover"><span data-toggle="tooltip" title="Remove this from your list because the signing will not be done electronically.">Remove closing</span></button>
+                  <button class="btn btn-secondary btn-block remove-closing-trigger" data-toggle="modal" data-target="#removeClosingModal" data-backdrop="static"><span data-toggle="tooltip" title="Remove this from your list because the signing will not be done electronically.">Remove closing</span></button>
                 </div>
               </div>
             </div>
@@ -598,8 +598,8 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <span class="eo-icon eo-icon-add-note-dark-gray"></span>
-          <span class="modal-title pl-2 font-weight-semibold" id="addNoteTitle">Add internal note</span>
+          <span class="eo-icon eo-icon-add-note-dark-gray mr-2"></span>
+          <span class="modal-title font-weight-semibold" id="addNoteTitle">Add internal note</span>
         </div>
         <div class="modal-body">
 
@@ -612,6 +612,26 @@
               <button type="button" id="cancelAddNote" class="btn btn-blank" data-dismiss="modal">Cancel</button>
             </div>
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="removeClosingModal" role="dialog" aria-labelled-by="removeClosingTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-title font-weight-semibold" id="removeClosingTitle">Remove closing</span>
+        </div>
+        <div class="modal-body">
+          <div class="row row-no-padding remove-closing-text">
+            <p class="font-weight-semibold">Are you sure you want to remove the closing from your list?</p>
+            <p class="text-smaller">Once you remove it, the lender will have to send you a new request before you can add it again.</p>
+          </div>
+          <div class="row row-no-padding mb-2">
+            <button type="submit" id="saveNote" class="btn btn-primary px-5">Yes, Remove</button>
+            <button type="button" id="cancelAddNote" class="btn btn-blank" data-dismiss="modal">Cancel</button>
+          </div>
         </div>
       </div>
     </div>
@@ -664,17 +684,13 @@
       minDate: moment(new Date(), 'MM-DD-YYYY')
     });
 
-    $('.remove-closing-trigger')
-    .popover({
+    // this might be better triggered by an id selector when there are multiple notes and the data is dynamic
+    $('.notes').popover({
+      container: $('.notes'),
+      trigger: 'hover',
+      placement: 'top',
       html: true,
-      title: 'Remove closing',
-      template: '<div class="popover" role="tooltip"><div class="popover-header font-weight-semibold"></div><div class="popover-body"></div></div>',
-      content: '<div class="popover-text mb-3">Are you sure you want to remove this closing?</div><div class="row row-no-padding"><button id="removeClosing" class="btn btn-primary px-5">Save</button><button type="button" id="cancelRemoveClosing" class="btn btn-blank cancel-button">Cancel</button></div>'
-    })
-    .on('inserted.bs.popover', function() {
-      $('.popover .cancel-button').click(function(e) {
-        $('.remove-closing-trigger').popover('hide');
-      });
+      content: '<div class="d-flex flex-column justify-space-between"><div class="note-content d-flex pb-1"><span class="eo-icon eo-icon-note-dk-gray flex-shrink-0"></span><div class="pl-2"><div class="note-heading"><span class="note-author font-weight-semibold">Debbie Johnson</span><span class="comma">,</span><span class="note-datetime pl-1">12/12/2018 2:23pm</span></div><div class="note-main py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum.</div></div></div><div class="note-footer"><a class="all-notes-link font-weight-semibold" href="#">See all notes</a></div></div>'
     });
 
 

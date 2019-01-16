@@ -5728,7 +5728,7 @@ a.close.disabled {
   position: relative;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
 }
 
 .modal-footer {
@@ -5738,7 +5738,7 @@ a.close.disabled {
   align-items: center;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   border-top: 1px solid #e9ecef;
   border-bottom-right-radius: 9px;
   border-bottom-left-radius: 9px;
@@ -6082,7 +6082,7 @@ a.close.disabled {
 }
 
 .popover-body {
-  padding: 1rem 1.5rem;
+  padding: 1rem 1rem;
   color: #353937;
 }
 
@@ -11030,6 +11030,36 @@ a.text-dark:hover, a.text-dark:focus {
   height: 24px;
 }
 
+.eo-icon.eo-icon-note-dk-gray {
+  width: 15px;
+  height: 16px;
+  background-image: url("../img/icon_note_dk_gray.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-note-dk-gray.eo-icon-xs {
+  width: 3.75px;
+  height: 4px;
+}
+
+.eo-icon.eo-icon-note-dk-gray.eo-icon-sm {
+  width: 7.5px;
+  height: 8px;
+}
+
+.eo-icon.eo-icon-note-dk-gray.eo-icon-lg {
+  width: 18.75px;
+  height: 20px;
+}
+
+.eo-icon.eo-icon-note-dk-gray.eo-icon-xl {
+  width: 22.5px;
+  height: 24px;
+}
+
 .eo-icon.eo-icon-trans-closing-completed {
   width: 33px;
   height: 35px;
@@ -12006,6 +12036,11 @@ a.form-control-feedback:hover {
   font-size: 0.75rem;
 }
 
+.text-smaller,
+.font-smaller {
+  font-size: 0.8125rem;
+}
+
 .text-md,
 .text-medium,
 .font-md,
@@ -12849,6 +12884,21 @@ table.table.table-sm thead tr:first-child th {
   color: #71767f;
 }
 
+.workbench-table .workbench-table-row .documents-column .note-content .note-heading {
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  color: #5a5e5a;
+}
+
+.workbench-table .workbench-table-row .documents-column .note-content .note-main {
+  font-size: 0.8125rem;
+  color: #000;
+}
+
+.workbench-table .workbench-table-row .documents-column .note-footer {
+  font-size: 0.8125rem;
+}
+
 .workbench-table .workbench-table-row .status-column .eo-icon {
   -ms-flex-negative: 0;
   flex-shrink: 0;
@@ -12932,7 +12982,7 @@ table.table.table-sm thead tr:first-child th {
   line-height: 18px;
 }
 
-.modal textarea.form-control {
+.modal .modal-body textarea.form-control {
   border: 2px solid #0abae5;
   font-size: 0.8125rem;
   color: #000;
@@ -12943,8 +12993,9 @@ table.table.table-sm thead tr:first-child th {
 }
 
 .popover {
-  border-radius: 9px;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  width: 350px;
+  border-radius: 3px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .popover .popover-header {

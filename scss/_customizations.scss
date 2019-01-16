@@ -538,6 +538,11 @@ a.form-control-feedback {
   font-size: $font-size-sm;
 }
 
+.text-smaller,
+.font-smaller {
+  font-size: $font-size-smaller;
+}
+
 .text-md,
 .text-medium,
 .font-md,
@@ -1466,6 +1471,25 @@ table.table.table-sm {
       .comma {
         color: $text-muted;
       }
+
+      // note popover content
+      .note-content {
+
+        .note-heading {
+          font-size: $font-size-sm;
+          line-height: $font-size-sm;
+          color: #5a5e5a;
+        }
+
+        .note-main {
+          font-size: $font-size-smaller;
+          color: $black;
+        }
+      }
+
+      .note-footer {
+        font-size: $font-size-smaller;
+      }
     }
 
     .status-column {
@@ -1529,11 +1553,14 @@ table.table.table-sm {
     }
   }
 
-  textarea.form-control {
-    border: 2px solid #0abae5;
-    font-size: $font-size-smaller;
-    color: $black;
+  .modal-body {
+    textarea.form-control {
+      border: 2px solid #0abae5;
+      font-size: $font-size-smaller;
+      color: $black;
+    }
   }
+
 }
 
 .modal-backdrop {
@@ -1541,8 +1568,9 @@ table.table.table-sm {
 }
 
 .popover {
-  border-radius: 9px;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
+  width: 350px;
+  border-radius: 3px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .3);
 
   .popover-header {
     color: #5a5e5a;
