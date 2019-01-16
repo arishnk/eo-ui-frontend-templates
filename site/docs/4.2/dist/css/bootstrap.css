@@ -545,25 +545,25 @@ pre code {
 
 @media (min-width: 576px) {
   .container {
-    max-width: 526px;
+    max-width: 576px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 718px;
+    max-width: 768px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    max-width: 932px;
+    max-width: 982px;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1190px;
   }
 }
 
@@ -11772,7 +11772,11 @@ h1, h2, h3, h4, h5, h6,
   margin-top: 0;
 }
 
-@media (max-width: 575.98px) {
+.sign-in-menu .col-form-label {
+  padding-top: 0;
+}
+
+@media (max-width: 767.98px) {
   .sign-in-menu {
     text-align: right;
     font-size: 14px;
@@ -11784,6 +11788,9 @@ h1, h2, h3, h4, h5, h6,
   .sign-in-menu a img {
     margin-bottom: 10px;
   }
+}
+
+@media (max-width: 575.98px) {
   .welcome-logo img {
     margin-left: 25px;
     margin-top: 5px;
@@ -12527,7 +12534,7 @@ a.form-text {
 }
 
 .navbar-secondary-brand img {
-  margin-top: 3px;
+  margin-top: 7px;
 }
 
 .navbar-nav {
