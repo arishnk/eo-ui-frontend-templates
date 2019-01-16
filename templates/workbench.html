@@ -286,8 +286,14 @@
               <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
                 <span class="status-text">Closing in progress</span>
                 <div class="status-more d-none d-md-block">
-                  <a href="#">More actions</a>
-                  <span class="eo-icon eo-icon-menu-arrow-down-green"></span>
+                  <a href="#" class="more-actions-toggle" id="moreActionsDropdownExample" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>More actions</span>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="moreActionsDropdownExample">
+                    <a class="dropdown-item" href="#">Add closing date</a>
+                    <a class="dropdown-item add-note-trigger" data-toggle="modal" data-target="#addNoteModal" data-backdrop="static" href="#">Add note</a>
+                    <a class="dropdown-item" href="#">Remove closing</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -477,7 +483,7 @@
           </div>
           <div class="workbench-table-cell col buttons-column d-none d-md-block">
             <div class="cell-text">
-              <button class="btn btn-secondary btn-block">Remove closing</button>
+              <button class="btn btn-secondary btn-block remove-closing-trigger" data-toggle="popover"><span data-toggle="tooltip" title="Remove this from your list because the signing will not be done electronically.">Remove closing</span></button>
             </div>
           </div>
         </div>
@@ -582,6 +588,29 @@
 
   </div>
 
+  <div class="modal fade" id="addNoteModal" role="dialog" aria-labelledby="addNoteTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="eo-icon eo-icon-add-note-dark-gray"></span>
+          <span class="modal-title pl-2 font-weight-semibold" id="addNoteTitle">Add internal note</span>
+        </div>
+        <div class="modal-body">
+
+          <form class="form">
+            <div class="form-group">
+              <textarea class="form-control" id="newNoteText" rows="3"></textarea>
+            </div>
+            <div class="form-group form-group row row-no-padding mb-2">
+              <button type="submit" id="saveNote" class="btn btn-primary px-5">Save</button>
+              <button type="button" id="cancelAddNote" class="btn btn-blank" data-dismiss="modal">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -592,15 +621,17 @@
 
   <script>
 
+    // activate tooltips
     $('[data-toggle="tooltip"]').tooltip();
 
+    // behavior for add closing form
     $('#addAClosing')
       .on('show.bs.collapse hide.bs.collapse', function (e) {
 
         e.stopPropagation();
 
         $('[href="#addAClosing"]')
-          .toggleClass('d-none');
+          .toggleClass('invisible');
         $(this).parents('.workbench-banner')
           .toggleClass('workbench-banner-open');
       });
@@ -626,6 +657,35 @@
       defaultDate: false,
       minDate: moment(new Date(), 'MM-DD-YYYY')
     });
+
+    $('.remove-closing-trigger')
+    .popover({
+      html: true,
+      title: 'Remove closing',
+      template: '<div class="popover" role="tooltip"><div class="popover-header font-weight-semibold"></div><div class="popover-body"></div></div>',
+      content: '<div class="popover-text mb-3">Are you sure you want to remove this closing?</div><div class="row row-no-padding"><button id="removeClosing" class="btn btn-primary px-5">Save</button><button type="button" id="cancelRemoveClosing" class="btn btn-blank cancel-button">Cancel</button></div>'
+    })
+    .on('inserted.bs.popover', function() {
+      $('.popover .cancel-button').click(function(e) {
+        $('.remove-closing-trigger').popover('hide');
+      });
+    });
+
+
+    $('#addNoteModal')
+    .on('show.bs.modal', function(e) {
+      var link = $(e.relatedTarget);
+      var row = link.parents('.workbench-table-row');
+      row.addClass('hover');
+    })
+    .on('shown.bs.modal', function(e) {
+      $('#newNoteText').focus();
+    })
+    .on('hide.bs.modal', function(e) {
+      $('.workbench-table-row').removeClass('hover');
+    });
+
+
 
   </script>
 

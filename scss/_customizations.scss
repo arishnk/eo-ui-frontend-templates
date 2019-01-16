@@ -448,14 +448,25 @@ a.form-control-feedback {
 
 .dropdown-menu {
   border-radius: 9px;
-  @include box-shadow(0 5px 10px 0 rgba(0, 0, 0, .2));
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
 }
 
 .navbar-nav > li > .dropdown-menu {
   border-radius: 9px;
 }
 
-.open > .dropdown-menu {
+.workbench-table .dropdown-menu {
+  border-radius: 3px;
+  padding: 2px 0;
+
+  .dropdown-item {
+    font-size: $font-size-smaller;
+    line-height: 16px;
+  }
+}
+
+.open > .dropdown-menu,
+.workbench-table .dropdown-menu {
   animation-name: slidenavanimation;
   animation-duration: .2s;
   animation-iteration-count: 1;
@@ -1399,6 +1410,11 @@ table.table.table-sm {
       transition: background .3s;
     }
 
+    &.hover {
+      background: rgba(185, 239, 132, 1);
+      transition: background .3s;
+    }
+
     .name-column {
       .cell-text {
         font-size: $font-size-smaller;
@@ -1451,8 +1467,17 @@ table.table.table-sm {
         font-size: $font-size-sm;
         color: $link-color;
 
-        .eo-icon {
-          margin-left: 2px;
+        .more-actions-toggle {
+          position: relative;
+
+          &::after {
+            content: "";
+            display: inline-block;
+            background-size: cover;
+            line-height: 1em;
+            margin-left: 2px;
+            @include icon-versions(8px, 5px, "../img/icon_menu_arrow_down_green.svg");
+          }
         }
       }
     }
@@ -1467,7 +1492,48 @@ table.table.table-sm {
       }
     }
   }
+}
 
+.modal {
+
+  .modal-content {
+    border-radius: 9px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
+  }
+
+  .modal-header {
+    background: #daf7bf;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 24px;
+
+    .modal-title {
+      font-size: $font-size-smaller;
+      color: #5a5e5a;
+      line-height: 18px;
+    }
+  }
+
+  textarea.form-control {
+    border: 2px solid #0abae5;
+    font-size: $font-size-smaller;
+    color: $black;
+  }
+}
+
+.modal-backdrop {
+  background-color: $white;
+}
+
+.popover {
+  border-radius: 9px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
+
+  .popover-header {
+    color: #5a5e5a;
+    line-height: 18px;
+    border-bottom: none;
+  }
 }
 
 .navbar-expand > .container,
@@ -1523,4 +1589,38 @@ table.table.table-sm {
 .bootstrap-datetimepicker-widget table td.day.old,
 .bootstrap-datetimepicker-widget table td.day.new {
   font-weight: 400;
+}
+
+.toast-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.toast {
+  border-radius: $border-radius;
+  box-shadow: $toast-box-shadow;
+
+  &.hide {
+    display: none !important;
+  }
+
+  .toast-header {
+    padding: 0;
+    width: 45px;
+    position: relative;
+    border-bottom: 0;
+    border-left: 1px solid $gray-300;
+
+    .toast-close {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      border-radius: 0;
+      text-align: center;
+      padding: 0 15px;
+    }
+  }
 }

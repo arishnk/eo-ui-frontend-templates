@@ -666,24 +666,24 @@ $dropdown-min-width:                10rem !default;
 $dropdown-padding-y:                .5rem !default;
 $dropdown-spacer:                   .125rem !default;
 $dropdown-bg:                       $white !default;
-$dropdown-border-color:             rgba($black, .15) !default;
+$dropdown-border-color:             rgba($black, .1) !default;
 $dropdown-border-radius:            $border-radius !default;
 $dropdown-border-width:             $border-width !default;
-$dropdown-inner-border-radius:      calc(#{$dropdown-border-radius} - #{$dropdown-border-width}) !default;
+$dropdown-inner-border-radius:      0 !default;
 $dropdown-divider-bg:               $gray-200 !default;
 $dropdown-box-shadow:               0 .5rem 1rem rgba($black, .175) !default;
 
-$dropdown-link-color:               $gray-900 !default;
+$dropdown-link-color:               $gray-800 !default;
 $dropdown-link-hover-color:         darken($gray-900, 5%) !default;
-$dropdown-link-hover-bg:            $gray-100 !default;
+$dropdown-link-hover-bg:            #daf7bf !default;
 
 $dropdown-link-active-color:        $component-active-color !default;
 $dropdown-link-active-bg:           $component-active-bg !default;
 
 $dropdown-link-disabled-color:      $gray-600 !default;
 
-$dropdown-item-padding-y:           .25rem !default;
-$dropdown-item-padding-x:           1.5rem !default;
+$dropdown-item-padding-y:           .75rem !default;
+$dropdown-item-padding-x:           1rem !default;
 
 $dropdown-header-color:             $gray-600 !default;
 
@@ -848,21 +848,21 @@ $form-feedback-tooltip-border-radius: $tooltip-border-radius !default;
 
 // Popovers
 
-$popover-font-size:                 $font-size-sm !default;
+$popover-font-size:                 $font-size-smaller !default;
 $popover-bg:                        $white !default;
-$popover-max-width:                 276px !default;
+$popover-max-width:                 350px !default;
 $popover-border-width:              $border-width !default;
-$popover-border-color:              rgba($black, .2) !default;
+$popover-border-color:              rgba($black, .1) !default;
 $popover-border-radius:             $border-radius-lg !default;
 $popover-box-shadow:                0 .25rem .5rem rgba($black, .2) !default;
 
-$popover-header-bg:                 darken($popover-bg, 3%) !default;
+$popover-header-bg:                 #daf7bf !default;
 $popover-header-color:              $headings-color !default;
-$popover-header-padding-y:          .5rem !default;
-$popover-header-padding-x:          .75rem !default;
+$popover-header-padding-y:          10px !default;
+$popover-header-padding-x:          1.5rem !default;
 
 $popover-body-color:                $body-color !default;
-$popover-body-padding-y:            $popover-header-padding-y !default;
+$popover-body-padding-y:            1rem !default;
 $popover-body-padding-x:            $popover-header-padding-x !default;
 
 $popover-arrow-width:               1rem !default;
@@ -879,9 +879,9 @@ $toast-padding-y: .25rem !default;
 $toast-font-size: .875rem !default;
 $toast-background-color: rgba($white, .85) !default;
 $toast-border-width: 1px !default;
-$toast-border-color: rgba(0, 0, 0, .1) !default;
-$toast-border-radius: .25rem !default;
-$toast-box-shadow: 0 .25rem .75rem rgba($black, .1) !default;
+$toast-border-color: $gray-400 !default;
+$toast-border-radius: $border-radius !default;
+$toast-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5) !default;
 
 $toast-header-color: $gray-600 !default;
 $toast-header-background-color: rgba($white, .85) !default;
@@ -913,9 +913,9 @@ $modal-dialog-margin-y-sm-up:       1.75rem !default;
 $modal-title-line-height:           $line-height-base !default;
 
 $modal-content-bg:                  $white !default;
-$modal-content-border-color:        rgba($black, .2) !default;
+$modal-content-border-color:        rgba($black, .1) !default;
 $modal-content-border-width:        $border-width !default;
-$modal-content-border-radius:       $border-radius-lg !default;
+$modal-content-border-radius:       9px !default;
 $modal-content-box-shadow-xs:       0 .25rem .5rem rgba($black, .5) !default;
 $modal-content-box-shadow-sm-up:    0 .5rem 1rem rgba($black, .5) !default;
 
@@ -925,7 +925,7 @@ $modal-header-border-color:         $gray-200 !default;
 $modal-footer-border-color:         $modal-header-border-color !default;
 $modal-header-border-width:         $modal-content-border-width !default;
 $modal-footer-border-width:         $modal-header-border-width !default;
-$modal-header-padding-y:            1rem !default;
+$modal-header-padding-y:            10px !default;
 $modal-header-padding-x:            1rem !default;
 $modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
 
