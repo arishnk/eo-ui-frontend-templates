@@ -12618,6 +12618,13 @@ table.table.table-sm thead tr:first-child th {
   display: block;
 }
 
+@media (max-width: 575.98px) {
+  .no-xs-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .workbench-banner {
   position: relative;
   background-image: linear-gradient(89deg, #81c241, #2ea049);

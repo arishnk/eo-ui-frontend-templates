@@ -1236,6 +1236,13 @@ table.table.table-sm {
   display: block;
 }
 
+.no-xs-padding {
+  @include media-breakpoint-only(xs) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .workbench-banner {
   position: relative;
   background-image: linear-gradient(89deg, #81c241, #2ea049);
