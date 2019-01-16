@@ -1342,6 +1342,19 @@ table.table.table-sm {
     color: $black;
   }
 
+  .refresh-reminder {
+    text-indent: -300px;
+    width: 0;
+    overflow: hidden;
+
+    &.active {
+      text-indent: 0;
+      padding-left: 1.5rem;
+      width: auto;
+      transition: text-indent 1s linear;
+    }
+  }
+
   .refresh-text {
     color: #38a448;
   }
@@ -1436,7 +1449,7 @@ table.table.table-sm {
     }
 
     &.new {
-      background: rgba(185, 239, 132, 1);
+      background: rgba(185, 239, 132, .5);
 
       &.bg-fade {
         background: transparent;

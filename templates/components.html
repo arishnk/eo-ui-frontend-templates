@@ -63,7 +63,7 @@
         <div class="col-12 text-center"><h2>Add New Table Row Behavior</h2></div>
         <div class="col-12 text-center pb-3"><button class="btn btn-primary" id="addTableRow">Click to add a row</button></div>
 
-        <div class="col-12">
+        <div class="col-12 no-xs-padding">
           <div class="container workbench-table">
             <div class="row text-light workbench-table-header">
               <div class="workbench-table-cell col name-column d-flex justify-content-between align-items-center">
@@ -146,6 +146,32 @@
         </div>
       </div>
 
+      <div class="pad"></div>
+
+      <div class="row">
+        <div class="col-12 text-center"><h2>Refresh Reminder Message Display Demo</h2></div>
+        <div class="col-12 text-center pb-3"><button class="btn btn-primary" id="addRefreshMsg">Show refresh reminder</button></div>
+
+        <div class="col-12 no-xs-padding">
+
+          <div class="container py-2 py-md-3 py-xl-4 workbench-status">
+            <div class="row workbench-status-content d-flex align-items-center">
+              <div class="last-refreshed text-sm">
+                <span class="last-refreshed-label">Last refreshed: </span>
+                <span class="last-refreshed-value">12/20/2019 10:23 am ET</span>
+              </div>
+              <div class="refresh-reminder d-none d-md-block text-smaller font-weight-semibold"><span>It’s been over 1 hour since your last refresh</span></div>
+              <div class="refresh pl-3 pl-sm-4">
+                <a href="#" class="d-flex align-items-center">
+                  <span class="eo-icon eo-icon-refresh"></span>
+                  <span class="refresh-text font-weight-semibold pl-1 pl-sm-2">Refresh</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
   </div>
@@ -156,15 +182,15 @@
 
   <script>
 
-    $('#triggerSuccessToast').click(function(e) {
+    $('#triggerSuccessToast').click(function() {
       $('#sampleSuccessToast').toast('show');
     });
 
-    $('#triggerErrorToast').click(function(e) {
+    $('#triggerErrorToast').click(function() {
       $('#sampleErrorToast').toast('show');
     });
 
-    $('#addTableRow').click(function(e) {
+    $('#addTableRow').click(function() {
       $('.workbench-table-row').removeClass('d-none');
       setTimeout(function() {
         $('.workbench-table-row').addClass('bg-fade');
@@ -172,6 +198,10 @@
       setTimeout(function() {
         $('.workbench-table-row').removeClass('new bg-fade');
       }, 5000);
+    });
+
+    $('#addRefreshMsg').click(function(){
+      $('.refresh-reminder').toggleClass('active');
     });
 
   </script>
