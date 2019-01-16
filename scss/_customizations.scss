@@ -271,9 +271,13 @@ h6,
 
   }
 
+  .col-form-label {
+    padding-top: 0;
+  }
+
 }
 
-@include media-breakpoint-only(xs) {
+@include media-breakpoint-down(sm) {
 
   .sign-in-menu {
 
@@ -292,6 +296,10 @@ h6,
     }
 
   }
+
+}
+
+@include media-breakpoint-only(xs) {
 
   .welcome-logo img {
     margin-left: 25px;
@@ -1122,7 +1130,7 @@ a.form-text {
   padding-right: 20px;
 
   img {
-    margin-top: 3px;
+    margin-top: 7px;
   }
 
 }

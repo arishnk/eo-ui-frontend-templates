@@ -27,14 +27,14 @@
     return Constructor;
   }
 
-  var cov_a5quaji2i = function () {
-    var path = "/Users/jkoulish/Sites/eo-ui-frontend-templates/js/src/button.js",
-        hash = "a93a2b0312e6ff23a814ee685af2b39ae8a67218",
+  var cov_iu8maywf1 = function () {
+    var path = "C:\\Users\\ari\\source\\repos\\eo-ui-frontend-templates\\js\\src\\button.js",
+        hash = "c592baea1c97486f1f90573c96bb015b411a612f",
         Function = function () {}.constructor,
         global = new Function('return this')(),
         gcv = "__coverage__",
         coverageData = {
-      path: "/Users/jkoulish/Sites/eo-ui-frontend-templates/js/src/button.js",
+      path: "C:\\Users\\ari\\source\\repos\\eo-ui-frontend-templates\\js\\src\\button.js",
       statementMap: {
         "0": {
           start: {
@@ -1399,25 +1399,25 @@
    * ------------------------------------------------------------------------
    */
 
-  var NAME = (cov_a5quaji2i.s[0]++, 'button');
-  var VERSION = (cov_a5quaji2i.s[1]++, '4.2.1');
-  var DATA_KEY = (cov_a5quaji2i.s[2]++, 'bs.button');
-  var EVENT_KEY = (cov_a5quaji2i.s[3]++, "." + DATA_KEY);
-  var DATA_API_KEY = (cov_a5quaji2i.s[4]++, '.data-api');
-  var JQUERY_NO_CONFLICT = (cov_a5quaji2i.s[5]++, $.fn[NAME]);
-  var ClassName = (cov_a5quaji2i.s[6]++, {
+  var NAME = (cov_iu8maywf1.s[0]++, 'button');
+  var VERSION = (cov_iu8maywf1.s[1]++, '4.2.1');
+  var DATA_KEY = (cov_iu8maywf1.s[2]++, 'bs.button');
+  var EVENT_KEY = (cov_iu8maywf1.s[3]++, "." + DATA_KEY);
+  var DATA_API_KEY = (cov_iu8maywf1.s[4]++, '.data-api');
+  var JQUERY_NO_CONFLICT = (cov_iu8maywf1.s[5]++, $.fn[NAME]);
+  var ClassName = (cov_iu8maywf1.s[6]++, {
     ACTIVE: 'active',
     BUTTON: 'btn',
     FOCUS: 'focus'
   });
-  var Selector = (cov_a5quaji2i.s[7]++, {
+  var Selector = (cov_iu8maywf1.s[7]++, {
     DATA_TOGGLE_CARROT: '[data-toggle^="button"]',
     DATA_TOGGLE: '[data-toggle="buttons"]',
     INPUT: 'input:not([type="hidden"])',
     ACTIVE: '.active',
     BUTTON: '.btn'
   });
-  var Event = (cov_a5quaji2i.s[8]++, {
+  var Event = (cov_iu8maywf1.s[8]++, {
     CLICK_DATA_API: "click" + EVENT_KEY + DATA_API_KEY,
     FOCUS_BLUR_DATA_API: "focus" + EVENT_KEY + DATA_API_KEY + " " + ("blur" + EVENT_KEY + DATA_API_KEY)
     /**
@@ -1432,8 +1432,8 @@
   /*#__PURE__*/
   function () {
     function Button(element) {
-      cov_a5quaji2i.f[0]++;
-      cov_a5quaji2i.s[9]++;
+      cov_iu8maywf1.f[0]++;
+      cov_iu8maywf1.s[9]++;
       this._element = element;
     } // Getters
 
@@ -1442,136 +1442,136 @@
 
     // Public
     _proto.toggle = function toggle() {
-      cov_a5quaji2i.f[2]++;
-      var triggerChangeEvent = (cov_a5quaji2i.s[11]++, true);
-      var addAriaPressed = (cov_a5quaji2i.s[12]++, true);
-      var rootElement = (cov_a5quaji2i.s[13]++, $(this._element).closest(Selector.DATA_TOGGLE)[0]);
-      cov_a5quaji2i.s[14]++;
+      cov_iu8maywf1.f[2]++;
+      var triggerChangeEvent = (cov_iu8maywf1.s[11]++, true);
+      var addAriaPressed = (cov_iu8maywf1.s[12]++, true);
+      var rootElement = (cov_iu8maywf1.s[13]++, $(this._element).closest(Selector.DATA_TOGGLE)[0]);
+      cov_iu8maywf1.s[14]++;
 
       if (rootElement) {
-        cov_a5quaji2i.b[0][0]++;
-        var input = (cov_a5quaji2i.s[15]++, this._element.querySelector(Selector.INPUT));
-        cov_a5quaji2i.s[16]++;
+        cov_iu8maywf1.b[0][0]++;
+        var input = (cov_iu8maywf1.s[15]++, this._element.querySelector(Selector.INPUT));
+        cov_iu8maywf1.s[16]++;
 
         if (input) {
-          cov_a5quaji2i.b[1][0]++;
-          cov_a5quaji2i.s[17]++;
+          cov_iu8maywf1.b[1][0]++;
+          cov_iu8maywf1.s[17]++;
 
           if (input.type === 'radio') {
-            cov_a5quaji2i.b[2][0]++;
-            cov_a5quaji2i.s[18]++;
+            cov_iu8maywf1.b[2][0]++;
+            cov_iu8maywf1.s[18]++;
 
-            if ((cov_a5quaji2i.b[4][0]++, input.checked) && (cov_a5quaji2i.b[4][1]++, this._element.classList.contains(ClassName.ACTIVE))) {
-              cov_a5quaji2i.b[3][0]++;
-              cov_a5quaji2i.s[19]++;
+            if ((cov_iu8maywf1.b[4][0]++, input.checked) && (cov_iu8maywf1.b[4][1]++, this._element.classList.contains(ClassName.ACTIVE))) {
+              cov_iu8maywf1.b[3][0]++;
+              cov_iu8maywf1.s[19]++;
               triggerChangeEvent = false;
             } else {
-              cov_a5quaji2i.b[3][1]++;
-              var activeElement = (cov_a5quaji2i.s[20]++, rootElement.querySelector(Selector.ACTIVE));
-              cov_a5quaji2i.s[21]++;
+              cov_iu8maywf1.b[3][1]++;
+              var activeElement = (cov_iu8maywf1.s[20]++, rootElement.querySelector(Selector.ACTIVE));
+              cov_iu8maywf1.s[21]++;
 
               if (activeElement) {
-                cov_a5quaji2i.b[5][0]++;
-                cov_a5quaji2i.s[22]++;
+                cov_iu8maywf1.b[5][0]++;
+                cov_iu8maywf1.s[22]++;
                 $(activeElement).removeClass(ClassName.ACTIVE);
               } else {
-                cov_a5quaji2i.b[5][1]++;
+                cov_iu8maywf1.b[5][1]++;
               }
             }
           } else {
-            cov_a5quaji2i.b[2][1]++;
+            cov_iu8maywf1.b[2][1]++;
           }
 
-          cov_a5quaji2i.s[23]++;
+          cov_iu8maywf1.s[23]++;
 
           if (triggerChangeEvent) {
-            cov_a5quaji2i.b[6][0]++;
-            cov_a5quaji2i.s[24]++;
+            cov_iu8maywf1.b[6][0]++;
+            cov_iu8maywf1.s[24]++;
 
-            if ((cov_a5quaji2i.b[8][0]++, input.hasAttribute('disabled')) || (cov_a5quaji2i.b[8][1]++, rootElement.hasAttribute('disabled')) || (cov_a5quaji2i.b[8][2]++, input.classList.contains('disabled')) || (cov_a5quaji2i.b[8][3]++, rootElement.classList.contains('disabled'))) {
-              cov_a5quaji2i.b[7][0]++;
-              cov_a5quaji2i.s[25]++;
+            if ((cov_iu8maywf1.b[8][0]++, input.hasAttribute('disabled')) || (cov_iu8maywf1.b[8][1]++, rootElement.hasAttribute('disabled')) || (cov_iu8maywf1.b[8][2]++, input.classList.contains('disabled')) || (cov_iu8maywf1.b[8][3]++, rootElement.classList.contains('disabled'))) {
+              cov_iu8maywf1.b[7][0]++;
+              cov_iu8maywf1.s[25]++;
               return;
             } else {
-              cov_a5quaji2i.b[7][1]++;
+              cov_iu8maywf1.b[7][1]++;
             }
 
-            cov_a5quaji2i.s[26]++;
+            cov_iu8maywf1.s[26]++;
             input.checked = !this._element.classList.contains(ClassName.ACTIVE);
-            cov_a5quaji2i.s[27]++;
+            cov_iu8maywf1.s[27]++;
             $(input).trigger('change');
           } else {
-            cov_a5quaji2i.b[6][1]++;
+            cov_iu8maywf1.b[6][1]++;
           }
 
-          cov_a5quaji2i.s[28]++;
+          cov_iu8maywf1.s[28]++;
           input.focus();
-          cov_a5quaji2i.s[29]++;
+          cov_iu8maywf1.s[29]++;
           addAriaPressed = false;
         } else {
-          cov_a5quaji2i.b[1][1]++;
+          cov_iu8maywf1.b[1][1]++;
         }
       } else {
-        cov_a5quaji2i.b[0][1]++;
+        cov_iu8maywf1.b[0][1]++;
       }
 
-      cov_a5quaji2i.s[30]++;
+      cov_iu8maywf1.s[30]++;
 
       if (addAriaPressed) {
-        cov_a5quaji2i.b[9][0]++;
-        cov_a5quaji2i.s[31]++;
+        cov_iu8maywf1.b[9][0]++;
+        cov_iu8maywf1.s[31]++;
 
         this._element.setAttribute('aria-pressed', !this._element.classList.contains(ClassName.ACTIVE));
       } else {
-        cov_a5quaji2i.b[9][1]++;
+        cov_iu8maywf1.b[9][1]++;
       }
 
-      cov_a5quaji2i.s[32]++;
+      cov_iu8maywf1.s[32]++;
 
       if (triggerChangeEvent) {
-        cov_a5quaji2i.b[10][0]++;
-        cov_a5quaji2i.s[33]++;
+        cov_iu8maywf1.b[10][0]++;
+        cov_iu8maywf1.s[33]++;
         $(this._element).toggleClass(ClassName.ACTIVE);
       } else {
-        cov_a5quaji2i.b[10][1]++;
+        cov_iu8maywf1.b[10][1]++;
       }
     };
 
     _proto.dispose = function dispose() {
-      cov_a5quaji2i.f[3]++;
-      cov_a5quaji2i.s[34]++;
+      cov_iu8maywf1.f[3]++;
+      cov_iu8maywf1.s[34]++;
       $.removeData(this._element, DATA_KEY);
-      cov_a5quaji2i.s[35]++;
+      cov_iu8maywf1.s[35]++;
       this._element = null;
     }; // Static
 
 
     Button._jQueryInterface = function _jQueryInterface(config) {
-      cov_a5quaji2i.f[4]++;
-      cov_a5quaji2i.s[36]++;
+      cov_iu8maywf1.f[4]++;
+      cov_iu8maywf1.s[36]++;
       return this.each(function () {
-        cov_a5quaji2i.f[5]++;
-        var data = (cov_a5quaji2i.s[37]++, $(this).data(DATA_KEY));
-        cov_a5quaji2i.s[38]++;
+        cov_iu8maywf1.f[5]++;
+        var data = (cov_iu8maywf1.s[37]++, $(this).data(DATA_KEY));
+        cov_iu8maywf1.s[38]++;
 
         if (!data) {
-          cov_a5quaji2i.b[11][0]++;
-          cov_a5quaji2i.s[39]++;
+          cov_iu8maywf1.b[11][0]++;
+          cov_iu8maywf1.s[39]++;
           data = new Button(this);
-          cov_a5quaji2i.s[40]++;
+          cov_iu8maywf1.s[40]++;
           $(this).data(DATA_KEY, data);
         } else {
-          cov_a5quaji2i.b[11][1]++;
+          cov_iu8maywf1.b[11][1]++;
         }
 
-        cov_a5quaji2i.s[41]++;
+        cov_iu8maywf1.s[41]++;
 
         if (config === 'toggle') {
-          cov_a5quaji2i.b[12][0]++;
-          cov_a5quaji2i.s[42]++;
+          cov_iu8maywf1.b[12][0]++;
+          cov_iu8maywf1.s[42]++;
           data[config]();
         } else {
-          cov_a5quaji2i.b[12][1]++;
+          cov_iu8maywf1.b[12][1]++;
         }
       });
     };
@@ -1579,8 +1579,8 @@
     _createClass(Button, null, [{
       key: "VERSION",
       get: function get() {
-        cov_a5quaji2i.f[1]++;
-        cov_a5quaji2i.s[10]++;
+        cov_iu8maywf1.f[1]++;
+        cov_iu8maywf1.s[10]++;
         return VERSION;
       }
     }]);
@@ -1594,29 +1594,29 @@
    */
 
 
-  cov_a5quaji2i.s[43]++;
+  cov_iu8maywf1.s[43]++;
   $(document).on(Event.CLICK_DATA_API, Selector.DATA_TOGGLE_CARROT, function (event) {
-    cov_a5quaji2i.f[6]++;
-    cov_a5quaji2i.s[44]++;
+    cov_iu8maywf1.f[6]++;
+    cov_iu8maywf1.s[44]++;
     event.preventDefault();
-    var button = (cov_a5quaji2i.s[45]++, event.target);
-    cov_a5quaji2i.s[46]++;
+    var button = (cov_iu8maywf1.s[45]++, event.target);
+    cov_iu8maywf1.s[46]++;
 
     if (!$(button).hasClass(ClassName.BUTTON)) {
-      cov_a5quaji2i.b[13][0]++;
-      cov_a5quaji2i.s[47]++;
+      cov_iu8maywf1.b[13][0]++;
+      cov_iu8maywf1.s[47]++;
       button = $(button).closest(Selector.BUTTON);
     } else {
-      cov_a5quaji2i.b[13][1]++;
+      cov_iu8maywf1.b[13][1]++;
     }
 
-    cov_a5quaji2i.s[48]++;
+    cov_iu8maywf1.s[48]++;
 
     Button._jQueryInterface.call($(button), 'toggle');
   }).on(Event.FOCUS_BLUR_DATA_API, Selector.DATA_TOGGLE_CARROT, function (event) {
-    cov_a5quaji2i.f[7]++;
-    var button = (cov_a5quaji2i.s[49]++, $(event.target).closest(Selector.BUTTON)[0]);
-    cov_a5quaji2i.s[50]++;
+    cov_iu8maywf1.f[7]++;
+    var button = (cov_iu8maywf1.s[49]++, $(event.target).closest(Selector.BUTTON)[0]);
+    cov_iu8maywf1.s[50]++;
     $(button).toggleClass(ClassName.FOCUS, /^focus(in)?$/.test(event.type));
   });
   /**
@@ -1625,17 +1625,17 @@
    * ------------------------------------------------------------------------
    */
 
-  cov_a5quaji2i.s[51]++;
+  cov_iu8maywf1.s[51]++;
   $.fn[NAME] = Button._jQueryInterface;
-  cov_a5quaji2i.s[52]++;
+  cov_iu8maywf1.s[52]++;
   $.fn[NAME].Constructor = Button;
-  cov_a5quaji2i.s[53]++;
+  cov_iu8maywf1.s[53]++;
 
   $.fn[NAME].noConflict = function () {
-    cov_a5quaji2i.f[8]++;
-    cov_a5quaji2i.s[54]++;
+    cov_iu8maywf1.f[8]++;
+    cov_iu8maywf1.s[54]++;
     $.fn[NAME] = JQUERY_NO_CONFLICT;
-    cov_a5quaji2i.s[55]++;
+    cov_iu8maywf1.s[55]++;
     return Button._jQueryInterface;
   };
 
