@@ -1643,6 +1643,10 @@ table.table.table-sm {
   border-radius: $border-radius;
   box-shadow: $toast-box-shadow;
 
+  &.fade {
+    @include transition(opacity 1s linear);
+  }
+
   &.hide {
     display: none !important;
   }
