@@ -291,7 +291,7 @@
                   </a>
                   <div class="dropdown-menu" aria-labelledby="moreActionsDropdownExample">
                     <a class="dropdown-item" href="#">Add closing date</a>
-                    <a class="dropdown-item add-note-trigger" data-toggle="modal" data-target="#addNoteModal" href="#">Add note</a>
+                    <a class="dropdown-item add-note-trigger" data-toggle="modal" data-target="#addNoteModal" data-backdrop="static" href="#">Add note</a>
                     <a class="dropdown-item" href="#">Remove closing</a>
                   </div>
                 </div>
@@ -483,7 +483,7 @@
           </div>
           <div class="workbench-table-cell col buttons-column d-none d-md-block">
             <div class="cell-text">
-              <button class="btn btn-secondary btn-block">Remove closing</button>
+              <button class="btn btn-secondary btn-block remove-closing-trigger" data-toggle="popover"><span data-toggle="tooltip" title="Remove this from your list because the signing will not be done electronically.">Remove closing</span></button>
             </div>
           </div>
         </div>
@@ -658,6 +658,19 @@
       minDate: moment(new Date(), 'MM-DD-YYYY')
     });
 
+    $('.remove-closing-trigger')
+    .popover({
+      html: true,
+      title: 'Remove closing',
+      template: '<div class="popover" role="tooltip"><div class="popover-header font-weight-semibold"></div><div class="popover-body"></div></div>',
+      content: '<div class="popover-text mb-3">Are you sure you want to remove this closing?</div><div class="row row-no-padding"><button id="removeClosing" class="btn btn-primary px-5">Save</button><button type="button" id="cancelRemoveClosing" class="btn btn-blank cancel-button">Cancel</button></div>'
+    })
+    .on('inserted.bs.popover', function() {
+      $('.popover .cancel-button').click(function(e) {
+        $('.remove-closing-trigger').popover('hide');
+      });
+    });
+
 
     $('#addNoteModal')
     .on('show.bs.modal', function(e) {
@@ -671,6 +684,8 @@
     .on('hide.bs.modal', function(e) {
       $('.workbench-table-row').removeClass('hover');
     });
+
+
 
   </script>
 

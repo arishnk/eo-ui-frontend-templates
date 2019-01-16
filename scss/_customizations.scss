@@ -1505,7 +1505,7 @@ table.table.table-sm {
     background: #daf7bf;
     align-items: center;
     justify-content: flex-start;
-    padding: 10px;
+    padding: 10px 24px;
 
     .modal-title {
       font-size: $font-size-smaller;
@@ -1523,9 +1523,16 @@ table.table.table-sm {
 
 .modal-backdrop {
   background-color: $white;
+}
 
-  &.show {
-    opacity: .4;
+.popover {
+  border-radius: 9px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
+
+  .popover-header {
+    color: #5a5e5a;
+    line-height: 18px;
+    border-bottom: none;
   }
 }
 
