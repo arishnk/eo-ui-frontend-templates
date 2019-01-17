@@ -13236,12 +13236,15 @@ table.table.table-sm thead tr:first-child th {
   padding-left: 12.5px;
   padding-right: 12.5px;
   color: #71767f;
+  line-height: 1rem;
+  top: 1px;
 }
 
 .detail-container .detail-more-row .detail-more-main .item-value {
   color: #000;
   padding-left: 0;
   padding-right: 12.5px;
+  line-height: 1rem;
 }
 
 .detail-container .detail-more-row .detail-more-main .lender-logo img {

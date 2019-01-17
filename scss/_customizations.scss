@@ -1614,6 +1614,8 @@ table.table.table-sm {
         padding-left: 12.5px;
         padding-right: 12.5px;
         color: $gray-600;
+        line-height: 1rem;
+        top: 1px;
         // font-size: $font-size-sm;
         // text-transform: uppercase;
       }
@@ -1622,6 +1624,7 @@ table.table.table-sm {
         color: $black;
         padding-left: 0;
         padding-right: 12.5px;
+        line-height: 1rem;
         // font-size: $font-size-smaller;
       }
 
