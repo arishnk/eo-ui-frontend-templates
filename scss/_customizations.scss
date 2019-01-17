@@ -1328,7 +1328,8 @@ table.table.table-sm {
 
 .workbench-status {
 
-  .workbench-status-content {
+  .workbench-status-content,
+  .workbench-status-back {
     @include media-breakpoint-only(xs) {
       margin-left: 0;
       margin-right: 0;

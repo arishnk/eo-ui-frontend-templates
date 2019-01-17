@@ -12922,7 +12922,8 @@ table.table.table-sm thead tr:first-child th {
 }
 
 @media (max-width: 575.98px) {
-  .workbench-status .workbench-status-content {
+  .workbench-status .workbench-status-content,
+  .workbench-status .workbench-status-back {
     margin-left: 0;
     margin-right: 0;
   }
