@@ -13028,22 +13028,16 @@ table.table.table-sm thead tr:first-child th {
   }
 }
 
-.workbench-table .workbench-table-row .name-column .cell-text,
-.detail-container .workbench-table-row .name-column .cell-text {
-  font-size: 0.8125rem;
-  color: #2ea049;
-}
-
 .workbench-table .workbench-table-row .date-column .date,
 .detail-container .workbench-table-row .date-column .date {
   font-size: 0.8125rem;
-  line-height: 22px;
+  line-height: 16px;
 }
 
 .workbench-table .workbench-table-row .date-column .time,
 .detail-container .workbench-table-row .date-column .time {
   font-size: 0.75rem;
-  line-height: 22px;
+  line-height: 16px;
   color: #71767f;
 }
 
@@ -13178,6 +13172,11 @@ table.table.table-sm thead tr:first-child th {
   transition: background 2s;
 }
 
+.workbench-table .workbench-table-row .workbench-table-cell.name-column .cell-text {
+  font-size: 0.8125rem;
+  color: #2ea049;
+}
+
 .workbench-table .workbench-table-row .workbench-table-cell.lender-column {
   -ms-flex-preferred-size: 145px;
   flex-basis: 145px;
@@ -13197,6 +13196,15 @@ table.table.table-sm thead tr:first-child th {
     flex-basis: 140px;
     -ms-flex-positive: 0;
     flex-grow: 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .detail-container .workbench-table-row .detail-row-left {
+    padding-left: 12.5px;
+  }
+  .detail-container .workbench-table-row .detail-row-right {
+    padding-right: 7.5px;
   }
 }
 

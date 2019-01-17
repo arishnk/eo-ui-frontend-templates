@@ -1427,22 +1427,15 @@ table.table.table-sm {
       padding: 0 12.5px;
     }
 
-    .name-column {
-      .cell-text {
-        font-size: $font-size-smaller;
-        color: $link-color;
-      }
-    }
-
     .date-column {
       .date {
         font-size: $font-size-smaller;
-        line-height: 22px;
+        line-height: 16px;
       }
 
       .time {
         font-size: $font-size-sm;
-        line-height: 22px;
+        line-height: 16px;
         color: $text-muted;
       }
     }
@@ -1549,6 +1542,13 @@ table.table.table-sm {
 
   .workbench-table-cell {
 
+    &.name-column {
+      .cell-text {
+        font-size: $font-size-smaller;
+        color: $link-color;
+      }
+    }
+
     &.lender-column {
       flex-basis: 145px;
       flex-grow: 0;
@@ -1571,6 +1571,17 @@ table.table.table-sm {
 .detail-container {
 
   .workbench-table-row {
+
+    @include media-breakpoint-up(sm) {
+      .detail-row-left {
+        padding-left: 12.5px;
+      }
+
+      .detail-row-right {
+        padding-right: 7.5px;
+      }
+    }
+
     .workbench-table-cell {
       &.name-column .cell-text {
         font-size: $font-size-lg;
