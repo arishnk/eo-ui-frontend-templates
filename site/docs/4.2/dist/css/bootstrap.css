@@ -11602,6 +11602,156 @@ a.text-dark:hover, a.text-dark:focus {
   height: 24px;
 }
 
+.eo-icon.eo-icon-back-arrow {
+  width: 11px;
+  height: 12px;
+  background-image: url("../img/icon_back_arrow.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-back-arrow.eo-icon-xs {
+  width: 2.75px;
+  height: 3px;
+}
+
+.eo-icon.eo-icon-back-arrow.eo-icon-sm {
+  width: 5.5px;
+  height: 6px;
+}
+
+.eo-icon.eo-icon-back-arrow.eo-icon-lg {
+  width: 13.75px;
+  height: 15px;
+}
+
+.eo-icon.eo-icon-back-arrow.eo-icon-xl {
+  width: 16.5px;
+  height: 18px;
+}
+
+.eo-icon.eo-icon-team-gray {
+  width: 14px;
+  height: 16px;
+  background-image: url("../img/icon_team_gray.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-team-gray.eo-icon-xs {
+  width: 3.5px;
+  height: 4px;
+}
+
+.eo-icon.eo-icon-team-gray.eo-icon-sm {
+  width: 7px;
+  height: 8px;
+}
+
+.eo-icon.eo-icon-team-gray.eo-icon-lg {
+  width: 17.5px;
+  height: 20px;
+}
+
+.eo-icon.eo-icon-team-gray.eo-icon-xl {
+  width: 21px;
+  height: 24px;
+}
+
+.eo-icon.eo-icon-team-green {
+  width: 14px;
+  height: 16px;
+  background-image: url("../img/icon_team_green.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-team-green.eo-icon-xs {
+  width: 3.5px;
+  height: 4px;
+}
+
+.eo-icon.eo-icon-team-green.eo-icon-sm {
+  width: 7px;
+  height: 8px;
+}
+
+.eo-icon.eo-icon-team-green.eo-icon-lg {
+  width: 17.5px;
+  height: 20px;
+}
+
+.eo-icon.eo-icon-team-green.eo-icon-xl {
+  width: 21px;
+  height: 24px;
+}
+
+.eo-icon.eo-icon-updated-star-gray {
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon_updated_star_gray.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-updated-star-gray.eo-icon-xs {
+  width: 3.75px;
+  height: 3.75px;
+}
+
+.eo-icon.eo-icon-updated-star-gray.eo-icon-sm {
+  width: 7.5px;
+  height: 7.5px;
+}
+
+.eo-icon.eo-icon-updated-star-gray.eo-icon-lg {
+  width: 18.75px;
+  height: 18.75px;
+}
+
+.eo-icon.eo-icon-updated-star-gray.eo-icon-xl {
+  width: 22.5px;
+  height: 22.5px;
+}
+
+.eo-icon.eo-icon-updated-star-white {
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon_updated_star_white.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-updated-star-white.eo-icon-xs {
+  width: 3.75px;
+  height: 3.75px;
+}
+
+.eo-icon.eo-icon-updated-star-white.eo-icon-sm {
+  width: 7.5px;
+  height: 7.5px;
+}
+
+.eo-icon.eo-icon-updated-star-white.eo-icon-lg {
+  width: 18.75px;
+  height: 18.75px;
+}
+
+.eo-icon.eo-icon-updated-star-white.eo-icon-xl {
+  width: 22.5px;
+  height: 22.5px;
+}
+
 a:hover .eo-icon.eo-icon-half-opacity,
 button:hover .eo-icon.eo-icon-half-opacity,
 a:focus .eo-icon.eo-icon-half-opacity,
