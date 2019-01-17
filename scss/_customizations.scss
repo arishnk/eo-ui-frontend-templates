@@ -1320,7 +1320,8 @@ table.table.table-sm {
 
 }
 
-.workbench-main {
+.workbench-main,
+.detail-main {
   background-image: linear-gradient(to bottom, #eff2f3 0%, #d9dee1);
   padding-bottom: 100px;
 }
@@ -1361,7 +1362,8 @@ table.table.table-sm {
 
 }
 
-.workbench-table {
+.workbench-table,
+.detail-container {
   background: $white;
   box-shadow: 0 2px 9px 0 rgba(63, 75, 80, .4);
 
@@ -1417,47 +1419,11 @@ table.table.table-sm {
 
   .workbench-table-cell {
     padding: 10px 12.5px;
-
-    &.lender-column {
-      flex-basis: 145px;
-      flex-grow: 0;
-    }
-    @include media-breakpoint-only(xs) {
-      &.date-column {
-        flex-basis: 95px;
-        flex-grow: 0;
-      }
-
-      &.status-column {
-        flex-basis: 140px;
-        flex-grow: 0;
-      }
-    }
   }
 
   .workbench-table-row {
     @include media-breakpoint-only(xs) {
       padding: 0 12.5px;
-    }
-
-    &:hover {
-      cursor: pointer;
-      background: rgba(185, 239, 132, .5);
-      transition: background .3s;
-    }
-
-    &.hover {
-      background: rgba(185, 239, 132, 1);
-      transition: background .3s;
-    }
-
-    &.new {
-      background: rgba(185, 239, 132, .5);
-
-      &.bg-fade {
-        background: transparent;
-        transition: background 2s;
-      }
     }
 
     .name-column {
@@ -1553,6 +1519,73 @@ table.table.table-sm {
         @include media-breakpoint-only(md) {
           font-size: $font-size-smaller;
         }
+      }
+    }
+  }
+}
+
+.workbench-table .workbench-table-row {
+
+  &:hover {
+    cursor: pointer;
+    background: rgba(185, 239, 132, .5);
+    transition: background .3s;
+  }
+
+  &.hover {
+    background: rgba(185, 239, 132, 1);
+    transition: background .3s;
+  }
+
+  &.new {
+    background: rgba(185, 239, 132, .5);
+
+    &.bg-fade {
+      background: transparent;
+      transition: background 2s;
+    }
+  }
+
+  .workbench-table-cell {
+
+    &.lender-column {
+      flex-basis: 145px;
+      flex-grow: 0;
+    }
+
+    @include media-breakpoint-only(xs) {
+      &.date-column {
+        flex-basis: 95px;
+        flex-grow: 0;
+      }
+
+      &.status-column {
+        flex-basis: 140px;
+        flex-grow: 0;
+      }
+    }
+  }
+}
+
+.detail-container .workbench-table-row {
+  .workbench-table-cell {
+    &.name-column .cell-text {
+      font-size: $font-size-lg;
+      line-height: 19px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      &.name-column {
+        padding-bottom: 0;
+      }
+      &.date-column {
+        padding-top: 0;
+      }
+    }
+
+    @include media-breakpoint-only(xs) {
+      &.status-column {
+        padding-top: 0;
       }
     }
   }

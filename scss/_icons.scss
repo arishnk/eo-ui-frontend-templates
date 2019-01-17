@@ -144,6 +144,7 @@
     top: -1px;
   }
   &.eo-icon-add-note-dark-gray { @include icon-versions(19px, 19px, "../img/icon_add_note_dark_gray.svg"); }
+  &.eo-icon-edit-green { @include icon-versions(16px, 16px, "../img/icon_edit_green.svg"); }
 }
 
 a:hover .eo-icon.eo-icon-half-opacity,
