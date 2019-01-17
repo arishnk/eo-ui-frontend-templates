@@ -1567,28 +1567,58 @@ table.table.table-sm {
   }
 }
 
-.detail-container .workbench-table-row {
-  .workbench-table-cell {
-    &.name-column .cell-text {
-      font-size: $font-size-lg;
-      line-height: 19px;
-    }
+.detail-container {
 
-    @include media-breakpoint-down(sm) {
-      &.name-column {
-        padding-bottom: 0;
+  .workbench-table-row {
+    .workbench-table-cell {
+      &.name-column .cell-text {
+        font-size: $font-size-lg;
+        line-height: 19px;
       }
-      &.date-column {
-        padding-top: 0;
-      }
-    }
 
-    @include media-breakpoint-only(xs) {
-      &.status-column {
-        padding-top: 0;
+      @include media-breakpoint-down(sm) {
+        &.name-column {
+          padding-bottom: 0;
+        }
+        &.date-column {
+          padding-top: 0;
+        }
+      }
+
+      @include media-breakpoint-only(xs) {
+        &.status-column {
+          padding-top: 0;
+        }
       }
     }
   }
+
+  .detail-more-row {
+    background: rgba(129, 194, 65, .17);
+
+    .detail-more-main {
+
+      .item-label {
+        padding-left: 12.5px;
+        padding-right: 12.5px;
+        color: $gray-600;
+        // font-size: $font-size-sm;
+        // text-transform: uppercase;
+      }
+
+      .item-value {
+        color: $black;
+        padding-left: 0;
+        padding-right: 12.5px;
+        // font-size: $font-size-smaller;
+      }
+
+      .lender-logo img {
+        max-width: 98px;
+      }
+    }
+  }
+
 }
 
 .modal {
