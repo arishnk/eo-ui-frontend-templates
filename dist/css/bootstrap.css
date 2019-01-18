@@ -13208,6 +13208,10 @@ table.table.table-sm thead tr:first-child th {
   }
 }
 
+.detail-container .workbench-table-row .workbench-table-cell.name-column {
+  max-width: 180px;
+}
+
 .detail-container .workbench-table-row .workbench-table-cell.name-column .cell-text {
   font-size: 1rem;
   line-height: 19px;

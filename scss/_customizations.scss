@@ -1583,9 +1583,14 @@ table.table.table-sm {
     }
 
     .workbench-table-cell {
-      &.name-column .cell-text {
-        font-size: $font-size-lg;
-        line-height: 19px;
+
+      &.name-column {
+        max-width: 180px;
+
+        .cell-text {
+          font-size: $font-size-lg;
+          line-height: 19px;
+        }
       }
 
       @include media-breakpoint-down(sm) {
