@@ -11632,6 +11632,36 @@ a.text-dark:hover, a.text-dark:focus {
   height: 24px;
 }
 
+.eo-icon.eo-icon-edit-dk-gray {
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/icon_edit_dk_gray.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-edit-dk-gray.eo-icon-xs {
+  width: 4px;
+  height: 4px;
+}
+
+.eo-icon.eo-icon-edit-dk-gray.eo-icon-sm {
+  width: 8px;
+  height: 8px;
+}
+
+.eo-icon.eo-icon-edit-dk-gray.eo-icon-lg {
+  width: 20px;
+  height: 20px;
+}
+
+.eo-icon.eo-icon-edit-dk-gray.eo-icon-xl {
+  width: 24px;
+  height: 24px;
+}
+
 .eo-icon.eo-icon-back-arrow {
   width: 11px;
   height: 12px;
@@ -12091,14 +12121,19 @@ h1, h2, h3, h4, h5, h6,
 .form-control {
   box-shadow: none;
   border-width: 2px;
-  border-top: none;
-  border-right: none;
+  border-top-width: 0;
+  border-right-width: 0;
   font-weight: 600;
   padding-left: 8px;
 }
 
 .form-control:focus {
   box-shadow: none;
+}
+
+textarea.form-control {
+  border-top-width: 2px;
+  border-right-width: 2px;
 }
 
 .form-control-wrap {
@@ -13298,24 +13333,53 @@ table.table.table-sm thead tr:first-child th {
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
   .card.notes-box {
-    max-width: 350px;
+    width: 350px;
   }
 }
 
-.card.notes-box .card-header {
+@media (min-width: 1200px) {
+  .card.notes-box {
+    width: 400px;
+  }
+}
+
+.card.notes-box.notes-container .card-header {
   color: #fff;
 }
 
-.card.notes-box .card-header .add-note-link {
+.card.notes-box.notes-container .card-header .add-note-link {
   color: #fff;
 }
 
-.card.notes-box .card-body {
+.card.notes-box.notes-container .card-body {
   color: #71767f;
 }
 
-.card.notes-box .card-body .notes-container {
+.card.notes-box.notes-container .card-body .notes-container-notes {
   background: #fff;
+  height: 120px;
+  overflow-y: scroll;
+}
+
+.card.notes-box.add-note-form .card-header, .card.notes-box.edit-note-form .card-header {
+  background: #fff;
+}
+
+.card.notes-box.add-note-form .card-header .card-header-title, .card.notes-box.edit-note-form .card-header .card-header-title {
+  font-size: 0.8125rem;
+  color: #5a5e5a;
+  line-height: 1rem;
+}
+
+.card.notes-box.add-note-form .card-header .card-header-right, .card.notes-box.edit-note-form .card-header .card-header-right {
+  font-size: 0.75rem;
+  line-height: 15px;
+  color: #5a5e5a;
+}
+
+.card.notes-box.add-note-form .card-body textarea.form-control, .card.notes-box.edit-note-form .card-body textarea.form-control {
+  font-size: 0.8125rem;
+  color: #000;
 }
 
 .note {
@@ -13359,7 +13423,6 @@ table.table.table-sm thead tr:first-child th {
 }
 
 .modal .modal-body textarea.form-control {
-  border: 2px solid #0abae5;
   font-size: 0.8125rem;
   color: #000;
 }

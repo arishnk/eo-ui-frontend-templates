@@ -176,50 +176,78 @@
 
       <div class="row">
         <div class="col-12 text-center"><h2>Notes Box with Notes Appearing</h2></div>
+        <div class="col-12 text-center"><h5 class="font-italic">Note: only the first edit link works</h4></div>
 
-        <div class="detail-more-notes-container w-100 my-3 my-md-0">
-          <div class="card notes-box bg-transparent rounded-0 p-0 mx-auto">
-            <div class="card-header pl-3 pr-2 py-2 d-flex justify-content-between bg-primary rounded-0">
-              <div class="card-header-left d-flex align-items-center">
-                <span class="card-header-title font-smaller">Internal notes</span>
-                <span class="num-notes pl-1 font-weight-semibold font-sm">(0)</span>
-              </div>
-              <div class="card-header-right d-flex align-items-center">
-                <span class="eo-icon eo-icon-add-note-dark-white"></span>
-                <a href="#" class="add-note-link font-weight-semibold ml-2 font-smaller" id="addNoteLink">Add note</a>
-              </div>
-            </div>
-            <div class="card-body p-3">
-              <div class="notes-container">
-                <div class="note">
-                  <div class="note-content d-flex pb-1">
-                    <span class="eo-icon eo-icon-note-dk-gray flex-shrink-0">
-                    </span>
-                    <div class="pl-2">
-                      <div class="note-heading">
-                        <span class="note-author font-weight-semibold">Debbie Johnson</span><span class="comma">,</span><span class="note-datetime pl-1">12/12/2018 2:23pm</span>
+        <div class="container detail-container">
+          <div class="detail-more-row">
+            <div class="detail-more-notes-container py-3 w-100 my-3 my-md-0">
+
+              <div class="card notes-box notes-container bg-transparent rounded-0 p-0 mx-auto">
+                <div class="card-header pl-3 pr-2 py-2 d-flex justify-content-between bg-primary border-bottom-0 rounded-0">
+                  <div class="card-header-left d-flex align-items-center">
+                    <span class="card-header-title font-smaller">Internal notes</span>
+                    <span class="num-notes pl-1 font-weight-semibold font-sm">(0)</span>
+                  </div>
+                  <div class="card-header-right d-flex align-items-center">
+                    <span class="eo-icon eo-icon-add-note-dark-white"></span>
+                    <a href="#" class="add-note-link font-weight-semibold ml-2 font-smaller" id="addNoteLink">Add note</a>
+                  </div>
+                </div>
+                <div class="card-body p-0">
+                  <div class="notes-container-notes p-3">
+                    <div class="note">
+                      <div class="note-content d-flex pb-1">
+                        <span class="eo-icon eo-icon-note-dk-gray flex-shrink-0">
+                        </span>
+                        <div class="pl-2">
+                          <div class="note-heading">
+                            <span class="note-author font-weight-semibold">Debbie Johnson</span><span class="comma">,</span><span class="note-datetime pl-1">12/12/2018 2:23pm</span>
+                          </div>
+                          <div class="note-main pt-2 pb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum.</div>
+                        </div>
+                        <div class="note-edit align-self-center">
+                          <a href="#" class="edit-note-link" id="editNoteLink"><span class="eo-icon eo-icon-edit-green" data-toggle="tooltip" title="Edit"></span></a>
+                        </div>
                       </div>
-                      <div class="note-main py-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum.</div>
                     </div>
-                    <div class="note-edit align-self-center">
-                      <span class="eo-icon eo-icon-edit-green"></span>
+                    <div class="note">
+                      <div class="note-content d-flex pb-1">
+                        <span class="eo-icon eo-icon-note-dk-gray flex-shrink-0">
+                        </span>
+                        <div class="pl-2">
+                          <div class="note-heading">
+                            <span class="note-author font-weight-semibold">Sam Wallace</span><span class="comma">,</span><span class="note-datetime pl-1">12/11/2018 10:34am</span>
+                          </div>
+                          <div class="note-main pt-2 pb-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. This is a longer note about the closing for Jonathan Shields that appears on the sample detail page.</div>
+                        </div>
+                        <div class="note-edit align-self-center">
+                          <span class="eo-icon eo-icon-edit-green"></span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="note">
-                  <div class="note-content d-flex pb-1">
-                    <span class="eo-icon eo-icon-note-dk-gray flex-shrink-0">
-                    </span>
-                    <div class="pl-2">
-                      <div class="note-heading">
-                        <span class="note-author font-weight-semibold">Sam Wallace</span><span class="comma">,</span><span class="note-datetime pl-1">12/11/2018 10:34am</span>
-                      </div>
-                      <div class="note-main py-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. This is a longer note about the closing for Jonathan Shields that appears on the sample detail page.</div>
-                    </div>
-                    <div class="note-edit align-self-center">
-                      <span class="eo-icon eo-icon-edit-green"></span>
-                    </div>
+              </div>
+
+              <div class="card notes-box edit-note-form rounded-0 p-0 d-none mx-auto" id="editNoteForm">
+                <div class="card-header px-3 py-2 d-flex justify-content-between align-items-center border-bottom-0 rounded-0">
+                  <div class="card-header-left d-flex align-items-center">
+                    <span class="eo-icon eo-icon-edit-dk-gray mr-2"></span>
+                    <span class="card-header-title font-weight-semibold" id="editNoteTitle">Edit internal note</span>
                   </div>
+                  <div class="card-header-right d-flex align-items-center">
+                    <span class="note-author font-weight-semibold">Debbie Johnson</span><span class="comma">,</span><span class="note-datetime pl-1">12/12/2018 2:23pm</span></div>
+                </div>
+                <div class="card-body px-3 pt-0 pb-1">
+                  <form class="form">
+                    <div class="form-group">
+                      <textarea class="form-control" id="editNoteText" rows="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum.</textarea>
+                    </div>
+                    <div class="form-group form-group row row-no-padding mb-2">
+                      <button type="submit" id="saveNoteEdit" class="btn btn-primary px-5">Save</button>
+                      <button type="button" id="cancelEditNote" class="btn btn-blank">Cancel</button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -236,6 +264,8 @@
   <script src="../dist/js/bootstrap.min.js"></script>
 
   <script>
+
+    $('[data-toggle="tooltip"]').tooltip();
 
     $('#triggerSuccessToast').click(function() {
       $('#sampleSuccessToast').toast('show');
@@ -257,6 +287,25 @@
 
     $('#addRefreshMsg').click(function(){
       $('.refresh-reminder').toggleClass('active');
+    });
+
+    $('#editNoteLink').click(function(e){
+      e.preventDefault();
+      $('.notes-container').toggleClass('d-none');
+      $('#editNoteForm').toggleClass('d-none');
+      $('#editNoteText').focus().select();
+    });
+
+    $('#cancelEditNote').click(function() {
+      $('.notes-container').toggleClass('d-none');
+      $('#editNoteForm').toggleClass('d-none');
+    });
+
+    $('#saveNoteEdit').click(function(e) {
+      e.preventDefault();
+      // functionality to updated/display updated note goes here
+      $('.notes-container').toggleClass('d-none');
+      $('#editNoteForm').toggleClass('d-none');
     });
 
   </script>
