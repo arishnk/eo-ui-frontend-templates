@@ -1674,20 +1674,20 @@ table.table.table-sm {
   &:last-child {
     margin-bottom: 0;
   }
+}
 
-  .note-content {
+.note-content {
 
-    .note-heading {
-      font-size: $font-size-sm;
-      line-height: $font-size-sm;
-      color: #5a5e5a;
-    }
+  .note-heading {
+    font-size: $font-size-sm;
+    line-height: $font-size-sm;
+    color: #5a5e5a;
+  }
 
-    .note-main {
-      font-size: $font-size-smaller;
-      line-height: 18px;
-      color: $black;
-    }
+  .note-main {
+    font-size: $font-size-smaller;
+    line-height: 18px;
+    color: $black;
   }
 }
 

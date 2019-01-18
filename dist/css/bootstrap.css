@@ -13326,13 +13326,13 @@ table.table.table-sm thead tr:first-child th {
   margin-bottom: 0;
 }
 
-.note .note-content .note-heading {
+.note-content .note-heading {
   font-size: 0.75rem;
   line-height: 0.75rem;
   color: #5a5e5a;
 }
 
-.note .note-content .note-main {
+.note-content .note-main {
   font-size: 0.8125rem;
   line-height: 18px;
   color: #000;
