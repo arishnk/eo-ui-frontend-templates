@@ -13090,19 +13090,6 @@ table.table.table-sm thead tr:first-child th {
   color: #71767f;
 }
 
-.workbench-table .workbench-table-row .documents-column .note-content .note-heading,
-.detail-container .workbench-table-row .documents-column .note-content .note-heading {
-  font-size: 0.75rem;
-  line-height: 0.75rem;
-  color: #5a5e5a;
-}
-
-.workbench-table .workbench-table-row .documents-column .note-content .note-main,
-.detail-container .workbench-table-row .documents-column .note-content .note-main {
-  font-size: 0.8125rem;
-  color: #000;
-}
-
 .workbench-table .workbench-table-row .documents-column .note-footer,
 .detail-container .workbench-table-row .documents-column .note-footer {
   font-size: 0.8125rem;
@@ -13303,24 +13290,52 @@ table.table.table-sm thead tr:first-child th {
   }
 }
 
-.detail-container .detail-more-row .detail-more-notes-container .card.notes-box {
+.card.notes-box {
   width: 100%;
   max-width: 400px;
   border: 1px solid rgba(87, 164, 10, 0.17);
 }
 
 @media (min-width: 768px) and (max-width: 1199.98px) {
-  .detail-container .detail-more-row .detail-more-notes-container .card.notes-box {
+  .card.notes-box {
     max-width: 350px;
   }
 }
 
-.detail-container .detail-more-row .detail-more-notes-container .card.notes-box .card-header {
+.card.notes-box .card-header {
   color: #fff;
 }
 
-.detail-container .detail-more-row .detail-more-notes-container .card.notes-box .card-body {
+.card.notes-box .card-header .add-note-link {
+  color: #fff;
+}
+
+.card.notes-box .card-body {
   color: #71767f;
+}
+
+.card.notes-box .card-body .notes-container {
+  background: #fff;
+}
+
+.note {
+  margin-bottom: .5rem;
+}
+
+.note:last-child {
+  margin-bottom: 0;
+}
+
+.note .note-content .note-heading {
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  color: #5a5e5a;
+}
+
+.note .note-content .note-main {
+  font-size: 0.8125rem;
+  line-height: 18px;
+  color: #000;
 }
 
 .modal .modal-content {

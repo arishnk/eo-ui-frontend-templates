@@ -1457,21 +1457,6 @@ table.table.table-sm {
         color: $text-muted;
       }
 
-      // note popover content
-      .note-content {
-
-        .note-heading {
-          font-size: $font-size-sm;
-          line-height: $font-size-sm;
-          color: #5a5e5a;
-        }
-
-        .note-main {
-          font-size: $font-size-smaller;
-          color: $black;
-        }
-      }
-
       .note-footer {
         font-size: $font-size-smaller;
       }
@@ -1652,27 +1637,58 @@ table.table.table-sm {
         padding-left: 0;
         padding-right: 20px;
       }
+    }
+  }
+}
 
-      .card.notes-box {
-        width: 100%;
-        max-width: 400px;
-        border: 1px solid rgba(87, 164, 10, .17);
+.card.notes-box {
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid rgba(87, 164, 10, .17);
 
-        @include media-breakpoint-between(md, lg) {
-          max-width: 350px;
-        }
+  @include media-breakpoint-between(md, lg) {
+    max-width: 350px;
+  }
 
-        .card-header {
-          color: $white;
-        }
-        //
-        .card-body {
-          color: $gray-600;
-        }
-      }
+  .card-header {
+    color: $white;
+
+    .add-note-link {
+      color: $white;
     }
   }
 
+  .card-body {
+    color: $gray-600;
+
+    .notes-container {
+      background: $white;
+    }
+  }
+}
+
+// internal note theming - on dashboard (as popover) and detail pages
+.note {
+  margin-bottom: .5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .note-content {
+
+    .note-heading {
+      font-size: $font-size-sm;
+      line-height: $font-size-sm;
+      color: #5a5e5a;
+    }
+
+    .note-main {
+      font-size: $font-size-smaller;
+      line-height: 18px;
+      color: $black;
+    }
+  }
 }
 
 .modal {
