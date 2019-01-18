@@ -13285,6 +13285,12 @@ table.table.table-sm thead tr:first-child th {
   max-width: 98px;
 }
 
+@media (min-width: 992px) {
+  .detail-container .detail-more-row .detail-more-main .detail-more-right {
+    max-width: 200px;
+  }
+}
+
 .detail-container .detail-more-row .detail-more-notes-container {
   padding-left: 25px;
   padding-right: 25px;
@@ -13292,6 +13298,7 @@ table.table.table-sm thead tr:first-child th {
 
 @media (min-width: 768px) {
   .detail-container .detail-more-row .detail-more-notes-container {
+    padding-left: 0;
     padding-right: 20px;
   }
 }
@@ -13300,6 +13307,12 @@ table.table.table-sm thead tr:first-child th {
   width: 100%;
   max-width: 400px;
   border: 1px solid rgba(87, 164, 10, 0.17);
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .detail-container .detail-more-row .detail-more-notes-container .card.notes-box {
+    max-width: 350px;
+  }
 }
 
 .detail-container .detail-more-row .detail-more-notes-container .card.notes-box .card-header {

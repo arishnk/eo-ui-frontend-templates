@@ -1636,6 +1636,12 @@ table.table.table-sm {
       .lender-logo img {
         max-width: 98px;
       }
+
+      .detail-more-right {
+        @include media-breakpoint-up(lg) {
+          max-width: 200px;
+        }
+      }
     }
 
     .detail-more-notes-container {
@@ -1643,6 +1649,7 @@ table.table.table-sm {
       padding-right: 25px;
 
       @include media-breakpoint-up(md) {
+        padding-left: 0;
         padding-right: 20px;
       }
 
@@ -1650,6 +1657,10 @@ table.table.table-sm {
         width: 100%;
         max-width: 400px;
         border: 1px solid rgba(87, 164, 10, .17);
+
+        @include media-breakpoint-between(md, lg) {
+          max-width: 350px;
+        }
 
         .card-header {
           color: $white;
