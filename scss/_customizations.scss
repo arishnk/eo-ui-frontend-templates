@@ -1637,6 +1637,29 @@ table.table.table-sm {
         max-width: 98px;
       }
     }
+
+    .detail-more-notes-container {
+      padding-left: 25px;
+      padding-right: 25px;
+
+      @include media-breakpoint-up(md) {
+        padding-right: 20px;
+      }
+
+      .card.notes-box {
+        width: 100%;
+        max-width: 400px;
+        border: 1px solid rgba(87, 164, 10, .17);
+
+        .card-header {
+          color: $white;
+        }
+        //
+        .card-body {
+          color: $gray-600;
+        }
+      }
+    }
   }
 
 }

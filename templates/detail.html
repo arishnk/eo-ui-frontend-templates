@@ -90,7 +90,7 @@
                 </div>
               </div>
 
-              <div class="row detail-more-row pt-3 pb-md-3 flex-column flex-md-row justify-content-between">
+              <div class="row detail-more-row pt-3 pb-md-3 flex-column flex-md-row justify-content-between flex-nowrap">
                 <div class="detail-more-main d-flex flex-column flex-lg-row flex-grow-1">
                   <div class="container detail-more-left">
                     <div class="row phone pb-1">
@@ -111,7 +111,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="container detail-more-right">
+                  <div class="container detail-more-right flex-grow-0 flex-shrink-1">
                     <div class="row loan-number pt-1 pt-lg-0 pb-1">
                       <div class="col-5 item-label text-right font-sm text-uppercase">Loan</div>
                       <div class="col-7 item-value font-smaller font-weight-semibold">#123456789</div>
@@ -128,7 +128,22 @@
                     </div>
                   </div>
                 </div>
-                <div class="detail-more-add-note">
+                <div class="detail-more-notes-container my-3 my-md-0 mx-auto">
+                  <div class="card notes-box bg-transparent rounded-0 p-0">
+                    <div class="card-header pl-3 pr-2 py-2 d-flex justify-content-between bg-primary rounded-0">
+                      <div class="card-header-left d-flex align-items-center">
+                        <span class="card-header-title font-smaller">Internal notes</span>
+                        <span class="num-notes pl-1 font-weight-semibold font-sm">(0)</span>
+                      </div>
+                      <div class="card-header-right d-flex align-items-center">
+                        <span class="eo-icon eo-icon-add-note-dark-white"></span>
+                        <span class="add-note-text font-weight-semibold pl-2 font-smaller">Add note</span>
+                      </div>
+                    </div>
+                    <div class="card-body p-3">
+                      <div class="no-notes-text font-smaller">You can add notes about the transaction. Lender and borrower do not see these notes.</div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
