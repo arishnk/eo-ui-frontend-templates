@@ -13394,6 +13394,10 @@ table.table.table-sm thead tr:first-child th {
   overflow-y: scroll;
 }
 
+.card.notes-box.add-note-form, .card.notes-box.edit-note-form {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.23);
+}
+
 .card.notes-box.add-note-form .card-header, .card.notes-box.edit-note-form .card-header {
   background: #fff;
 }
@@ -13573,5 +13577,43 @@ table.table.table-sm thead tr:first-child th {
   border-radius: 0;
   text-align: center;
   padding: 0 15px;
+}
+
+.nav-tabs {
+  border-bottom: none;
+  background: linear-gradient(to right, #5fa600, #2ea049);
+}
+
+.nav-tabs .nav-item {
+  margin-bottom: 0;
+}
+
+.nav-tabs .nav-link {
+  border-width: 0;
+  border-radius: 0;
+  color: #fff;
+  position: relative;
+}
+
+.nav-tabs .nav-link.active {
+  background: #000;
+  color: #fff;
+}
+
+.nav-tabs .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 10px;
+  background: #000;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.nav-tabs .nav-link .tab-docs-detail .docs-label,
+.nav-tabs .nav-link .tab-docs-detail .pages .docs-value {
+  font-size: 0.75rem;
 }
 /*# sourceMappingURL=bootstrap.css.map */

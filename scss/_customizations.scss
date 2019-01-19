@@ -1682,6 +1682,7 @@ table.table.table-sm {
 
   &.add-note-form,
   &.edit-note-form {
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .23);
 
     .card-header {
       background: $white;
@@ -1866,6 +1867,46 @@ table.table.table-sm {
       border-radius: 0;
       text-align: center;
       padding: 0 15px;
+    }
+  }
+}
+
+.nav-tabs {
+  border-bottom: none;
+  background: linear-gradient(to right, #5fa600, #2ea049);
+
+  .nav-item {
+    margin-bottom: 0;
+  }
+
+  .nav-link {
+    border-width: 0;
+    border-radius: 0;
+    color: $white;
+    position: relative;
+
+    &.active {
+      background: $black;
+      color: $white;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: calc(50% - 10px);
+        width: 20px;
+        height: 10px;
+        background: $black;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+    }
+
+    .tab-docs-detail {
+      .docs-label,
+      .pages .docs-value {
+        font-size: $font-size-sm;
+      }
     }
   }
 }

@@ -82,7 +82,6 @@
                           <div class="dropdown-menu" aria-labelledby="moreActionsDropdownExample">
                             <a class="dropdown-item" href="#">Add closing date</a>
                             <a class="dropdown-item add-note-trigger" data-toggle="modal" data-target="#addNoteModal" data-backdrop="static" href="#">Add note</a>
-                            <a class="dropdown-item" href="#">Remove closing</a>
                           </div>
                         </div>
                       </div>
@@ -173,6 +172,40 @@
                 </div>
               </div>
 
+              <div class="row detail-tabs-lg-row">
+                <div class="nav-tabs-wrapper w-100">
+                  <div class="nav nav-tabs" role="tablist">
+                    <a class="nav-item nav-link" id="lenderDocsTabLink" href="#lenderDocsDetail" data-toggle="tab" role="tab" aria-controls="nav-lender-docs" aria-selected="false">
+                      <div class="tab-title font-weight-semibold">Lender documents</div>
+                      <div class="tab-docs-detail d-flex justify-content-center align-items-center">
+                        <span class="eo-icon eo-icon-updated-star-white"></span>
+                        <span class="docs pl-2">
+                          <span class="docs-value font-weight-semibold">13</span>
+                          <span class="docs-label">docs</span>
+                        </span>
+                        <span class="comma">,</span>
+                        <span class="pages pl-1">
+                          <span class="docs-value font-weight-semibold">106</span>
+                          <span class="docs-label">pg</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a class="nav-item nav-link active" id="signingSummaryTabLink" href="#signingSummaryDetail" data-toggle="tab" role="tab" aria-controls="nav-signing-summary" aria-selected="true">
+                      <span class="tab-title font-weight-semibold">Signing summary</span>
+                    </a>
+                  </div>
+
+                  <div class="tab-content">
+                    <div class="tab-pane fade" id="lenderDocsDetail" role="tabpanel" aria-labelled-by="lenderDocsTabLink">
+                      This is the future lender docs detail section.
+                    </div>
+                    <div class="tab-pane fade show active" id="signingSummaryDetail" role="tabpanel" aria-labelled-by="signingSummaryTabLink">
+                      This is the future signing summary detail section.
+                    </div> <!-- .tab-pane#signingSummaryDetail -->
+                  </div> <!-- .tab-content -->
+                </div>
+
+              </div> <!-- .detail-tabs-lg-row -->
             </div> <!-- .detail-container -->
 
 
