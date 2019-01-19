@@ -13433,9 +13433,9 @@ table.table.table-sm thead tr:first-child th {
   color: #5a5e5a;
 }
 
-.note-content .note-main {
+.note-content .note-text {
   font-size: 0.8125rem;
-  line-height: 18px;
+  line-height: 16px;
   color: #000;
 }
 
@@ -13610,6 +13610,14 @@ table.table.table-sm thead tr:first-child th {
   background: #000;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+.nav-tabs .nav-link .tab-docs-detail .docs {
+  padding-left: .5rem;
+}
+
+.nav-tabs .nav-link .tab-docs-detail .docs:first-child {
+  padding-left: 0;
 }
 
 .nav-tabs .nav-link .tab-docs-detail .docs-label,

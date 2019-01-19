@@ -1726,9 +1726,9 @@ table.table.table-sm {
     color: #5a5e5a;
   }
 
-  .note-main {
+  .note-text {
     font-size: $font-size-smaller;
-    line-height: 18px;
+    line-height: 16px;
     color: $black;
   }
 }
@@ -1903,6 +1903,14 @@ table.table.table-sm {
     }
 
     .tab-docs-detail {
+      .docs {
+        padding-left: .5rem;
+
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+
       .docs-label,
       .pages .docs-value {
         font-size: $font-size-sm;
