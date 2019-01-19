@@ -1834,10 +1834,11 @@ table.table.table-sm {
 }
 
 .toast-container {
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: 1rem;
 }
+
 .toast {
   border-radius: $border-radius;
   box-shadow: $toast-box-shadow;
