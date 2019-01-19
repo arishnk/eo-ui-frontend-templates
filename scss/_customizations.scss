@@ -467,7 +467,7 @@ a.form-control-feedback {
   border-radius: 9px;
 }
 
-.workbench-table .dropdown-menu {
+.workbench-table-cell .dropdown-menu {
   border-radius: 3px;
   padding: 2px 0;
 
@@ -478,7 +478,7 @@ a.form-control-feedback {
 }
 
 .open > .dropdown-menu,
-.workbench-table .dropdown-menu {
+.workbench-table-cell .dropdown-menu {
   animation-name: slidenavanimation;
   animation-duration: .2s;
   animation-iteration-count: 1;

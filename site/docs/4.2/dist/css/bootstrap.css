@@ -11542,6 +11542,37 @@ a.text-dark:hover, a.text-dark:focus {
   height: 27px;
 }
 
+.eo-icon.eo-icon-add-closing-date-dk-gray {
+  width: 25px;
+  height: 18px;
+  background-image: url("../img/icon_add_closing_date_dk_gray.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -1px;
+}
+
+.eo-icon.eo-icon-add-closing-date-dk-gray.eo-icon-xs {
+  width: 6.25px;
+  height: 4.5px;
+}
+
+.eo-icon.eo-icon-add-closing-date-dk-gray.eo-icon-sm {
+  width: 12.5px;
+  height: 9px;
+}
+
+.eo-icon.eo-icon-add-closing-date-dk-gray.eo-icon-lg {
+  width: 31.25px;
+  height: 22.5px;
+}
+
+.eo-icon.eo-icon-add-closing-date-dk-gray.eo-icon-xl {
+  width: 37.5px;
+  height: 27px;
+}
+
 .eo-icon.eo-icon-add-note-dark-gray {
   width: 19px;
   height: 19px;
@@ -12206,18 +12237,18 @@ a.form-control-feedback:hover {
   border-radius: 9px;
 }
 
-.workbench-table .dropdown-menu {
+.workbench-table-cell .dropdown-menu {
   border-radius: 3px;
   padding: 2px 0;
 }
 
-.workbench-table .dropdown-menu .dropdown-item {
+.workbench-table-cell .dropdown-menu .dropdown-item {
   font-size: 0.8125rem;
   line-height: 16px;
 }
 
 .open > .dropdown-menu,
-.workbench-table .dropdown-menu {
+.workbench-table-cell .dropdown-menu {
   animation-name: slidenavanimation;
   animation-duration: .2s;
   animation-iteration-count: 1;

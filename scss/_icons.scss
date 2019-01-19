@@ -143,6 +143,10 @@
     @include icon-versions(25px, 18px, "../img/icon_add_closing_date_green.svg");
     top: -1px;
   }
+  &.eo-icon-add-closing-date-dk-gray {
+    @include icon-versions(25px, 18px, "../img/icon_add_closing_date_dk_gray.svg");
+    top: -1px;
+  }
   &.eo-icon-add-note-dark-gray { @include icon-versions(19px, 19px, "../img/icon_add_note_dark_gray.svg"); }
   &.eo-icon-add-note-dark-white { @include icon-versions(19px, 19px, "../img/icon_add_note_dark_white.svg"); }
   &.eo-icon-edit-green { @include icon-versions(16px, 16px, "../img/icon_edit_green.svg"); }
