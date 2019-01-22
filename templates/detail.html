@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title></title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,500i,600,600i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+  <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="has-footer">
+  <div class="main-content pb-0">
+
+    <div class="detail-main">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12 no-xs-padding">
+
+            <div class="container py-2 py-md-3 py-xl-4 workbench-status">
+              <div class="row pb-2 align-items-center workbench-status-back">
+                <span class="eo-icon eo-icon-back-arrow"></span>
+                <a href="#" class="back-link ml-2">All closings</a>
+              </div>
+              <div class="row workbench-status-content d-flex align-items-center">
+                <div class="last-refreshed text-sm">
+                  <span class="last-refreshed-label">Last refreshed: </span>
+                  <span class="last-refreshed-value">12/20/2019 10:23 am ET</span>
+                </div>
+                <div class="refresh-reminder d-none d-md-block text-smaller font-weight-semibold"><span>It’s been over 1 hour since your last refresh</span></div>
+                <div class="refresh pl-3 pl-sm-4">
+                  <a href="#" class="d-flex align-items-center">
+                    <span class="eo-icon eo-icon-refresh"></span>
+                    <span class="refresh-text font-weight-semibold pl-1 pl-sm-2">Refresh</span>
+                  </a>
+                </div>
+              </div>
+            </div> <!-- .workbench-status -->
+
+            <div class="container detail-container">
+
+              <div class="row justify-content-between align-items-sm-center workbench-table-row">
+                <div class="detail-row-left d-flex flex-column flex-md-row align-items-md-center">
+                  <div class="workbench-table-cell name-column">
+                    <div class="cell-text">
+                      <span class="last">Shields</span>, <span class="first">Jonathan</span>
+                    </div>
+                  </div>
+                  <div class="workbench-table-cell date-column">
+                    <div class="cell-text">
+                      <span class="date font-weight-semibold pr-sm-1">12/14/2019</span>
+                      <span class="time mr-sm-1">4:30 pm ET</span>
+                      <span class="eo-icon eo-icon-edit-green"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="detail-row-middle d-none d-lg-block">
+                  <div class="workbench-table-cell lender-column">
+                    <div class="cell-text">
+                      <img src="../img/icon_bank_of_america.png" alt="Bank of America" />
+                    </div>
+                  </div>
+                </div>
+                <div class="detail-row-right d-flex flex-column-reverse flex-sm-row align-items-sm-center">
+                  <div class="workbench-table-cell status-column">
+                    <div class="cell-text d-flex align-items-center">
+                      <span class="eo-icon eo-icon-trans-ready-to-close"></span>
+                      <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
+                        <span class="status-text">Ready to close</span>
+                        <div class="status-more">
+                          <a href="#" class="more-actions-toggle" id="moreActionsDropdownExample" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>More actions</span>
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="moreActionsDropdownExample">
+                            <a class="dropdown-item" href="#">Add closing date</a>
+                            <a class="dropdown-item add-note-trigger" data-toggle="modal" data-target="#addNoteModal" data-backdrop="static" href="#">Add note</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="workbench-table-cell buttons-column">
+                    <div class="cell-text">
+                      <button class="btn btn-primary btn-block">Start closing</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row detail-more-row pt-3 pb-md-3 flex-column flex-md-row justify-content-between flex-nowrap">
+                <div class="detail-more-main d-flex flex-column flex-lg-row flex-shrink-0 flex-grow-1">
+                  <div class="container detail-more-left">
+                    <div class="row phone pb-1">
+                      <div class="col-5 item-label text-right font-sm text-uppercase">Borrower phone</div>
+                      <div class="col-7 item-value font-smaller font-weight-semibold">(123) 456-7890</div>
+                    </div>
+                    <div class="row other-borrowers py-1">
+                      <div class="col-5 item-label text-right font-sm text-uppercase">Additional borrower(s)</div>
+                      <div class="col-7 item-value font-smaller font-weight-semibold">
+                        <span class="borrower d-block d-lg-inline">Rebecca Shields</span><span class="comma d-none d-lg-inline">, </span><span class="borrower d-block d-lg-inline">Martin Shields</span>
+                      </div>
+                    </div>
+                    <div class="row address py-1">
+                      <div class="col-5 item-label text-right font-sm text-uppercase">Property address</div>
+                      <div class="col-7 item-value font-smaller font-weight-semibold">
+                        <div class="address1">233 Massachusetts Avenue NW</div>
+                        <div class="address2">Washington, DC 20008</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container detail-more-right">
+                    <div class="row loan-number pt-1 pt-lg-0 pb-1">
+                      <div class="col-5 item-label text-right font-sm text-uppercase">Loan</div>
+                      <div class="col-7 item-value font-smaller font-weight-semibold">#123456789</div>
+                    </div>
+                    <div class="row loan-amount py-1">
+                      <div class="col-5 item-label text-right font-sm text-uppercase">Amount</div>
+                      <div class="col-7 item-value font-smaller font-weight-semibold">$350,000</div>
+                    </div>
+                    <div class="row lender-logo d-lg-none py-1">
+                      <div class="col-5 item-label text-right font-sm text-uppercase"></div>
+                      <div class="col-7 item-value font-smaller font-weight-semibold">
+                        <img src="../img/icon_bank_of_america.png" alt="Bank of America" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="detail-more-notes-container my-3 my-md-0">
+
+                  <div class="card notes-box notes-container bg-transparent rounded-0 p-0 mx-auto mr-md-0">
+                    <div class="card-header pl-3 pr-2 py-2 d-flex justify-content-between bg-primary rounded-0">
+                      <div class="card-header-left d-flex align-items-center">
+                        <span class="card-header-title font-smaller">Internal notes</span>
+                        <span class="num-notes pl-1 font-weight-semibold font-sm">(0)</span>
+                      </div>
+                      <div class="card-header-right d-flex align-items-center">
+                        <span class="eo-icon eo-icon-add-note-dark-white"></span>
+                        <a href="#" class="add-note-link font-weight-semibold ml-2 font-smaller" id="addNoteLink">Add note</a>
+                      </div>
+                    </div>
+                    <div class="card-body p-0">
+                      <div class="no-notes-text p-3 font-smaller">You can add notes about the transaction. Lender and borrower do not see these notes.</div>
+                    </div>
+                  </div>
+
+                  <div class="card notes-box add-note-form rounded-0 p-0 d-none mx-auto mr-md-0" id="addNoteForm">
+                    <div class="card-header pl-3 pr-2 py-2 border-bottom-0 rounded-0">
+                      <span class="eo-icon eo-icon-add-note-dark-gray mr-2"></span>
+                      <span class="card-header-title font-weight-semibold" id="addNoteTitle">Add internal note</span>
+                    </div>
+                    <div class="card-body px-3 pt-0 pb-1">
+                      <form class="form">
+                        <div class="form-group">
+                          <textarea class="form-control" id="newNoteText" rows="2"></textarea>
+                        </div>
+                        <div class="form-group form-group row row-no-padding mb-2">
+                          <button type="submit" id="saveNoteForm" class="btn btn-primary px-5">Save</button>
+                          <button type="button" id="cancelAddNoteForm" class="btn btn-blank">Cancel</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row detail-tabs-lg-row">
+                <div class="nav-tabs-wrapper w-100">
+                  <div class="nav nav-tabs" role="tablist">
+                    <a class="nav-item nav-link" id="lenderDocsTabLink" href="#lenderDocsDetail" data-toggle="tab" role="tab" aria-controls="nav-lender-docs" aria-selected="false">
+                      <div class="tab-title font-weight-semibold">Lender documents</div>
+                      <div class="tab-docs-detail d-flex justify-content-center align-items-center">
+                        <span class="eo-icon eo-icon-updated-star-white"></span>
+                        <span class="docs">
+                          <span class="docs-value font-weight-semibold">13</span>
+                          <span class="docs-label">docs</span>
+                        </span>
+                        <span class="comma">,</span>
+                        <span class="pages pl-1">
+                          <span class="docs-value font-weight-semibold">106</span>
+                          <span class="docs-label">pg</span>
+                        </span>
+                      </div>
+                    </a>
+                    <a class="nav-item nav-link active" id="signingSummaryTabLink" href="#signingSummaryDetail" data-toggle="tab" role="tab" aria-controls="nav-signing-summary" aria-selected="true">
+                      <span class="tab-title font-weight-semibold">Signing summary</span>
+                    </a>
+                  </div>
+
+                  <div class="tab-content">
+                    <div class="tab-pane fade" id="lenderDocsDetail" role="tabpanel" aria-labelled-by="lenderDocsTabLink">
+                      <div class="py-4 pl-4">This is the future lender docs detail section.</div>
+                    </div>
+                    <div class="tab-pane fade show active" id="signingSummaryDetail" role="tabpanel" aria-labelled-by="signingSummaryTabLink">
+                      <div class="py-4 pl-4">This is the future signing summary detail section.</div>
+                    </div> <!-- .tab-pane#signingSummaryDetail -->
+                  </div> <!-- .tab-content -->
+                </div>
+
+              </div> <!-- .detail-tabs-lg-row -->
+            </div> <!-- .detail-container -->
+
+
+
+          </div> <!-- .col-12 -->
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+
+    </div> <!-- .detail-main -->
+
+  </div> <!-- .main-content -->
+
+<!-- Add Note Modal TODO: move to separate partial - same as version on workbench page -->
+  <div class="modal fade" id="addNoteModal" role="dialog" aria-labelledby="addNoteTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="eo-icon eo-icon-add-note-dark-gray mr-2"></span>
+          <span class="modal-title font-weight-semibold" id="addNoteTitle">Add internal note</span>
+        </div>
+        <div class="modal-body">
+
+          <form class="form">
+            <div class="form-group">
+              <textarea class="form-control" id="newNoteText" rows="3"></textarea>
+            </div>
+            <div class="form-group form-group row row-no-padding mb-2">
+              <button type="submit" id="saveNoteModal" class="btn btn-primary px-5">Save</button>
+              <button type="button" id="cancelAddNoteModal" class="btn btn-blank" data-dismiss="modal">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
+  <script src="../dist/js/bootstrap.min.js"></script>
+
+  <script>
+
+    $('#addNoteLink').click(function(e){
+      e.preventDefault();
+      $('.notes-container').toggleClass('d-none');
+      $('#addNoteForm').toggleClass('d-none');
+      $('#newNoteText').focus();
+    });
+
+    $('#cancelAddNoteForm').click(function() {
+      $('.notes-container').toggleClass('d-none');
+      $('#addNoteForm').toggleClass('d-none');
+    });
+
+    $('#saveNoteForm').click(function() {
+      // functionality to create/display new note goes here
+      $('.notes-container').toggleClass('d-none');
+      $('#addNoteForm').toggleClass('d-none');
+    });
+
+    $('#saveNoteModal').click(function() {
+      // functionality to create/display note
+      $('#addNoteModal').modal('hide');
+    });
+  </script>
+
+</body>
+
+
+</html>

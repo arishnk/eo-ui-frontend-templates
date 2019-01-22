@@ -44,557 +44,566 @@
 
     <div class="workbench-banner bg-primary">
       <div class="container">
-        <div class="row workbench-banner-content d-flex justify-content-between align-items-center">
-          <div class="workbench-banner-left">
-            <h1><span class="workbench-banner-left-text">My Closings</span></h1>
+        <div class="row workbench-banner-content">
+          <div class="col-12 no-xs-padding d-flex justify-content-between align-items-center">
+            <div class="workbench-banner-left">
+              <h1><span class="workbench-banner-left-text">My Closings</span></h1>
+            </div>
+            <div class="workbench-banner-middle d-none d-md-block">
+              <span class="eo-icon eo-icon-closing-medium"></span>
+            </div>
+            <div class="workbench-banner-right">
+              <a class="workbench-banner-right-text" data-toggle="collapse" href="#addAClosing" role="button" aria-expanded="false" aria-controls="addAClosing"><span class="eo-icon eo-icon-add"></span></a>
+              <a class="workbench-banner-right-text" data-toggle="collapse" href="#addAClosing" role="button" aria-expanded="false" aria-controls="addAClosing">
+                <span>Add closing</span>
+              </a>
+            </div>
           </div>
-          <div class="workbench-banner-middle d-none d-md-block">
-            <span class="eo-icon eo-icon-closing-medium"></span>
-          </div>
-          <div class="workbench-banner-right">
-            <a class="workbench-banner-right-text" data-toggle="collapse" href="#addAClosing" role="button" aria-expanded="false" aria-controls="addAClosing"><span class="eo-icon eo-icon-add"></span></a>
-            <a class="workbench-banner-right-text" data-toggle="collapse" href="#addAClosing" role="button" aria-expanded="false" aria-controls="addAClosing">
-              <span>Add closing</span>
-            </a>
-          </div>
-        </div>
+        </div> <!-- .workbench-banner-content -->
 
         <div class="row">
+          <div class="col-12 no-xs-padding">
 
-          <div class="collapse" id="addAClosing">
+            <div class="collapse" id="addAClosing">
 
-            <div class="workbench-banner-form">
+              <div class="workbench-banner-form">
 
-              <div class="card card-sm card-body rounded-0 px-5 py-4">
+                <div class="card card-sm card-body rounded-0 px-5 py-4">
 
-                <button class="btn btn-blank btn-muted card-close" role="button" data-toggle="collapse" data-target="#addAClosing"  aria-expanded="false" aria-controls="addAClosing">
-                  <span class="sr-only">Close</span>
-                  <span class="eo-icon eo-icon-remove-large eo-icon-half-opacity"></span>
-                </button>
+                  <button class="btn btn-blank btn-muted card-close" role="button" data-toggle="collapse" data-target="#addAClosing"  aria-expanded="false" aria-controls="addAClosing">
+                    <span class="sr-only">Close</span>
+                    <span class="eo-icon eo-icon-remove-large eo-icon-half-opacity"></span>
+                  </button>
 
-                <h2>Add a closing</h2>
+                  <h2>Add a closing</h2>
 
-                <form class="form">
+                  <form class="form">
 
-                  <div class="row">
-                    <div class="col-lg-7 pr-lg-5">
+                    <div class="row">
+                      <div class="col-lg-7 pr-lg-5">
 
-                      <p>Please enter the access code and one borrower&apos;s information from the email you received.</p>
+                        <p>Please enter the access code and one borrower&apos;s information from the email you received.</p>
 
-                      <div class="row">
-                        <div class="form-group col-md-6">
-                          <label class="col-form-label required" for="accessCode"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
-                            Access code
-                          </label>
-                          <div class="form-control-wrap">
-                            <input class="form-control" name="accessCode" type="text" id="accessCode" placeholder="" value="" data-container="body" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus">
+                        <div class="row">
+                          <div class="form-group col-md-6">
+                            <label class="col-form-label required" for="accessCode"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                              Access code
+                            </label>
+                            <div class="form-control-wrap">
+                              <input class="form-control" name="accessCode" type="text" id="accessCode" placeholder="" value="" data-container="body" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-trigger="focus">
+                            </div>
+                            <div class="form-text"></div>
                           </div>
-                          <div class="form-text"></div>
                         </div>
+                        <div class="row">
+                          <div class="form-group col-md-6">
+                            <label class="col-form-label required" for="firstName"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                              Borrower&apos;s
+                              first name</label>
+                            <div class="form-control-wrap">
+                              <input class="form-control" name="firstName" type="text" id="firstName" placeholder="" value="">
+                            </div>
+                            <div class="form-text"></div>
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label class="col-form-label required" for="lastName"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                              Borrower&apos;s
+                              last name</label>
+                            <div class="form-control-wrap">
+                              <input class="form-control" name="lastName" type="text" id="lastName" placeholder="" value="">
+                            </div>
+                            <div class="form-text"></div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-12">
+                            <label class="col-form-label required" for="emailAddress2"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                              Borrower&apos;s
+                              email address</label>
+                            <div class="form-control-wrap">
+                              <input class="form-control" name="emailAddress2" type="email" id="emailAddress2" placeholder="" value="">
+                            </div>
+                            <div class="form-text"></div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-12">
+                            <label class="col-form-label required" for="organizationsName"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                              Organization&apos;s
+                              name</label>
+                            <div class="form-control-wrap">
+                              <input class="form-control" name="organizationsName" type="email" id="organizationsName" placeholder="" value="">
+                            </div>
+                            <div class="form-text"></div>
+                          </div>
+                        </div>
+
                       </div>
-                      <div class="row">
-                        <div class="form-group col-md-6">
-                          <label class="col-form-label required" for="firstName"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
-                            Borrower&apos;s
-                            first name</label>
-                          <div class="form-control-wrap">
-                            <input class="form-control" name="firstName" type="text" id="firstName" placeholder="" value="">
+
+                      <div class="col-lg-5 border-lg-left border-xl-left">
+
+                        <p>If you know the closing date, you can enter it here, to see your closings sorted by date.</p>
+
+                        <p>
+                          <a data-toggle="collapse" href="#closingDateFields" role="button" aria-expanded="false" aria-controls="closingDateFields" class="mr-1"><span class="eo-icon eo-icon-add-closing-date-green"></span></a>
+                          <a data-toggle="collapse" href="#closingDateFields" role="button" aria-expanded="false" aria-controls="closingDateFields">Add date/time</a>
+                        </p>
+
+                        <div id="closingDateFields" class="collapse">
+
+                          <div class="row align-items-end">
+
+                            <div class="col-sm-6 col-lg-12 col-xl-6">
+                              <div id="closingDatePicker"></div>
+                            </div>
+
+                            <div class="col-sm-6 col-lg-12 col-xl-6">
+
+                              <div class="row">
+                                <div class="form-group col-12">
+                                  <div class="pad-sm d-xs-block"></div>
+                                  <label class="col-form-label" for="hour">Time</label>
+                                  <div class="form-control-wrap">
+                                    <select class="form-control form-control-short" name="hour" id="hour"><option></option></select>
+                                      <select class="form-control form-control-short" name="minute" id="minute"><option></option></select>
+                                  </div>
+                                  <div class="form-text"></div>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="form-group col-12">
+                                  <label class="col-form-label" for="timezone">Time zone</label>
+                                  <div class="form-control-wrap">
+                                    <select class="form-control form-control-short" name="timezone" id="timezone"><option>ET</option></select>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+
                           </div>
-                          <div class="form-text"></div>
+
                         </div>
-                        <div class="form-group col-md-6">
-                          <label class="col-form-label required" for="lastName"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
-                            Borrower&apos;s
-                            last name</label>
-                          <div class="form-control-wrap">
-                            <input class="form-control" name="lastName" type="text" id="lastName" placeholder="" value="">
-                          </div>
-                          <div class="form-text"></div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="form-group col-12">
-                          <label class="col-form-label required" for="emailAddress2"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
-                            Borrower&apos;s
-                            email address</label>
-                          <div class="form-control-wrap">
-                            <input class="form-control" name="emailAddress2" type="email" id="emailAddress2" placeholder="" value="">
-                          </div>
-                          <div class="form-text"></div>
-                        </div>
-                      </div>
-                      <div class="row">
-                        <div class="form-group col-12">
-                          <label class="col-form-label required" for="organizationsName"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
-                            Organization&apos;s
-                            name</label>
-                          <div class="form-control-wrap">
-                            <input class="form-control" name="organizationsName" type="email" id="organizationsName" placeholder="" value="">
-                          </div>
-                          <div class="form-text"></div>
-                        </div>
+
                       </div>
 
                     </div>
 
-                    <div class="col-lg-5 border-lg-left border-xl-left">
+                    <div class="pad"></div>
 
-                      <p>If you know the closing date, you can enter it here, to see your closings sorted by date.</p>
-
-                      <p>
-                        <a data-toggle="collapse" href="#closingDateFields" role="button" aria-expanded="false" aria-controls="closingDateFields" class="mr-1"><span class="eo-icon eo-icon-add-closing-date-green"></span></a>
-                        <a data-toggle="collapse" href="#closingDateFields" role="button" aria-expanded="false" aria-controls="closingDateFields">Add date/time</a>
-                      </p>
-
-                      <div id="closingDateFields" class="collapse">
-
-                        <div class="row align-items-end">
-
-                          <div class="col-sm-6 col-lg-12 col-xl-6">
-                            <div id="closingDatePicker"></div>
-                          </div>
-
-                          <div class="col-sm-6 col-lg-12 col-xl-6">
-
-                            <div class="row">
-                              <div class="form-group col-12">
-                                <div class="pad-sm d-xs-block"></div>
-                                <label class="col-form-label" for="hour">Time</label>
-                                <div class="form-control-wrap">
-                                  <select class="form-control form-control-short" name="hour" id="hour"><option></option></select>
-                                    <select class="form-control form-control-short" name="minute" id="minute"><option></option></select>
-                                </div>
-                                <div class="form-text"></div>
-                              </div>
-                            </div>
-
-                            <div class="row">
-                              <div class="form-group col-12">
-                                <label class="col-form-label" for="timezone">Time zone</label>
-                                <div class="form-control-wrap">
-                                  <select class="form-control form-control-short" name="timezone" id="timezone"><option>ET</option></select>
-                                </div>
-                              </div>
-                            </div>
-
-                          </div>
-
-                        </div>
-
-                      </div>
-
+                    <div class="form-group">
+                      <button type="button" class="btn btn-primary px-5"data-toggle="collapse" data-target="#addAClosing" role="button" aria-expanded="false" aria-controls="addAClosing">Save</button>
+                      <button type="button" id="cancel" class="btn btn-blank" data-toggle="collapse" data-target="#addAClosing" role="button" aria-expanded="false" aria-controls="addAClosing">Cancel</button>
                     </div>
 
-                  </div>
+                    <div class="pad"></div>
+                    <p class="small"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span> Required field</p>
 
-                  <div class="pad"></div>
+                  </form>
 
-                  <div class="form-group">
-                    <button type="button" class="btn btn-primary px-5"data-toggle="collapse" data-target="#addAClosing" role="button" aria-expanded="false" aria-controls="addAClosing">Save</button>
-                    <button type="button" id="cancel" class="btn btn-blank" data-toggle="collapse" data-target="#addAClosing" role="button" aria-expanded="false" aria-controls="addAClosing">Cancel</button>
-                  </div>
-
-                  <div class="pad"></div>
-                  <p class="small"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span> Required field</p>
-
-                </form>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </div>
+                </div>
+              </div> <!-- .workbench-banner-form -->
+            </div> <!-- .collapse #addAClosing -->
+          </div> <!-- .col-12 -->
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+    </div> <!-- .workbench-banner -->
 
     <div class="workbench-main">
-    <div class="container"><div class="row"><div class="col-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 no-xs-padding">
 
-      <div class="container py-2 py-md-3 py-xl-4 workbench-status">
-        <div class="row workbench-status-content d-flex align-items-center">
-          <div class="last-refreshed text-sm">
-            <span class="last-refreshed-label">Last refreshed: </span>
-            <span class="last-refreshed-value">12/20/2019 10:23 am ET</span>
-          </div>
-          <div class="refresh pl-3 pl-sm-4">
-            <a href="#" class="d-flex align-items-center">
-              <span class="eo-icon eo-icon-refresh"></span>
-              <span class="refresh-text font-weight-semibold pl-1 pl-sm-2">Refresh</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="container workbench-table">
-        <div class="row text-light workbench-table-header">
-          <div class="workbench-table-cell col name-column d-flex justify-content-between align-items-center">
-            <span class="cell-text text-uppercase font-weight-semibold">Primary Borrower</span>
-          </div>
-          <div class="workbench-table-cell col sortable date-column d-flex justify-content-between align-items-center">
-            <span class="cell-text text-uppercase font-weight-semibold">Closing Date</span>
-            <span class="eo-icon eo-icon-sort-up d-none d-sm-block"></span>
-          </div>
-          <div class="workbench-table-cell col lender-column d-none d-xl-block">
-            <span class="cell-text text-uppercase font-weight-semibold">Lender</span>
-          </div>
-          <div class="workbench-table-cell col documents-column d-none d-lg-block">
-            <span class="cell-text text-uppercase font-weight-semibold">Documents</span>
-          </div>
-          <div class="workbench-table-cell col sortable status-column d-flex justify-content-between align-items-center">
-            <span class="cell-text text-uppercase font-weight-semibold">Status</span>
-            <span class="eo-icon eo-icon-sort-down d-none d-sm-block"></span>
-          </div>
-          <div class="workbench-table-cell col buttons-column d-none d-md-block">
-            <span class="cell-text sr-only">Action Buttons</span>
-          </div>
-        </div>
-
-        <div class="row border-bottom align-items-center workbench-table-row">
-          <div class="workbench-table-cell col name-column">
-            <div class="cell-text font-weight-semibold">
-              <span class="lastname">Rodriguez</span>, <span class="firstname">Marco</span>
-            </div>
-          </div>
-          <div class="workbench-table-cell col date-column">
-            <div class="cell-text">
-            </div>
-          </div>
-          <div class="workbench-table-cell col lender-column d-none d-xl-block">
-            <div class="cell-text">
-              <img src="../img/icon_fannie_mae_logo_small.png" alt="Fannie Mae" />
-            </div>
-          </div>
-          <div class="workbench-table-cell col documents-column d-none d-lg-block">
-            <div class="cell-text d-flex align-items-center">
-              <span class="eo-icon eo-icon-documents"></span>
-              <span class="docs pl-2">
-                <span class="docs-value font-weight-semibold">12</span>
-                <span class="docs-label">docs</span>
-              </span>
-              <span class="comma">,</span>
-              <span class="pages pl-1">
-                <span class="docs-value font-weight-semibold">103</span>
-                <span class="docs-label">pg</span>
-              </span>
-            </div>
-          </div>
-          <div class="workbench-table-cell col status-column">
-            <div class="cell-text d-flex align-items-center">
-              <span class="eo-icon eo-icon-trans-closing-in-process"></span>
-              <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
-                <span class="status-text">Closing in progress</span>
-                <div class="status-more d-none d-md-block">
-                  <a href="#" class="more-actions-toggle" id="moreActionsDropdownExample" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span>More actions</span>
+            <div class="container py-2 py-md-3 py-xl-4 workbench-status">
+              <div class="row workbench-status-content d-flex align-items-center">
+                <div class="last-refreshed text-sm">
+                  <span class="last-refreshed-label">Last refreshed: </span>
+                  <span class="last-refreshed-value">12/20/2019 10:23 am ET</span>
+                </div>
+                <div class="refresh-reminder d-none d-md-block text-smaller font-weight-semibold"><span>It’s been over 1 hour since your last refresh</span></div>
+                <div class="refresh pl-3 pl-sm-4">
+                  <a href="#" class="d-flex align-items-center">
+                    <span class="eo-icon eo-icon-refresh"></span>
+                    <span class="refresh-text font-weight-semibold pl-1 pl-sm-2">Refresh</span>
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="moreActionsDropdownExample">
-                    <a class="dropdown-item" href="#">Add closing date</a>
-                    <a class="dropdown-item add-note-trigger" data-toggle="modal" data-target="#addNoteModal" data-backdrop="static" href="#">Add note</a>
-                    <a class="dropdown-item" href="#">Remove closing</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="container workbench-table">
+              <div class="row text-light workbench-table-header">
+                <div class="workbench-table-cell col sortable name-column d-flex justify-content-between align-items-center">
+                  <span class="cell-text text-uppercase font-weight-semibold">Primary Borrower</span>
+                </div>
+                <div class="workbench-table-cell col sortable sorted date-column d-flex justify-content-between align-items-center">
+                  <span class="cell-text text-uppercase font-weight-semibold">Closing Date</span>
+                  <span class="eo-icon eo-icon-sort-up d-none d-sm-block"></span>
+                </div>
+                <div class="workbench-table-cell col sortable lender-column d-none d-xl-block">
+                  <span class="cell-text text-uppercase font-weight-semibold">Lender</span>
+                </div>
+                <div class="workbench-table-cell col documents-column d-none d-lg-block">
+                  <span class="cell-text text-uppercase font-weight-semibold">Documents</span>
+                </div>
+                <div class="workbench-table-cell col sortable sorted status-column d-flex justify-content-between align-items-center">
+                  <span class="cell-text text-uppercase font-weight-semibold">Status</span>
+                  <span class="eo-icon eo-icon-sort-down d-none d-sm-block"></span>
+                </div>
+                <div class="workbench-table-cell col buttons-column d-none d-md-block">
+                  <span class="cell-text sr-only">Action Buttons</span>
+                </div>
+              </div>
+
+              <div class="row border-bottom align-items-center workbench-table-row">
+                <div class="workbench-table-cell col name-column">
+                  <div class="cell-text font-weight-semibold">
+                    <span class="lastname">Rodriguez</span>, <span class="firstname">Marco</span>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col date-column">
+                  <div class="cell-text">
+                  </div>
+                </div>
+                <div class="workbench-table-cell col lender-column d-none d-xl-block">
+                  <div class="cell-text">
+                    <img src="../img/icon_fannie_mae_logo_small.png" alt="Fannie Mae" />
+                  </div>
+                </div>
+                <div class="workbench-table-cell col documents-column d-none d-lg-block">
+                  <div class="cell-text d-flex align-items-center">
+                    <span class="eo-icon eo-icon-documents"></span>
+                    <span class="docs pl-2">
+                      <span class="docs-value font-weight-semibold">12</span>
+                      <span class="docs-label">docs</span>
+                    </span>
+                    <span class="comma">,</span>
+                    <span class="pages pl-1">
+                      <span class="docs-value font-weight-semibold">103</span>
+                      <span class="docs-label">pg</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col status-column">
+                  <div class="cell-text d-flex align-items-center">
+                    <span class="eo-icon eo-icon-trans-closing-in-process"></span>
+                    <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
+                      <span class="status-text">Closing in progress</span>
+                      <div class="status-more d-none d-md-block">
+                        <a href="#" class="more-actions-toggle" id="moreActionsDropdownExample" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <span>More actions</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="moreActionsDropdownExample">
+                          <a class="dropdown-item" href="#">Add closing date</a>
+                          <a class="dropdown-item add-note-trigger" data-toggle="modal" data-target="#addNoteModal" data-backdrop="static" href="#">Add note</a>
+                          <a class="dropdown-item" href="#">Remove closing</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col buttons-column d-none d-md-block">
+                  <div class="cell-text">
+                    <button class="btn btn-primary btn-block">Complete closing</button>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="workbench-table-cell col buttons-column d-none d-md-block">
-            <div class="cell-text">
-              <button class="btn btn-primary btn-block">Complete closing</button>
-            </div>
-          </div>
-        </div>
 
-        <div class="row border-bottom align-items-center workbench-table-row">
-          <div class="workbench-table-cell col name-column">
-            <div class="cell-text font-weight-semibold">
-              <span class="last">Nguyen</span>, <span class="first">Naomi</span>
-            </div>
-          </div>
-          <div class="workbench-table-cell col date-column">
-            <div class="cell-text">
-              <span class="date font-weight-semibold pr-sm-1">12/11/2019</span>
-              <span class="time d-block d-sm-inline">8:00 am ET</span>
-            </div>
-          </div>
-          <div class="workbench-table-cell col lender-column d-none d-xl-block">
-            <div class="cell-text">
-              <img src="../img/icon_fairway_logo_small.png" alt="Fairway" />
-            </div>
-          </div>
-          <div class="workbench-table-cell col documents-column d-none d-lg-block">
-            <div class="cell-text d-flex align-items-center">
-              <span class="eo-icon eo-icon-documents"></span>
-              <span class="docs pl-2">
-                <span class="docs-value font-weight-semibold">8</span>
-                <span class="docs-label">docs</span>
-              </span>
-              <span class="comma">,</span>
-              <span class="pages pl-1">
-                <span class="docs-value font-weight-semibold">76</span>
-                <span class="docs-label">pg</span>
-              </span>
-              <span class="msg ml-auto">
-                <span class="eo-icon eo-icon-note-green"></span>
-                <span class="num-msgs">2</span>
-              </span>
-            </div>
-          </div>
-          <div class="workbench-table-cell col status-column">
-            <div class="cell-text d-flex align-items-center">
-              <span class="eo-icon eo-icon-trans-closing-completed"></span>
-              <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
-                <span class="status-text">Closing completed</span>
-              </div>
-            </div>
-          </div>
-          <div class="workbench-table-cell col buttons-column d-none d-md-block">
-            <div class="cell-text">
-              <button class="btn btn-secondary btn-block">Finish</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="row border-bottom align-items-center workbench-table-row">
-          <div class="workbench-table-cell col name-column">
-            <div class="cell-text font-weight-semibold">
-              <span class="last">Fredrick</span>, <span class="first">Warren</span>
-            </div>
-          </div>
-          <div class="workbench-table-cell col date-column">
-            <div class="cell-text">
-              <span class="date font-weight-semibold pr-sm-1">12/12/2019</span>
-              <span class="time d-block d-sm-inline">9:00 am ET</span>
-            </div>
-          </div>
-          <div class="workbench-table-cell col lender-column d-none d-xl-block">
-            <div class="cell-text">
-              <img src="../img/icon_bank_of_america.png" alt="Bank of America" />
-            </div>
-          </div>
-          <div class="workbench-table-cell col documents-column d-none d-lg-block">
-            <div class="cell-text d-flex align-items-center">
-              <span class="eo-icon eo-icon-documents-updated" data-toggle="tooltip" title="Updated docs retrieved at 9:15am ET 12/20/2019"></span>
-              <span class="docs pl-2">
-                <span class="docs-value font-weight-semibold">15</span>
-                <span class="docs-label">docs</span>
-              </span>
-              <span class="comma">,</span>
-              <span class="pages pl-1">
-                <span class="docs-value font-weight-semibold">99</span>
-                <span class="docs-label">pg</span>
-              </span>
-            </div>
-          </div>
-          <div class="workbench-table-cell col status-column">
-            <div class="cell-text d-flex align-items-center">
-              <span class="eo-icon eo-icon-trans-lender"></span>
-              <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
-                <span class="status-text">Lender review</span>
-                <div class="status-more d-none d-md-block">
-                  <a href="#">More actions</a>
-                  <span class="eo-icon eo-icon-menu-arrow-down-green"></span>
+              <div class="row border-bottom align-items-center workbench-table-row">
+                <div class="workbench-table-cell col name-column">
+                  <div class="cell-text font-weight-semibold">
+                    <span class="last">Nguyen</span>, <span class="first">Naomi</span>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col date-column">
+                  <div class="cell-text">
+                    <span class="date font-weight-semibold pr-sm-1">12/11/2019</span>
+                    <span class="time d-block d-sm-inline">8:00 am ET</span>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col lender-column d-none d-xl-block">
+                  <div class="cell-text">
+                    <img src="../img/icon_fairway_logo_small.png" alt="Fairway" />
+                  </div>
+                </div>
+                <div class="workbench-table-cell col documents-column d-none d-lg-block">
+                  <div class="cell-text d-flex align-items-center">
+                    <span class="eo-icon eo-icon-documents"></span>
+                    <span class="docs pl-2">
+                      <span class="docs-value font-weight-semibold">8</span>
+                      <span class="docs-label">docs</span>
+                    </span>
+                    <span class="comma">,</span>
+                    <span class="pages pl-1">
+                      <span class="docs-value font-weight-semibold">76</span>
+                      <span class="docs-label">pg</span>
+                    </span>
+                    <span class="notes ml-auto" data-toggle="popover">
+                      <span class="eo-icon eo-icon-note-green"></span>
+                      <span class="num-notes">2</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col status-column">
+                  <div class="cell-text d-flex align-items-center">
+                    <span class="eo-icon eo-icon-trans-closing-completed"></span>
+                    <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
+                      <span class="status-text">Closing completed</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col buttons-column d-none d-md-block">
+                  <div class="cell-text">
+                    <button class="btn btn-secondary btn-block">Finish</button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="workbench-table-cell col buttons-column d-none d-md-block">
-            <div class="cell-text">
-            </div>
-          </div>
-        </div>
 
-        <div class="row border-bottom align-items-center workbench-table-row">
-          <div class="workbench-table-cell col name-column">
-            <div class="cell-text font-weight-semibold">
-              <span class="last">Shields</span>, <span class="first">Jonathan</span>
-            </div>
-          </div>
-          <div class="workbench-table-cell col date-column">
-            <div class="cell-text">
-              <span class="date font-weight-semibold pr-sm-1">12/14/2019</span>
-              <span class="time d-block d-sm-inline">4:30 pm ET</span>
-            </div>
-          </div>
-          <div class="workbench-table-cell col lender-column d-none d-xl-block">
-            <div class="cell-text">
-              <img src="../img/icon_bank_of_america.png" alt="Bank of America" />
-            </div>
-          </div>
-          <div class="workbench-table-cell col documents-column d-none d-lg-block">
-            <div class="cell-text d-flex align-items-center">
-              <span class="eo-icon eo-icon-documents-updated" data-toggle="tooltip" title="Updated docs retrieved at 9:15am ET 12/20/2019"></span>
-              <span class="docs pl-2">
-                <span class="docs-value font-weight-semibold">13</span>
-                <span class="docs-label">docs</span>
-              </span>
-              <span class="comma">,</span>
-              <span class="pages pl-1">
-                <span class="docs-value font-weight-semibold">106</span>
-                <span class="docs-label">pg</span>
-              </span>
-            </div>
-          </div>
-          <div class="workbench-table-cell col status-column">
-            <div class="cell-text d-flex align-items-center">
-              <span class="eo-icon eo-icon-trans-ready-to-close"></span>
-              <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
-                <span class="status-text">Ready to close</span>
-                <div class="status-more d-none d-md-block">
-                  <a href="#">More actions</a>
-                  <span class="eo-icon eo-icon-menu-arrow-down-green"></span>
+              <div class="row border-bottom align-items-center workbench-table-row">
+                <div class="workbench-table-cell col name-column">
+                  <div class="cell-text font-weight-semibold">
+                    <span class="last">Fredrick</span>, <span class="first">Warren</span>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col date-column">
+                  <div class="cell-text">
+                    <span class="date font-weight-semibold pr-sm-1">12/12/2019</span>
+                    <span class="time d-block d-sm-inline">9:00 am ET</span>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col lender-column d-none d-xl-block">
+                  <div class="cell-text">
+                    <img src="../img/icon_bank_of_america.png" alt="Bank of America" />
+                  </div>
+                </div>
+                <div class="workbench-table-cell col documents-column d-none d-lg-block">
+                  <div class="cell-text d-flex align-items-center">
+                    <span class="eo-icon eo-icon-documents-updated" data-toggle="tooltip" title="Updated docs retrieved at 9:15am ET 12/20/2019"></span>
+                    <span class="docs pl-2">
+                      <span class="docs-value font-weight-semibold">15</span>
+                      <span class="docs-label">docs</span>
+                    </span>
+                    <span class="comma">,</span>
+                    <span class="pages pl-1">
+                      <span class="docs-value font-weight-semibold">99</span>
+                      <span class="docs-label">pg</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col status-column">
+                  <div class="cell-text d-flex align-items-center">
+                    <span class="eo-icon eo-icon-trans-lender"></span>
+                    <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
+                      <span class="status-text">Lender review</span>
+                      <div class="status-more d-none d-md-block">
+                        <a href="#">More actions</a>
+                        <span class="eo-icon eo-icon-menu-arrow-down-green"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col buttons-column d-none d-md-block">
+                  <div class="cell-text">
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="workbench-table-cell col buttons-column d-none d-md-block">
-            <div class="cell-text">
-              <button class="btn btn-primary btn-block">Start closing</button>
-            </div>
-          </div>
-        </div>
 
-        <div class="row border-bottom align-items-center workbench-table-row">
-          <div class="workbench-table-cell col name-column">
-            <div class="cell-text font-weight-semibold">
-              <span class="last">Lu</span>, <span class="first">Florence</span>
-            </div>
-          </div>
-          <div class="workbench-table-cell col date-column">
-            <div class="cell-text">
-              <span class="date font-weight-semibold pr-sm-1">12/15/2019</span>
-              <span class="time d-block d-sm-inline">8:30 am ET</span>
-            </div>
-          </div>
-          <div class="workbench-table-cell col lender-column d-none d-xl-block">
-            <div class="cell-text">
-              <img src="../img/icon_roundpoint_logo_small.png" alt="Roundpoint" />
-            </div>
-          </div>
-          <div class="workbench-table-cell col documents-column d-none d-lg-block">
-          </div>
-          <div class="workbench-table-cell col status-column">
-            <div class="cell-text d-flex align-items-center">
-              <span class="eo-icon eo-icon-trans-withdrawn"></span>
-              <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
-                <span class="status-text">Withdrawn</span>
-              </div>
-            </div>
-          </div>
-          <div class="workbench-table-cell col buttons-column d-none d-md-block">
-            <div class="cell-text">
-              <button class="btn btn-secondary btn-block remove-closing-trigger" data-toggle="popover"><span data-toggle="tooltip" title="Remove this from your list because the signing will not be done electronically.">Remove closing</span></button>
-            </div>
-          </div>
-        </div>
-
-        <div class="row border-bottom align-items-center workbench-table-row">
-          <div class="workbench-table-cell col name-column">
-            <div class="cell-text font-weight-semibold">
-              <span class="last">Von dem Knesbeck - Robertson</span>, <span class="first">Hannah</span>
-            </div>
-          </div>
-          <div class="workbench-table-cell col date-column">
-            <div class="cell-text">
-              <span class="date font-weight-semibold pr-sm-1">12/15/2019</span>
-              <span class="time d-block d-sm-inline">1:30 pm ET</span>
-            </div>
-          </div>
-          <div class="workbench-table-cell col lender-column d-none d-xl-block">
-            <div class="cell-text">
-              <img src="../img/icon_lender_logo_white_bgd.png" alt="Fairway with white background TEST" />
-            </div>
-          </div>
-          <div class="workbench-table-cell col documents-column d-none d-lg-block">
-            <div class="cell-text d-flex align-items-center">
-              <span class="eo-icon eo-icon-documents"></span>
-              <span class="docs pl-2">
-                <span class="docs-value font-weight-semibold">10</span>
-                <span class="docs-label">docs</span>
-              </span>
-              <span class="comma">,</span>
-              <span class="pages pl-1">
-                <span class="docs-value font-weight-semibold">54</span>
-                <span class="docs-label">pg</span>
-              </span>
-            </div>
-          </div>
-          <div class="workbench-table-cell col status-column">
-            <div class="cell-text d-flex align-items-center">
-              <span class="eo-icon eo-icon-trans-void"></span>
-              <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
-                <span class="status-text">Void</span>
-              </div>
-            </div>
-          </div>
-          <div class="workbench-table-cell col buttons-column d-none d-md-block">
-            <div class="cell-text">
-              <button class="btn btn-secondary btn-block">Remove closing</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="row border-bottom align-items-center workbench-table-row">
-          <div class="workbench-table-cell col name-column">
-            <div class="cell-text font-weight-semibold">
-              <span class="last">Sorrenson</span>, <span class="first">Alecia</span>
-            </div>
-          </div>
-          <div class="workbench-table-cell col date-column">
-            <div class="cell-text">
-              <span class="date font-weight-semibold pr-sm-1">12/16/2019</span>
-              <span class="time d-block d-sm-inline">8:30 am ET</span>
-            </div>
-          </div>
-          <div class="workbench-table-cell col lender-column d-none d-xl-block">
-            <div class="cell-text">
-              <img src="../img/icon_fannie_mae_logo_small.png" alt="Fannie Mae" />
-            </div>
-          </div>
-          <div class="workbench-table-cell col documents-column d-none d-lg-block">
-            <div class="cell-text d-flex align-items-center">
-              <span class="eo-icon eo-icon-documents"></span>
-              <span class="docs pl-2">
-                <span class="docs-value font-weight-semibold">15</span>
-                <span class="docs-label">docs</span>
-              </span>
-              <span class="comma">,</span>
-              <span class="pages pl-1">
-                <span class="docs-value font-weight-semibold">99</span>
-                <span class="docs-label">pg</span>
-              </span>
-            </div>
-          </div>
-          <div class="workbench-table-cell col status-column">
-            <div class="cell-text d-flex align-items-center">
-              <span class="eo-icon eo-icon-trans-ready-to-close"></span>
-              <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
-                <span class="status-text">Ready to close</span>
-                <div class="status-more d-none d-md-block">
-                  <a href="#">More actions</a>
-                  <span class="eo-icon eo-icon-menu-arrow-down-green"></span>
+              <div class="row border-bottom align-items-center workbench-table-row">
+                <div class="workbench-table-cell col name-column">
+                  <div class="cell-text font-weight-semibold">
+                    <span class="last">Shields</span>, <span class="first">Jonathan</span>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col date-column">
+                  <div class="cell-text">
+                    <span class="date font-weight-semibold pr-sm-1">12/14/2019</span>
+                    <span class="time d-block d-sm-inline">4:30 pm ET</span>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col lender-column d-none d-xl-block">
+                  <div class="cell-text">
+                    <img src="../img/icon_bank_of_america.png" alt="Bank of America" />
+                  </div>
+                </div>
+                <div class="workbench-table-cell col documents-column d-none d-lg-block">
+                  <div class="cell-text d-flex align-items-center">
+                    <span class="eo-icon eo-icon-documents-updated" data-toggle="tooltip" title="Updated docs retrieved at 9:15am ET 12/20/2019"></span>
+                    <span class="docs pl-2">
+                      <span class="docs-value font-weight-semibold">13</span>
+                      <span class="docs-label">docs</span>
+                    </span>
+                    <span class="comma">,</span>
+                    <span class="pages pl-1">
+                      <span class="docs-value font-weight-semibold">106</span>
+                      <span class="docs-label">pg</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col status-column">
+                  <div class="cell-text d-flex align-items-center">
+                    <span class="eo-icon eo-icon-trans-ready-to-close"></span>
+                    <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
+                      <span class="status-text">Ready to close</span>
+                      <div class="status-more d-none d-md-block">
+                        <a href="#">More actions</a>
+                        <span class="eo-icon eo-icon-menu-arrow-down-green"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col buttons-column d-none d-md-block">
+                  <div class="cell-text">
+                    <button class="btn btn-primary btn-block">Start closing</button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="workbench-table-cell col buttons-column d-none d-md-block">
-            <div class="cell-text">
-              <button class="btn btn-primary btn-block">Start closing</button>
-            </div>
-          </div>
-        </div>
 
-      </div>
-  </div></div></div>
-  </div>
+              <div class="row border-bottom align-items-center workbench-table-row">
+                <div class="workbench-table-cell col name-column">
+                  <div class="cell-text font-weight-semibold">
+                    <span class="last">Lu</span>, <span class="first">Florence</span>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col date-column">
+                  <div class="cell-text">
+                    <span class="date font-weight-semibold pr-sm-1">12/15/2019</span>
+                    <span class="time d-block d-sm-inline">8:30 am ET</span>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col lender-column d-none d-xl-block">
+                  <div class="cell-text">
+                    <img src="../img/icon_roundpoint_logo_small.png" alt="Roundpoint" />
+                  </div>
+                </div>
+                <div class="workbench-table-cell col documents-column d-none d-lg-block">
+                </div>
+                <div class="workbench-table-cell col status-column">
+                  <div class="cell-text d-flex align-items-center">
+                    <span class="eo-icon eo-icon-trans-withdrawn"></span>
+                    <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
+                      <span class="status-text">Withdrawn</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col buttons-column d-none d-md-block">
+                  <div class="cell-text">
+                    <button class="btn btn-secondary btn-block remove-closing-trigger" data-toggle="modal" data-target="#removeClosingModal" data-backdrop="static"><span data-toggle="tooltip" title="Remove this from your list because the signing will not be done electronically.">Remove closing</span></button>
+                  </div>
+                </div>
+              </div>
 
+              <div class="row border-bottom align-items-center workbench-table-row">
+                <div class="workbench-table-cell col name-column">
+                  <div class="cell-text font-weight-semibold">
+                    <span class="last">Von dem Knesbeck - Robertson</span>, <span class="first">Hannah</span>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col date-column">
+                  <div class="cell-text">
+                    <span class="date font-weight-semibold pr-sm-1">12/15/2019</span>
+                    <span class="time d-block d-sm-inline">1:30 pm ET</span>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col lender-column d-none d-xl-block">
+                  <div class="cell-text">
+                    <img src="../img/icon_lender_logo_white_bgd.png" alt="Fairway with white background TEST" />
+                  </div>
+                </div>
+                <div class="workbench-table-cell col documents-column d-none d-lg-block">
+                  <div class="cell-text d-flex align-items-center">
+                    <span class="eo-icon eo-icon-documents"></span>
+                    <span class="docs pl-2">
+                      <span class="docs-value font-weight-semibold">10</span>
+                      <span class="docs-label">docs</span>
+                    </span>
+                    <span class="comma">,</span>
+                    <span class="pages pl-1">
+                      <span class="docs-value font-weight-semibold">54</span>
+                      <span class="docs-label">pg</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col status-column">
+                  <div class="cell-text d-flex align-items-center">
+                    <span class="eo-icon eo-icon-trans-void"></span>
+                    <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
+                      <span class="status-text">Void</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col buttons-column d-none d-md-block">
+                  <div class="cell-text">
+                    <button class="btn btn-secondary btn-block">Remove closing</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row border-bottom align-items-center workbench-table-row">
+                <div class="workbench-table-cell col name-column">
+                  <div class="cell-text font-weight-semibold">
+                    <span class="last">Sorrenson</span>, <span class="first">Alecia</span>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col date-column">
+                  <div class="cell-text">
+                    <span class="date font-weight-semibold pr-sm-1">12/16/2019</span>
+                    <span class="time d-block d-sm-inline">8:30 am ET</span>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col lender-column d-none d-xl-block">
+                  <div class="cell-text">
+                    <img src="../img/icon_fannie_mae_logo_small.png" alt="Fannie Mae" />
+                  </div>
+                </div>
+                <div class="workbench-table-cell col documents-column d-none d-lg-block">
+                  <div class="cell-text d-flex align-items-center">
+                    <span class="eo-icon eo-icon-documents"></span>
+                    <span class="docs pl-2">
+                      <span class="docs-value font-weight-semibold">15</span>
+                      <span class="docs-label">docs</span>
+                    </span>
+                    <span class="comma">,</span>
+                    <span class="pages pl-1">
+                      <span class="docs-value font-weight-semibold">99</span>
+                      <span class="docs-label">pg</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col status-column">
+                  <div class="cell-text d-flex align-items-center">
+                    <span class="eo-icon eo-icon-trans-ready-to-close"></span>
+                    <div class="pl-1 pl-sm-3 d-flex flex-column justify-content-center font-weight-semibold">
+                      <span class="status-text">Ready to close</span>
+                      <div class="status-more d-none d-md-block">
+                        <a href="#">More actions</a>
+                        <span class="eo-icon eo-icon-menu-arrow-down-green"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="workbench-table-cell col buttons-column d-none d-md-block">
+                  <div class="cell-text">
+                    <button class="btn btn-primary btn-block">Start closing</button>
+                  </div>
+                </div>
+              </div>
+
+            </div> <!-- .workbench-table -->
+
+          </div> <!-- .col-12 -->
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+    </div> <!-- .workbench-main -->
+
+  </div> <!-- .main-content -->
+
+  <!-- Add Note Modal TODO: move to separate partial - same as version on detail page -->
   <div class="modal fade" id="addNoteModal" role="dialog" aria-labelledby="addNoteTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <span class="eo-icon eo-icon-add-note-dark-gray"></span>
-          <span class="modal-title pl-2 font-weight-semibold" id="addNoteTitle">Add internal note</span>
+          <span class="eo-icon eo-icon-add-note-dark-gray mr-2"></span>
+          <span class="modal-title font-weight-semibold" id="addNoteTitle">Add internal note</span>
         </div>
         <div class="modal-body">
 
@@ -612,9 +621,29 @@
     </div>
   </div>
 
+  <div class="modal fade" id="removeClosingModal" role="dialog" aria-labelled-by="removeClosingTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-title font-weight-semibold" id="removeClosingTitle">Remove closing</span>
+        </div>
+        <div class="modal-body">
+          <div class="row row-no-padding remove-closing-text">
+            <p class="font-weight-semibold">Are you sure you want to remove the closing from your list?</p>
+            <p class="text-smaller">Once you remove it, the lender will have to send you a new request before you can add it again.</p>
+          </div>
+          <div class="row row-no-padding mb-2">
+            <button type="submit" id="removeClosing" class="btn btn-primary px-5">Yes, remove</button>
+            <button type="button" id="cancelRemoveClosing" class="btn btn-blank" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/js/tempusdominus-bootstrap-4.min.js"></script>
@@ -646,7 +675,6 @@
           .toggleClass('d-none');
       });
 
-    // DOCUMENTATION: https://tempusdominus.github.io/bootstrap-4/
     $('#closingDatePicker').datetimepicker({
       allowMultidate: true,
       multidateSeparator: ',',
@@ -660,17 +688,13 @@
       minDate: moment(new Date(), 'MM-DD-YYYY')
     });
 
-    $('.remove-closing-trigger')
-    .popover({
+    // this might be better triggered by an id selector when there are multiple notes and the data is dynamic
+    $('.notes').popover({
+      container: $('.notes'),
+      trigger: 'hover',
+      placement: 'top',
       html: true,
-      title: 'Remove closing',
-      template: '<div class="popover" role="tooltip"><div class="popover-header font-weight-semibold"></div><div class="popover-body"></div></div>',
-      content: '<div class="popover-text mb-3">Are you sure you want to remove this closing?</div><div class="row row-no-padding"><button id="removeClosing" class="btn btn-primary px-5">Save</button><button type="button" id="cancelRemoveClosing" class="btn btn-blank cancel-button">Cancel</button></div>'
-    })
-    .on('inserted.bs.popover', function() {
-      $('.popover .cancel-button').click(function(e) {
-        $('.remove-closing-trigger').popover('hide');
-      });
+      content: '<div class="d-flex flex-column justify-space-between"><div class="note-content d-flex pb-1"><span class="eo-icon eo-icon-note-dk-gray flex-shrink-0"></span><div class="pl-2"><div class="note-heading"><span class="note-author font-weight-semibold">Debbie Johnson</span><span class="comma">,</span><span class="note-datetime pl-1">12/12/2018 2:23pm</span></div><div class="note-main py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum.</div></div></div><div class="note-footer"><a class="all-notes-link font-weight-semibold" href="#">See all notes</a></div></div>'
     });
 
 
@@ -685,6 +709,23 @@
     })
     .on('hide.bs.modal', function(e) {
       $('.workbench-table-row').removeClass('hover');
+    });
+
+    $('#removeClosingModal')
+    .on('show.bs.modal', function(e) {
+      var link = $(e.relatedTarget);
+      var row = link.parents('.workbench-table-row');
+      row.addClass('hover');
+
+      $('#removeClosing').click(function() {
+        row.slideUp(1000, function(){$(this).remove();});
+        $('#removeClosingModal').modal('hide');
+      });
+
+      $('#cancelRemoveClosing').click(function() {
+        $('.workbench-table-row').removeClass('hover');
+      });
+
     });
 
 
