@@ -1990,6 +1990,48 @@ table.table.table-sm {
     .signing-summary-inner {
       min-height: 300px;
     }
+
+    .signing-summary-table {
+
+      th,
+      td {
+        padding: 1rem 1.5rem;
+      }
+
+      thead {
+        background: #eff2f3;
+
+        th {
+          text-transform: uppercase;
+          font-weight: $font-weight-semibold;
+          font-size: $font-size-sm;
+          line-height: 13px;
+          color: #5a5e5a;
+          border-top: 0;
+          border-bottom: 0;
+        }
+      }
+
+      tbody {
+
+        th,
+        td {
+          font-size: $font-size-smaller;
+          line-height: 19px;
+        }
+
+        tr:first-child {
+          th,
+          td {
+            border-top: 0;
+          }
+        }
+
+        th {
+          font-weight: $font-weight-semibold;
+        }
+      }
+    }
   }
 }
 
