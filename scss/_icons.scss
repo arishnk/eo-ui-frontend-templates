@@ -165,7 +165,7 @@
   &.eo-icon-sign-out { @include icon-versions(21px, 21px, "../img/icon_sign_out.svg"); }
   &.eo-icon-sign-out-hover-select { @include icon-versions(21px, 21px, "../img/icon_sign_out_hover_select.svg"); }
   &.eo-icon-signature-required { @include icon-versions(27px, 22px, "../img/icon_signature_required.svg"); }
-  &.eo-icon-signing-summary-icon-alert { @include icon-versions(32px, 22px, "../img/icon_signing_summary_icon_alert.svg"); } }
+  &.eo-icon-signing-summary-icon-alert { @include icon-versions(32px, 22px, "../img/icon_signing_summary_icon_alert.svg"); }
   &.eo-icon-signing-summary-icon-status-partially-signed { @include icon-versions(32px, 22px, "../img/icon_signing_summary_icon_status_partially_signed.svg"); }
   &.eo-icon-signing-summary-icon-status-signed { @include icon-versions(32px, 22px, "../img/icon_signing_summary_icon_status_signed.svg"); }
   &.eo-icon-signing-summary-icon-viewed { @include icon-versions(32px, 22px, "../img/icon_signing_summary_icon_viewed.svg"); }

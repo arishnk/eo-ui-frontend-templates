@@ -12113,36 +12113,6 @@ a.text-dark:hover, a.text-dark:focus {
   height: 33px;
 }
 
-.eo-icon.eo-icon-signing-summary-icon-not-viewed {
-  width: 32px;
-  height: 22px;
-  background-image: url("../img/icon_signing_summary_icon_not_viewed.svg");
-  background-size: cover;
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-.eo-icon.eo-icon-signing-summary-icon-not-viewed.eo-icon-xs {
-  width: 8px;
-  height: 5.5px;
-}
-
-.eo-icon.eo-icon-signing-summary-icon-not-viewed.eo-icon-sm {
-  width: 16px;
-  height: 11px;
-}
-
-.eo-icon.eo-icon-signing-summary-icon-not-viewed.eo-icon-lg {
-  width: 40px;
-  height: 27.5px;
-}
-
-.eo-icon.eo-icon-signing-summary-icon-not-viewed.eo-icon-xl {
-  width: 48px;
-  height: 33px;
-}
-
 .eo-icon.eo-icon-signing-summary-icon-status-partially-signed {
   width: 32px;
   height: 22px;
