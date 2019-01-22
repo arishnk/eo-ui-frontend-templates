@@ -125,6 +125,7 @@ body {
     border-right: none;
     border-bottom: 2px solid #81c241;
     padding: 0;
+    background-color: #fff !important;
 
     .row {
       width: 100%;
@@ -820,6 +821,11 @@ h6.reserve-two-lines {
       background-image: url("../img/icon_orange_x_large.svg");
     }
 
+  }
+
+  &.list-checks-less-space li {
+    min-height: unset;
+    margin-bottom: 10px;
   }
 
 }
@@ -1971,6 +1977,10 @@ table.table.table-sm {
 
   .righthand-name-menu {
 
+    @include media-breakpoint-up(sm) {
+      width: 100px;
+    }
+
     @include media-breakpoint-up(lg) {
       width: 157px;
     }
@@ -2028,6 +2038,24 @@ table.table.table-sm {
 
   .dropdown-toggle::after {
     display: none;
+  }
+
+}
+
+@include media-breakpoint-down(sm) {
+
+  .eo-icon.eo-icon-closing-large.mobile-adjust {
+    width: 36.5px;
+    height: 31px;
+  }
+
+}
+
+@include media-breakpoint-only(xs) {
+
+  .px-xs-0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 
 }
