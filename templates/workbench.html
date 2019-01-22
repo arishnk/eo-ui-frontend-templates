@@ -17,30 +17,68 @@
 </head>
 
 <body class="has-footer">
+
   <div class="main-content pb-0">
-    <!--<nav class="navbar navbar-light bg-light justify-content-between">
-      <div class="navbar-brand" href="#">
-        <img src="../img/icon_header_eoriginal_logo.svg" width="157" height="30" alt="Bank of America" />
-        <span class="sr-only">Bank of America</span>
+
+    <nav class="navbar navbar-light navbar-expand-xl bg-light border-0">
+      <div class="container px-4">
+        <div class="navbar-brand workbench-brand" href="#">
+          <img src="../img/icon_header_eoriginal_logo.svg" width="100%" height="auto" alt="Bank of America" />
+          <span class="sr-only">Bank of America</span>
+        </div>
+        <div class="product-name-image workbench-product-name-image">
+          <img src="../img/product_name_closing_center.svg" width="100%" height="auto" alt="Closing Center" />
+        </div>
+        <div class="righthand-name-menu flex-column align-items-end" id="menuUsername">
+          <div class="header-name d-none d-xl-block text-right">John Smith</div>
+          <div class="header-hamburger d-xl-none text-right">
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="d-none d-sm-inline">Menu</span>
+                <span class="eo-icon eo-icon-header-menu ml-1"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">My closings</a>
+                <a class="dropdown-item" href="#">View/edit profile</a>
+                <a class="dropdown-item" href="#">Change password</a>
+                <a class="dropdown-item" href="#">Sign out</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="product-name-image">
-        <img src="../img/product_name_closing_center.svg" width="208" height="31" alt="Closing Center" />
-      </div>
-      <div class="righthand-name-menu d-flex flex-column justify-content-between">
-        <div class="header-name">John Smith</div>
-        <ul class="header-menu">
-          <li>
-            <a href="#" class="menu-item" id="closings">My Closings</a>
+    </nav>
+
+    <nav class="navbar navbar-light bg-light d-none d-xl-flex">
+      <div class="container px-4 d-none d-xl-flex justify-content-end">
+        <ul class="header-menu list-inline mb-2" id="menuLinks">
+          <li class="list-inline-item">
+            <a href="#" class="menu-item" id="closings">
+              <span class="eo-icon eo-icon-my-closings-small"></span>
+              My closings
+            </a>
           </li>
-          <li>
-            <a href="#" class="menu-item dropdown-toggle" id="account">My Account</a>
+          <li class="list-inline-item text-md">
+            <div class="dropdown">
+              <a class="dropdown-toggle" href="#" role="button" id="myAccountDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="eo-icon eo-icon-my-account"></span>
+                My account
+              </a>
+              <div class="dropdown-menu" aria-labelledby="myAccountDropdown">
+                <a class="dropdown-item" href="#">View/edit profile</a>
+                <a class="dropdown-item" href="#">Change password</a>
+              </div>
+            </div>
           </li>
-          <li>
-            <a href="#" class="menu-item" id="signout">Sign Out</a>
+          <li class="list-inline-item">
+            <a href="#" class="menu-item" id="signout">
+              <span class="eo-icon eo-icon-sign-out"></span>
+              Sign out
+            </a>
           </li>
         </ul>
       </div>
-    </nav> -->
+    </nav>
 
     <div class="workbench-banner bg-primary">
       <div class="container">
@@ -52,7 +90,7 @@
             <div class="workbench-banner-middle d-none d-md-block">
               <span class="eo-icon eo-icon-closing-medium"></span>
             </div>
-            <div class="workbench-banner-right">
+            <div class="workbench-banner-right text-right">
               <a class="workbench-banner-right-text" data-toggle="collapse" href="#addAClosing" role="button" aria-expanded="false" aria-controls="addAClosing"><span class="eo-icon eo-icon-add"></span></a>
               <a class="workbench-banner-right-text" data-toggle="collapse" href="#addAClosing" role="button" aria-expanded="false" aria-controls="addAClosing">
                 <span>Add closing</span>

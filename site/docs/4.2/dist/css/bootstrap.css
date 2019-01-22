@@ -11843,6 +11843,216 @@ a.text-dark:hover, a.text-dark:focus {
   height: 22.5px;
 }
 
+.eo-icon.eo-icon-header-menu {
+  width: 18px;
+  height: 12px;
+  background-image: url("../img/icon_header_menu.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-header-menu.eo-icon-xs {
+  width: 4.5px;
+  height: 3px;
+}
+
+.eo-icon.eo-icon-header-menu.eo-icon-sm {
+  width: 9px;
+  height: 6px;
+}
+
+.eo-icon.eo-icon-header-menu.eo-icon-lg {
+  width: 22.5px;
+  height: 15px;
+}
+
+.eo-icon.eo-icon-header-menu.eo-icon-xl {
+  width: 27px;
+  height: 18px;
+}
+
+.eo-icon.eo-icon-my-account {
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/icon_my_account.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-my-account.eo-icon-xs {
+  width: 5.25px;
+  height: 5.25px;
+}
+
+.eo-icon.eo-icon-my-account.eo-icon-sm {
+  width: 10.5px;
+  height: 10.5px;
+}
+
+.eo-icon.eo-icon-my-account.eo-icon-lg {
+  width: 26.25px;
+  height: 26.25px;
+}
+
+.eo-icon.eo-icon-my-account.eo-icon-xl {
+  width: 31.5px;
+  height: 31.5px;
+}
+
+.eo-icon.eo-icon-my-account-hover-select {
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/icon_my_account_hover_select.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-my-account-hover-select.eo-icon-xs {
+  width: 5.25px;
+  height: 5.25px;
+}
+
+.eo-icon.eo-icon-my-account-hover-select.eo-icon-sm {
+  width: 10.5px;
+  height: 10.5px;
+}
+
+.eo-icon.eo-icon-my-account-hover-select.eo-icon-lg {
+  width: 26.25px;
+  height: 26.25px;
+}
+
+.eo-icon.eo-icon-my-account-hover-select.eo-icon-xl {
+  width: 31.5px;
+  height: 31.5px;
+}
+
+.eo-icon.eo-icon-my-closings-small {
+  width: 29px;
+  height: 26px;
+  background-image: url("../img/icon_my_closings_small.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-my-closings-small.eo-icon-xs {
+  width: 7.25px;
+  height: 6.5px;
+}
+
+.eo-icon.eo-icon-my-closings-small.eo-icon-sm {
+  width: 14.5px;
+  height: 13px;
+}
+
+.eo-icon.eo-icon-my-closings-small.eo-icon-lg {
+  width: 36.25px;
+  height: 32.5px;
+}
+
+.eo-icon.eo-icon-my-closings-small.eo-icon-xl {
+  width: 43.5px;
+  height: 39px;
+}
+
+.eo-icon.eo-icon-my-closings-small-hover-select {
+  width: 29px;
+  height: 26px;
+  background-image: url("../img/icon_my_closings_small_hover_select.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-my-closings-small-hover-select.eo-icon-xs {
+  width: 7.25px;
+  height: 6.5px;
+}
+
+.eo-icon.eo-icon-my-closings-small-hover-select.eo-icon-sm {
+  width: 14.5px;
+  height: 13px;
+}
+
+.eo-icon.eo-icon-my-closings-small-hover-select.eo-icon-lg {
+  width: 36.25px;
+  height: 32.5px;
+}
+
+.eo-icon.eo-icon-my-closings-small-hover-select.eo-icon-xl {
+  width: 43.5px;
+  height: 39px;
+}
+
+.eo-icon.eo-icon-sign-out {
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/icon_sign_out.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-sign-out.eo-icon-xs {
+  width: 5.25px;
+  height: 5.25px;
+}
+
+.eo-icon.eo-icon-sign-out.eo-icon-sm {
+  width: 10.5px;
+  height: 10.5px;
+}
+
+.eo-icon.eo-icon-sign-out.eo-icon-lg {
+  width: 26.25px;
+  height: 26.25px;
+}
+
+.eo-icon.eo-icon-sign-out.eo-icon-xl {
+  width: 31.5px;
+  height: 31.5px;
+}
+
+.eo-icon.eo-icon-sign-out-hover-select {
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/icon_sign_out_hover_select.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-sign-out-hover-select.eo-icon-xs {
+  width: 5.25px;
+  height: 5.25px;
+}
+
+.eo-icon.eo-icon-sign-out-hover-select.eo-icon-sm {
+  width: 10.5px;
+  height: 10.5px;
+}
+
+.eo-icon.eo-icon-sign-out-hover-select.eo-icon-lg {
+  width: 26.25px;
+  height: 26.25px;
+}
+
+.eo-icon.eo-icon-sign-out-hover-select.eo-icon-xl {
+  width: 31.5px;
+  height: 31.5px;
+}
+
 a:hover .eo-icon.eo-icon-half-opacity,
 button:hover .eo-icon.eo-icon-half-opacity,
 a:focus .eo-icon.eo-icon-half-opacity,
@@ -12237,11 +12447,15 @@ a.form-control-feedback:hover {
   border-radius: 9px;
 }
 
+.header-menu .dropdown-menu,
+.header-hamburger .dropdown-menu,
 .workbench-table-cell .dropdown-menu {
   border-radius: 3px;
   padding: 2px 0;
 }
 
+.header-menu .dropdown-menu .dropdown-item,
+.header-hamburger .dropdown-menu .dropdown-item,
 .workbench-table-cell .dropdown-menu .dropdown-item {
   font-size: 0.8125rem;
   line-height: 16px;
@@ -12988,10 +13202,22 @@ table.table.table-sm thead tr:first-child th {
   padding-bottom: 43px;
 }
 
+@media (min-width: 576px) {
+  .workbench-banner .workbench-banner-left {
+    min-width: 180px;
+  }
+}
+
 .workbench-banner .workbench-banner-left .workbench-banner-left-text {
   font-size: 30px;
   font-weight: 400;
   color: #fff;
+}
+
+@media (min-width: 576px) {
+  .workbench-banner .workbench-banner-right {
+    min-width: 180px;
+  }
 }
 
 .workbench-banner .workbench-banner-right .workbench-banner-right-text {
@@ -13623,5 +13849,190 @@ table.table.table-sm thead tr:first-child th {
 .nav-tabs .nav-link .tab-docs-detail .docs-label,
 .nav-tabs .nav-link .tab-docs-detail .pages .docs-value {
   font-size: 0.75rem;
+}
+
+.navbar-collapse.righthand-name-menu {
+  -ms-flex-positive: unset;
+  flex-grow: unset;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+}
+
+.navbar .navbar-brand.workbench-brand {
+  width: 100px;
+  margin-top: 9px;
+  height: 35px;
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-brand.workbench-brand {
+    width: 157px;
+    margin-top: 16px;
+    height: 50px;
+  }
+}
+
+.navbar .workbench-product-name-image {
+  width: 110px;
+}
+
+@media (min-width: 992px) {
+  .navbar .workbench-product-name-image {
+    width: 208px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar .righthand-name-menu {
+    width: 157px;
+  }
+}
+
+.navbar .navbar-toggler {
+  text-align: right;
+}
+
+@media (min-width: 992px) {
+  .navbar .navbar-toggler {
+    width: 157px;
+  }
+}
+
+.header-menu {
+  font-size: 13px;
+}
+
+.header-menu .list-inline-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.header-menu a {
+  color: #5a5e5a;
+}
+
+.header-menu a:hover,
+.header-menu a:focus {
+  color: #2ea049;
+  text-decoration: none;
+}
+
+.header-menu a:hover .eo-icon-my-closings-small,
+.header-menu a:focus .eo-icon-my-closings-small {
+  width: 29px;
+  height: 26px;
+  background-image: url("../img/icon_my_closings_small_hover_select.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.header-menu a:hover .eo-icon-my-closings-small.eo-icon-xs,
+.header-menu a:focus .eo-icon-my-closings-small.eo-icon-xs {
+  width: 7.25px;
+  height: 6.5px;
+}
+
+.header-menu a:hover .eo-icon-my-closings-small.eo-icon-sm,
+.header-menu a:focus .eo-icon-my-closings-small.eo-icon-sm {
+  width: 14.5px;
+  height: 13px;
+}
+
+.header-menu a:hover .eo-icon-my-closings-small.eo-icon-lg,
+.header-menu a:focus .eo-icon-my-closings-small.eo-icon-lg {
+  width: 36.25px;
+  height: 32.5px;
+}
+
+.header-menu a:hover .eo-icon-my-closings-small.eo-icon-xl,
+.header-menu a:focus .eo-icon-my-closings-small.eo-icon-xl {
+  width: 43.5px;
+  height: 39px;
+}
+
+.header-menu a:hover .eo-icon-my-account,
+.header-menu a:focus .eo-icon-my-account {
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/icon_my_account_hover_select.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.header-menu a:hover .eo-icon-my-account.eo-icon-xs,
+.header-menu a:focus .eo-icon-my-account.eo-icon-xs {
+  width: 5.25px;
+  height: 5.25px;
+}
+
+.header-menu a:hover .eo-icon-my-account.eo-icon-sm,
+.header-menu a:focus .eo-icon-my-account.eo-icon-sm {
+  width: 10.5px;
+  height: 10.5px;
+}
+
+.header-menu a:hover .eo-icon-my-account.eo-icon-lg,
+.header-menu a:focus .eo-icon-my-account.eo-icon-lg {
+  width: 26.25px;
+  height: 26.25px;
+}
+
+.header-menu a:hover .eo-icon-my-account.eo-icon-xl,
+.header-menu a:focus .eo-icon-my-account.eo-icon-xl {
+  width: 31.5px;
+  height: 31.5px;
+}
+
+.header-menu a:hover .eo-icon-sign-out,
+.header-menu a:focus .eo-icon-sign-out {
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/icon_sign_out_hover_select.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.header-menu a:hover .eo-icon-sign-out.eo-icon-xs,
+.header-menu a:focus .eo-icon-sign-out.eo-icon-xs {
+  width: 5.25px;
+  height: 5.25px;
+}
+
+.header-menu a:hover .eo-icon-sign-out.eo-icon-sm,
+.header-menu a:focus .eo-icon-sign-out.eo-icon-sm {
+  width: 10.5px;
+  height: 10.5px;
+}
+
+.header-menu a:hover .eo-icon-sign-out.eo-icon-lg,
+.header-menu a:focus .eo-icon-sign-out.eo-icon-lg {
+  width: 26.25px;
+  height: 26.25px;
+}
+
+.header-menu a:hover .eo-icon-sign-out.eo-icon-xl,
+.header-menu a:focus .eo-icon-sign-out.eo-icon-xl {
+  width: 31.5px;
+  height: 31.5px;
+}
+
+.header-hamburger a:hover {
+  text-decoration: none;
+}
+
+.header-hamburger a.dropdown-toggle {
+  font-size: 13px;
+  color: #5a5e5a;
+}
+
+.header-hamburger .dropdown-toggle::after {
+  display: none;
 }
 /*# sourceMappingURL=bootstrap.css.map */

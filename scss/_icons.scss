@@ -157,6 +157,14 @@
   &.eo-icon-updated-star-gray { @include icon-versions(15px, 15px, "../img/icon_updated_star_gray.svg"); }
   &.eo-icon-updated-star-white { @include icon-versions(15px, 15px, "../img/icon_updated_star_white.svg"); }
 
+  &.eo-icon-header-menu { @include icon-versions(18px, 12px, "../img/icon_header_menu.svg"); }
+  &.eo-icon-my-account { @include icon-versions(21px, 21px, "../img/icon_my_account.svg"); }
+  &.eo-icon-my-account-hover-select { @include icon-versions(21px, 21px, "../img/icon_my_account_hover_select.svg"); }
+  &.eo-icon-my-closings-small { @include icon-versions(29px, 26px, "../img/icon_my_closings_small.svg"); }
+  &.eo-icon-my-closings-small-hover-select { @include icon-versions(29px, 26px, "../img/icon_my_closings_small_hover_select.svg"); }
+  &.eo-icon-sign-out { @include icon-versions(21px, 21px, "../img/icon_sign_out.svg"); }
+  &.eo-icon-sign-out-hover-select { @include icon-versions(21px, 21px, "../img/icon_sign_out_hover_select.svg"); }
+
 
 }
 

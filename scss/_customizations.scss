@@ -467,6 +467,8 @@ a.form-control-feedback {
   border-radius: 9px;
 }
 
+.header-menu .dropdown-menu,
+.header-hamburger .dropdown-menu,
 .workbench-table-cell .dropdown-menu {
   border-radius: 3px;
   padding: 2px 0;
@@ -1292,6 +1294,7 @@ table.table.table-sm {
       padding-top: 1rem * (13 / 16);
       padding-bottom: 1rem * (13 / 16);
     }
+
   }
 
   .workbench-banner-form {
@@ -1300,10 +1303,22 @@ table.table.table-sm {
 
   }
 
+  .workbench-banner-left {
+    @include media-breakpoint-up(sm) {
+      min-width: 180px;
+    }
+  }
+
   .workbench-banner-left .workbench-banner-left-text {
     font-size: 30px;
     font-weight: $font-weight-normal;
     color: $white;
+  }
+
+  .workbench-banner-right {
+    @include media-breakpoint-up(sm) {
+      min-width: 180px;
+    }
   }
 
   .workbench-banner-right .workbench-banner-right-text {
@@ -1918,4 +1933,101 @@ table.table.table-sm {
       }
     }
   }
+}
+
+.navbar-collapse.righthand-name-menu {
+  flex-grow: unset;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+}
+
+.navbar {
+
+  .navbar-brand.workbench-brand {
+
+    width: 100px;
+    margin-top: 9px;
+    height: 35px;
+
+    @include media-breakpoint-up(lg) {
+      width: 157px;
+      margin-top: 16px;
+      height: 50px;
+    }
+
+  }
+
+  .workbench-product-name-image {
+
+    width: 110px;
+
+    @include media-breakpoint-up(lg) {
+      width: 208px;
+    }
+
+  }
+
+  .righthand-name-menu {
+
+    @include media-breakpoint-up(lg) {
+      width: 157px;
+    }
+
+  }
+
+  .navbar-toggler {
+
+    text-align: right;
+
+    @include media-breakpoint-up(lg) {
+      width: 157px;
+    }
+
+  }
+
+}
+
+.header-menu {
+
+  font-size: 13px;
+
+  .list-inline-item:not(:last-child) {
+    margin-right: 40px;
+  }
+
+  a {
+    color: #5a5e5a;
+  }
+
+  a:hover,
+  a:focus {
+
+    color: #2ea049;
+    text-decoration: none;
+
+    .eo-icon-my-closings-small { @include icon-versions(29px, 26px, "../img/icon_my_closings_small_hover_select.svg"); }
+    .eo-icon-my-account { @include icon-versions(21px, 21px, "../img/icon_my_account_hover_select.svg"); }
+    .eo-icon-sign-out { @include icon-versions(21px, 21px, "../img/icon_sign_out_hover_select.svg"); }
+
+  }
+
+}
+
+.header-hamburger {
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a.dropdown-toggle {
+    font-size: 13px;
+    color: #5a5e5a;
+  }
+
+  .dropdown-toggle::after {
+    display: none;
+  }
+
 }
