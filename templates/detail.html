@@ -178,7 +178,7 @@
                     <a class="nav-item nav-link" id="lenderDocsTabLink" href="#lenderDocsDetail" data-toggle="tab" role="tab" aria-controls="nav-lender-docs" aria-selected="false">
                       <div class="tab-title font-weight-semibold">Lender documents</div>
                       <div class="tab-docs-detail d-flex justify-content-center align-items-center">
-                        <span class="eo-icon eo-icon-updated-star-white"></span>
+                        <span class="eo-icon eo-icon-updated-star-white docs-popover-trigger" id="docsPopoverTrigger" data-toggle="popover"></span>
                         <span class="docs">
                           <span class="docs-value font-weight-semibold">13</span>
                           <span class="docs-label">docs</span>
@@ -197,10 +197,62 @@
 
                   <div class="tab-content">
                     <div class="tab-pane fade" id="lenderDocsDetail" role="tabpanel" aria-labelled-by="lenderDocsTabLink">
-                      <div class="py-4 pl-4">This is the future lender docs detail section.</div>
+                      <div class="lender-docs-inner py-4 pl-4">Document viewer goes here.</div>
                     </div>
                     <div class="tab-pane fade show active" id="signingSummaryDetail" role="tabpanel" aria-labelled-by="signingSummaryTabLink">
-                      <div class="py-4 pl-4">This is the future signing summary detail section.</div>
+                      <!-- <div class="py-4 pl-4">This is the future signing summary detail section.</div> -->
+                      <div class="signing-summary-inner">
+                        <div class="signing-summary-table-wrapper">
+                          <table class="table signing-summary-table">
+                            <thead>
+                              <tr>
+                                <th scope="col">Document</th>
+                                <th scope="col">Jonathan Shields</th>
+                                <th scope="col">Rebecca Shields</th>
+                                <th scope="col">Martin Shields</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">Title of first document</th>
+                                <td>Signed</td>
+                                <td>Signed</td>
+                                <td>Signed</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Second document's title</th>
+                                <td>Signed</td>
+                                <td>Signed</td>
+                                <td>Signed</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Third document goes here</th>
+                                <td>Signed</td>
+                                <td>Partially signed</td>
+                                <td>n/a</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Fourth document in the list</th>
+                                <td>Signed</td>
+                                <td>Viewed</td>
+                                <td>n/a</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Another document here with a longer title</th>
+                                <td>Viewed</td>
+                                <td>Viewed</td>
+                                <td>Viewed</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Document number six</th>
+                                <td>Viewed</td>
+                                <td>Not signed</td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div> <!-- .signing-summary-table-wrapper -->
+                      </div> <!-- .signing-summary-inner -->
                     </div> <!-- .tab-pane#signingSummaryDetail -->
                   </div> <!-- .tab-content -->
                 </div>
@@ -272,9 +324,22 @@
       // functionality to create/display note
       $('#addNoteModal').modal('hide');
     });
+
+    // NOTE: the "content" attribute's markup is best converted to a more modular template inserted into the DOM elsewhere and referenced with either an element selector or function call.
+    $('#docsPopoverTrigger').popover({
+      container: $('#docsPopoverTrigger')[0],
+      trigger: 'hover',
+      placement: 'bottom',
+      // offset: 'top, 5px',
+      boundary: $('.nav-tabs-wrapper')[0],
+      fallbackPlacement: ['top'],
+      html: true,
+      title: 'Updated docs retrieved at:',
+      template: '<div class="popover" role="tooltip"><div class="arrow"></div><div class="popover-header"></div><div class="popover-body py-0 docs-updates"></div></div>',
+      content: '<div class="docs-update"><div class="docs-update-heading d-flex justify-content-between align-items-center p-2"><span class="eo-icon eo-icon-updated-star-gray"></span><span class="docs-update-date pl-1 mr-auto">12/20/2018</span><span class="docs-update-time">9:15 am ET</span></div><ul class="docs-update-docs"><li class="docs-update-doc">Document title here</li><li class="docs-update-doc">Document title here long example lorem ipsum dolor</li><li class="docs-update-doc">Document title here</li></ul></div><div class="docs-update"><div class="docs-update-heading d-flex justify-content-between align-items-center p-2"><span class="eo-icon eo-icon-updated-star-gray"></span><span class="docs-update-date pl-1 mr-auto">12/18/2018</span><span class="docs-update-time">8:43 am ET</span></div><ul class="docs-update-docs"><li class="docs-update-doc">Document title here</li><li class="docs-update-doc">Document title here</li></ul></div><div class="docs-update"><div class="docs-update-heading d-flex justify-content-between align-items-center p-2"><span class="eo-icon eo-icon-updated-star-gray"></span><span class="docs-update-date pl-1 mr-auto">12/9/2018</span><span class="docs-update-time">12:11 pm ET</span></div><ul class="docs-update-docs"><li class="docs-update-doc">Document title here</li></ul></div>'
+    });
   </script>
 
 </body>
-
 
 </html>

@@ -6034,7 +6034,7 @@ a.close.disabled {
   width: 1rem;
   margin-left: -0.5rem;
   content: "";
-  border-bottom: 1px solid #daf7bf;
+  border-bottom: 1px solid #fff;
 }
 
 .bs-popover-left, .bs-popover-auto[x-placement^="left"] {
@@ -6067,12 +6067,12 @@ a.close.disabled {
 }
 
 .popover-header {
-  padding: 10px 1.5rem;
+  padding: 10px 1rem;
   margin-bottom: 0;
   font-size: 0.875rem;
   color: #000;
-  background-color: #daf7bf;
-  border-bottom: 1px solid #cdf4a8;
+  background-color: #fff;
+  border-bottom: 1px solid #f2f2f2;
   border-top-left-radius: calc(6px - 1px);
   border-top-right-radius: calc(6px - 1px);
 }
@@ -13395,6 +13395,7 @@ table.table.table-sm thead tr:first-child th {
 }
 
 .card.notes-box.add-note-form, .card.notes-box.edit-note-form {
+  border-color: #81c241;
   box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.23);
 }
 
@@ -13475,8 +13476,9 @@ table.table.table-sm thead tr:first-child th {
 }
 
 .popover .popover-header {
-  color: #5a5e5a;
-  line-height: 18px;
+  color: #353937;
+  font-size: 0.75rem;
+  line-height: 1rem;
   border-bottom: none;
 }
 
@@ -13612,16 +13614,55 @@ table.table.table-sm thead tr:first-child th {
   border-bottom-right-radius: 20px;
 }
 
-.nav-tabs .nav-link .tab-docs-detail .docs {
+.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs {
   padding-left: .5rem;
 }
 
-.nav-tabs .nav-link .tab-docs-detail .docs:first-child {
+.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs:first-child {
   padding-left: 0;
 }
 
-.nav-tabs .nav-link .tab-docs-detail .docs-label,
-.nav-tabs .nav-link .tab-docs-detail .pages .docs-value {
+.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs-label,
+.nav-tabs-wrapper .nav-tabs .tab-docs-detail .pages .docs-value {
   font-size: 0.75rem;
+}
+
+.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover {
+  width: 250px;
+}
+
+.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .popover-body {
+  max-height: 260px;
+  overflow-y: scroll;
+}
+
+.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-heading {
+  background-color: #eff2f3;
+}
+
+.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-heading .docs-update-date,
+.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-heading .docs-update-time {
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 15px;
+}
+
+.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-docs {
+  list-style: none;
+  padding-left: 27px;
+  padding-top: .25rem;
+  padding-bottom: .5rem;
+  margin-bottom: 0;
+}
+
+.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-docs .docs-update-doc {
+  padding: .25rem 0;
+  font-size: 0.75rem;
+  line-height: 18px;
+}
+
+.nav-tabs-wrapper .tab-content .lender-docs-inner,
+.nav-tabs-wrapper .tab-content .signing-summary-inner {
+  min-height: 300px;
 }
 /*# sourceMappingURL=bootstrap.css.map */

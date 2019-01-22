@@ -1682,6 +1682,7 @@ table.table.table-sm {
 
   &.add-note-form,
   &.edit-note-form {
+    border-color: #81c241;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, .23);
 
     .card-header {
@@ -1772,8 +1773,9 @@ table.table.table-sm {
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .3);
 
   .popover-header {
-    color: #5a5e5a;
-    line-height: 18px;
+    color: $body-color;
+    font-size: $font-size-sm;
+    line-height: 1rem;
     border-bottom: none;
   }
 }
@@ -1902,7 +1904,11 @@ table.table.table-sm {
         border-bottom-right-radius: 20px;
       }
     }
+  }
+}
 
+.nav-tabs-wrapper {
+  .nav-tabs {
     .tab-docs-detail {
       .docs {
         padding-left: .5rem;
@@ -1916,6 +1922,52 @@ table.table.table-sm {
       .pages .docs-value {
         font-size: $font-size-sm;
       }
+
+      .docs-popover-trigger {
+        .popover {
+          width: 250px;
+
+          .popover-body {
+            max-height: 260px;
+            overflow-y: scroll;
+          }
+
+          .docs-update {
+            .docs-update-heading {
+              background-color: #eff2f3;
+
+              .docs-update-date,
+              .docs-update-time {
+                font-weight: $font-weight-semibold;
+                font-size: $font-size-sm;
+                line-height: 15px;
+              }
+            }
+
+            .docs-update-docs {
+              list-style: none;
+              padding-left: 27px;
+              padding-top: .25rem;
+              padding-bottom: .5rem;
+              margin-bottom: 0;
+
+              .docs-update-doc {
+                padding: .25rem 0;
+                font-size: $font-size-sm;
+                line-height: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    // patch to allow star popover treatment to remain consistent
+    .lender-docs-inner,
+    .signing-summary-inner {
+      min-height: 300px;
     }
   }
 }
