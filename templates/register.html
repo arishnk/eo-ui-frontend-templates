@@ -24,66 +24,64 @@
 <body class="has-footer">
 
   <div class="main-content bg-green">
-    <nav class="navbar navbar-light bg-light navbar-expand-md">
-      <div class="container">
-        <div class="row row-no-padding">
-          <div class="navbar-brand col-sm-2 col-lg-3 hidden-xs" href="#" style="background-image: url(../img/icon_header_eoriginal_logo.svg)"><span class="sr-only">Bank of America</span></div>
-          <div class="col-10 col-md-8 col-xl-6 product-name text-center text-left-xs">
-            <div class="navbar-brand hidden-sm d-md-none d-block" href="#" style="background-image: url(../img/icon_header_eoriginal_logo.svg)"><span class="sr-only">eOriginal</span>
-            </div>
-            <br class="d-block d-sm-none-block">
-            <div class="product-name-image" style="background-image: url(../img/product_name_closing_center.svg);"><span class="sr-only">Closing Center</span>
+
+    <nav class="navbar navbar-light navbar-expand-xl bg-light border-0">
+      <div class="container px-4">
+        <div class="navbar-brand workbench-brand" href="#">
+          <img src="../img/icon_header_eoriginal_logo.svg" width="100%" height="auto" alt="Bank of America" />
+          <span class="sr-only">Bank of America</span>
+        </div>
+        <div class="product-name-image workbench-product-name-image">
+          <img src="../img/product_name_closing_center.svg" width="100%" height="auto" alt="Closing Center" />
+        </div>
+        <div class="righthand-name-menu flex-column align-items-end text-right" id="menuUsername">
+
+          <div class="dropdown sign-in-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sign in</a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <form class="form">
+                <h3>Sign in to my<br> Closing Center</h3>
+                <div class="pad-sm"></div>
+                <div class="form-group"> <a href="#" class="small float-right">I forgot my user name</a>
+                  <label class="col-form-label" for="username">User name</label>
+                  <div class="form-control-wrap">
+                    <input class="form-control" name="username" type="text" id="username" placeholder="" value="">
+                  </div>
+                  <div class="form-text"></div>
+                </div>
+                <div class="form-group has-feedback"> <a href="#" class="small float-right">I forgot my password</a>
+                  <label class="col-form-label" for="password">Password</label>
+                  <div class="form-control-wrap">
+                    <input class="form-control" name="password" type="password" id="password" placeholder="" value=""> <a href="#" title="Click to show password" class="form-control-feedback"><span class="eo-icon eo-icon-password-hidden"></span><!-- <span class="eo-icon eo-icon-password-shown"></span> --></a>
+                  </div>
+                  <div class="form-text"></div>
+                </div>
+                <div class="pad-sm"></div>
+                <div class="form-group row row-no-padding">
+                  <button type="submit" class="btn btn-primary col-7">Sign in</button>
+                  <button type="button" id="cancelSignIn" class="btn btn-blank col-5">Cancel</button>
+                </div>
+              </form>
             </div>
           </div>
-          <ul class="nav navbar-nav col-2 col-lg-3">
-            <li class="dropdown sign-in-menu float-right nav-item"> <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
 
-                Sign in
-
-              </a>
-              <div class="dropdown-menu dropdown-menu-right">
-                <form class="form">
-                  <h3>Sign in to my<br> Closing Center</h3>
-                  <div class="pad-sm"></div>
-                  <div class="form-group"> <a href="#" class="small float-right">I forgot my user name</a>
-                    <label class="col-form-label" for="username">User name</label>
-                    <div class="form-control-wrap">
-                      <input class="form-control" name="username" type="text" id="username" placeholder="" value="">
-                    </div>
-                    <div class="form-text"></div>
-                  </div>
-                  <div class="form-group has-feedback"> <a href="#" class="small float-right">I forgot my password</a>
-                    <label class="col-form-label" for="password">Password</label>
-                    <div class="form-control-wrap">
-                      <input class="form-control" name="password" type="password" id="password" placeholder="" value=""> <a href="#" title="Click to show password" class="form-control-feedback"><span class="eo-icon eo-icon-password-hidden"></span><!-- <span class="eo-icon eo-icon-password-shown"></span> --></a>
-                    </div>
-                    <div class="form-text"></div>
-                  </div>
-                  <div class="pad-sm"></div>
-                  <div class="form-group row row-no-padding">
-                    <button type="submit" class="btn btn-primary col-7">Sign in</button>
-                    <button type="button" id="cancelSignIn" class="btn btn-blank col-5">Cancel</button>
-                  </div>
-                </form>
-              </div>
-            </li>
-          </ul>
         </div>
       </div>
     </nav>
+
     <div class="container">
       <div class="row">
         <div class="col-md-8 offset-md-2 col-xl-6 offset-xl-3">
           <div class="pad"></div>
           <div class="container-fluid">
             <div class="row">
-              <div class="col-12">
-                <p class="text-center"><span class="eo-icon eo-icon-closing-large"></span>
+              <div class="col-12 px-xs-0">
+                <p class="text-center"><span class="eo-icon eo-icon-closing-large mobile-adjust"></span>
                 </p>
                 <p class="text-xxl white semi-strong"><span class="text-xxxl">Closing Center</span> is your central, personalized
                   portal for tracking and managing all of your digital closings.</p>
-                <div class="pad"></div>
-                <ul class="list-checks-white text-large semi-strong">
+                <div class="pad-sm"></div>
+                <ul class="list-checks-white list-checks-less-space text-large semi-strong">
                   <li>Review title and lender documents before closing.</li>
                   <li>Execute the digital signing of documents during closing.</li>
                   <li>Maintain continued access to signed documents after closing.</li>
@@ -91,18 +89,21 @@
               </div>
             </div>
           </div>
-          <div class="pad-lg"></div>
+          <div class="pad-sm"></div>
           <div class="card card-sm card-body">
-            <h2>Register</h2>
-            <p class="text-large">Don&#x2019;t have an <strong>eOriginal Closing Center</strong> account?
-              <br>Registration is easy.</p>
-            <p>To get started, provide your name and email address and we&#x2019;ll send
-              you a link to complete the registration process.
+
+            <div id="registerForm" class="formToggle collapse show">
+
+              <h2>Register</h2>
+              <p class="text-large">Don&#x2019;t have an <strong>eOriginal Closing Center</strong> account?
+                <br>Registration is easy.</p>
+              <p>To get started, provide your name and email address and we&#x2019;ll send
+                you a link to complete the registration process.</p>
               <div class="pad-lg"></div>
               <form class="form">
                 <div class="row">
                   <div class="form-group col-md-6">
-                    <label class="col-form-label required" for="firstName"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                    <label class="col-form-label" for="firstName">
                       First name</label>
                     <div class="form-control-wrap">
                       <input class="form-control" name="firstName" type="text" id="firstName" placeholder="" value="">
@@ -110,7 +111,7 @@
                     <div class="form-text"></div>
                   </div>
                   <div class="form-group col-md-6">
-                    <label class="col-form-label required" for="lastName"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                    <label class="col-form-label" for="lastName">
                       Last name</label>
                     <div class="form-control-wrap">
                       <input class="form-control" name="lastName" type="text" id="lastName" placeholder="" value="">
@@ -120,7 +121,7 @@
                 </div>
                 <div class="row">
                   <div class="form-group col-12">
-                    <label class="col-form-label required" for="emailAddress"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                    <label class="col-form-label" for="emailAddress">
                       Email address</label>
                     <div class="form-control-wrap">
                       <input class="form-control" name="emailAddress" type="email" id="emailAddress" placeholder="" value="">
@@ -129,17 +130,54 @@
                   </div>
                 </div>
                 <div class="pad-sm"></div>
-                <div class="form-group row">
+                <div class="form-group row mb-0">
                   <div class="col-md-6">
                     <button type="submit" class="btn btn-primary full-width">Create account</button>
                   </div>
                   <div class="col-md-6 text-center">
-                    <div class="button-height">Already have an account?&#xA0;&#xA0;&#xA0; <a href="#">Sign&#xA0;in</a>
+                    <div class="button-height">Already have an account?&#xA0;&#xA0;&#xA0; <a href=".formToggle" data-toggle="collapse" aria-expanded="false" aria-controls="registerForm, signInForm">Sign&#xA0;in</a>
                     </div>
                   </div>
                 </div>
               </form>
-            </p>
+
+            </div>
+
+            <div id="signInForm" class="formToggle collapse">
+
+              <h2>Sign in to my Closing Center</h2>
+
+              <div class="pad-lg"></div>
+
+              <form class="form">
+                <div class="form-group"> <a href="#" class="small float-right">I forgot my user name</a>
+                  <label class="col-form-label" for="username2">User name</label>
+                  <div class="form-control-wrap">
+                    <input class="form-control" name="username2" type="text" id="username2" placeholder="" value="">
+                  </div>
+                  <div class="form-text"></div>
+                </div>
+                <div class="form-group has-feedback"> <a href="#" class="small float-right">I forgot my password</a>
+                  <label class="col-form-label" for="password2">Password</label>
+                  <div class="form-control-wrap">
+                    <input class="form-control" name="password2" type="password" id="password2" placeholder="" value=""> <a href="#" title="Click to show password" class="form-control-feedback"><span class="eo-icon eo-icon-password-hidden"></span><!-- <span class="eo-icon eo-icon-password-shown"></span> --></a>
+                  </div>
+                  <div class="form-text"></div>
+                </div>
+                <div class="pad-sm"></div>
+                <div class="form-group row mb-0">
+                  <div class="col-md-6">
+                    <button type="submit" class="btn btn-primary full-width">Sign in</button>
+                  </div>
+                  <div class="col-md-6 text-left">
+                    <div class="button-height">Don't have an account?<br> <a href=".formToggle" class="strong" data-toggle="collapse" aria-expanded="false" aria-controls="registerForm, signInForm">Register!</a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+
           </div>
         </div>
       </div>
@@ -149,10 +187,10 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
-          <img src="../img/icon_footer_logo_w_tagline.svg" width="223" class="hidden-xsd-none d-sm-block" alt="eOriginal: Trust the Asset. Trust the Transaction.TM">
+        <div class="col-md-7">
+          <img src="../img/icon_footer_logo_w_tagline.svg" width="223" class="d-none d-sm-block" alt="eOriginal: Trust the Asset. Trust the Transaction.TM">
         </div>
-        <div class="col-md-4"> <address>
+        <div class="col-md-5"> <address>
 
             The Warehouse at Camden Yards<br>
 
@@ -163,7 +201,7 @@
           </p>
           <p> <a href="http://www.eoriginal.com" class="link-www" target="_blank">www.eoriginal.com</a>
           </p>
-          <div class="pad hidden-sm d-md-none d-block"></div>
+          <div class="pad-lg hidden-sm d-md-none d-block"></div>
           <img src="../img/icon_footer_logo_w_tagline.svg" width="223" class="hidden-sm d-md-none d-block" alt="eOriginal: Trust the Asset. Trust the Transaction.TM">
         </div>
       </div>
