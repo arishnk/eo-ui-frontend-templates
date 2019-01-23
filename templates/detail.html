@@ -708,6 +708,21 @@
       content: '<div class="docs-update"><div class="docs-update-heading d-flex justify-content-between align-items-center p-2"><span class="eo-icon eo-icon-updated-star-gray"></span><span class="docs-update-date pl-1 mr-auto">12/20/2018</span><span class="docs-update-time">9:15 am ET</span></div><ul class="docs-update-docs"><li class="docs-update-doc">Document title here</li><li class="docs-update-doc">Document title here long example lorem ipsum dolor</li><li class="docs-update-doc">Document title here</li></ul></div><div class="docs-update"><div class="docs-update-heading d-flex justify-content-between align-items-center p-2"><span class="eo-icon eo-icon-updated-star-gray"></span><span class="docs-update-date pl-1 mr-auto">12/18/2018</span><span class="docs-update-time">8:43 am ET</span></div><ul class="docs-update-docs"><li class="docs-update-doc">Document title here</li><li class="docs-update-doc">Document title here</li></ul></div><div class="docs-update"><div class="docs-update-heading d-flex justify-content-between align-items-center p-2"><span class="eo-icon eo-icon-updated-star-gray"></span><span class="docs-update-date pl-1 mr-auto">12/9/2018</span><span class="docs-update-time">12:11 pm ET</span></div><ul class="docs-update-docs"><li class="docs-update-doc">Document title here</li></ul></div>'
     });
 
+    $("html").on("mouseup", function (e) {
+      var l = $(e.target);
+      if (l[0].className.indexOf("popover") == -1) {
+        $(".popover").each(function () {
+          $(this).popover("hide");
+        });
+      }
+
+      if (l[0].className.indexOf("tooltip") == -1) {
+        $(".tooltip").each(function () {
+          $(this).tooltip("hide");
+        });
+      }
+    });
+
   </script>
 
 </body>
