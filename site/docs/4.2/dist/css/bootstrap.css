@@ -12240,6 +12240,10 @@ button:focus .eo-icon.eo-icon-half-opacity {
   opacity: 1;
 }
 
+.lender-logo.lender-logo-bank-of-america {
+  background-image: url("../img/icon_bank_of_america.png");
+}
+
 body.has-footer {
   background-color: #353937;
 }
@@ -12374,6 +12378,7 @@ body > .main-content > .navbar .product-name .navbar-brand {
 body > .main-content > .navbar .product-name .product-name-image {
   width: 100%;
   height: 17px;
+  background-image: url("../img/product_name_digital_closing_portal.svg");
   background-position: center left;
   background-size: contain;
   background-repeat: no-repeat;
@@ -12789,6 +12794,10 @@ a.form-control-feedback:hover {
   color: #fff;
 }
 
+.jumbotron.welcome-jumbotron {
+  background-image: url("../img/Welcome-Banner-2.jpg");
+}
+
 @media (max-width: 991.98px) {
   .jumbotron {
     margin-bottom: 10px;
@@ -13145,18 +13154,22 @@ hr.hr-dots {
 
 .progress-bar-danger {
   background-color: #e60303;
+  width: 10%;
 }
 
 .progress-bar-warning {
   background-color: #fd7f23;
+  width: 40%;
 }
 
 .progress-bar-ok {
   background-color: #f2c700;
+  width: 60%;
 }
 
 .progress-bar-success {
   background-color: #81c241;
+  width: 90%;
 }
 
 .input-group-addon {
@@ -14258,6 +14271,7 @@ table.table.table-sm thead tr:first-child th {
 }
 
 .navbar .workbench-product-name-image {
+  background-image: none;
   width: 110px;
 }
 
