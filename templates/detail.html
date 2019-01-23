@@ -93,7 +93,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> <!-- .workbench-table-row -->
 
               <div class="row detail-more-row pt-3 pb-md-3 flex-column flex-md-row justify-content-between flex-nowrap">
                 <div class="detail-more-main d-flex flex-column flex-lg-row flex-shrink-0 flex-grow-1">
@@ -132,7 +132,8 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> <!-- .detail-more-main -->
+
                 <div class="detail-more-notes-container my-3 my-md-0">
 
                   <div class="card notes-box notes-container bg-transparent rounded-0 p-0 mx-auto mr-md-0">
@@ -169,8 +170,8 @@
                     </div>
                   </div>
 
-                </div>
-              </div>
+                </div> <!-- .detail-more-notes-container -->
+              </div> <!-- .detail-more-row -->
 
               <div class="row detail-tabs-row">
 
@@ -194,7 +195,7 @@
                     <a class="nav-item nav-link active" id="signingSummaryTabLink" href="#signingSummaryDetail" data-toggle="tab" role="tab" aria-controls="nav-signing-summary" aria-selected="true">
                       <span class="tab-title font-weight-semibold">Signing summary</span>
                     </a>
-                  </div>
+                  </div> <!-- .nav-tabs -->
 
                   <div class="tab-content">
                     <div class="tab-pane fade" id="lenderDocsDetail" role="tabpanel" aria-labelled-by="lenderDocsTabLink">
@@ -425,7 +426,7 @@
                 <div class="nav-tabs-sm-wrapper d-flex justify-content-center d-md-none w-100">
                   <div class="tab-docs-detail d-flex align-items-center mr-4">
                     <span class="eo-icon eo-icon-documents mr-1"></span>
-                    <a href="#" class="tab-detail-link d-flex align-items-end">
+                    <a href="#" class="tab-detail-link d-flex align-items-end" data-toggle="modal" data-target="#lenderDocsMobileDetail" data-backdrop="static">
                       <span class="docs-label docs-intro-label">View</span>
                       <span class="docs pl-1">
                         <span class="docs-value font-weight-semibold">13</span>
@@ -440,10 +441,10 @@
                   </div>
                   <div class="tab-docs-detail d-flex align-items-center ml-4">
                     <span class="eo-icon eo-icon-signature-required mr-2"></span>
-                  <a href="#" class="tab-detail-link" data-toggle="modal" data-target="#signingSummaryMobileDetail" data-backdrop="static">
-
-                      <span>Signing summary</span>
-                  </a>
+                    <a href="#" class="tab-detail-link" data-toggle="modal" data-target="#signingSummaryMobileDetail" data-backdrop="static">
+                        <span>Signing summary</span>
+                    </a>
+                  </div>
                 </div> <!-- nav-tabs-sm-wrapper -->
 
               </div> <!-- .detail-tabs-row -->
@@ -510,7 +511,7 @@
                   <th scope="row" class="pl-0">
                     <div class="signing-summary-table-cell-content d-flex align-items-center">
                       <div class="cell-icon">
-                        <span class="eo-icon eo-icon-signature-required" data-toggle="tooltip" title="Signature required"></span>
+                        <span class="eo-icon eo-icon-signature-required" data-toggle="tooltip" data-trigger="click" title="Signature required"></span>
                       </div>
                       <div class="cell-text">Title of first document</div>
                     </div>
@@ -518,7 +519,7 @@
                   <td class="pr-0">
                     <div class="signing-summary-table-cell-content d-flex align-items-center status-signed">
                       <div class="cell-icon">
-                        <span class="eo-icon eo-icon-signing-summary-icon-status-signed"></span>
+                        <span class="eo-icon eo-icon-signing-summary-icon-status-signed" data-toggle="tooltip" data-trigger="click" title="Signed"></span>
                       </div>
                       <div class="cell-text">Signed</div>
                     </div>
@@ -528,7 +529,7 @@
                   <th scope="row" class="pl-0">
                     <div class="signing-summary-table-cell-content d-flex align-items-center status-signed">
                       <div class="cell-icon">
-                        <span class="eo-icon eo-icon-signature-required mr-2" data-toggle="tooltip" title="Signature required"></span>
+                        <span class="eo-icon eo-icon-signature-required mr-2" data-toggle="tooltip" data-trigger="click" title="Signature required"></span>
                       </div>
                       <div class="cell-text">Second document's title</div>
                     </div>
@@ -536,7 +537,7 @@
                   <td class="pr-0">
                     <div class="signing-summary-table-cell-content d-flex align-items-center status-signed">
                       <div class="cell-icon">
-                        <span class="eo-icon eo-icon-signing-summary-icon-status-signed"></span>
+                        <span class="eo-icon eo-icon-signing-summary-icon-status-signed" data-toggle="tooltip" data-trigger="click" title="Signed"></span>
                       </div>
                       <div class="cell-text">Signed</div>
                     </div>
@@ -546,7 +547,7 @@
                   <th scope="row" class="pl-0">
                     <div class="signing-summary-table-cell-content d-flex align-items-center">
                       <div class="cell-icon">
-                        <span class="eo-icon eo-icon-signature-required mr-2" data-toggle="tooltip" title="Signature required"></span>
+                        <span class="eo-icon eo-icon-signature-required mr-2" data-toggle="tooltip" data-trigger="click" title="Signature required"></span>
                       </div>
                       <div class="cell-text">Third document goes here</div>
                     </div>
@@ -554,7 +555,7 @@
                   <td class="pr-0">
                     <div class="signing-summary-table-cell-content d-flex align-items-center status-signed">
                       <div class="cell-icon">
-                        <span class="eo-icon eo-icon-signing-summary-icon-status-signed"></span>
+                        <span class="eo-icon eo-icon-signing-summary-icon-status-signed" data-toggle="tooltip" data-trigger="click" title="Signed"></span>
                       </div>
                       <div class="cell-text">Signed</div>
                     </div>
@@ -564,7 +565,7 @@
                   <th scope="row" class="pl-0">
                     <div class="signing-summary-table-cell-content d-flex align-items-center">
                       <div class="cell-icon">
-                        <span class="eo-icon eo-icon-signature-required mr-2" data-toggle="tooltip" title="Signature required"></span>
+                        <span class="eo-icon eo-icon-signature-required mr-2" data-toggle="tooltip" data-trigger="click" title="Signature required"></span>
                       </div>
                       <div class="cell-text">Fourth document in the list</div>
                     </div>
@@ -572,7 +573,7 @@
                   <td class="pr-0">
                     <div class="signing-summary-table-cell-content d-flex align-items-center status-signed">
                       <div class="cell-icon">
-                        <span class="eo-icon eo-icon-signing-summary-icon-status-signed"></span>
+                        <span class="eo-icon eo-icon-signing-summary-icon-status-signed" data-toggle="tooltip" data-trigger="click" title="Signed"></span>
                       </div>
                       <div class="cell-text">Signed</div>
                     </div>
@@ -589,7 +590,7 @@
                   <td class="pr-0">
                     <div class="signing-summary-table-cell-content d-flex align-items-center status-viewed">
                       <div class="cell-icon">
-                        <span class="eo-icon eo-icon-signing-summary-icon-viewed"></span>
+                        <span class="eo-icon eo-icon-signing-summary-icon-viewed" data-toggle="tooltip" data-trigger="click" title="Viewed but not signed"></span>
                       </div>
                       <div class="cell-text">Viewed but not signed</div>
                     </div>
@@ -599,7 +600,7 @@
                   <th scope="row" class="pl-0">
                     <div class="signing-summary-table-cell-content d-flex align-items-center">
                       <div class="cell-icon">
-                        <span class="eo-icon eo-icon-signature-required mr-2" data-toggle="tooltip" title="Signature required"></span>
+                        <span class="eo-icon eo-icon-signature-required mr-2" data-toggle="tooltip" data-trigger="click" title="Signature required"></span>
                       </div>
                       <div class="cell-text">Document number six</div>
                     </div>
@@ -607,7 +608,7 @@
                   <td class="pr-0">
                     <div class="signing-summary-table-cell-content d-flex align-items-center status-viewed">
                       <div class="cell-icon">
-                        <span class="eo-icon eo-icon-signing-summary-icon-viewed"></span>
+                        <span class="eo-icon eo-icon-signing-summary-icon-viewed" data-toggle="tooltip" data-trigger="click" title="Viewed"></span>
                       </div>
                       <div class="cell-text">Viewed</div>
                     </div>
@@ -616,6 +617,22 @@
               </tbody>
             </table>
           </div> <!-- .signing-summary-table-wrapper -->
+        </div> <!-- .modal-body -->
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade lender-docs-mobile-detail" id="lenderDocsMobileDetail" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-full" role="document">
+      <div class="modal-content rounded-0">
+
+        <div class="modal-header d-flex justify-content-between pr-0 rounded-0">
+          <h2 class="modal-title font-weight-semibold font-lg"><span class="signerName">Jonathan Shields</span> closing docs</h2>
+          <button class="btn btn-blank" role="button" data-dismiss="modal" aria-label="Close"><span class="eo-icon eo-icon-remove-large eo-icon-half-opacity"></span></button>
+        </div>
+        <div class="modal-body">
+          <div class="document-viewer-placeholder">Document viewer goes here.</div>
         </div> <!-- .modal-body -->
 
       </div>

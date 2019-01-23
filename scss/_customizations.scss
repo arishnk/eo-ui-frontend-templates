@@ -1370,11 +1370,19 @@ table.table.table-sm {
 
 .detail-main {
   @include media-breakpoint-down(sm) {
-    padding-bottom: 0;
+    padding-bottom: 50px;
 
     .detail-tabs-row {
       background: rgba(129, 194, 65, .17);
-      padding-bottom: 100px;
+      padding-bottom: 25px;
+    }
+  }
+
+  @include media-breakpoint-only(xs) {
+    padding-bottom: 0;
+
+    .detail-tabs-row {
+      padding-bottom: 50px;
     }
   }
 }
@@ -1994,10 +2002,12 @@ table.table.table-sm {
 
       .docs-popover-trigger {
         .popover {
-          width: 250px;
+          width: 300px;
 
           .popover-body {
-            max-height: 260px;
+            padding-left: .75rem;
+            padding-right: .75rem;
+            max-height: 310px;
             overflow-y: scroll;
           }
 
@@ -2036,7 +2046,7 @@ table.table.table-sm {
     // patch to allow star popover treatment to remain consistent
     .lender-docs-inner,
     .signing-summary-inner {
-      min-height: 300px;
+      min-height: 350px;
     }
   }
 }
