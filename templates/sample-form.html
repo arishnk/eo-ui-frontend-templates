@@ -234,11 +234,33 @@
             <div class="pad-md hidden-xs d-none d-sm-block"></div>
             <div class="pad-xs d-block d-sm-none"></div>
             <hr class="hr-dots">
+            <h2>Textareas</h2>
+            <div class="pad"></div>
+            <div class="row">
+              <div class="form-group col-12">
+                <label class="col-form-label required" for="textarea1"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                Text Area</label>
+                <textarea class="form-control" id="textarea1" rows="2"></textarea>
+                <div class="form-text"></div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-12 has-feedback has-error">
+                <label class="col-form-label required" for="textarea1"> <span class="eo-icon eo-icon-asterisk eo-icon-pad-sm"></span>
+                Text Area</label>
+                <textarea class="form-control is-invalid" id="textarea1" rows="2"></textarea>
+                <div class="invalid-feedback">Invalid message</div>
+              </div>
+            </div>
+            <div class="pad-md hidden-xs d-none d-sm-block"></div>
+            <div class="pad-xs d-block d-sm-none"></div>
+            <hr class="hr-dots">
             <h2>Radio Buttons</h2>
             <div class="pad"></div>
-            <div class="radio">
+            <div class="radio has-feedback has-error">
               <label>
-                <input type="radio" value="" name="radio1"> <span>Radio Button 1</span>
+                <input type="radio" class="is-invalid" value="" name="radio1"> <span>Radio 1</span>
+                <div class="invalid-feedback">Invalid message</div>
               </label>
             </div>
             <div class="radio">
@@ -261,9 +283,10 @@
             <hr class="hr-dots">
             <h2>Checkboxes</h2>
             <div class="pad"></div>
-            <div class="checkbox">
+            <div class="checkbox has-feedback has-error">
               <label>
-                <input type="checkbox" value="" name="checkbox1"> <span>Checkbox 1</span>
+                <input type="checkbox" class="is-invalid" value="" name="checkbox1"> <span>Checkbox 1</span>
+                <div class="invalid-feedback">Invalid message</div>
               </label>
             </div>
             <div class="checkbox">
@@ -335,6 +358,7 @@
                   Password</label>
                 <div class="form-control-wrap is-invalid">
                   <input class="form-control is-invalid" name="password2" type="password" id="password2" placeholder="" value="" autocomplete="new-password">
+                  <a href="#" title="Click to show password" class="form-control-feedback"><span class="eo-icon eo-icon-password-hidden"></span></a>
                 </div>
                 <div class="invalid-feedback">Passwords do not match</div>
               </div>
@@ -504,15 +528,14 @@
 
     });
 
-    $(function () {
-      $('#accessCode').popover({
-        placement: function() {
-          if ($(window).width() < 768)
-            return 'top';
-          else
-            return 'right';
-        }
-      })
+    $('#accessCode').popover({
+      template: '<div class="popover popover-adjust-for-label" role="tooltip"><div class="arrow"></div><h3 class="popover-header"></h3><div class="popover-body"></div></div>',
+      placement: function() {
+        if ($(window).width() < 768)
+          return 'top';
+        else
+          return 'right';
+      }
     });
 
   </script>

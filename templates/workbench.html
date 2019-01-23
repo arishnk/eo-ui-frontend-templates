@@ -52,7 +52,7 @@
     <nav class="navbar navbar-light bg-light d-none d-xl-flex">
       <div class="container px-4 d-none d-xl-flex justify-content-end">
         <ul class="header-menu list-inline mb-2" id="menuLinks">
-          <li class="list-inline-item">
+          <li class="list-inline-item active">
             <a href="#" class="menu-item" id="closings">
               <span class="eo-icon eo-icon-my-closings-small"></span>
               My closings
@@ -61,7 +61,7 @@
           <li class="list-inline-item text-md">
             <div class="dropdown">
               <a class="dropdown-toggle" href="#" role="button" id="myAccountDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="eo-icon eo-icon-my-account"></span>
+                <span class="eo-icon eo-icon-my-account-hover-select"></span>
                 My account
               </a>
               <div class="dropdown-menu" aria-labelledby="myAccountDropdown">
@@ -72,7 +72,7 @@
           </li>
           <li class="list-inline-item">
             <a href="#" class="menu-item" id="signout">
-              <span class="eo-icon eo-icon-sign-out"></span>
+              <span class="eo-icon eo-icon-sign-out-hover-select"></span>
               Sign out
             </a>
           </li>
@@ -377,6 +377,7 @@
                       <span class="docs-label">pg</span>
                     </span>
                     <span class="notes ml-auto" data-toggle="popover">
+                      <span class="sr-only">Notes:</span>
                       <span class="eo-icon eo-icon-note-green"></span>
                       <span class="num-notes">2</span>
                     </span>
@@ -679,6 +680,46 @@
     </div>
   </div>
 
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <img src="../img/icon_footer_logo_w_tagline.svg" width="223" class="mb-5" alt="eOriginal: Trust the Asset. Trust the Transaction.TM">
+        </div>
+        <div class="col-md-5"> <address>
+
+            The Warehouse at Camden Yards<br>
+
+            Baltimore, MD 21201
+
+          </address>
+          <p> <a href="tel:866.364.3578" class="link-phone">866.935.1776</a>
+          </p>
+          <p> <a href="http://www.eoriginal.com" class="link-www" target="_blank">www.eoriginal.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-decoration"></div>
+    <div class="container text-muted">
+      <div class="row">
+        <div class="col-md-7 order-sm-2">
+          <ul class="list-inline list-inline-piped float-md-right float-lg-right float-xl-right small">
+            <li class="list-inline-item"><a href="#">Privacy Policy</a>
+            </li>
+            <li class="list-inline-item"><a href="#">Intellectual Property</a>
+            </li>
+            <li class="list-inline-item"><a href="#">Terms &amp; Conditions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-5 order-sm-1">
+          <p class="small">&#xA9; 2019 <span class="white">eOriginal</span>, Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -732,7 +773,7 @@
       trigger: 'hover',
       placement: 'top',
       html: true,
-      content: '<div class="d-flex flex-column justify-space-between"><div class="note-content d-flex pb-1"><span class="eo-icon eo-icon-note-dk-gray flex-shrink-0"></span><div class="pl-2"><div class="note-heading"><span class="note-author font-weight-semibold">Debbie Johnson</span><span class="comma">,</span><span class="note-datetime pl-1">12/12/2018 2:23pm</span></div><div class="note-main py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum.</div></div></div><div class="note-footer"><a class="all-notes-link font-weight-semibold" href="#">See all notes</a></div></div>'
+      content: '<div class="d-flex flex-column justify-space-between"><div class="note-content d-flex pb-1"><span class="sr-only">Notes:</span><span class="eo-icon eo-icon-note-dk-gray flex-shrink-0"></span><div class="pl-2"><div class="note-heading"><span class="note-author font-weight-semibold">Debbie Johnson</span><span class="comma">,</span><span class="note-datetime pl-1">12/12/2018 2:23pm</span></div><div class="note-main py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum.</div></div></div><div class="note-footer"><a class="all-notes-link font-weight-semibold" href="#">See all notes</a></div></div>'
     });
 
 

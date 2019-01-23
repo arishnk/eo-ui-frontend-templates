@@ -28,14 +28,14 @@
     return Constructor;
   }
 
-  var cov_16ybww48pe = function () {
-    var path = "/Users/jkoulish/Sites/eo-ui-frontend-templates/js/src/tab.js",
-        hash = "3e72d49b5650f69ff685747729c344259d180c4e",
+  var cov_17u35s4y5x = function () {
+    var path = "C:\\Users\\ari\\source\\repos\\eo-ui-frontend-templates\\js\\src\\tab.js",
+        hash = "c7d33e38f7b76d66249935ddd00aa4a7bb14ee22",
         Function = function () {}.constructor,
         global = new Function('return this')(),
         gcv = "__coverage__",
         coverageData = {
-      path: "/Users/jkoulish/Sites/eo-ui-frontend-templates/js/src/tab.js",
+      path: "C:\\Users\\ari\\source\\repos\\eo-ui-frontend-templates\\js\\src\\tab.js",
       statementMap: {
         "0": {
           start: {
@@ -2231,27 +2231,27 @@
    * ------------------------------------------------------------------------
    */
 
-  var NAME = (cov_16ybww48pe.s[0]++, 'tab');
-  var VERSION = (cov_16ybww48pe.s[1]++, '4.2.1');
-  var DATA_KEY = (cov_16ybww48pe.s[2]++, 'bs.tab');
-  var EVENT_KEY = (cov_16ybww48pe.s[3]++, "." + DATA_KEY);
-  var DATA_API_KEY = (cov_16ybww48pe.s[4]++, '.data-api');
-  var JQUERY_NO_CONFLICT = (cov_16ybww48pe.s[5]++, $.fn[NAME]);
-  var Event = (cov_16ybww48pe.s[6]++, {
+  var NAME = (cov_17u35s4y5x.s[0]++, 'tab');
+  var VERSION = (cov_17u35s4y5x.s[1]++, '4.2.1');
+  var DATA_KEY = (cov_17u35s4y5x.s[2]++, 'bs.tab');
+  var EVENT_KEY = (cov_17u35s4y5x.s[3]++, "." + DATA_KEY);
+  var DATA_API_KEY = (cov_17u35s4y5x.s[4]++, '.data-api');
+  var JQUERY_NO_CONFLICT = (cov_17u35s4y5x.s[5]++, $.fn[NAME]);
+  var Event = (cov_17u35s4y5x.s[6]++, {
     HIDE: "hide" + EVENT_KEY,
     HIDDEN: "hidden" + EVENT_KEY,
     SHOW: "show" + EVENT_KEY,
     SHOWN: "shown" + EVENT_KEY,
     CLICK_DATA_API: "click" + EVENT_KEY + DATA_API_KEY
   });
-  var ClassName = (cov_16ybww48pe.s[7]++, {
+  var ClassName = (cov_17u35s4y5x.s[7]++, {
     DROPDOWN_MENU: 'dropdown-menu',
     ACTIVE: 'active',
     DISABLED: 'disabled',
     FADE: 'fade',
     SHOW: 'show'
   });
-  var Selector = (cov_16ybww48pe.s[8]++, {
+  var Selector = (cov_17u35s4y5x.s[8]++, {
     DROPDOWN: '.dropdown',
     NAV_LIST_GROUP: '.nav, .list-group',
     ACTIVE: '.active',
@@ -2271,8 +2271,8 @@
   /*#__PURE__*/
   function () {
     function Tab(element) {
-      cov_16ybww48pe.f[0]++;
-      cov_16ybww48pe.s[9]++;
+      cov_17u35s4y5x.f[0]++;
+      cov_17u35s4y5x.s[9]++;
       this._element = element;
     } // Getters
 
@@ -2283,111 +2283,111 @@
     _proto.show = function show() {
       var _this = this;
 
-      cov_16ybww48pe.f[2]++;
-      cov_16ybww48pe.s[11]++;
+      cov_17u35s4y5x.f[2]++;
+      cov_17u35s4y5x.s[11]++;
 
-      if ((cov_16ybww48pe.b[1][0]++, this._element.parentNode) && (cov_16ybww48pe.b[1][1]++, this._element.parentNode.nodeType === Node.ELEMENT_NODE) && (cov_16ybww48pe.b[1][2]++, $(this._element).hasClass(ClassName.ACTIVE)) || (cov_16ybww48pe.b[1][3]++, $(this._element).hasClass(ClassName.DISABLED))) {
-        cov_16ybww48pe.b[0][0]++;
-        cov_16ybww48pe.s[12]++;
+      if ((cov_17u35s4y5x.b[1][0]++, this._element.parentNode) && (cov_17u35s4y5x.b[1][1]++, this._element.parentNode.nodeType === Node.ELEMENT_NODE) && (cov_17u35s4y5x.b[1][2]++, $(this._element).hasClass(ClassName.ACTIVE)) || (cov_17u35s4y5x.b[1][3]++, $(this._element).hasClass(ClassName.DISABLED))) {
+        cov_17u35s4y5x.b[0][0]++;
+        cov_17u35s4y5x.s[12]++;
         return;
       } else {
-        cov_16ybww48pe.b[0][1]++;
+        cov_17u35s4y5x.b[0][1]++;
       }
 
       var target;
       var previous;
-      var listElement = (cov_16ybww48pe.s[13]++, $(this._element).closest(Selector.NAV_LIST_GROUP)[0]);
-      var selector = (cov_16ybww48pe.s[14]++, Util.getSelectorFromElement(this._element));
-      cov_16ybww48pe.s[15]++;
+      var listElement = (cov_17u35s4y5x.s[13]++, $(this._element).closest(Selector.NAV_LIST_GROUP)[0]);
+      var selector = (cov_17u35s4y5x.s[14]++, Util.getSelectorFromElement(this._element));
+      cov_17u35s4y5x.s[15]++;
 
       if (listElement) {
-        cov_16ybww48pe.b[2][0]++;
-        var itemSelector = (cov_16ybww48pe.s[16]++, (cov_16ybww48pe.b[4][0]++, listElement.nodeName === 'UL') || (cov_16ybww48pe.b[4][1]++, listElement.nodeName === 'OL') ? (cov_16ybww48pe.b[3][0]++, Selector.ACTIVE_UL) : (cov_16ybww48pe.b[3][1]++, Selector.ACTIVE));
-        cov_16ybww48pe.s[17]++;
+        cov_17u35s4y5x.b[2][0]++;
+        var itemSelector = (cov_17u35s4y5x.s[16]++, (cov_17u35s4y5x.b[4][0]++, listElement.nodeName === 'UL') || (cov_17u35s4y5x.b[4][1]++, listElement.nodeName === 'OL') ? (cov_17u35s4y5x.b[3][0]++, Selector.ACTIVE_UL) : (cov_17u35s4y5x.b[3][1]++, Selector.ACTIVE));
+        cov_17u35s4y5x.s[17]++;
         previous = $.makeArray($(listElement).find(itemSelector));
-        cov_16ybww48pe.s[18]++;
+        cov_17u35s4y5x.s[18]++;
         previous = previous[previous.length - 1];
       } else {
-        cov_16ybww48pe.b[2][1]++;
+        cov_17u35s4y5x.b[2][1]++;
       }
 
-      var hideEvent = (cov_16ybww48pe.s[19]++, $.Event(Event.HIDE, {
+      var hideEvent = (cov_17u35s4y5x.s[19]++, $.Event(Event.HIDE, {
         relatedTarget: this._element
       }));
-      var showEvent = (cov_16ybww48pe.s[20]++, $.Event(Event.SHOW, {
+      var showEvent = (cov_17u35s4y5x.s[20]++, $.Event(Event.SHOW, {
         relatedTarget: previous
       }));
-      cov_16ybww48pe.s[21]++;
+      cov_17u35s4y5x.s[21]++;
 
       if (previous) {
-        cov_16ybww48pe.b[5][0]++;
-        cov_16ybww48pe.s[22]++;
+        cov_17u35s4y5x.b[5][0]++;
+        cov_17u35s4y5x.s[22]++;
         $(previous).trigger(hideEvent);
       } else {
-        cov_16ybww48pe.b[5][1]++;
+        cov_17u35s4y5x.b[5][1]++;
       }
 
-      cov_16ybww48pe.s[23]++;
+      cov_17u35s4y5x.s[23]++;
       $(this._element).trigger(showEvent);
-      cov_16ybww48pe.s[24]++;
+      cov_17u35s4y5x.s[24]++;
 
-      if ((cov_16ybww48pe.b[7][0]++, showEvent.isDefaultPrevented()) || (cov_16ybww48pe.b[7][1]++, hideEvent.isDefaultPrevented())) {
-        cov_16ybww48pe.b[6][0]++;
-        cov_16ybww48pe.s[25]++;
+      if ((cov_17u35s4y5x.b[7][0]++, showEvent.isDefaultPrevented()) || (cov_17u35s4y5x.b[7][1]++, hideEvent.isDefaultPrevented())) {
+        cov_17u35s4y5x.b[6][0]++;
+        cov_17u35s4y5x.s[25]++;
         return;
       } else {
-        cov_16ybww48pe.b[6][1]++;
+        cov_17u35s4y5x.b[6][1]++;
       }
 
-      cov_16ybww48pe.s[26]++;
+      cov_17u35s4y5x.s[26]++;
 
       if (selector) {
-        cov_16ybww48pe.b[8][0]++;
-        cov_16ybww48pe.s[27]++;
+        cov_17u35s4y5x.b[8][0]++;
+        cov_17u35s4y5x.s[27]++;
         target = document.querySelector(selector);
       } else {
-        cov_16ybww48pe.b[8][1]++;
+        cov_17u35s4y5x.b[8][1]++;
       }
 
-      cov_16ybww48pe.s[28]++;
+      cov_17u35s4y5x.s[28]++;
 
       this._activate(this._element, listElement);
 
-      cov_16ybww48pe.s[29]++;
+      cov_17u35s4y5x.s[29]++;
 
       var complete = function complete() {
-        cov_16ybww48pe.f[3]++;
-        var hiddenEvent = (cov_16ybww48pe.s[30]++, $.Event(Event.HIDDEN, {
+        cov_17u35s4y5x.f[3]++;
+        var hiddenEvent = (cov_17u35s4y5x.s[30]++, $.Event(Event.HIDDEN, {
           relatedTarget: _this._element
         }));
-        var shownEvent = (cov_16ybww48pe.s[31]++, $.Event(Event.SHOWN, {
+        var shownEvent = (cov_17u35s4y5x.s[31]++, $.Event(Event.SHOWN, {
           relatedTarget: previous
         }));
-        cov_16ybww48pe.s[32]++;
+        cov_17u35s4y5x.s[32]++;
         $(previous).trigger(hiddenEvent);
-        cov_16ybww48pe.s[33]++;
+        cov_17u35s4y5x.s[33]++;
         $(_this._element).trigger(shownEvent);
       };
 
-      cov_16ybww48pe.s[34]++;
+      cov_17u35s4y5x.s[34]++;
 
       if (target) {
-        cov_16ybww48pe.b[9][0]++;
-        cov_16ybww48pe.s[35]++;
+        cov_17u35s4y5x.b[9][0]++;
+        cov_17u35s4y5x.s[35]++;
 
         this._activate(target, target.parentNode, complete);
       } else {
-        cov_16ybww48pe.b[9][1]++;
-        cov_16ybww48pe.s[36]++;
+        cov_17u35s4y5x.b[9][1]++;
+        cov_17u35s4y5x.s[36]++;
         complete();
       }
     };
 
     _proto.dispose = function dispose() {
-      cov_16ybww48pe.f[4]++;
-      cov_16ybww48pe.s[37]++;
+      cov_17u35s4y5x.f[4]++;
+      cov_17u35s4y5x.s[37]++;
       $.removeData(this._element, DATA_KEY);
-      cov_16ybww48pe.s[38]++;
+      cov_17u35s4y5x.s[38]++;
       this._element = null;
     }; // Private
 
@@ -2395,151 +2395,151 @@
     _proto._activate = function _activate(element, container, callback) {
       var _this2 = this;
 
-      cov_16ybww48pe.f[5]++;
-      var activeElements = (cov_16ybww48pe.s[39]++, (cov_16ybww48pe.b[11][0]++, container) && ((cov_16ybww48pe.b[11][1]++, container.nodeName === 'UL') || (cov_16ybww48pe.b[11][2]++, container.nodeName === 'OL')) ? (cov_16ybww48pe.b[10][0]++, $(container).find(Selector.ACTIVE_UL)) : (cov_16ybww48pe.b[10][1]++, $(container).children(Selector.ACTIVE)));
-      var active = (cov_16ybww48pe.s[40]++, activeElements[0]);
-      var isTransitioning = (cov_16ybww48pe.s[41]++, (cov_16ybww48pe.b[12][0]++, callback) && (cov_16ybww48pe.b[12][1]++, active) && (cov_16ybww48pe.b[12][2]++, $(active).hasClass(ClassName.FADE)));
-      cov_16ybww48pe.s[42]++;
+      cov_17u35s4y5x.f[5]++;
+      var activeElements = (cov_17u35s4y5x.s[39]++, (cov_17u35s4y5x.b[11][0]++, container) && ((cov_17u35s4y5x.b[11][1]++, container.nodeName === 'UL') || (cov_17u35s4y5x.b[11][2]++, container.nodeName === 'OL')) ? (cov_17u35s4y5x.b[10][0]++, $(container).find(Selector.ACTIVE_UL)) : (cov_17u35s4y5x.b[10][1]++, $(container).children(Selector.ACTIVE)));
+      var active = (cov_17u35s4y5x.s[40]++, activeElements[0]);
+      var isTransitioning = (cov_17u35s4y5x.s[41]++, (cov_17u35s4y5x.b[12][0]++, callback) && (cov_17u35s4y5x.b[12][1]++, active) && (cov_17u35s4y5x.b[12][2]++, $(active).hasClass(ClassName.FADE)));
+      cov_17u35s4y5x.s[42]++;
 
       var complete = function complete() {
-        cov_16ybww48pe.f[6]++;
-        cov_16ybww48pe.s[43]++;
+        cov_17u35s4y5x.f[6]++;
+        cov_17u35s4y5x.s[43]++;
         return _this2._transitionComplete(element, active, callback);
       };
 
-      cov_16ybww48pe.s[44]++;
+      cov_17u35s4y5x.s[44]++;
 
-      if ((cov_16ybww48pe.b[14][0]++, active) && (cov_16ybww48pe.b[14][1]++, isTransitioning)) {
-        cov_16ybww48pe.b[13][0]++;
-        var transitionDuration = (cov_16ybww48pe.s[45]++, Util.getTransitionDurationFromElement(active));
-        cov_16ybww48pe.s[46]++;
+      if ((cov_17u35s4y5x.b[14][0]++, active) && (cov_17u35s4y5x.b[14][1]++, isTransitioning)) {
+        cov_17u35s4y5x.b[13][0]++;
+        var transitionDuration = (cov_17u35s4y5x.s[45]++, Util.getTransitionDurationFromElement(active));
+        cov_17u35s4y5x.s[46]++;
         $(active).removeClass(ClassName.SHOW).one(Util.TRANSITION_END, complete).emulateTransitionEnd(transitionDuration);
       } else {
-        cov_16ybww48pe.b[13][1]++;
-        cov_16ybww48pe.s[47]++;
+        cov_17u35s4y5x.b[13][1]++;
+        cov_17u35s4y5x.s[47]++;
         complete();
       }
     };
 
     _proto._transitionComplete = function _transitionComplete(element, active, callback) {
-      cov_16ybww48pe.f[7]++;
-      cov_16ybww48pe.s[48]++;
+      cov_17u35s4y5x.f[7]++;
+      cov_17u35s4y5x.s[48]++;
 
       if (active) {
-        cov_16ybww48pe.b[15][0]++;
-        cov_16ybww48pe.s[49]++;
+        cov_17u35s4y5x.b[15][0]++;
+        cov_17u35s4y5x.s[49]++;
         $(active).removeClass(ClassName.ACTIVE);
-        var dropdownChild = (cov_16ybww48pe.s[50]++, $(active.parentNode).find(Selector.DROPDOWN_ACTIVE_CHILD)[0]);
-        cov_16ybww48pe.s[51]++;
+        var dropdownChild = (cov_17u35s4y5x.s[50]++, $(active.parentNode).find(Selector.DROPDOWN_ACTIVE_CHILD)[0]);
+        cov_17u35s4y5x.s[51]++;
 
         if (dropdownChild) {
-          cov_16ybww48pe.b[16][0]++;
-          cov_16ybww48pe.s[52]++;
+          cov_17u35s4y5x.b[16][0]++;
+          cov_17u35s4y5x.s[52]++;
           $(dropdownChild).removeClass(ClassName.ACTIVE);
         } else {
-          cov_16ybww48pe.b[16][1]++;
+          cov_17u35s4y5x.b[16][1]++;
         }
 
-        cov_16ybww48pe.s[53]++;
+        cov_17u35s4y5x.s[53]++;
 
         if (active.getAttribute('role') === 'tab') {
-          cov_16ybww48pe.b[17][0]++;
-          cov_16ybww48pe.s[54]++;
+          cov_17u35s4y5x.b[17][0]++;
+          cov_17u35s4y5x.s[54]++;
           active.setAttribute('aria-selected', false);
         } else {
-          cov_16ybww48pe.b[17][1]++;
+          cov_17u35s4y5x.b[17][1]++;
         }
       } else {
-        cov_16ybww48pe.b[15][1]++;
+        cov_17u35s4y5x.b[15][1]++;
       }
 
-      cov_16ybww48pe.s[55]++;
+      cov_17u35s4y5x.s[55]++;
       $(element).addClass(ClassName.ACTIVE);
-      cov_16ybww48pe.s[56]++;
+      cov_17u35s4y5x.s[56]++;
 
       if (element.getAttribute('role') === 'tab') {
-        cov_16ybww48pe.b[18][0]++;
-        cov_16ybww48pe.s[57]++;
+        cov_17u35s4y5x.b[18][0]++;
+        cov_17u35s4y5x.s[57]++;
         element.setAttribute('aria-selected', true);
       } else {
-        cov_16ybww48pe.b[18][1]++;
+        cov_17u35s4y5x.b[18][1]++;
       }
 
-      cov_16ybww48pe.s[58]++;
+      cov_17u35s4y5x.s[58]++;
       Util.reflow(element);
-      cov_16ybww48pe.s[59]++;
+      cov_17u35s4y5x.s[59]++;
       $(element).addClass(ClassName.SHOW);
-      cov_16ybww48pe.s[60]++;
+      cov_17u35s4y5x.s[60]++;
 
-      if ((cov_16ybww48pe.b[20][0]++, element.parentNode) && (cov_16ybww48pe.b[20][1]++, $(element.parentNode).hasClass(ClassName.DROPDOWN_MENU))) {
-        cov_16ybww48pe.b[19][0]++;
-        var dropdownElement = (cov_16ybww48pe.s[61]++, $(element).closest(Selector.DROPDOWN)[0]);
-        cov_16ybww48pe.s[62]++;
+      if ((cov_17u35s4y5x.b[20][0]++, element.parentNode) && (cov_17u35s4y5x.b[20][1]++, $(element.parentNode).hasClass(ClassName.DROPDOWN_MENU))) {
+        cov_17u35s4y5x.b[19][0]++;
+        var dropdownElement = (cov_17u35s4y5x.s[61]++, $(element).closest(Selector.DROPDOWN)[0]);
+        cov_17u35s4y5x.s[62]++;
 
         if (dropdownElement) {
-          cov_16ybww48pe.b[21][0]++;
-          var dropdownToggleList = (cov_16ybww48pe.s[63]++, [].slice.call(dropdownElement.querySelectorAll(Selector.DROPDOWN_TOGGLE)));
-          cov_16ybww48pe.s[64]++;
+          cov_17u35s4y5x.b[21][0]++;
+          var dropdownToggleList = (cov_17u35s4y5x.s[63]++, [].slice.call(dropdownElement.querySelectorAll(Selector.DROPDOWN_TOGGLE)));
+          cov_17u35s4y5x.s[64]++;
           $(dropdownToggleList).addClass(ClassName.ACTIVE);
         } else {
-          cov_16ybww48pe.b[21][1]++;
+          cov_17u35s4y5x.b[21][1]++;
         }
 
-        cov_16ybww48pe.s[65]++;
+        cov_17u35s4y5x.s[65]++;
         element.setAttribute('aria-expanded', true);
       } else {
-        cov_16ybww48pe.b[19][1]++;
+        cov_17u35s4y5x.b[19][1]++;
       }
 
-      cov_16ybww48pe.s[66]++;
+      cov_17u35s4y5x.s[66]++;
 
       if (callback) {
-        cov_16ybww48pe.b[22][0]++;
-        cov_16ybww48pe.s[67]++;
+        cov_17u35s4y5x.b[22][0]++;
+        cov_17u35s4y5x.s[67]++;
         callback();
       } else {
-        cov_16ybww48pe.b[22][1]++;
+        cov_17u35s4y5x.b[22][1]++;
       }
     }; // Static
 
 
     Tab._jQueryInterface = function _jQueryInterface(config) {
-      cov_16ybww48pe.f[8]++;
-      cov_16ybww48pe.s[68]++;
+      cov_17u35s4y5x.f[8]++;
+      cov_17u35s4y5x.s[68]++;
       return this.each(function () {
-        cov_16ybww48pe.f[9]++;
-        var $this = (cov_16ybww48pe.s[69]++, $(this));
-        var data = (cov_16ybww48pe.s[70]++, $this.data(DATA_KEY));
-        cov_16ybww48pe.s[71]++;
+        cov_17u35s4y5x.f[9]++;
+        var $this = (cov_17u35s4y5x.s[69]++, $(this));
+        var data = (cov_17u35s4y5x.s[70]++, $this.data(DATA_KEY));
+        cov_17u35s4y5x.s[71]++;
 
         if (!data) {
-          cov_16ybww48pe.b[23][0]++;
-          cov_16ybww48pe.s[72]++;
+          cov_17u35s4y5x.b[23][0]++;
+          cov_17u35s4y5x.s[72]++;
           data = new Tab(this);
-          cov_16ybww48pe.s[73]++;
+          cov_17u35s4y5x.s[73]++;
           $this.data(DATA_KEY, data);
         } else {
-          cov_16ybww48pe.b[23][1]++;
+          cov_17u35s4y5x.b[23][1]++;
         }
 
-        cov_16ybww48pe.s[74]++;
+        cov_17u35s4y5x.s[74]++;
 
         if (typeof config === 'string') {
-          cov_16ybww48pe.b[24][0]++;
-          cov_16ybww48pe.s[75]++;
+          cov_17u35s4y5x.b[24][0]++;
+          cov_17u35s4y5x.s[75]++;
 
           if (typeof data[config] === 'undefined') {
-            cov_16ybww48pe.b[25][0]++;
-            cov_16ybww48pe.s[76]++;
+            cov_17u35s4y5x.b[25][0]++;
+            cov_17u35s4y5x.s[76]++;
             throw new TypeError("No method named \"" + config + "\"");
           } else {
-            cov_16ybww48pe.b[25][1]++;
+            cov_17u35s4y5x.b[25][1]++;
           }
 
-          cov_16ybww48pe.s[77]++;
+          cov_17u35s4y5x.s[77]++;
           data[config]();
         } else {
-          cov_16ybww48pe.b[24][1]++;
+          cov_17u35s4y5x.b[24][1]++;
         }
       });
     };
@@ -2547,8 +2547,8 @@
     _createClass(Tab, null, [{
       key: "VERSION",
       get: function get() {
-        cov_16ybww48pe.f[1]++;
-        cov_16ybww48pe.s[10]++;
+        cov_17u35s4y5x.f[1]++;
+        cov_17u35s4y5x.s[10]++;
         return VERSION;
       }
     }]);
@@ -2562,12 +2562,12 @@
    */
 
 
-  cov_16ybww48pe.s[78]++;
+  cov_17u35s4y5x.s[78]++;
   $(document).on(Event.CLICK_DATA_API, Selector.DATA_TOGGLE, function (event) {
-    cov_16ybww48pe.f[10]++;
-    cov_16ybww48pe.s[79]++;
+    cov_17u35s4y5x.f[10]++;
+    cov_17u35s4y5x.s[79]++;
     event.preventDefault();
-    cov_16ybww48pe.s[80]++;
+    cov_17u35s4y5x.s[80]++;
 
     Tab._jQueryInterface.call($(this), 'show');
   });
@@ -2577,17 +2577,17 @@
    * ------------------------------------------------------------------------
    */
 
-  cov_16ybww48pe.s[81]++;
+  cov_17u35s4y5x.s[81]++;
   $.fn[NAME] = Tab._jQueryInterface;
-  cov_16ybww48pe.s[82]++;
+  cov_17u35s4y5x.s[82]++;
   $.fn[NAME].Constructor = Tab;
-  cov_16ybww48pe.s[83]++;
+  cov_17u35s4y5x.s[83]++;
 
   $.fn[NAME].noConflict = function () {
-    cov_16ybww48pe.f[11]++;
-    cov_16ybww48pe.s[84]++;
+    cov_17u35s4y5x.f[11]++;
+    cov_17u35s4y5x.s[84]++;
     $.fn[NAME] = JQUERY_NO_CONFLICT;
-    cov_16ybww48pe.s[85]++;
+    cov_17u35s4y5x.s[85]++;
     return Tab._jQueryInterface;
   };
 

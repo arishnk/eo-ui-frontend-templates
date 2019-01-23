@@ -652,7 +652,7 @@ a.form-control-feedback {
 
   position: relative;
   border-radius: 9px;
-  @include box-shadow(0 5px 10px 0 rgba(0, 0, 0, .2));
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
   padding: 25px 40px 35px;
 
   > *:first-child {
@@ -914,9 +914,15 @@ hr.hr-dots {
   margin-bottom: 5px;
   position: relative;
 
+  .invalid-feedback {
+    margin-left: 13px;
+    margin-top: 0;
+  }
+
   label {
 
-    padding-left: 12px;
+    padding-left: 24px;
+    text-indent: -12px;
 
     input {
 
@@ -961,9 +967,15 @@ hr.hr-dots {
   margin-bottom: 5px;
   position: relative;
 
+  .invalid-feedback {
+    margin-left: 13px;
+    margin-top: 0;
+  }
+
   label {
 
-    padding-left: 12px;
+    padding-left: 24px;
+    text-indent: -12px;
 
     input {
 
@@ -1250,6 +1262,12 @@ table.table.table-sm {
 
 .is-invalid ~ .invalid-feedback {
   display: block;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  background: none;
+  padding-right: .75rem;
 }
 
 .no-xs-padding {
@@ -2176,17 +2194,18 @@ table.table.table-sm {
 .header-menu {
 
   font-size: 13px;
+  font-weight: 400;
 
   .list-inline-item:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 35px;
   }
 
-  a {
+  .list-inline-item.active a {
     color: #5a5e5a;
   }
 
-  a:hover,
-  a:focus {
+  .list-inline-item.active a:hover,
+  .list-inline-item.active a:focus {
 
     color: #2ea049;
     text-decoration: none;
@@ -2206,8 +2225,12 @@ table.table.table-sm {
   }
 
   a.dropdown-toggle {
-    font-size: 13px;
-    color: #5a5e5a;
+    font-size: 12px;
+    color: #8d939a;
+  }
+
+  .show a.dropdown-toggle {
+    color: #71767f;
   }
 
   .dropdown-toggle::after {
@@ -2230,6 +2253,18 @@ table.table.table-sm {
   .px-xs-0 {
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+
+}
+
+.header-name {
+  font-size: 14px;
+}
+
+@include media-breakpoint-down(sm) {
+
+  .popover-adjust-for-label {
+    top: -30px !important;
   }
 
 }

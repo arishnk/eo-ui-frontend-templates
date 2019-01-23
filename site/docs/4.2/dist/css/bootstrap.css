@@ -12777,6 +12777,7 @@ a.form-control-feedback:hover {
 .card {
   position: relative;
   border-radius: 9px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
   padding: 25px 40px 35px;
 }
 
@@ -13010,8 +13011,14 @@ hr.hr-dots {
   position: relative;
 }
 
+.checkbox .invalid-feedback {
+  margin-left: 13px;
+  margin-top: 0;
+}
+
 .checkbox label {
-  padding-left: 12px;
+  padding-left: 24px;
+  text-indent: -12px;
 }
 
 .checkbox label input {
@@ -13051,8 +13058,14 @@ hr.hr-dots {
   position: relative;
 }
 
+.radio .invalid-feedback {
+  margin-left: 13px;
+  margin-top: 0;
+}
+
 .radio label {
-  padding-left: 12px;
+  padding-left: 24px;
+  text-indent: -12px;
 }
 
 .radio label input {
@@ -13298,6 +13311,12 @@ table.table.table-sm thead tr:first-child th {
 
 .is-invalid ~ .invalid-feedback {
   display: block;
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  background: none;
+  padding-right: .75rem;
 }
 
 @media (max-width: 575.98px) {
@@ -14210,24 +14229,25 @@ table.table.table-sm thead tr:first-child th {
 
 .header-menu {
   font-size: 13px;
+  font-weight: 400;
 }
 
 .header-menu .list-inline-item:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 35px;
 }
 
-.header-menu a {
+.header-menu .list-inline-item.active a {
   color: #5a5e5a;
 }
 
-.header-menu a:hover,
-.header-menu a:focus {
+.header-menu .list-inline-item.active a:hover,
+.header-menu .list-inline-item.active a:focus {
   color: #2ea049;
   text-decoration: none;
 }
 
-.header-menu a:hover .eo-icon-my-closings-small,
-.header-menu a:focus .eo-icon-my-closings-small {
+.header-menu .list-inline-item.active a:hover .eo-icon-my-closings-small,
+.header-menu .list-inline-item.active a:focus .eo-icon-my-closings-small {
   width: 29px;
   height: 26px;
   background-image: url("../img/icon_my_closings_small_hover_select.svg");
@@ -14237,32 +14257,32 @@ table.table.table-sm thead tr:first-child th {
   position: relative;
 }
 
-.header-menu a:hover .eo-icon-my-closings-small.eo-icon-xs,
-.header-menu a:focus .eo-icon-my-closings-small.eo-icon-xs {
+.header-menu .list-inline-item.active a:hover .eo-icon-my-closings-small.eo-icon-xs,
+.header-menu .list-inline-item.active a:focus .eo-icon-my-closings-small.eo-icon-xs {
   width: 7.25px;
   height: 6.5px;
 }
 
-.header-menu a:hover .eo-icon-my-closings-small.eo-icon-sm,
-.header-menu a:focus .eo-icon-my-closings-small.eo-icon-sm {
+.header-menu .list-inline-item.active a:hover .eo-icon-my-closings-small.eo-icon-sm,
+.header-menu .list-inline-item.active a:focus .eo-icon-my-closings-small.eo-icon-sm {
   width: 14.5px;
   height: 13px;
 }
 
-.header-menu a:hover .eo-icon-my-closings-small.eo-icon-lg,
-.header-menu a:focus .eo-icon-my-closings-small.eo-icon-lg {
+.header-menu .list-inline-item.active a:hover .eo-icon-my-closings-small.eo-icon-lg,
+.header-menu .list-inline-item.active a:focus .eo-icon-my-closings-small.eo-icon-lg {
   width: 36.25px;
   height: 32.5px;
 }
 
-.header-menu a:hover .eo-icon-my-closings-small.eo-icon-xl,
-.header-menu a:focus .eo-icon-my-closings-small.eo-icon-xl {
+.header-menu .list-inline-item.active a:hover .eo-icon-my-closings-small.eo-icon-xl,
+.header-menu .list-inline-item.active a:focus .eo-icon-my-closings-small.eo-icon-xl {
   width: 43.5px;
   height: 39px;
 }
 
-.header-menu a:hover .eo-icon-my-account,
-.header-menu a:focus .eo-icon-my-account {
+.header-menu .list-inline-item.active a:hover .eo-icon-my-account,
+.header-menu .list-inline-item.active a:focus .eo-icon-my-account {
   width: 21px;
   height: 21px;
   background-image: url("../img/icon_my_account_hover_select.svg");
@@ -14272,32 +14292,32 @@ table.table.table-sm thead tr:first-child th {
   position: relative;
 }
 
-.header-menu a:hover .eo-icon-my-account.eo-icon-xs,
-.header-menu a:focus .eo-icon-my-account.eo-icon-xs {
+.header-menu .list-inline-item.active a:hover .eo-icon-my-account.eo-icon-xs,
+.header-menu .list-inline-item.active a:focus .eo-icon-my-account.eo-icon-xs {
   width: 5.25px;
   height: 5.25px;
 }
 
-.header-menu a:hover .eo-icon-my-account.eo-icon-sm,
-.header-menu a:focus .eo-icon-my-account.eo-icon-sm {
+.header-menu .list-inline-item.active a:hover .eo-icon-my-account.eo-icon-sm,
+.header-menu .list-inline-item.active a:focus .eo-icon-my-account.eo-icon-sm {
   width: 10.5px;
   height: 10.5px;
 }
 
-.header-menu a:hover .eo-icon-my-account.eo-icon-lg,
-.header-menu a:focus .eo-icon-my-account.eo-icon-lg {
+.header-menu .list-inline-item.active a:hover .eo-icon-my-account.eo-icon-lg,
+.header-menu .list-inline-item.active a:focus .eo-icon-my-account.eo-icon-lg {
   width: 26.25px;
   height: 26.25px;
 }
 
-.header-menu a:hover .eo-icon-my-account.eo-icon-xl,
-.header-menu a:focus .eo-icon-my-account.eo-icon-xl {
+.header-menu .list-inline-item.active a:hover .eo-icon-my-account.eo-icon-xl,
+.header-menu .list-inline-item.active a:focus .eo-icon-my-account.eo-icon-xl {
   width: 31.5px;
   height: 31.5px;
 }
 
-.header-menu a:hover .eo-icon-sign-out,
-.header-menu a:focus .eo-icon-sign-out {
+.header-menu .list-inline-item.active a:hover .eo-icon-sign-out,
+.header-menu .list-inline-item.active a:focus .eo-icon-sign-out {
   width: 21px;
   height: 21px;
   background-image: url("../img/icon_sign_out_hover_select.svg");
@@ -14307,26 +14327,26 @@ table.table.table-sm thead tr:first-child th {
   position: relative;
 }
 
-.header-menu a:hover .eo-icon-sign-out.eo-icon-xs,
-.header-menu a:focus .eo-icon-sign-out.eo-icon-xs {
+.header-menu .list-inline-item.active a:hover .eo-icon-sign-out.eo-icon-xs,
+.header-menu .list-inline-item.active a:focus .eo-icon-sign-out.eo-icon-xs {
   width: 5.25px;
   height: 5.25px;
 }
 
-.header-menu a:hover .eo-icon-sign-out.eo-icon-sm,
-.header-menu a:focus .eo-icon-sign-out.eo-icon-sm {
+.header-menu .list-inline-item.active a:hover .eo-icon-sign-out.eo-icon-sm,
+.header-menu .list-inline-item.active a:focus .eo-icon-sign-out.eo-icon-sm {
   width: 10.5px;
   height: 10.5px;
 }
 
-.header-menu a:hover .eo-icon-sign-out.eo-icon-lg,
-.header-menu a:focus .eo-icon-sign-out.eo-icon-lg {
+.header-menu .list-inline-item.active a:hover .eo-icon-sign-out.eo-icon-lg,
+.header-menu .list-inline-item.active a:focus .eo-icon-sign-out.eo-icon-lg {
   width: 26.25px;
   height: 26.25px;
 }
 
-.header-menu a:hover .eo-icon-sign-out.eo-icon-xl,
-.header-menu a:focus .eo-icon-sign-out.eo-icon-xl {
+.header-menu .list-inline-item.active a:hover .eo-icon-sign-out.eo-icon-xl,
+.header-menu .list-inline-item.active a:focus .eo-icon-sign-out.eo-icon-xl {
   width: 31.5px;
   height: 31.5px;
 }
@@ -14336,8 +14356,12 @@ table.table.table-sm thead tr:first-child th {
 }
 
 .header-hamburger a.dropdown-toggle {
-  font-size: 13px;
-  color: #5a5e5a;
+  font-size: 12px;
+  color: #8d939a;
+}
+
+.header-hamburger .show a.dropdown-toggle {
+  color: #71767f;
 }
 
 .header-hamburger .dropdown-toggle::after {
@@ -14355,6 +14379,16 @@ table.table.table-sm thead tr:first-child th {
   .px-xs-0 {
     padding-left: 0 !important;
     padding-right: 0 !important;
+  }
+}
+
+.header-name {
+  font-size: 14px;
+}
+
+@media (max-width: 767.98px) {
+  .popover-adjust-for-label {
+    top: -30px !important;
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
