@@ -1718,6 +1718,8 @@ table.table.table-sm {
   }
 
   &.notes-container {
+    box-shadow: none;
+
     .card-header {
       color: $white;
 
