@@ -637,7 +637,13 @@
       <div class="modal-content rounded-0">
 
         <div class="modal-header d-flex justify-content-between pr-0 rounded-0">
-          <h2 class="modal-title font-weight-semibold font-lg"><span class="signerName">Jonathan Shields</span> closing docs</h2>
+          <div class="d-flex flex-column align-items-start">
+            <h2 class="modal-title font-weight-semibold font-lg"><span class="signerName">Jonathan Shields</span> closing docs</h2>
+            <a href="#" class="tab-updates-link docs-popover-trigger d-flex align-items-center mt-1" id="docsMobilePopoverModalTrigger" data-toggle="popover">
+              <span class="eo-icon eo-icon-updated-star-green mr-2"></span>
+              <span class="tab-updates-link-text">Updates</span>
+            </a>
+          </div>
           <button class="btn btn-blank" role="button" data-dismiss="modal" aria-label="Close"><span class="eo-icon eo-icon-remove-large eo-icon-half-opacity"></span></button>
         </div>
         <div class="modal-body">
@@ -702,6 +708,18 @@
       // offset: 'top, -5px',
       boundary: $('.detail-container')[0],
       fallbackPlacement: ['bottom'],
+      html: true,
+      title: 'Updated docs retrieved at:',
+      template: '<div class="popover" role="tooltip"><div class="arrow"></div><div class="popover-header"></div><div class="popover-body py-0 docs-updates"></div></div>',
+      content: '<div class="docs-update"><div class="docs-update-heading d-flex justify-content-between align-items-center p-2"><span class="eo-icon eo-icon-updated-star-gray"></span><span class="docs-update-date pl-1 mr-auto">12/20/2018</span><span class="docs-update-time">9:15 am ET</span></div><ul class="docs-update-docs"><li class="docs-update-doc">Document title here</li><li class="docs-update-doc">Document title here long example lorem ipsum dolor</li><li class="docs-update-doc">Document title here</li></ul></div><div class="docs-update"><div class="docs-update-heading d-flex justify-content-between align-items-center p-2"><span class="eo-icon eo-icon-updated-star-gray"></span><span class="docs-update-date pl-1 mr-auto">12/18/2018</span><span class="docs-update-time">8:43 am ET</span></div><ul class="docs-update-docs"><li class="docs-update-doc">Document title here</li><li class="docs-update-doc">Document title here</li></ul></div><div class="docs-update"><div class="docs-update-heading d-flex justify-content-between align-items-center p-2"><span class="eo-icon eo-icon-updated-star-gray"></span><span class="docs-update-date pl-1 mr-auto">12/9/2018</span><span class="docs-update-time">12:11 pm ET</span></div><ul class="docs-update-docs"><li class="docs-update-doc">Document title here</li></ul></div>'
+    });
+
+    $('#docsMobilePopoverModalTrigger').popover({
+      container: $('#docsMobilePopoverModalTrigger')[0],
+      placement: 'bottom',
+      // offset: 'top, 5px',
+      boundary: $('#lenderDocsMobileDetail')[0],
+      fallbackPlacement: ['top'],
       html: true,
       title: 'Updated docs retrieved at:',
       template: '<div class="popover" role="tooltip"><div class="arrow"></div><div class="popover-header"></div><div class="popover-body py-0 docs-updates"></div></div>',
