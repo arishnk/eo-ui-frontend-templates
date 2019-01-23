@@ -12552,7 +12552,7 @@ textarea.form-control {
 }
 
 .col-form-label {
-  color: #353937 !important;
+  color: #353937;
   font-size: 0.75rem;
   font-weight: 400;
 }
@@ -13823,6 +13823,15 @@ table.table.table-sm thead tr:first-child th {
   color: #000;
 }
 
+.modal .modal-full {
+  min-width: 100%;
+  margin: 0;
+}
+
+.modal .modal-full .modal-content {
+  min-height: 100vh;
+}
+
 .modal .modal-content {
   border-radius: 9px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
@@ -13841,6 +13850,12 @@ table.table.table-sm thead tr:first-child th {
   font-size: 0.8125rem;
   color: #5a5e5a;
   line-height: 18px;
+}
+
+.modal .modal-header .modal-title.font-lg {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: normal;
 }
 
 .modal .modal-body textarea.form-control {
@@ -13997,40 +14012,40 @@ table.table.table-sm thead tr:first-child th {
   border-bottom-right-radius: 20px;
 }
 
-.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs {
+.nav-tabs-lg-wrapper .nav-tabs .tab-docs-detail .docs {
   padding-left: .5rem;
 }
 
-.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs:first-child {
+.nav-tabs-lg-wrapper .nav-tabs .tab-docs-detail .docs:first-child {
   padding-left: 0;
 }
 
-.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs-label,
-.nav-tabs-wrapper .nav-tabs .tab-docs-detail .pages .docs-value {
+.nav-tabs-lg-wrapper .nav-tabs .tab-docs-detail .docs-label,
+.nav-tabs-lg-wrapper .nav-tabs .tab-docs-detail .pages .docs-value {
   font-size: 0.75rem;
 }
 
-.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover {
+.nav-tabs-lg-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover {
   width: 250px;
 }
 
-.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .popover-body {
+.nav-tabs-lg-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .popover-body {
   max-height: 260px;
   overflow-y: scroll;
 }
 
-.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-heading {
+.nav-tabs-lg-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-heading {
   background-color: #eff2f3;
 }
 
-.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-heading .docs-update-date,
-.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-heading .docs-update-time {
+.nav-tabs-lg-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-heading .docs-update-date,
+.nav-tabs-lg-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-heading .docs-update-time {
   font-weight: 600;
   font-size: 0.75rem;
   line-height: 15px;
 }
 
-.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-docs {
+.nav-tabs-lg-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-docs {
   list-style: none;
   padding-left: 27px;
   padding-top: .25rem;
@@ -14038,27 +14053,27 @@ table.table.table-sm thead tr:first-child th {
   margin-bottom: 0;
 }
 
-.nav-tabs-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-docs .docs-update-doc {
+.nav-tabs-lg-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-docs .docs-update-doc {
   padding: .25rem 0;
   font-size: 0.75rem;
   line-height: 18px;
 }
 
-.nav-tabs-wrapper .tab-content .lender-docs-inner,
-.nav-tabs-wrapper .tab-content .signing-summary-inner {
+.nav-tabs-lg-wrapper .tab-content .lender-docs-inner,
+.nav-tabs-lg-wrapper .tab-content .signing-summary-inner {
   min-height: 300px;
 }
 
-.nav-tabs-wrapper .tab-content .signing-summary-table th,
-.nav-tabs-wrapper .tab-content .signing-summary-table td {
+.signing-summary-table th,
+.signing-summary-table td {
   padding: 1rem 1.5rem;
 }
 
-.nav-tabs-wrapper .tab-content .signing-summary-table thead {
+.signing-summary-table thead {
   background: #eff2f3;
 }
 
-.nav-tabs-wrapper .tab-content .signing-summary-table thead th {
+.signing-summary-table thead th {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.75rem;
@@ -14068,32 +14083,52 @@ table.table.table-sm thead tr:first-child th {
   border-bottom: 0;
 }
 
-.nav-tabs-wrapper .tab-content .signing-summary-table tbody th,
-.nav-tabs-wrapper .tab-content .signing-summary-table tbody td {
+.signing-summary-table tbody th,
+.signing-summary-table tbody td {
   font-size: 0.8125rem;
   line-height: 19px;
 }
 
-.nav-tabs-wrapper .tab-content .signing-summary-table tbody tr:first-child th,
-.nav-tabs-wrapper .tab-content .signing-summary-table tbody tr:first-child td {
+.signing-summary-table tbody tr:first-child th,
+.signing-summary-table tbody tr:first-child td {
   border-top: 0;
 }
 
-.nav-tabs-wrapper .tab-content .signing-summary-table tbody th .cell-icon {
+.signing-summary-table tbody th .cell-icon {
   width: 37px;
   padding-right: 10px;
 }
 
-.nav-tabs-wrapper .tab-content .signing-summary-table tbody th .cell-text {
+.signing-summary-table tbody th .cell-text {
   font-weight: 600;
 }
 
-.nav-tabs-wrapper .tab-content .signing-summary-table tbody td .cell-icon {
+.signing-summary-table tbody td .cell-icon {
   width: 40px;
 }
 
-.nav-tabs-wrapper .tab-content .signing-summary-table tbody td .status-na {
+.signing-summary-table tbody td .status-na {
   color: #71767f;
+}
+
+@media (max-width: 575.98px) {
+  .modal-body .signing-summary-table td .signing-summary-table-cell-content {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  .modal-body .signing-summary-table td .signing-summary-table-cell-content .cell-icon {
+    width: auto;
+  }
+  .modal-body .signing-summary-table td .signing-summary-table-cell-content .cell-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
 }
 
 .navbar-collapse.righthand-name-menu {

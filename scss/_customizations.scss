@@ -418,8 +418,7 @@ textarea.form-control {
 }
 
 .col-form-label {
-
-  color: $gray-800 !important;
+  color: $gray-800;
   font-size: $font-size-sm;
   font-weight: $font-weight-normal;
 
@@ -1757,6 +1756,20 @@ table.table.table-sm {
 
 .modal {
 
+  .modal-full {
+    min-width: 100%;
+    margin: 0;
+
+    .modal-content {
+      min-height: 100vh;
+    }
+
+    .modal-header {
+      // padding: 0;
+    }
+
+  }
+
   .modal-content {
     border-radius: 9px;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
@@ -1772,6 +1785,12 @@ table.table.table-sm {
       font-size: $font-size-smaller;
       color: #5a5e5a;
       line-height: 18px;
+
+      &.font-lg {
+        font-size: $font-size-xxl;
+        line-height: 1.5rem;
+        letter-spacing: normal;
+      }
     }
   }
 
@@ -1928,7 +1947,7 @@ table.table.table-sm {
   }
 }
 
-.nav-tabs-wrapper {
+.nav-tabs-lg-wrapper {
   .nav-tabs {
     .tab-docs-detail {
       .docs {
@@ -1990,61 +2009,79 @@ table.table.table-sm {
     .signing-summary-inner {
       min-height: 300px;
     }
+  }
+}
 
-    .signing-summary-table {
+.signing-summary-table {
 
+  th,
+  td {
+    padding: 1rem 1.5rem;
+  }
+
+  thead {
+    background: #eff2f3;
+
+    th {
+      text-transform: uppercase;
+      font-weight: $font-weight-semibold;
+      font-size: $font-size-sm;
+      line-height: 13px;
+      color: #5a5e5a;
+      border-top: 0;
+      border-bottom: 0;
+    }
+  }
+
+  tbody {
+
+    th,
+    td {
+      font-size: $font-size-smaller;
+      line-height: 19px;
+    }
+
+    tr:first-child {
       th,
       td {
-        padding: 1rem 1.5rem;
+        border-top: 0;
+      }
+    }
+
+    th {
+      .cell-icon {
+        width: 37px;
+        padding-right: 10px;
       }
 
-      thead {
-        background: #eff2f3;
+      .cell-text {
+        font-weight: $font-weight-semibold;
+      }
+    }
 
-        th {
-          text-transform: uppercase;
-          font-weight: $font-weight-semibold;
-          font-size: $font-size-sm;
-          line-height: 13px;
-          color: #5a5e5a;
-          border-top: 0;
-          border-bottom: 0;
-        }
+    td {
+      .cell-icon {
+        width: 40px;
       }
 
-      tbody {
+      .status-na {
+        color: $text-muted;
+      }
+    }
+  }
 
-        th,
-        td {
-          font-size: $font-size-smaller;
-          line-height: 19px;
-        }
+  .modal-body & {
+    td {
+      @include media-breakpoint-only(xs) {
+        .signing-summary-table-cell-content {
+          justify-content: flex-end;
 
-        tr:first-child {
-          th,
-          td {
-            border-top: 0;
-          }
-        }
-
-        th {
           .cell-icon {
-            width: 37px;
-            padding-right: 10px;
+            width: auto;
           }
 
           .cell-text {
-            font-weight: $font-weight-semibold;
-          }
-        }
-
-        td {
-          .cell-icon {
-            width: 40px;
-          }
-
-          .status-na {
-            color: $text-muted;
+            @include sr-only;
           }
         }
       }
