@@ -13400,6 +13400,16 @@ table.table.table-sm thead tr:first-child th {
   padding-bottom: 100px;
 }
 
+@media (max-width: 767.98px) {
+  .detail-main {
+    padding-bottom: 0;
+  }
+  .detail-main .detail-tabs-row {
+    background: rgba(129, 194, 65, 0.17);
+    padding-bottom: 100px;
+  }
+}
+
 @media (max-width: 575.98px) {
   .workbench-status .workbench-status-content,
   .workbench-status .workbench-status-back {
@@ -14062,6 +14072,18 @@ table.table.table-sm thead tr:first-child th {
 .nav-tabs-lg-wrapper .tab-content .lender-docs-inner,
 .nav-tabs-lg-wrapper .tab-content .signing-summary-inner {
   min-height: 300px;
+}
+
+.nav-tabs-sm-wrapper .tab-detail-link {
+  font-size: 0.75rem;
+  line-height: 15px;
+  text-decoration: none;
+  border-top: 3px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-tabs-sm-wrapper .tab-detail-link:hover {
+  border-bottom: 1px solid;
 }
 
 .signing-summary-table th,

@@ -1350,6 +1350,17 @@ table.table.table-sm {
   padding-bottom: 100px;
 }
 
+.detail-main {
+  @include media-breakpoint-down(sm) {
+    padding-bottom: 0;
+
+    .detail-tabs-row {
+      background: rgba(129, 194, 65, .17);
+      padding-bottom: 100px;
+    }
+  }
+}
+
 .workbench-status {
 
   .workbench-status-content,
@@ -2008,6 +2019,21 @@ table.table.table-sm {
     .lender-docs-inner,
     .signing-summary-inner {
       min-height: 300px;
+    }
+  }
+}
+
+.nav-tabs-sm-wrapper {
+
+  .tab-detail-link {
+    font-size: $font-size-sm;
+    line-height: 15px;
+    text-decoration: none;
+    border-top: 3px solid transparent;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      border-bottom: 1px solid;
     }
   }
 }
