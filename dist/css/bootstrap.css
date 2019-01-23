@@ -11843,6 +11843,36 @@ a.text-dark:hover, a.text-dark:focus {
   height: 22.5px;
 }
 
+.eo-icon.eo-icon-updated-star-green {
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon_updated_star_green.svg");
+  background-size: cover;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.eo-icon.eo-icon-updated-star-green.eo-icon-xs {
+  width: 3.75px;
+  height: 3.75px;
+}
+
+.eo-icon.eo-icon-updated-star-green.eo-icon-sm {
+  width: 7.5px;
+  height: 7.5px;
+}
+
+.eo-icon.eo-icon-updated-star-green.eo-icon-lg {
+  width: 18.75px;
+  height: 18.75px;
+}
+
+.eo-icon.eo-icon-updated-star-green.eo-icon-xl {
+  width: 22.5px;
+  height: 22.5px;
+}
+
 .eo-icon.eo-icon-header-menu {
   width: 18px;
   height: 12px;
@@ -14063,29 +14093,63 @@ table.table.table-sm thead tr:first-child th {
   font-size: 0.75rem;
 }
 
-.nav-tabs-lg-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover {
+.nav-tabs-lg-wrapper .tab-content .lender-docs-inner,
+.nav-tabs-lg-wrapper .tab-content .signing-summary-inner {
+  min-height: 350px;
+}
+
+.nav-tabs-sm-wrapper .tab-docs {
+  margin-top: -3px;
+}
+
+.nav-tabs-sm-wrapper .tab-detail-link,
+.nav-tabs-sm-wrapper .tab-updates-link {
+  font-size: 0.75rem;
+  line-height: 15px;
+  text-decoration: none;
+}
+
+.nav-tabs-sm-wrapper .tab-detail-link {
+  border-top: 3px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-tabs-sm-wrapper .tab-detail-link:hover {
+  border-bottom: 1px solid;
+}
+
+.nav-tabs-sm-wrapper .tab-updates-link .tab-updates-link-text {
+  border-top: 3px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.nav-tabs-sm-wrapper .tab-updates-link .tab-updates-link-text:hover {
+  border-bottom: 1px solid;
+}
+
+.docs-popover-trigger .popover {
   width: 300px;
 }
 
-.nav-tabs-lg-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .popover-body {
+.docs-popover-trigger .popover .popover-body {
   padding-left: .75rem;
   padding-right: .75rem;
   max-height: 310px;
   overflow-y: scroll;
 }
 
-.nav-tabs-lg-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-heading {
+.docs-popover-trigger .popover .docs-update .docs-update-heading {
   background-color: #eff2f3;
 }
 
-.nav-tabs-lg-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-heading .docs-update-date,
-.nav-tabs-lg-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-heading .docs-update-time {
+.docs-popover-trigger .popover .docs-update .docs-update-heading .docs-update-date,
+.docs-popover-trigger .popover .docs-update .docs-update-heading .docs-update-time {
   font-weight: 600;
   font-size: 0.75rem;
   line-height: 15px;
 }
 
-.nav-tabs-lg-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-docs {
+.docs-popover-trigger .popover .docs-update .docs-update-docs {
   list-style: none;
   padding-left: 27px;
   padding-top: .25rem;
@@ -14093,27 +14157,10 @@ table.table.table-sm thead tr:first-child th {
   margin-bottom: 0;
 }
 
-.nav-tabs-lg-wrapper .nav-tabs .tab-docs-detail .docs-popover-trigger .popover .docs-update .docs-update-docs .docs-update-doc {
+.docs-popover-trigger .popover .docs-update .docs-update-docs .docs-update-doc {
   padding: .25rem 0;
   font-size: 0.75rem;
   line-height: 18px;
-}
-
-.nav-tabs-lg-wrapper .tab-content .lender-docs-inner,
-.nav-tabs-lg-wrapper .tab-content .signing-summary-inner {
-  min-height: 350px;
-}
-
-.nav-tabs-sm-wrapper .tab-detail-link {
-  font-size: 0.75rem;
-  line-height: 15px;
-  text-decoration: none;
-  border-top: 3px solid transparent;
-  border-bottom: 1px solid transparent;
-}
-
-.nav-tabs-sm-wrapper .tab-detail-link:hover {
-  border-bottom: 1px solid;
 }
 
 .signing-summary-table th,

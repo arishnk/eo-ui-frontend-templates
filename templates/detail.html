@@ -423,23 +423,32 @@
 
                 </div> <!-- nav-tabs-lg-wrapper -->
 
-                <div class="nav-tabs-sm-wrapper d-flex justify-content-center d-md-none w-100">
-                  <div class="tab-docs-detail d-flex align-items-center mr-4">
-                    <span class="eo-icon eo-icon-documents mr-1"></span>
-                    <a href="#" class="tab-detail-link d-flex align-items-end" data-toggle="modal" data-target="#lenderDocsMobileDetail" data-backdrop="static">
-                      <span class="docs-label docs-intro-label">View</span>
-                      <span class="docs pl-1">
-                        <span class="docs-value font-weight-semibold">13</span>
-                        <span class="docs-label">docs</span>
-                      </span>
-                      <span class="comma">,</span>
-                      <span class="pages pl-1">
-                        <span class="docs-value font-weight-semibold">106</span>
-                        <span class="docs-label">pg</span>
-                      </span>
-                    </a>
+                <div class="nav-tabs-sm-wrapper d-flex justify-content-center align-items-start d-md-none w-100">
+                  <div class="tab-docs d-flex flex-column">
+                    <div class="tab-docs-detail d-flex align-items-center mr-4">
+                      <span class="eo-icon eo-icon-documents mr-1"></span>
+                      <a href="#" class="tab-detail-link d-flex align-items-end" data-toggle="modal" data-target="#lenderDocsMobileDetail" data-backdrop="static">
+                        <span class="docs-label docs-intro-label">View</span>
+                        <span class="docs pl-1">
+                          <span class="docs-value font-weight-semibold">13</span>
+                          <span class="docs-label">docs</span>
+                        </span>
+                        <span class="comma">,</span>
+                        <span class="pages pl-1">
+                          <span class="docs-value font-weight-semibold">106</span>
+                          <span class="docs-label">pg</span>
+                        </span>
+                      </a>
+                    </div>
+                    <div class="tabs-docs-updates align-self-start mt-1">
+                      <a href="#" class="tab-updates-link docs-popover-trigger d-flex align-items-center" id="docsMobilePopoverTrigger" data-toggle="popover">
+                        <span class="eo-icon eo-icon-updated-star-green mr-2"></span>
+                        <span class="tab-updates-link-text">Updates</span>
+                      </a>
+                    </div>
+
                   </div>
-                  <div class="tab-docs-detail d-flex align-items-center ml-4">
+                  <div class="tab-detail d-flex align-items-center ml-4">
                     <span class="eo-icon eo-icon-signature-required mr-2"></span>
                     <a href="#" class="tab-detail-link" data-toggle="modal" data-target="#signingSummaryMobileDetail" data-backdrop="static">
                         <span>Signing summary</span>
@@ -673,7 +682,7 @@
       $('#addNoteModal').modal('hide');
     });
 
-    // NOTE: the "content" attribute's markup is best converted to a more modular template inserted into the DOM elsewhere and referenced with either an element selector or function call.
+    // NOTE: in both versions of the popover below, the "content" attribute's markup is best converted to a more modular template inserted into the DOM elsewhere and referenced with either an element selector or function call.
     $('#docsPopoverTrigger').popover({
       container: $('#docsPopoverTrigger')[0],
       trigger: 'hover',
@@ -681,6 +690,18 @@
       // offset: 'top, 5px',
       boundary: $('.nav-tabs-lg-wrapper')[0],
       fallbackPlacement: ['top'],
+      html: true,
+      title: 'Updated docs retrieved at:',
+      template: '<div class="popover" role="tooltip"><div class="arrow"></div><div class="popover-header"></div><div class="popover-body py-0 docs-updates"></div></div>',
+      content: '<div class="docs-update"><div class="docs-update-heading d-flex justify-content-between align-items-center p-2"><span class="eo-icon eo-icon-updated-star-gray"></span><span class="docs-update-date pl-1 mr-auto">12/20/2018</span><span class="docs-update-time">9:15 am ET</span></div><ul class="docs-update-docs"><li class="docs-update-doc">Document title here</li><li class="docs-update-doc">Document title here long example lorem ipsum dolor</li><li class="docs-update-doc">Document title here</li></ul></div><div class="docs-update"><div class="docs-update-heading d-flex justify-content-between align-items-center p-2"><span class="eo-icon eo-icon-updated-star-gray"></span><span class="docs-update-date pl-1 mr-auto">12/18/2018</span><span class="docs-update-time">8:43 am ET</span></div><ul class="docs-update-docs"><li class="docs-update-doc">Document title here</li><li class="docs-update-doc">Document title here</li></ul></div><div class="docs-update"><div class="docs-update-heading d-flex justify-content-between align-items-center p-2"><span class="eo-icon eo-icon-updated-star-gray"></span><span class="docs-update-date pl-1 mr-auto">12/9/2018</span><span class="docs-update-time">12:11 pm ET</span></div><ul class="docs-update-docs"><li class="docs-update-doc">Document title here</li></ul></div>'
+    });
+
+    $('#docsMobilePopoverTrigger').popover({
+      container: $('#docsMobilePopoverTrigger')[0],
+      placement: 'top',
+      // offset: 'top, -5px',
+      boundary: $('.detail-container')[0],
+      fallbackPlacement: ['bottom'],
       html: true,
       title: 'Updated docs retrieved at:',
       template: '<div class="popover" role="tooltip"><div class="arrow"></div><div class="popover-header"></div><div class="popover-body py-0 docs-updates"></div></div>',

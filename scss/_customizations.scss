@@ -1999,46 +1999,6 @@ table.table.table-sm {
       .pages .docs-value {
         font-size: $font-size-sm;
       }
-
-      .docs-popover-trigger {
-        .popover {
-          width: 300px;
-
-          .popover-body {
-            padding-left: .75rem;
-            padding-right: .75rem;
-            max-height: 310px;
-            overflow-y: scroll;
-          }
-
-          .docs-update {
-            .docs-update-heading {
-              background-color: #eff2f3;
-
-              .docs-update-date,
-              .docs-update-time {
-                font-weight: $font-weight-semibold;
-                font-size: $font-size-sm;
-                line-height: 15px;
-              }
-            }
-
-            .docs-update-docs {
-              list-style: none;
-              padding-left: 27px;
-              padding-top: .25rem;
-              padding-bottom: .5rem;
-              margin-bottom: 0;
-
-              .docs-update-doc {
-                padding: .25rem 0;
-                font-size: $font-size-sm;
-                line-height: 18px;
-              }
-            }
-          }
-        }
-      }
     }
   }
 
@@ -2053,15 +2013,74 @@ table.table.table-sm {
 
 .nav-tabs-sm-wrapper {
 
-  .tab-detail-link {
+  .tab-docs {
+    margin-top: -3px;
+  }
+
+  .tab-detail-link,
+  .tab-updates-link {
     font-size: $font-size-sm;
     line-height: 15px;
     text-decoration: none;
+  }
+
+  .tab-detail-link {
     border-top: 3px solid transparent;
     border-bottom: 1px solid transparent;
 
     &:hover {
       border-bottom: 1px solid;
+    }
+  }
+
+  .tab-updates-link {
+    .tab-updates-link-text {
+      border-top: 3px solid transparent;
+      border-bottom: 1px solid transparent;
+
+      &:hover {
+        border-bottom: 1px solid;
+      }
+    }
+  }
+}
+
+.docs-popover-trigger {
+  .popover {
+    width: 300px;
+
+    .popover-body {
+      padding-left: .75rem;
+      padding-right: .75rem;
+      max-height: 310px;
+      overflow-y: scroll;
+    }
+
+    .docs-update {
+      .docs-update-heading {
+        background-color: #eff2f3;
+
+        .docs-update-date,
+        .docs-update-time {
+          font-weight: $font-weight-semibold;
+          font-size: $font-size-sm;
+          line-height: 15px;
+        }
+      }
+
+      .docs-update-docs {
+        list-style: none;
+        padding-left: 27px;
+        padding-top: .25rem;
+        padding-bottom: .5rem;
+        margin-bottom: 0;
+
+        .docs-update-doc {
+          padding: .25rem 0;
+          font-size: $font-size-sm;
+          line-height: 18px;
+        }
+      }
     }
   }
 }
