@@ -25,7 +25,11 @@
 ### New
 * HTML templates (`/templates/*`)
 * Images (`/img/*`)
-* Certain SCSS folders/files: (`/scss`)
+* Certain SCSS files:
+    1. Custom variables and variable overrides (`/scss/_variable-overrides.scss`)
+    1. SVG icon handling (`/scss/_icons.scss`)
+    1. Lender logos (`/scss/_lender-logos.scss`)
+    1. All other custom styles (`/scss/_customizations.scss`)
 * This documentation file (`README.md`)
     * replaces original README, moved to the [docs folder](site/docs)
 
@@ -33,6 +37,8 @@
 * dynamically built dist folder (`/dist/*`)
 * `package.json`
 * `.gitignore`
+* Main SCSS file  (`/scss/bootstrap.scss`) with imports of new partials
+    * ***NOTE:*** The precise placement of those new partials in that file is critical. In particular, the variable overrides will not work if imported after the default `variables` file.
 * SCSS linter (`.stylelintrc`)
 * Docs folder (`/site/docs`)
     * ***NOTE:*** *The sites folder is unrelated to the site itself and may be removed from the final code base.*
