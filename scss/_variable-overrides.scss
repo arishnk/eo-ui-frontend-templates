@@ -10,18 +10,29 @@
 
 $white:    #fff !default;
 $gray-100: #f7f8f9 !default;
+$gray-200: #eff2f3 !default;
 $gray-300: #d9dee1 !default;
 $gray-400: #c0c4c8 !default;
+$gray-500: #8d939a !default;
 $gray-600: #71767f !default;
+$gray-700: #5a5e5a !default;
 $gray-800: #353937 !default;
 $black:    #000 !default;
 
-$primary:       #57a40a !default; // default was $blue
+$faded-green: #daf7bf !default;
+$lighter-green: #b9ef84 !default;
+$light-green: #81c241 !default;
+$green: #57a40a !default;
+$alt-green: #38a448 !default;
+$dark-green: #2ea049 !default;
+$yellow: #f2c700 !default;
+
+$primary:       $green !default; // default was $blue
 $secondary:     $gray-100 !default;
-$success:       #57a40a !default; // default was $green
+$success:       $light-green !default; // default was $green
 $info:          $gray-100 !default; // default was $cyan
 $warning:       #fd7f23 !default; // default was $yellow
-$danger:        #ca0000 !default; // default was $red
+$danger:        #e60303 !default; // default was $red
 
 
 // Body
@@ -34,7 +45,7 @@ $body-color:                $gray-800 !default;
 //
 // Style anchor elements.
 
-$link-color:                              #2ea049 !default;
+$link-color:                              $dark-green !default;
 $link-hover-color:                        $link-color !default; // default was darken by 15%;
 $emphasized-link-hover-darken-percentage: 0 !default; // default was 15%
 
@@ -129,7 +140,7 @@ $input-border-radius-lg:                0 !default;
 $input-border-radius-sm:                0 !default;
 
 $input-focus-border-color:              #0abae5 !default;
-$input-placeholder-color:               #8d939a !default; // default was $gray-600
+$input-placeholder-color:               $gray-500 !default; // default was $gray-600
 
 $input-group-addon-bg:                  $white !default; // default was $gray-200
 $input-group-addon-border-color:        transparent !default;
@@ -143,7 +154,7 @@ $dropdown-border-color:             rgba($black, .1) !default;
 $dropdown-inner-border-radius:      0 !default;
 
 $dropdown-link-color:               $gray-800 !default;
-$dropdown-link-hover-bg:            #daf7bf !default;
+$dropdown-link-hover-bg:            $faded-green !default;
 
 $dropdown-item-padding-y:           .75rem !default;
 $dropdown-item-padding-x:           1rem !default;
@@ -171,7 +182,7 @@ $popover-body-padding-x:            1rem !default;
 
 $toast-border-color: $gray-400 !default;
 $toast-border-radius: $border-radius !default;
-$toast-box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5) !default;
+$toast-box-shadow: 0 0 10px 0 rgba($black, .5) !default;
 
 
 // Modals
