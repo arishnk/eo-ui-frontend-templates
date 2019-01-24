@@ -75,6 +75,10 @@ More info [here](https://getbootstrap.com/docs/4.2/getting-started/build-tools/#
 1. ***SUBJECT TO CHANGE:*** All custom jQuery scripts are currently placed within script tags embedded into the corresponding template.
 
 
+### Dependencies
+* A date picker tool has been selected for use on select pages. Tempus Dominus can be used on a page-by-page basis by including the required CSS and JavaScript https://tempusdominus.github.io/bootstrap-4/
+
+
 <a name="upgrade"></a>
 ## Upgrading Bootstrap
 1. Download and unzip the version of your choice from https://github.com/twbs/bootstrap/releases.
@@ -88,4 +92,3 @@ More info [here](https://getbootstrap.com/docs/4.2/getting-started/build-tools/#
         * Copy custom SCSS partial files from renamed current folder to the new one
         * Add imports for those copied custom files in the new `/scss/bootstrap.scss` file, in the order matching that of the current version.
     1. Run `npm run dist` from the terminal to dynamically update the `/dist` folder.
-  
