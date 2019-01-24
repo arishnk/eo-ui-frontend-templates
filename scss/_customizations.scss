@@ -1,6 +1,6 @@
 body {
   &.has-footer {
-    background-color: #353937;
+    background-color: $dark;
   }
 
   > .footer {
@@ -19,7 +19,7 @@ body {
     h4,
     h5,
     h6 {
-      color: #fff;
+      color: $white;
       margin: 0;
       font-weight: 500;
     }
@@ -123,9 +123,9 @@ body {
     border-top: none;
     border-left: none;
     border-right: none;
-    border-bottom: 2px solid #81c241;
+    border-bottom: 2px solid $light-green;
     padding: 0;
-    background-color: #fff !important;
+    background-color: $white !important;
 
     .row {
       width: 100%;
@@ -222,20 +222,20 @@ h6,
 
 .main-content {
 
-  background-color: #fff;
+  background-color: $white;
   min-height: calc(100vh - 350px);
   padding-bottom: 26px;
 
   &.bg-muted {
-    background-color: #eff2f3;
+    background-color: $gray-200;
   }
 
   &.bg-green {
 
     position: relative;
     overflow: hidden;
-    background-color: #2ea049;
-    background-image: linear-gradient(89deg, #81c241, #2ea049);
+    background-color: $link-color;
+    background-image: linear-gradient(89deg, $light-green, $link-color);
 
     &::before {
       content: "";
@@ -321,8 +321,8 @@ h6,
   padding: 10px 18px;
 
   &.btn-secondary {
-    border: 1px solid #d9dee1;
-    color: #2ea049;
+    border: 1px solid $gray-300;
+    color: $link-color;
     box-shadow: 0 3px 3px 0 rgba($black, .05);
 
     &:hover,
@@ -360,7 +360,7 @@ h6,
 
   &.btn-muted {
 
-    color: #5a5e5a;
+    color: $gray-700;
 
     &:hover,
     &:focus {
@@ -430,7 +430,7 @@ textarea.form-control {
   }
 
   &.has-focus {
-    color: #000;
+    color: $black;
   }
 
 }
@@ -461,7 +461,7 @@ a.form-control-feedback {
 
 .dropdown-menu {
   border-radius: 9px;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 5px 10px 0 rgba($black, .2);
 }
 
 .navbar-nav > li > .dropdown-menu {
@@ -604,17 +604,17 @@ a.form-control-feedback {
     background-image: url("../img/white_dots_2_rows.svg");
   }
 
-  background: #81c242;
+  background: $light-green;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top right;
-  color: #fff;
+  color: $white;
   font-size: $h3-font-size;
 
   h1 {
     font-size: $h1-font-size;
     margin-top: 0;
-    color: #fff;
+    color: $white;
   }
 
   p,
@@ -625,7 +625,7 @@ a.form-control-feedback {
   h5,
   div {
     font-size: $h3-font-size;
-    color: #fff;
+    color: $white;
   }
 
   &.welcome-jumbotron {
@@ -640,7 +640,7 @@ a.form-control-feedback {
     margin-bottom: 10px;
     padding-top: 18px;
     padding-bottom: 10px;
-    background-image: linear-gradient(136deg, #81c241, $link-color) !important;
+    background-image: linear-gradient(136deg, $light-green, $link-color) !important;
   }
 
 }
@@ -657,7 +657,7 @@ a.form-control-feedback {
 
   position: relative;
   border-radius: 9px;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 5px 10px 0 rgba($black, .2);
   padding: 25px 40px 35px;
 
   > *:first-child {
@@ -689,7 +689,7 @@ a.form-control-feedback {
   }
 
   .bg-white-xs {
-    background-color: #fff;
+    background-color: $white;
   }
 
   .text-left-xs {
@@ -720,7 +720,7 @@ a.form-control-feedback {
   }
 
   .bg-white-sm {
-    background-color: #fff;
+    background-color: $white;
   }
 
 }
@@ -742,7 +742,7 @@ a.form-control-feedback {
   }
 
   .border-lg-left {
-    border-left: 1px solid #d9dee1 !important;
+    border-left: 1px solid $gray-300 !important;
   }
 
 }
@@ -764,7 +764,7 @@ a.form-control-feedback {
   }
 
   .border-xl-left {
-    border-left: 1px solid #d9dee1 !important;
+    border-left: 1px solid $gray-300 !important;
   }
 
 }
@@ -836,7 +836,7 @@ h6.reserve-two-lines {
 
 .list-checks-white {
 
-  color: #fff;
+  color: $white;
 
   li::before {
     background-image: url("../img/icon_checkmark_white_large.svg");
@@ -854,11 +854,11 @@ strong {
 }
 
 .black {
-  color: #000;
+  color: $black;
 }
 
 .white {
-  color: #fff;
+  color: $white;
 }
 
 .list-inline-piped {
@@ -1036,22 +1036,22 @@ hr.hr-dots {
 }
 
 .progress-bar-danger {
-  background-color: #e60303;
+  background-color: $danger;
   width: 10%;
 }
 
 .progress-bar-warning {
-  background-color: #fd7f23;
+  background-color: $warning;
   width: 40%;
 }
 
 .progress-bar-ok {
-  background-color: #f2c700;
+  background-color: $yellow;
   width: 60%;
 }
 
 .progress-bar-success {
-  background-color: #81c241;
+  background-color: $success;
   width: 90%;
 }
 
@@ -1075,13 +1075,13 @@ hr.hr-dots {
 
 .help-block,
 .form-text {
-  color: #71767f;
+  color: $gray-600;
 }
 
 a.help-block,
 a.form-text {
   font-weight: 600;
-  color: #2ea049;
+  color: $link-color;
 }
 
 .alert {
@@ -1093,7 +1093,7 @@ a.form-text {
   position: relative;
   letter-spacing: .9;
   border: none;
-  color: #fff;
+  color: $white;
 
   &::before {
     content: "";
@@ -1113,7 +1113,7 @@ a.form-text {
   h4,
   h5,
   h6 {
-    color: #fff;
+    color: $white;
     margin-top: 0;
     font-size: $h2-font-size;
     font-weight: 600;
@@ -1125,7 +1125,7 @@ a.form-text {
   }
 
   &.alert-success {
-    background-image: linear-gradient(144deg, #81c241, #2ea049);
+    background-image: linear-gradient(144deg, $light-green, $link-color);
   }
 
   .has-icon {
@@ -1288,7 +1288,7 @@ table.table.table-sm {
 
 .workbench-banner {
   position: relative;
-  background-image: linear-gradient(89deg, #81c241, #2ea049);
+  background-image: linear-gradient(89deg, $light-green, $link-color);
 
   &::before {
     content: "";
@@ -1373,7 +1373,7 @@ table.table.table-sm {
 
 .workbench-main,
 .detail-main {
-  background-image: linear-gradient(to bottom, #eff2f3 0%, #d9dee1);
+  background-image: linear-gradient(to bottom, $gray-200 0%, $gray-300);
   padding-bottom: 100px;
 }
 
@@ -1382,7 +1382,7 @@ table.table.table-sm {
     padding-bottom: 50px;
 
     .detail-tabs-row {
-      background: rgba(129, 194, 65, .17);
+      background: rgba($light-green, .17);
       padding-bottom: 25px;
     }
   }
@@ -1407,7 +1407,7 @@ table.table.table-sm {
   }
 
   .last-refreshed-label {
-    color: #5a5a5a;
+    color: $gray-700;
   }
 
   .last-refreshed-value {
@@ -1428,7 +1428,7 @@ table.table.table-sm {
   }
 
   .refresh-text {
-    color: #38a448;
+    color: $alt-green;
   }
 
 }
@@ -1464,7 +1464,7 @@ table.table.table-sm {
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(239, 242, 243, .3);
+            background: rgba($gray-200, .3);
           }
         }
       }
@@ -1483,7 +1483,7 @@ table.table.table-sm {
       }
 
       &:not(:last-child) {
-        border-right: 1px solid rgba(141, 147, 154, .38);
+        border-right: 1px solid rgba($gray-500, .38);
       }
     }
   }
@@ -1577,17 +1577,17 @@ table.table.table-sm {
 
   &:hover {
     cursor: pointer;
-    background: rgba(185, 239, 132, .5);
+    background: rgba($lighter-green, .5);
     transition: background .3s;
   }
 
   &.hover {
-    background: rgba(185, 239, 132, 1);
+    background: rgba($lighter-green, 1);
     transition: background .3s;
   }
 
   &.new {
-    background: rgba(185, 239, 132, .5);
+    background: rgba($lighter-green, .5);
 
     &.bg-fade {
       background: transparent;
@@ -1666,7 +1666,7 @@ table.table.table-sm {
   }
 
   .detail-more-row {
-    background: rgba(129, 194, 65, .17);
+    background: rgba($light-green, .17);
 
     .detail-more-main {
 
@@ -1716,7 +1716,7 @@ table.table.table-sm {
 .card.notes-box {
   width: 100%;
   max-width: 400px;
-  border: 1px solid rgba(87, 164, 10, .17);
+  border: 1px solid rgba($primary, .17);
 
   @include media-breakpoint-between(md, lg) {
     width: 350px;
@@ -1750,22 +1750,22 @@ table.table.table-sm {
 
   &.add-note-form,
   &.edit-note-form {
-    border-color: #81c241;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .23);
+    border-color: $light-green;
+    box-shadow: 0 0 8px 0 rgba($black, .23);
 
     .card-header {
       background: $white;
 
       .card-header-title {
         font-size: $font-size-smaller;
-        color: #5a5e5a;
+        color: $gray-700;
         line-height: $font-size-lg;
       }
 
       .card-header-right {
         font-size: $font-size-sm;
         line-height: 15px;
-        color: #5a5e5a;
+        color: $gray-700;
       }
     }
 
@@ -1792,7 +1792,7 @@ table.table.table-sm {
   .note-heading {
     font-size: $font-size-sm;
     line-height: $font-size-sm;
-    color: #5a5e5a;
+    color: $gray-700;
   }
 
   .note-text {
@@ -1820,18 +1820,18 @@ table.table.table-sm {
 
   .modal-content {
     border-radius: 9px;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 10px 0 rgba($black, .2);
   }
 
   .modal-header {
-    background: #daf7bf;
+    background: $faded-green;
     align-items: center;
     justify-content: flex-start;
     padding: 10px 24px;
 
     .modal-title {
       font-size: $font-size-smaller;
-      color: #5a5e5a;
+      color: $gray-700;
       line-height: 18px;
 
       &.font-lg {
@@ -1858,7 +1858,7 @@ table.table.table-sm {
 .popover {
   width: 350px;
   border-radius: 3px;
-  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 10px 0 rgba($black, .3);
 
   .popover-header {
     color: $body-color;
@@ -1875,7 +1875,7 @@ table.table.table-sm {
 }
 
 .bootstrap-datetimepicker-widget table {
-  border: 1px solid #d9dee1;
+  border: 1px solid $gray-300;
 }
 
 .bootstrap-datetimepicker-widget table th {
@@ -1883,24 +1883,24 @@ table.table.table-sm {
 }
 
 .bootstrap-datetimepicker-widget table thead tr:first-child {
-  background-color: #d9dee1;
+  background-color: $gray-300;
 }
 
 .bootstrap-datetimepicker-widget table td.today::before {
-  border-bottom-color: #57a40a;
+  border-bottom-color: $primary;
   display: none;
 }
 
 .bootstrap-datetimepicker-widget table td.old,
 .bootstrap-datetimepicker-widget table td.new {
-  color: #353937;
+  color: $dark;
 }
 
 .bootstrap-datetimepicker-widget table td.day.active,
 .bootstrap-datetimepicker-widget table td.day.active:hover {
 
-  background-color: #57a40a;
-  color: #fff;
+  background-color: $primary;
+  color: $white;
 
   &::before {
     display: none;
@@ -1909,18 +1909,18 @@ table.table.table-sm {
 }
 
 .bootstrap-datetimepicker-widget table td.day {
-  color: #2ea049;
+  color: $link-color;
   border: none;
-  font-weight: 600;
+  font-weight: $font-weight-semibold;
 }
 
 .bootstrap-datetimepicker-widget table td.day.disabled {
-  color: #8d939a;
+  color: $gray-500;
 }
 
 .bootstrap-datetimepicker-widget table td.day.old,
 .bootstrap-datetimepicker-widget table td.day.new {
-  font-weight: 400;
+  font-weight: $font-weight-normal;
 }
 
 .toast-container {
@@ -1964,7 +1964,7 @@ table.table.table-sm {
 
 .nav-tabs {
   border-bottom: none;
-  background: linear-gradient(to right, #5fa600, #2ea049);
+  background: linear-gradient(to right, $green, $link-color);
 
   .nav-item {
     margin-bottom: 0;
@@ -2069,7 +2069,7 @@ table.table.table-sm {
 
     .docs-update {
       .docs-update-heading {
-        background-color: #eff2f3;
+        background-color: $gray-200;
 
         .docs-update-date,
         .docs-update-time {
@@ -2104,14 +2104,14 @@ table.table.table-sm {
   }
 
   thead {
-    background: #eff2f3;
+    background: $gray-200;
 
     th {
       text-transform: uppercase;
       font-weight: $font-weight-semibold;
       font-size: $font-size-sm;
       line-height: 13px;
-      color: #5a5e5a;
+      color: $gray-700;
       border-top: 0;
       border-bottom: 0;
     }
@@ -2241,13 +2241,13 @@ table.table.table-sm {
   }
 
   .list-inline-item.active a {
-    color: #5a5e5a;
+    color: $gray-700;
   }
 
   .list-inline-item.active a:hover,
   .list-inline-item.active a:focus {
 
-    color: #2ea049;
+    color: $link-color;
     text-decoration: none;
 
     .eo-icon-my-closings-small { @include icon-versions(29px, 26px, "../img/icon_my_closings_small_hover_select.svg"); }
@@ -2266,11 +2266,11 @@ table.table.table-sm {
 
   a.dropdown-toggle {
     font-size: 12px;
-    color: #8d939a;
+    color: $gray-500;
   }
 
   .show a.dropdown-toggle {
-    color: #71767f;
+    color: $gray-600;
   }
 
   .dropdown-toggle::after {

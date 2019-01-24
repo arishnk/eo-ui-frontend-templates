@@ -1,0 +1,203 @@
+// Variables Overrides
+//
+// All variable values deviating from Bootstrap defaults should be placed in this file.
+
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+
+// Color system
+
+$white:    #fff !default;
+$gray-100: #f7f8f9 !default;
+$gray-200: #eff2f3 !default;
+$gray-300: #d9dee1 !default;
+$gray-400: #c0c4c8 !default;
+$gray-500: #8d939a !default;
+$gray-600: #71767f !default;
+$gray-700: #5a5e5a !default;
+$gray-800: #353937 !default;
+$black:    #000 !default;
+
+$faded-green: #daf7bf !default;
+$lighter-green: #b9ef84 !default;
+$light-green: #81c241 !default;
+$green: #57a40a !default;
+$alt-green: #38a448 !default;
+$dark-green: #2ea049 !default;
+$yellow: #f2c700 !default;
+
+$primary:       $green !default; // default was $blue
+$secondary:     $gray-100 !default;
+$success:       $light-green !default; // default was $green
+$info:          $gray-100 !default; // default was $cyan
+$warning:       #fd7f23 !default; // default was $yellow
+$danger:        #e60303 !default; // default was $red
+
+
+// Body
+//
+// Settings for the `<body>` element.
+$body-color:                $gray-800 !default;
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                              $dark-green !default;
+$link-hover-color:                        $link-color !default; // default was darken by 15%;
+$emphasized-link-hover-darken-percentage: 0 !default; // default was 15%
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$container-max-widths: map-merge(
+  (
+    sm: 576px,
+    md: 768px,
+    lg: 982px,
+    xl: 1190px
+  ),
+  $container-max-widths
+);
+
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-gutter-width:           50px !default; // default 30px
+
+$border-radius:               6px !default; // default .25rem
+$border-radius-lg:            6px !default; // default .3rem
+$border-radius-sm:            0 !default; // default .2rem
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      "Open Sans", sans-serif !default; // override leaving default in place for now
+// stylelint-enable value-keyword-case
+
+$font-size-base:              (1rem * 14 / 16) !default; // default was 1rem (browser default, generally 16px)
+$font-size-xxxl:              (1rem * 24 / 16) !default; // 24px
+$font-size-xxl:               (1rem * 20 / 16) !default; // 20px
+$font-size-xl:                (1rem * 18 / 16) !default; // 18px
+$font-size-lg:                1rem !default; // 16px
+$font-size-smaller:           (1rem * 13 / 16) !default; // 13px
+$font-size-sm:                (1rem * 12 / 16) !default; // 12px
+
+$font-weight-semibold:        600 !default;
+
+$line-height-base:            1.5 !default; // 21px. @line-height-base was 1.428571429 (20px) in v3
+
+$line-height-computed:        floor(($font-size-base * $line-height-base)) !default; // ~20px added back in for some elements
+
+$h1-font-size:                36px !default; // 36px
+$h2-font-size:                $font-size-xxxl !default;
+$h3-font-size:                $font-size-xxxl !default;
+$h4-font-size:                $font-size-xl !default;
+$h5-font-size:                $font-size-base !default;
+$h6-font-size:                $font-size-sm !default;
+
+$headings-font-weight:        600 !default; // default is 500
+$headings-line-height:        1.33 !default; // default is 1.2
+$headings-color:              $black !default; // default is inherit
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-focus-box-shadow:  none !default;
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-border-width:            0 !default; // was 1px
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:           $border-radius-lg !default;
+$btn-border-radius-sm:        0 !default;
+
+
+// Forms
+
+$input-disabled-bg:                     transparent !default; // was $gray-200
+$input-border-color:                    $gray-300 !default; // default was $gray-400
+
+$input-border-radius:                   0 !default;
+$input-border-radius-lg:                0 !default;
+$input-border-radius-sm:                0 !default;
+
+$input-focus-border-color:              #0abae5 !default;
+$input-placeholder-color:               $gray-500 !default; // default was $gray-600
+
+$input-group-addon-bg:                  $white !default; // default was $gray-200
+$input-group-addon-border-color:        transparent !default;
+
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-border-color:             rgba($black, .1) !default;
+$dropdown-inner-border-radius:      0 !default;
+
+$dropdown-link-color:               $gray-800 !default;
+$dropdown-link-hover-bg:            $faded-green !default;
+
+$dropdown-item-padding-y:           .75rem !default;
+$dropdown-item-padding-x:           1rem !default;
+
+
+// Navbar
+
+$navbar-light-color:                $link-color !default; // default was rgba($black, .5)
+$navbar-light-hover-color:          $link-hover-color !default; // default was rgba($black, .7)
+$navbar-light-active-color:         $link-hover-color !default; // // default was rgba($black, .9)
+
+
+// Popovers
+
+$popover-font-size:                 $font-size-smaller !default;
+$popover-max-width:                 350px !default;
+$popover-border-color:              rgba($black, .1) !default;
+$popover-header-bg:                 $white !default;
+
+$popover-body-padding-y:            1rem !default;
+$popover-body-padding-x:            1rem !default;
+
+
+// Toasts
+
+$toast-border-color: $gray-400 !default;
+$toast-border-radius: $border-radius !default;
+$toast-box-shadow: 0 0 10px 0 rgba($black, .5) !default;
+
+
+// Modals
+
+// Padding applied to the modal body
+$modal-inner-padding:               1rem 1.5rem !default;
+
+$modal-content-border-color:        rgba($black, .1) !default;
+$modal-content-border-radius:       9px !default;
+
+$modal-header-padding-y:            10px !default;
+
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+$alert-bg-level:                    0 !default;
