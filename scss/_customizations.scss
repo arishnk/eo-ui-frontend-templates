@@ -149,7 +149,6 @@ body {
       .product-name-image {
         width: 100%;
         height: 17px;
-        background-image: url("../img/product_name_digital_closing_portal.svg");
         background-position: center left;
         background-size: contain;
         background-repeat: no-repeat;
@@ -2198,13 +2197,11 @@ table.table.table-sm {
   }
 
   .workbench-product-name-image {
-    background-image: none;
     width: 110px;
 
     @include media-breakpoint-up(lg) {
       width: 208px;
     }
-
   }
 
   .righthand-name-menu {

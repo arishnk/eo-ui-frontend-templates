@@ -4,3 +4,14 @@
     background-image: url("../img/icon_bank_of_america.png");
   }
 }
+
+.product-logo {
+
+  &.product-logo-digital-closing-portal {
+    background-image: url("../img/product_name_digital_closing_portal.svg");
+  }
+
+  &.product-logo-closing-center {
+    background-image: url("../img/product_name_closing_center.svg");
+  }
+}
