@@ -53,7 +53,7 @@
 ## Development Process
 
 ### Getting Started
-***NOTE:*** *assumes use of Mac OSx*
+***NOTE:*** *assumes use of Mac OSx* 
 1. Clone this repository using Git
 1. Navigate to root folder of code base in your terminal
 1. *Optional:* run `bundle install` to build Ruby-based assets used for local documentation
